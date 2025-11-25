@@ -22,5 +22,5 @@ Kamela International offers:
 | Styling      | Tailwind CSS      |
 | Animations   | GSAP |
 | CMS          | Sanity |
-| Hosting      | Netlify |
+| Hosting      | Vercile |
 | Versioning   | Git + GitHub              |
