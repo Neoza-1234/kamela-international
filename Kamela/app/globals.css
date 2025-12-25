@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
 
 @import "bootstrap-icons/font/bootstrap-icons.css";
@@ -8,13 +7,17 @@
 :root {
   --prime: #ff4500;
   --secondary: #0866ff;
-  --body: #f9f9f9;
+  --body: #ffffff;
   --background: #252326;
   --text-color: #000000;
   --text-color-secondary: #545454;
+  --navbar: #f8f9fa;
+  --footer: #1a1a1a;
 
-  --font-oswald: "Oswald", sans-serif;
-  --font-roboto: "Roboto", sans-serif;
+
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  
 
   --transition-regular: 0.3s;
   --transition-slow: 0.6s;
@@ -26,9 +29,52 @@
 }
 
 body {
-  font-family: var(--font-roboto);
+  font-family: var(--font-inter);
   background-color: var(--body);
   color: var(--text-color);
   margin: 0;
   padding: 0;
+}
+
+.font-inter {
+  font-family: var(--font-inter);
+}
+
+.font-montserrat {
+  font-family: var(--font-montserrat);
+}
+
+/*navbar*/
+.menu-link a{
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+}
+
+/*hero*/
+.hero{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+h1{
+  font-size: var(--biggest-font-size);
+  font-weight: 600;
+  font-family: var(--font-montserrat);
+}
+
+h2{
+  font-size: var(--h1-font-size);
+  font-weight: 600;
+  font-family: var(--font-montserrat);
+}
+
+h3{
+  font-size: var(--small-font-size);
+  font-family: var(--font-montserrat);
 }

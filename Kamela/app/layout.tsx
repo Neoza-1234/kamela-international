@@ -1,22 +1,25 @@
 import type { Metadata } from "next";
-import { Oswald, Roboto } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
+import { p } from "framer-motion/client";
+import Navbar from "./components/Navbar/navbar";
 
-const oswald = Oswald({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "600", "700"],
-  variable: "--font-oswald",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-inter",
 });
 
-const roboto = Roboto({
+const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "900"],
-  variable: "--font-roboto",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-montserrat",
 });
 
 export const metadata: Metadata = {
   title: "Kamela International",
-  description: "Kamela International Official Website",
+  description:
+    "Kamela International is a QCTO-accredited skills development provider delivering IT, business, and management skills programs for career and enterprise success.",
 };
 
 export default function RootLayout({
@@ -27,8 +30,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${oswald.variable} ${roboto.variable} font-sans bg-white text-black`}
+        className={`${inter.variable} ${montserrat.variable} min-h-screen antialiased`}
       >
+        <Navbar />
         {children}
       </body>
     </html>
