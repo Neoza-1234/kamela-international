@@ -1,10 +1,9 @@
 "use client";
 
-import CountUp from "react-countup";
-
+import  CountUp  from 'react-countup';
 import Image from "next/image";
 import Link from "next/link";
-import { desc } from "framer-motion/client";
+
 
 const statsData = [
   {

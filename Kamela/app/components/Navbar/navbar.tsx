@@ -12,7 +12,7 @@ type NavLink = {
 
 const navLinks: NavLink[] = [
   
-  { label: "About Us", href: "/UI-Components/About" },
+  { label: "About Us", href: "/UI-Components/About Us" },
   {
     label: "Solutions",
     href: "/UI-Components/Solutions",
@@ -20,6 +20,7 @@ const navLinks: NavLink[] = [
       { label: "Study", href: "/UI-Components/Solutions/Study" },
       { label: "Enterprise", href: "/UI-Components/Solutions/Enterprise" },
       { label: "RPL", href: "/UI-Components/Solutions/RPL" },
+      { label: "Assessment Center", href: "/UI-Components/Solutions/Assessment Center" },
     ],
   },
   {
