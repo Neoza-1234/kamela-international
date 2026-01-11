@@ -110,7 +110,7 @@ export default function Services() {
           </div>
           <div className="service-card relative w-full max-w-6xl bg-black rounded-[3rem] p-8 md:p-16 flex flex-col md:flex-row gap-8 items-center cursor-pointer">
             <div className="flex-1 text-white w-full md:w-2/3 lg:w-3/5 service-content">
-              <div className="flex items-center gap-4 mb-6">
+              <div className="flex items-center gap-4 mb-6 leading-tight md:text-sm">
                 <span className="text-2xl font-bold italic">03</span>
                 <h2>CSI Skills Development</h2>
               </div>

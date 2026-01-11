@@ -4,7 +4,7 @@ export default function Purpose() {
   return (
     <>
       <div className="px-[8%] lg:px-[12%] py-30 purpose h-[50hv] md:h-[90vh] flex flex-col items-center justify-center mt-30">
-        <div className="title flex flex-col items-center justify-center mt-45">
+        <div className="title flex flex-col items-center justify-center mt-50">
           <h1 className="text-(--prime) text-center">Our Purpose Is Clear</h1>
           <p className="text-center my-4 sm:text-xsm">
             To unlock Africa's potential by equipping people and organizations

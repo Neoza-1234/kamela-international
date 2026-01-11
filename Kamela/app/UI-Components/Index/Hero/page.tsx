@@ -88,7 +88,7 @@ export default function Hero() {
                 Skills, Technology, and Innovation
               </span>
             </h1>
-            <div className=" flex justify-start items-center gap-3 flex-wrap">
+            <div className=" flex justify-start items-center gap-1 flex-wrap">
               <button className="mt-9 border-(--prime) border-2 px-3 py-3 rounded-full text-(--prime) font-semibold hover:bg-(--prime) hover:text-white transition-all duration-300 flex items-center gap-6">
                 <Link href="/UI-Components/Solutions/Study">
                   Explore Courses<i className="bi bi-arrow-right ps-1"></i>
