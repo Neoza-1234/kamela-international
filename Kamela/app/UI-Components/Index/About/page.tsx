@@ -18,18 +18,11 @@ export default function About() {
         <div className="container mx:auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="about-image flex justify-center">
             <Image
-              src="/Underlay.png"
-              alt="Background Element"
-              width={500}
-              height={500}
-              className="absolute -right-10 -left-1 w-[500px] h-[500px] z-[-1]"
-            />
-            <Image
               src="/kamela-3.jpg"
               alt="About Kamela International"
               width={500}
               height={300}
-              className="rounded-lg shadow-lg"
+              className="rounded-3xl shadow-2xl"
             />
           </div>
           <div className="content mt-8 relative justify-center items-center ">
@@ -58,7 +51,7 @@ export default function About() {
               alt="About Kamela International"
               width={500}
               height={300}
-              className="rounded-lg shadow-lg"
+              className="rounded-3xl shadow-2xl"
             />
           </div>
         </div>
@@ -66,21 +59,14 @@ export default function About() {
         <div className="container mx:auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-40">
           <div className="about-image flex justify-center">
             <Image
-              src="/Underlay.png"
-              alt="Background Element"
-              width={400}
-              height={400}
-              className="absolute -right-10 -left-1 w-[400px] h-[400px] z-[-1]"
-            />
-            <Image
               src="/Kamela-5.jpg"
               alt="About Kamela International"
               width={500}
               height={300}
-              className="rounded-lg shadow-lg"
+              className="rounded-3xl shadow-2xl"
             />
           </div>
-          <div className="content mt-8 relative justify-center items-center ">
+          <div className="content mt-8 justify-center items-center ">
             <p className="mb-4">
               As a QCTO-accredited Skills Development Provider and a fully
               accredited QCTO Assessment Centre, Kamela provides an integrated
@@ -92,7 +78,7 @@ export default function About() {
             </p>
             <div className="flex justify-center items-center gap-6 flex-wrap mt-10">
               <button className="mt-9 border-(--prime) border-2 px-3 py-3 rounded-full text-(--prime) font-semibold hover:bg-(--prime) hover:text-white transition-all duration-300 flex items-center gap-6">
-                <Link href="/UI-Components/solutions/About">
+                <Link href="/UI-Components/About-Us">
                   Explore More<i className="bi bi-arrow-right ps-1"></i>
                 </Link>
               </button>

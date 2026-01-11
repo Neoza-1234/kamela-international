@@ -9,22 +9,28 @@ export default function CourseCategory() {
         <h3 className="">Course Categories</h3>
         <h2>
           We focus on key sectors essential for South Africa's stability and
-          growth, providing <span className="text-(--prime)"><br></br>in-demand programs</span>
+          growth, providing{" "}
+          <span className="text-(--prime)">
+            <br></br>in-demand programs
+          </span>
         </h2>
       </div>
-      <div className="flex min-h-screen items-center justify-center">
-      <div className="grid w-full max-w-15xl mx-auto grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 p-6 mt-8">
-        <div className="md:row-span-3 overflow-hidden relative rounded-3xl cursor-pointer">
+      <div className="flex justify-center items-center min-h-screen">
+        <div className="grid max-w-5xl w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-8">
+          <div className="col-span-1 lg:col-span-3 lg:row-span-3 overflow-hidden relative rounded-3xl cursor-pointer">
             <img
               src="/ICT.jpg"
               alt="Course Category 1"
               className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
             />
             <div className="absolute bottom-4 left-4 text-white px-3 py-1">
-              <h3 className="text-lg font-semibold ">Information & Communication Technology</h3>
+              <h3 className="text-lg font-semibold ">
+                Information & Communication Technology
+              </h3>
             </div>
-        </div>
-        <div className="overflow-hidden relative rounded-3xl cursor-pointer">
+          </div>
+
+          <div className="col-span-1 lg:col-span-2 overflow-hidden relative rounded-3xl cursor-pointer">
             <img
               src="/sales-&-retail.jpg"
               alt="Course Category 2"
@@ -33,19 +39,22 @@ export default function CourseCategory() {
             <div className="absolute bottom-4 left-4 text-white px-3 py-1">
               <h3 className="text-lg font-semibold">Sales & Retail</h3>
             </div>
+          </div>
 
-        </div>
-        <div className="md:col-start-2 md:row-start-2 overflow-hidden relative rounded-3xl cursor-pointer">
+          <div className="col-span-1 lg:col-span-2 overflow-hidden relative rounded-3xl cursor-pointer">
             <img
               src="/bussiness.jpg"
               alt="Course Category 3"
               className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
             />
             <div className="absolute bottom-4 left-4 text-white px-3 py-1">
-              <h3 className="text-lg font-semibold">Business, Management & Administration</h3>
+              <h3 className="text-lg font-semibold">
+                Business, Management & Administration
+              </h3>
             </div>
-        </div>
-        <div className="md:col-start-2 md:row-start-3 overflow-hidden relative rounded-3xl cursor-pointer">
+          </div>
+
+          <div className="col-span-1 lg:col-span-2 overflow-hidden relative rounded-3xl cursor-pointer">
             <img
               src="/operations.jpg"
               alt="Course Category 4"
@@ -54,8 +63,8 @@ export default function CourseCategory() {
             <div className="absolute bottom-4 left-4 text-white px-3 py-1">
               <h3 className="text-lg font-semibold">Operations & Logistics</h3>
             </div>
+          </div>
         </div>
-      </div>
       </div>
     </div>
   );

@@ -5,6 +5,8 @@ import Hero from "./Hero/page";
 import Paralex from "./Paralex/page";
 import Purpose from "./Purpose/page";
 import Services from "./Services/page";
+import Testimonials from "./Testimonials/page";
+import ContactUs from "./Contact Us/page";
 
 export default function Index() {
   return (
@@ -14,8 +16,10 @@ export default function Index() {
       <CourseCategory />
       <Paralex />
       <Services />
-      <Accreditations/>
-      <Purpose/>
+      <Accreditations />
+      <Purpose />
+      <Testimonials />
+      <ContactUs />
     </>
   );
 }

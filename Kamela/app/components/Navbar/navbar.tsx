@@ -11,8 +11,7 @@ type NavLink = {
 };
 
 const navLinks: NavLink[] = [
-  
-  { label: "About Us", href: "/UI-Components/About Us" },
+  { label: "About Us", href: "/UI-Components/About-Us" },
   {
     label: "Solutions",
     href: "/UI-Components/Solutions",
@@ -20,7 +19,10 @@ const navLinks: NavLink[] = [
       { label: "Study", href: "/UI-Components/Solutions/Study" },
       { label: "Enterprise", href: "/UI-Components/Solutions/Enterprise" },
       { label: "RPL", href: "/UI-Components/Solutions/RPL" },
-      { label: "Assessment Center", href: "/UI-Components/Solutions/Assessment Center" },
+      {
+        label: "Assessment Center",
+        href: "/UI-Components/Solutions/Assessment-Center",
+      },
     ],
   },
   {
@@ -32,7 +34,7 @@ const navLinks: NavLink[] = [
       { label: "Careers", href: "/UI-Components/Explore/Careers" },
     ],
   },
-  { label: "Contact", href: "/contact" },
+  { label: "Contact", href: "/UI-Components/Contact" },
 ];
 
 export default function Navbar() {
@@ -115,7 +117,8 @@ export default function Navbar() {
 
           {/* Learning Hub Link */}
           <div className="flex justify-center items-center ml-6">
-            <Link href="https://kamelatraininghub.co.za">
+            <Link href="https://kamelatraininghub.co.za"
+            target="_blank">
               <button
                 className="hidden lg:flex justify-center items-center text-l px-3 py-2 font-bold rounded-full border
                          bg-(--prime) text-white  hover:bg-white hover:text-(--black) transition-all duration-300 cursor-pointer border-(--prime) hover:border-(--prime)"

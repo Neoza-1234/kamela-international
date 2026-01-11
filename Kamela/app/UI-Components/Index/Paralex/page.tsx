@@ -54,12 +54,11 @@ const ParalexData = [
 export default function Paralex() {
   return (
     <div className="mb-10 paralex-container">
-        <div className="text-center">
-          <h2 className="mt-1">
-            Our Commitment{" "}
-            <span className="text-(--prime)">To Excellence</span>
-          </h2>
-        </div>
+      <div className="text-center">
+        <h2 className="mt-1">
+          Our Commitment <span className="text-(--prime)">To Excellence</span>
+        </h2>
+      </div>
       {ParalexData.map((item) => (
         <ParalexSection key={item.id} item={item} />
       ))}
@@ -88,7 +87,6 @@ function ParalexSection({ item }: { item: any }) {
         zIndex: item.id * 1,
       }}
     >
-        
       <div className="Paralex-content flex flex-col justify-center px[8%] py-20">
         <div className="flex justify-between items-center gap-5 py-7 px-15">
           <span className="text-white border border-gray-300 px-4 p-2 rounded-full uppercase">
@@ -102,5 +100,5 @@ function ParalexSection({ item }: { item: any }) {
         </div>
       </div>
     </motion.div>
-  )
+  );
 }
