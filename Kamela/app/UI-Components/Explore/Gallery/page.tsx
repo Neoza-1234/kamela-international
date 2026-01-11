@@ -19,14 +19,15 @@ export default function Gallery() {
         </h1>
         <h3 className="text-sm text-slate-500 text-center mt-2 max-w-lg mx-auto">
           {" "}
-          Capturing moments of excellence and innovation.
+          Capturing every moment of excellence and achievement at Kamela
+          International.{" "}
         </h3>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 px-6">
           <div className="grid gap-4">
             <div>
               <Image
-                className="h-auto max-w-full rounded-3xl"
+                className="h-auto max-w-full rounded-xl"
                 src="/kamela-1.jpg"
                 alt=""
                 width={500}
@@ -35,7 +36,7 @@ export default function Gallery() {
             </div>
             <div>
               <Image
-                className="h-auto max-w-full rounded-3xl"
+                className="h-auto max-w-full rounded-xl"
                 src="/kamela-2.jpg"
                 alt=""
                 width={500}
@@ -44,7 +45,7 @@ export default function Gallery() {
             </div>
             <div>
               <Image
-                className="h-auto max-w-full rounded-3xl"
+                className="h-auto max-w-full rounded-xl"
                 src="/kamela-5.jpg"
                 alt=""
                 width={500}
@@ -55,7 +56,7 @@ export default function Gallery() {
           <div className="grid gap-4">
             <div>
               <Image
-                className="h-auto max-w-full rounded-3xl"
+                className="h-auto max-w-full rounded-xl"
                 src="/Kamela-6.jpg"
                 alt=""
                 width={500}
@@ -64,7 +65,7 @@ export default function Gallery() {
             </div>
             <div>
               <Image
-                className="h-auto max-w-full rounded-3xl"
+                className="h-auto max-w-full rounded-xl"
                 src="/Kamela-7.jpg"
                 alt=""
                 width={500}
@@ -73,7 +74,7 @@ export default function Gallery() {
             </div>
             <div>
               <Image
-                className="h-auto max-w-full rounded-3xl"
+                className="h-auto max-w-full rounded-xl"
                 src="/Kamela-8.jpg"
                 alt=""
                 width={500}
@@ -84,7 +85,7 @@ export default function Gallery() {
           <div className="grid gap-4">
             <div>
               <Image
-                className="h-auto max-w-full rounded-3xl"
+                className="h-auto max-w-full rounded-xl"
                 src="/Kamela-9.jpg"
                 alt=""
                 width={500}
@@ -93,7 +94,7 @@ export default function Gallery() {
             </div>
             <div>
               <Image
-                className="h-auto max-w-full rounded-3xl"
+                className="h-auto max-w-full rounded-xl"
                 src="/Kamela-10.jpg"
                 alt=""
                 width={500}
@@ -102,7 +103,7 @@ export default function Gallery() {
             </div>
             <div>
               <Image
-                className="h-auto max-w-full rounded-3xl"
+                className="h-auto max-w-full rounded-xl"
                 src="/Kamela-11.jpg"
                 alt=""
                 width={500}
@@ -113,7 +114,7 @@ export default function Gallery() {
           <div className="grid gap-4">
             <div>
               <Image
-                className="h-auto max-w-full rounded-3xl"
+                className="h-auto max-w-full rounded-xl"
                 src="/Kamela-12.jpg"
                 alt=""
                 width={500}
@@ -122,7 +123,7 @@ export default function Gallery() {
             </div>
             <div>
               <Image
-                className="h-auto max-w-full rounded-3xl"
+                className="h-auto max-w-full rounded-xl"
                 src="/Kamela-14.jpg"
                 alt=""
                 width={500}
@@ -131,7 +132,7 @@ export default function Gallery() {
             </div>
             <div>
               <Image
-                className="h-auto max-w-full rounded-3xl"
+                className="h-auto max-w-full rounded-xl"
                 src="/Kamela-13.jpg"
                 alt=""
                 width={500}

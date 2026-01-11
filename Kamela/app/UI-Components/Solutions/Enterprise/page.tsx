@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { Feature197 } from "@/components/accordion-feature-section";
 
 export default function Enterprise() {
   return (
@@ -48,13 +51,15 @@ export default function Enterprise() {
         <i className="ri-arrow-drop-right-line"></i>
         <a href="#">Solutions</a>
         <i className="ri-arrow-drop-right-line"></i>
-        <div className="text-(--prime) font-semibold">Enterprise</div>
+        <div style={{ color: "var(--prime)" }} className="font-semibold">
+          Enterprise
+        </div>
       </div>
 
       {/* Hero Section */}
 
       <div
-        className="container mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gaps-12 items-center relative z-10"
+        className="container mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10"
         data-aos="zoom-in"
         data-aos-delay="100"
       >
@@ -64,7 +69,10 @@ export default function Enterprise() {
             <br></br> Digital Upskilling
           </h1>
           <div className=" flex justify-center items-center gap-3 flex-wrap">
-            <button className="mt-9 border-(--prime) border-2 px-3 py-3 rounded-full text-(--prime) font-semibold hover:bg-(--prime) hover:text-white transition-all duration-300 flex items-center gap-6">
+            <button
+              className="mt-9 border-2 px-3 py-3 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 flex items-center gap-6"
+              style={{ borderColor: "var(--prime)", color: "var(--prime)" }}
+            >
               <Link href="/UI-Components/Solutions/Study">
                 Discover Our Services<i className="bi bi-arrow-right ps-1"></i>
               </Link>
@@ -87,7 +95,9 @@ export default function Enterprise() {
 
       <section className="max-w-7xl mx-auto px-6 py-5">
         <div className="text-center mb-12">
-          <h2 className=" mb-6"></h2>
+          <h2 className=" mb-6">
+            A Leading Provider Of Corporate Training Solutions
+          </h2>
           <p>
             Kamela International partners with organisations across South Africa
             and Africa to deliver high-impact enterprise development, workforce
@@ -105,10 +115,10 @@ export default function Enterprise() {
       {/* Why Corporates Choose Kamela Section */}
 
       <section className="py-20 px-4 bg-white flex flex-col justify-center items-center gap-6">
-        <h2 className="px-4 h-8 rounded-lg text-center leading-tight">
+        <h2 className="px-4 h-8 rounded-3xl text-center leading-tight">
           Why Corporates Choose Kamela
         </h2>
-        <p className=" md:text-[40px]/12 text-center leading-tight pt-3 max-w-3xl">
+        <p className=" md:text-[40px]/12 text-center leading-tight max-w-3xl">
           Our enterprise development solutions are trusted because they offer
         </p>
         <div className="relative max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
@@ -164,7 +174,7 @@ export default function Enterprise() {
         </div>
       </section>
 
-        {/* Trusted By Section */}
+      {/* Trusted By Section */}
 
       <section className="flex flex-col items-center justify-center px-4 md:px-0 w-full mb-15">
         <h2 className=" text-center">
@@ -211,7 +221,6 @@ export default function Enterprise() {
         </div>
       </section>
 
-
       {/* Custom Training Solutions */}
 
       <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0 dark:bg-gray-900">
@@ -220,9 +229,9 @@ export default function Enterprise() {
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
               <div className="lg:max-w-lg">
-                <h1 className="tracking-tight text-pretty sm:text-5xl dark:text-white">
-                  Training solutions tailored for enterprise success
-                </h1>
+                <h2 className="tracking-tight text-pretty sm:text-5xl dark:text-white">
+                  Training Solutions Tailored For Enterprise Success
+                </h2>
                 <p className="mt-6 dark:text-gray-300">
                   We partner with organisations to deliver customised training
                   solutions that drive workforce transformation, enterprise
@@ -256,7 +265,10 @@ export default function Enterprise() {
                 <ul role="list" className="mt-8 space-y-8 dark:text-gray-400">
                   <li className="flex gap-x-3">
                     <span>
-                      <strong className="font-semibold text-(--prime) dark:text-white">
+                      <strong
+                        className="font-semibold dark:text-white"
+                        style={{ color: "var(--prime)" }}
+                      >
                         In-House Training.{" "}
                       </strong>
                       We offer flexible in-house training programs tailored to
@@ -268,7 +280,10 @@ export default function Enterprise() {
                   </li>
                   <li className="flex gap-x-3">
                     <span>
-                      <strong className="font-semibold text-(--prime) dark:text-white">
+                      <strong
+                        className="font-semibold dark:text-white"
+                        style={{ color: "var(--prime)" }}
+                      >
                         Online Training.{" "}
                       </strong>{" "}
                       We also deliver accessible and flexible online training
@@ -280,7 +295,10 @@ export default function Enterprise() {
                   </li>
                   <li className="flex gap-x-3">
                     <span>
-                      <strong className="font-semibold text-(--prime) dark:text-white">
+                      <strong
+                        className="font-semibold dark:text-white"
+                        style={{ color: "var(--prime)" }}
+                      >
                         Blended Learning.{" "}
                       </strong>{" "}
                       Our blended learning solutions combine the best of
@@ -299,16 +317,54 @@ export default function Enterprise() {
 
       {/* Our Services Section */}
 
-        <section className="max-w-7xl mx-auto px-6 py-5">
+      <section className="max-w-7xl mx-auto px-6 py-5">
         <div className="text-center mb-12">
           <h2 className=" mb-6">Our Enterprise Solutions</h2>
           <p>
             Kamela International offers a comprehensive suite of enterprise
             solutions designed to meet the diverse needs of organisations across
-            South Africa and Africa. Our services include:
+            South Africa and Africa. Our services include
           </p>
         </div>
-        
+
+        <Feature197 />
+      </section>
+
+      {/* Call to Action Section */}
+
+      <section className="overflow-hidden sm:grid sm:grid-cols-2 mb-8">
+        <div className="p-8 md:p-12 lg:px-16 lg:py-24">
+          <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+            <h2 className="font-bold md:text-3xl">
+              Ready to Transform Your Workforce and Drive Enterprise Success?
+            </h2>
+
+            <p className="hidden text-gray-500 md:mt-4 md:block">
+              Partner with Kamela International to access customised training
+              solutions that empower your employees, develop SMMEs, and build
+              talent pipelines for the future. Let's work together to create a
+              skilled, inclusive, and competitive workforce that drives your
+              organisation's success.
+            </p>
+
+            <div className="mt-4 md:mt-8">
+              <a
+                href="/UI-Components/Contact"
+                className="inline-block rounded-3xl bg-(--prime) px-12 py-3 text-sm font-medium text-white transition hover:bg-white hover:text-black border-2 hover:border-(--prime)"
+              >
+                Get Started Today
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <Image
+          alt="contact"
+          src="/contact.jpg"
+          width={500}
+          height={500}
+          className="h-56 w-full object-cover rounded-3xl sm:h-full"
+        />
       </section>
     </>
   );
