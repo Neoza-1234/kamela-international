@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import CourseCategory from "../../Index/Course Category/page";
 
 export default function Study() {
   return (
@@ -77,7 +78,7 @@ export default function Study() {
             </div>
             <div className="hero-img-container relative flex justify-around items-center">
               <Image
-                src="/deco.svg"
+                src="/icons/deco.svg"
                 alt="Hero Image"
                 width={500}
                 height={500}

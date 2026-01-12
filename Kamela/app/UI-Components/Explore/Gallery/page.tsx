@@ -14,10 +14,10 @@ export default function Gallery() {
           <i className="ri-arrow-drop-right-line"></i>
           <div className="text-(--prime) font-semibold">Gallery</div>
         </div>
-        <h1 className="text-3xl font-semibold text-center mx-auto mt-30">
+        <h1 className="text-3xl font-semibold text-center mx-auto mt-30 text-(--prime)">
           Kamela International Galleery
         </h1>
-        <h3 className="text-sm text-slate-500 text-center mt-2 max-w-lg mx-auto">
+        <h3 className="text-center mt-2 max-w-lg mx-auto">
           {" "}
           Capturing every moment of excellence and achievement at Kamela
           International.{" "}

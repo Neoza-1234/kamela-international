@@ -111,6 +111,7 @@ h3{
 p{
   font-size: var(--normal-font-size);
   line-height: 1.6;
+  font-family: var(--font-inter);
 }
 
 @media (max-width: 991px) {

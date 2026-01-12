@@ -417,6 +417,8 @@ export default function AboutUs() {
         </div>
       </section>
 
+      {/* ======= Contact Us Section ======= */}
+
       <section className="flex flex-col items-center justify-center mx-auto max-md:mx-2 max-md:px-2 max-w-5xl w-full text-center rounded-3xl py-20 px-8 md:py-24 bg-black my-15">
         <h1 className="text-white leading-tight">
           Contact us today and take the <br></br>next step toward growth{" "}

@@ -4,6 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { Feature197 } from "@/components/accordion-feature-section";
 
+const scrollToEnterpriseServices = () => {
+  const element = document.getElementById("enterprise-services");
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 export default function Enterprise() {
   return (
     <>
@@ -64,20 +71,20 @@ export default function Enterprise() {
         data-aos-delay="100"
       >
         <div className="hero-content">
-          <h1 className="hero-title leading-tight flex justify-center items-center flex-col text-center">
+          <h1 className="hero-title leading-tight flex justify-center items-center flex-col text-center text-(--prime)">
             Corporate Training <br></br> Workforce Development Talent Pipelines{" "}
             <br></br> Digital Upskilling
           </h1>
-          <div className=" flex justify-center items-center gap-3 flex-wrap">
-            <button
-              className="mt-9 border-2 px-3 py-3 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 flex items-center gap-6"
-              style={{ borderColor: "var(--prime)", color: "var(--prime)" }}
-            >
-              <Link href="/UI-Components/Solutions/Study">
-                Discover Our Services<i className="bi bi-arrow-right ps-1"></i>
-              </Link>
-            </button>
-          </div>
+          
+            <div className="mt-6 flex justify-center">
+              <button
+                onClick={scrollToEnterpriseServices}
+                className="inline-block rounded-3xl bg-white text-(--prime) px-12 py-3 text-sm font-medium transition hover:bg-(--prime) hover:text-white border-2 border-(--prime)"
+              >
+                Our Services
+              </button>
+            </div>
+          
         </div>
 
         <div className="hero-img-container relative flex justify-around items-center pt-5">
@@ -183,7 +190,7 @@ export default function Enterprise() {
         <div className="max-w-4xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 w-full mt-14">
           <div className="border border-secondary p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
             <Image
-              src="/anglo-american.svg"
+              src="/icons/anglo-american.svg"
               alt="Logo"
               width={100}
               height={100}
@@ -194,29 +201,29 @@ export default function Enterprise() {
           </div>
           <div className="border border-secondary p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
             <Image
-              src="/master-plastics.webp"
+              src="/icons/master-plastics.webp"
               alt="Logo"
               width={100}
               height={100}
             />
           </div>
           <div className="border border-secondary p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
-            <Image src="/wits.png" alt="Logo" width={100} height={100} />
+            <Image src="/icons/iwits.png" alt="Logo" width={100} height={100} />
           </div>
           <div className="border border-secondary p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
-            <Image src="/unisa.jpg" alt="Logo" width={100} height={100} />
+            <Image src="/icons/unisa.jpg" alt="Logo" width={100} height={100} />
           </div>
           <div className="border border-secondary p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
-            <Image src="/transnet.png" alt="Logo" width={100} height={100} />
+            <Image src="/icons/transnet.png" alt="Logo" width={100} height={100} />
           </div>
           <div className="border border-secondary p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
-            <Image src="/marshalls.jpg" alt="Logo" width={100} height={100} />
+            <Image src="/icons/marshalls.jpg" alt="Logo" width={100} height={100} />
           </div>
           <div className="border border-secondary p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
-            <Image src="/makhophila.png" alt="Logo" width={100} height={100} />
+            <Image src="/icons/makhophila.png" alt="Logo" width={100} height={100} />
           </div>
           <div className="border border-secondary p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
-            <Image src="/raf.jpg" alt="Logo" width={50} height={50} />
+            <Image src="/icons/raf.jpg" alt="Logo" width={50} height={50} />
           </div>
         </div>
       </section>
@@ -247,7 +254,7 @@ export default function Enterprise() {
             <Image
               width={1184}
               height={1376}
-              alt=""
+              alt="training"
               src="/Kamela-18.jpg"
               className="w-3xl max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-228 dark:bg-gray-800 dark:ring-white/10"
             />
@@ -317,7 +324,10 @@ export default function Enterprise() {
 
       {/* Our Services Section */}
 
-      <section className="max-w-7xl mx-auto px-6 py-5">
+      <section
+        id="enterprise-services"
+        className="enterprise-services max-w-7xl mx-auto px-6 py-5"
+      >
         <div className="text-center mb-12">
           <h2 className=" mb-6">Our Enterprise Solutions</h2>
           <p>
@@ -350,7 +360,7 @@ export default function Enterprise() {
             <div className="mt-4 md:mt-8">
               <a
                 href="/UI-Components/Contact"
-                className="inline-block rounded-3xl bg-(--prime) px-12 py-3 text-sm font-medium text-white transition hover:bg-white hover:text-black border-2 hover:border-(--prime)"
+                className="inline-block rounded-3xl bg-white px-12 py-3 text-sm font-medium text-(--prime) transition hover:bg-(--prime) hover:text-white border-2 border-(--prime)"
               >
                 Get Started Today
               </a>

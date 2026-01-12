@@ -69,7 +69,7 @@ export default function Navbar() {
 
           <Link href="/" className="logo">
             <Image
-              src="/logob.png"
+              src="/icons/logob.png"
               alt="Kamela Logo"
               width={120}
               height={40}

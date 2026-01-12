@@ -11,7 +11,7 @@ export default function Example() {
           <div className="flex flex-col items-center lg:items-start shrink-0">
             <Link href="/" className="logo mb-6 md:mb-8">
               <Image
-                src="/logoa.png"
+                src="/icons/logoa.png"
                 alt="Kamela Logo"
                 width={150}
                 height={150}

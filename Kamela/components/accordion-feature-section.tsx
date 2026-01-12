@@ -25,42 +25,42 @@ const defaultFeatures: FeatureItem[] = [
   {
     id: 1,
     title: "Early-Stage Talent Development",
-    image: "/talent-development.svg",
+    image: "/icons/talent-development.svg",
     description:
       "We help organisations transform new entrants into high-performing, work-ready professionals. This includes include workplace readiness, digital literacy, communication & professional conduct, professional writing & reporting, professional writing & reporting, customer service excellence and Basic project management. These programs are ideally suited for interns, graduates, entry-level employees, apprentices and learnership candidates.",
   },
   {
     id: 2,
     title: "Talent Re-Skilling & Upskilling Solutions",
-    image: "/upskilling.svg",
+    image: "/icons/upskilling.svg",
     description:
       "We design reskilling programmes to help companies adopt new technologies, improve productivity, and remain competitive. Our focus areas include: Information Technology, Business & Administration, Retail & Sales.",
   },
   {
     id: 3,
     title: "BBBEE-aligned Enterprise Development",
-    image: "/bbbee.svg",
+    image: "/icons/bbbee.svg",
     description:
       "We support SMMEs with skills development as well as digital upskilling, helping them to grow and contribute to your BBBEE scorecard.",
   },
   {
     id: 4,
     title: "National Learnership Delivery",
-    image: "/learnership.svg",
+    image: "/icons/learnership.svg",
     description:
       "Full-service implementation including recruitment, hosting, training, mentoring, and compliance.",
   },
   {
     id: 5,
     title: "Work Integrated Learning (WIL) Solutions",
-    image: "/wil.svg",
+    image: "/icons/wil.svg",
     description:
       "We support employee development and organisational performance through practical, workplace-driven learning experiences. Our focus areas include leadership & supervisory skills, customer service excellence, negotiation & conflict management, project management fundamentals, emotional intelligence, time management, workplace problem solving  and financial literacy.",
   },
   {
     id: 6,
     title: "Recruitment as a Service (RaaS)",
-    image: "/recruitment.svg",
+    image: "/icons/recruitment.svg",
     description:
       "We provide end-to-end recruitment and placement tailored for internships, learnerships, graduate programmes and entry-level positions, ensuring a seamless hiring process for organisations seeking fresh talent.",
   },
