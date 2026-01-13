@@ -122,7 +122,7 @@ export default function Enterprise() {
       {/* Why Corporates Choose Kamela Section */}
 
       <section className="py-20 px-4 bg-white flex flex-col justify-center items-center gap-6">
-        <h2 className="px-4 h-8 rounded-3xl text-center leading-tight">
+        <h2 className="px-4 h-8 rounded-3xl text-center leading-tight text-green-500">
           Why Corporates Choose Kamela
         </h2>
         <p className=" md:text-[40px]/12 text-center leading-tight max-w-3xl">
@@ -197,7 +197,7 @@ export default function Enterprise() {
             />
           </div>
           <div className="border border-secondary p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
-            <Image src="/alteram.png" alt="Logo" width={100} height={100} />
+            <Image src="/icons/alteram.png" alt="Logo" width={100} height={100} />
           </div>
           <div className="border border-secondary p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
             <Image
@@ -208,7 +208,7 @@ export default function Enterprise() {
             />
           </div>
           <div className="border border-secondary p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
-            <Image src="/icons/iwits.png" alt="Logo" width={100} height={100} />
+            <Image src="/icons/wits.png" alt="Logo" width={100} height={100} />
           </div>
           <div className="border border-secondary p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
             <Image src="/icons/unisa.jpg" alt="Logo" width={100} height={100} />

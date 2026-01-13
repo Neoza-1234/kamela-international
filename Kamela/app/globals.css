@@ -1,5 +1,9 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @import "tailwindcss";
+
 @import "remixicon/fonts/remixicon.css";
 @import "tw-animate-css";
 
@@ -14,6 +18,7 @@
   --text-color-secondary: #545454;
   --navbar: #f8f9fa;
   --footer: #1a1a1a;
+
 
   --font-montserrat: "Montserrat", sans-serif;
   --font-inter: "Inter", sans-serif;

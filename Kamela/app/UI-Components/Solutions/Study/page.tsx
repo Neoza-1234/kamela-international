@@ -1,6 +1,8 @@
+"use client"
+
 import Link from "next/link";
 import Image from "next/image";
-import CourseCategory from "../../Index/Course Category/page";
+import CourseSection from "@/components/coursecategories";
 
 export default function Study() {
   return (
@@ -95,10 +97,10 @@ export default function Study() {
             </div>
           </main>
         </div>
+        <CourseSection/>
 
-        <div className="description flex justify-center items-center text-center leading-tight py-20 px-10 md:px-16 lg:px-24 xl:px-32">
-          <h2>Explore Our Selection Of Industry-Recognized Qualifications</h2>
-        </div>
+
+        
       </div>
     </>
   );

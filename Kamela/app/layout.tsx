@@ -5,7 +5,6 @@ import { p } from "framer-motion/client";
 import Navbar from "./components/Navbar/navbar";
 import Footer from "./components/Footer/footer";
 
-
 const inter = Inter({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],

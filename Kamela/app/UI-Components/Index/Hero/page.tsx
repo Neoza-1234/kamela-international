@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const statsData = [
   {
-    value: "20",
+    value: "16",
     suffix: "",
     title: "Accredited Courses",
     desc: "Accredited by QCTO and recognized across Africa.",
@@ -105,11 +105,11 @@ export default function Hero() {
 
           <div className="hero-img-container relative flex justify-around items-center">
             <Image
-              src="/Underlay-2.png"
+              src="/icons/Underlay-2.png"
               alt="Hero Image"
               width={540}
               height={510}
-              className="hero-bg-elm absolute -right-30 -left-1 w-[540px] h-[510px] z-[-1]"
+              className="hero-bg-elm absolute -right-30 -left-1 w-135 h-127.5 z-[-1]"
             />
             <Image
               src="/hero.png"

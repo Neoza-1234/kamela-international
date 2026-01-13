@@ -6,10 +6,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
-import acc1 from "@/public/acc-1.jpg";
-import acc2 from "@/public/acc-2.jpg";
-import acc3 from "@/public/acc-3.png";
-import acc4 from "@/public/acc-4.png";
+import acc1 from "@/public/icons/acc-1.jpg";
+import acc2 from "@/public/icons/acc-2.jpg";
+import acc3 from "@/public/icons/acc-3.png";
+import acc4 from "@/public/icons/acc-4.png";
 
 const Accreditation = [acc1, acc2, acc3, acc4];
 
