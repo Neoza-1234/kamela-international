@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 type TabId = "ict" | "business" | "governance" | "sales";
 
-const CourseSection = () => {
-  const [activeTab, setActiveTab] = useState<TabId>("ict");
+const CourseSection = ({ initialTab = "ict" }: { initialTab?: TabId }) => {
+  const [activeTab, setActiveTab] = useState<TabId>(initialTab);
+
+  useEffect(() => {
+    setActiveTab(initialTab);
+  }, [initialTab]);
 
   const courses = {
     ict: [
@@ -16,7 +20,7 @@ const CourseSection = () => {
         saqaid: "118699",
         credits: 149,
         duration: "12 months",
-        courseUrl: "/courses/cloud-administrator"
+        courseUrl: "/courses/cloud-administrator",
       },
       {
         name: "Occupational Certificate: Software Developer ",
@@ -27,7 +31,7 @@ const CourseSection = () => {
         saqaid: "118707",
         credits: 220,
         duration: "24 months",
-        courseUrl: "/courses/software-developer"
+        courseUrl: "/courses/software-developer",
       },
       {
         name: "Occupational Certificate: Cybersecurity Analyst",
@@ -38,7 +42,7 @@ const CourseSection = () => {
         saqaid: "118986",
         credits: 173,
         duration: "10 months",
-        courseUrl: "/courses/cybersecurity-analyst"
+        courseUrl: "/courses/cybersecurity-analyst",
       },
       {
         name: "Occupational Certificate: Computer Technician",
@@ -49,7 +53,7 @@ const CourseSection = () => {
         saqaid: "101408",
         credits: 282,
         duration: "15 months",
-        courseUrl: "/courses/computer-technician"
+        courseUrl: "/courses/computer-technician",
       },
       {
         name: "Occupational Certificate: Data Science Practitioner",
@@ -60,7 +64,7 @@ const CourseSection = () => {
         saqaid: "118708",
         credits: 185,
         duration: "12 months",
-        courseUrl: "/courses/data-science-practitioner"
+        courseUrl: "/courses/data-science-practitioner",
       },
     ],
     business: [
@@ -73,7 +77,7 @@ const CourseSection = () => {
         saqaid: "101869",
         credits: 240,
         duration: "24 months",
-        courseUrl: "/courses/project-manager"
+        courseUrl: "/courses/project-manager",
       },
       {
         name: "Occupational Certificate: Contact Centre Manager",
@@ -84,7 +88,7 @@ const CourseSection = () => {
         saqaid: "99687",
         credits: 285,
         duration: "14 months",
-        courseUrl: "/courses/contact-centre-manager"
+        courseUrl: "/courses/contact-centre-manager",
       },
       {
         name: "Occupational Certificate: Supply Chain Practitioner ",
@@ -95,7 +99,7 @@ const CourseSection = () => {
         saqaid: "110942",
         credits: 145,
         duration: "12 months",
-        courseUrl: "/courses/supply-chain-practitioner"
+        courseUrl: "/courses/supply-chain-practitioner",
       },
       {
         name: "Occupational Certificate: Supply Chain Manager",
@@ -106,7 +110,7 @@ const CourseSection = () => {
         saqaid: "111357",
         credits: 180,
         duration: "13 months",
-        courseUrl: "/courses/supply-chain-manager"
+        courseUrl: "/courses/supply-chain-manager",
       },
       {
         name: "Occupational Certificate: Office Administrator",
@@ -117,7 +121,7 @@ const CourseSection = () => {
         saqaid: "1021161",
         credits: 175,
         duration: "13 months",
-        courseUrl: "/courses/office-administrator"
+        courseUrl: "/courses/office-administrator",
       },
       {
         name: "Occupational Certificate: Office Supervisor",
@@ -128,7 +132,7 @@ const CourseSection = () => {
         saqaid: "118740",
         credits: 240,
         duration: "13 months",
-        courseUrl: "/courses/office-supervisor"
+        courseUrl: "/courses/office-supervisor",
       },
       {
         name: "HOC: Human Resource Management Administrator",
@@ -138,7 +142,7 @@ const CourseSection = () => {
         saqaid: "121150",
         credits: 120,
         duration: "12 months",
-        courseUrl: "/courses/hr-management-administrator"
+        courseUrl: "/courses/hr-management-administrator",
       },
     ],
     governance: [
@@ -151,7 +155,7 @@ const CourseSection = () => {
         saqaid: "118769",
         credits: 106,
         duration: "10 months",
-        courseUrl: "/courses/quality-assurer"
+        courseUrl: "/courses/quality-assurer",
       },
     ],
     sales: [
@@ -163,7 +167,7 @@ const CourseSection = () => {
         saqaid: "118706",
         credits: 175,
         duration: "10 months",
-        courseUrl: "/courses/marketing-coordinator"
+        courseUrl: "/courses/marketing-coordinator",
       },
       {
         name: "National Occupational Certificate: Sales Representative ",
@@ -173,7 +177,7 @@ const CourseSection = () => {
         saqaid: "121792",
         credits: 155,
         duration: "10 months",
-        courseUrl: "/courses/sales-representative"
+        courseUrl: "/courses/sales-representative",
       },
       {
         name: "Occupational Certificate: Retail Supervisor",
@@ -184,7 +188,7 @@ const CourseSection = () => {
         saqaid: "99573",
         credits: 100,
         duration: "18 months",
-        courseUrl: "/courses/retail-supervisor"
+        courseUrl: "/courses/retail-supervisor",
       },
     ],
   };

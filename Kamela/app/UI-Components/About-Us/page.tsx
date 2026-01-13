@@ -106,7 +106,7 @@ export default function AboutUs() {
 
       {/* ======= About Us Section ======= */}
 
-      <section className="overflow-hidden pt-20 pb-12 px-10 lg:pt-[120px] lg:pb-[90px] bg-white dark:bg-dark">
+      <section className="overflow-hidden pt-20 pb-12 px-10 lg:pt-30 lg:pb-22.5 bg-white dark:bg-dark">
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center justify-between -mx-4">
             <div className="w-full px-4 lg:w-6/12">
@@ -118,7 +118,7 @@ export default function AboutUs() {
                       alt="about image"
                       width={500}
                       height={400}
-                      className=" rounded-2xl w-[500px] h-[400px]  "
+                      className=" rounded-2xl w-125 h-100  "
                     />
                   </div>
                   <div className="py-3 sm:py-4 bg-cover">
@@ -127,7 +127,7 @@ export default function AboutUs() {
                       alt="about image"
                       width={500}
                       height={400}
-                      className=" rounded-2xl w-[500px] h-[400px] "
+                      className=" rounded-2xl w-125 h-100 "
                     />
                   </div>
                 </div>
@@ -138,7 +138,7 @@ export default function AboutUs() {
                       alt="about image"
                       width={500}
                       height={400}
-                      className=" rounded-2xl w-[500px] h-[400px]"
+                      className=" rounded-2xl w-125 h-100"
                     />
                   </div>
                 </div>
@@ -423,7 +423,7 @@ export default function AboutUs() {
         <h1 className="text-white leading-tight">
           Contact us today and take the <br></br>next step toward growth{" "}
         </h1>
-        <div className="h-[3px] w-32 my-1 bg-linear-to-l from-transparent to-blue-700"></div>
+        <div className="h-0.75 w-32 my-1 bg-linear-to-l from-transparent to-blue-700"></div>
         <p className="md:text-base text-white max-w-xl pt-5">
           Whether you're advancing your own career or strengthening your
           workforce, we deliver the training that transforms potential into

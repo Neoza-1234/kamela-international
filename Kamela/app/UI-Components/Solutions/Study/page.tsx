@@ -4,7 +4,25 @@ import Link from "next/link";
 import Image from "next/image";
 import CourseSection from "@/components/coursecategories";
 
+
+import { useSearchParams } from "next/navigation";
+import { useEffect, useState } from "react";
+ 
+
+type TabId = "ict" | "business" | "governance" | "sales";
+
 export default function Study() {
+
+  const searchParams = useSearchParams();
+  const [activeTab, setActiveTab] = useState<TabId>("ict");
+
+  useEffect(() => {
+    const tab = searchParams.get("tab") as TabId;
+    if (tab && ["ict", "business", "governance", "sales"].includes(tab)) {
+      setActiveTab(tab);
+    }
+  }, [searchParams]);
+
   return (
     <>
       <div className="min-h-screen w-full flex flex-col">
@@ -84,7 +102,7 @@ export default function Study() {
                 alt="Hero Image"
                 width={500}
                 height={500}
-                className="hero-bg-elm absolute -right-10 -left-1 w-[500px] h-[500px] z-[-1]"
+                className="hero-bg-elm absolute -right-10 -left-1 w-125 h-125 z-[-1]"
               />
 
               <Image
@@ -97,7 +115,7 @@ export default function Study() {
             </div>
           </main>
         </div>
-        <CourseSection/>
+        <CourseSection initialTab={activeTab}/>
 
 
         

@@ -8,124 +8,70 @@ import { cn } from '@/lib/utils';
 const testimonials = [
   {
     tempId: 0,
-    testimonial: "My favorite solution in the market. We work 5x faster with COMPANY.",
-    by: "Alex, CEO at TechCorp",
-    imgSrc: "https://i.pravatar.cc/150?img=1"
+    testimonial: "Kamela has highly competent training facilitators who are passionate and eager to train for a positive changing environment and business improvement. Furthermore, Kamela also exhibits a propensity for technological advancements.",
+    by: "NTOMBIZODIDI NDLOVU, HCM Manager at Alteram ",
+    imgSrc: "/icons/alteram.png"
   },
   {
     tempId: 1,
-    testimonial: "I'm confident my data is safe with COMPANY. I can't say that about other providers.",
-    by: "Dan, CTO at SecureNet",
-    imgSrc: "https://i.pravatar.cc/150?img=2"
+    testimonial: "Kamela International did work for the University, they delivered on their mandate with dedication and professionalism..",
+    by: " Dr Phasoane Mokgobu , Vice-Principal of Institutional Development and Transformation at UNISA",
+    imgSrc: "/icons/unisa.jpg"
   },
   {
     tempId: 2,
-    testimonial: "I know it's cliche, but we were lost before we found COMPANY. Can't thank you guys enough!",
-    by: "Stephanie, COO at InnovateCo",
-    imgSrc: "https://i.pravatar.cc/150?img=3"
+    testimonial: "Kamela has been providing soft skills training services to our organization for the past 5 years with exceptional results. Kamela's Training expertise, corroborative and innovative spirit make them the go to company when you are looking for customized training",
+    by: "MM Ngiba, Manager at Makhophila",
+    imgSrc: "/icons/makhophila.png"
   },
   {
     tempId: 3,
-    testimonial: "COMPANY's products make planning for the future seamless. Can't recommend them enough!",
-    by: "Marie, CFO at FuturePlanning",
-    imgSrc: "https://i.pravatar.cc/150?img=4"
+    testimonial: "Kamela International has provided professional training services to the University of Witwatersrand Campus Protection Services. Kamela International conducted themselves with the highest level of professionalism and integrity ",
+    by: "Donna-Lisa Mac Minn, Acting Deputy Director- Specialised Operation at Wits",
+    imgSrc: "/icons/wits.png"
   },
   {
     tempId: 4,
-    testimonial: "If I could give 11 stars, I'd give 12.",
-    by: "Andre, Head of Design at CreativeSolutions",
-    imgSrc: "https://i.pravatar.cc/150?img=5"
+    testimonial: "The service provider, Kamela International, was appointed to provide a Power BI Session for the RAF Management Structure in Cape Town. We wish to acknowledge Kamela International for their outstanding professionalism and good work ethic ",
+    by: "Glynn Schlemmer, Senior HRD Officer at RAF",
+    imgSrc: "/icons/raf.jpg"
   },
   {
     tempId: 5,
-    testimonial: "SO SO SO HAPPY WE FOUND YOU GUYS!!!! I'd bet you've saved me 100 hours so far.",
-    by: "Jeremy, Product Manager at TimeWise",
-    imgSrc: "https://i.pravatar.cc/150?img=6"
+    testimonial: "We have worked with Kamela for the past 6 years and we can confirm that they are industry leaders, their ability to identify training needs analysis and recommend relevant and adequate training programmes is exceptional.",
+    by: "Tsepo Nthebe, Head of Skills at Marshalls World of Sport",
+    imgSrc: "/icons/marshalls.jpg"
   },
   {
     tempId: 6,
-    testimonial: "Took some convincing, but now that we're on COMPANY, we're never going back.",
-    by: "Pam, Marketing Director at BrandBuilders",
-    imgSrc: "https://i.pravatar.cc/150?img=7"
+    testimonial: "Kamela's software development learnership gave me the foundation I needed to enter the IT field.",
+    by: "Neo, Student",
+    imgSrc: "/icons/students.png"
   },
   {
     tempId: 7,
-    testimonial: "I would be lost without COMPANY's in-depth analytics. The ROI is EASILY 100X for us.",
-    by: "Daniel, Data Scientist at AnalyticsPro",
-    imgSrc: "https://i.pravatar.cc/150?img=8"
+    testimonial: "Kamela International has conducted Computer Training for the staff at Wits University and has provided excellent training. The Director is always professional and goes out of his way to ensure that we are always satisfied",
+    by: "G THULUKANAM, HUMAN RESOURCES DEVELOPMENT CONSULTANT at Wits",
+    imgSrc: "/icons/wits.png"
   },
   {
     tempId: 8,
-    testimonial: "It's just the best. Period.",
-    by: "Fernando, UX Designer at UserFirst",
-    imgSrc: "https://i.pravatar.cc/150?img=9"
+    testimonial: "I appreciated the flexible schedule that allowed me to balance studies and work. ",
+    by: "G Jessica, student",
+    imgSrc: "/icons/students.png"
   },
   {
     tempId: 9,
-    testimonial: "I switched 5 years ago and never looked back.",
-    by: "Andy, DevOps Engineer at CloudMasters",
-    imgSrc: "https://i.pravatar.cc/150?img=10"
+    testimonial: "I found the interactive sessions engaging and career-focused. I also appreciate the team in how they handled the training sessions the whole time",
+    by: "Lunga Makhubu, student",
+    imgSrc: "/icons/students.png"
   },
   {
     tempId: 10,
-    testimonial: "I've been searching for a solution like COMPANY for YEARS. So glad I finally found one!",
-    by: "Pete, Sales Director at RevenueRockets",
-    imgSrc: "https://i.pravatar.cc/150?img=11"
+    testimonial: "For the past two years, Kamela has been our go-to training provider for such as HPE Blade Administration, CompTiA Security+, Fortigate, Risk Management and other essential topics",
+    by: "Busani Hadebe, 22KA Training and Consulting (Pty) Ltd",
+    imgSrc: "/icons/22ka.png"
   },
-  {
-    tempId: 11,
-    testimonial: "It's so simple and intuitive, we got the team up to speed in 10 minutes.",
-    by: "Marina, HR Manager at TalentForge",
-    imgSrc: "https://i.pravatar.cc/150?img=12"
-  },
-  {
-    tempId: 12,
-    testimonial: "COMPANY's customer support is unparalleled. They're always there when we need them.",
-    by: "Olivia, Customer Success Manager at ClientCare",
-    imgSrc: "https://i.pravatar.cc/150?img=13"
-  },
-  {
-    tempId: 13,
-    testimonial: "The efficiency gains we've seen since implementing COMPANY are off the charts!",
-    by: "Raj, Operations Manager at StreamlineSolutions",
-    imgSrc: "https://i.pravatar.cc/150?img=14"
-  },
-  {
-    tempId: 14,
-    testimonial: "COMPANY has revolutionized how we handle our workflow. It's a game-changer!",
-    by: "Lila, Workflow Specialist at ProcessPro",
-    imgSrc: "https://i.pravatar.cc/150?img=15"
-  },
-  {
-    tempId: 15,
-    testimonial: "The scalability of COMPANY's solution is impressive. It grows with our business seamlessly.",
-    by: "Trevor, Scaling Officer at GrowthGurus",
-    imgSrc: "https://i.pravatar.cc/150?img=16"
-  },
-  {
-    tempId: 16,
-    testimonial: "I appreciate how COMPANY continually innovates. They're always one step ahead.",
-    by: "Naomi, Innovation Lead at FutureTech",
-    imgSrc: "https://i.pravatar.cc/150?img=17"
-  },
-  {
-    tempId: 17,
-    testimonial: "The ROI we've seen with COMPANY is incredible. It's paid for itself many times over.",
-    by: "Victor, Finance Analyst at ProfitPeak",
-    imgSrc: "https://i.pravatar.cc/150?img=18"
-  },
-  {
-    tempId: 18,
-    testimonial: "COMPANY's platform is so robust, yet easy to use. It's the perfect balance.",
-    by: "Yuki, Tech Lead at BalancedTech",
-    imgSrc: "https://i.pravatar.cc/150?img=19"
-  },
-  {
-    tempId: 19,
-    testimonial: "We've tried many solutions, but COMPANY stands out in terms of reliability and performance.",
-    by: "Zoe, Performance Manager at ReliableSystems",
-    imgSrc: "https://i.pravatar.cc/150?img=20"
-  }
 ];
 
 interface TestimonialCardProps {
@@ -169,7 +115,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
       <img
         src={testimonial.imgSrc}
         alt={`${testimonial.by.split(',')[0]}`}
-        className="mb-4 h-14 w-12 bg-muted object-cover object-top"
+        className="mb-4 h-20 w-60 bg-muted object-cover object-top"
         style={{
           boxShadow: "3px 3px 0px hsl(var(--background))"
         }}

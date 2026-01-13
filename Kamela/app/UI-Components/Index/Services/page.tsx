@@ -17,7 +17,7 @@ export default function Services() {
               </span>
             </h2>
           </div>
-          <div className="service-card relative w-full max-w-6xl bg-black rounded-[3rem] p-8 md:p-16 flex flex-col md:flex-row gap-8 items-center cursor-pointer">
+          <div className="service-card relative w-full max-w-7xl bg-black rounded-[3rem] p-8 md:p-14 flex flex-col md:flex-row gap-8 items-center cursor-pointer">
             <div className="flex-1 text-white w-full md:w-2/3 lg:w-3/5 service-content">
               <div className="flex items-center gap-4 mb-6">
                 <span className="text-2xl font-bold italic">01</span>
@@ -55,7 +55,7 @@ export default function Services() {
               </div>
             </div>
             <div className="relative w-full md:w-1/3 lg:w-2/5 shrink-0">
-              <div className="overflow-hidden h-48 sm:h-56 md:h-64 lg:h-72 w-full rounded-3xl md:max-w-[300px]">
+              <div className="overflow-hidden h-48 sm:h-56 md:h-64 lg:h-72 w-full rounded-3xl md:max-w-75">
                 <Image
                   src="/student-learning.jpg"
                   className="object-cover border-2 w-full h-full border-white service-img"
@@ -67,7 +67,7 @@ export default function Services() {
               <i className=" i bi bi-arrow-up-right transition-all duration-300"></i>
             </div>
           </div>
-          <div className="service-card relative w-full max-w-6xl bg-black rounded-[3rem] p-8 md:p-16 flex flex-col md:flex-row gap-8 items-center cursor-pointer">
+          <div className="service-card relative w-full max-w-7xl bg-black rounded-[3rem] p-8 md:p-14 flex flex-col md:flex-row gap-8 items-center cursor-pointer">
             <div className="flex-1 text-white w-full md:w-2/3 lg:w-3/5 service-content">
               <div className="flex items-center gap-4 mb-6">
                 <span className="text-2xl font-bold italic">02</span>
@@ -96,7 +96,7 @@ export default function Services() {
               </div>
             </div>
             <div className="relative w-full md:w-1/3 lg:w-2/5 shrink-0">
-              <div className="overflow-hidden h-48 sm:h-56 md:h-64 lg:h-72 w-full rounded-3xl md:max-w-[300px]">
+              <div className="overflow-hidden h-48 sm:h-56 md:h-64 lg:h-72 w-full rounded-3xl md:max-w-75">
                 <Image
                   src="/corporate.jpg"
                   className="object-cover border-2 w-full h-full border-white service-img"
@@ -108,7 +108,7 @@ export default function Services() {
               <i className="i bi bi-arrow-up-right transition-all duration-300"></i>
             </div>
           </div>
-          <div className="service-card relative w-full max-w-6xl bg-black rounded-[3rem] p-8 md:p-16 flex flex-col md:flex-row gap-8 items-center cursor-pointer">
+          <div className="service-card relative w-full max-w-7xl bg-black rounded-[3rem] p-8 md:p-14 flex flex-col md:flex-row gap-8 items-center cursor-pointer">
             <div className="flex-1 text-white w-full md:w-2/3 lg:w-3/5 service-content">
               <div className="flex items-center gap-4 mb-6 leading-tight md:text-sm">
                 <span className="text-2xl font-bold italic">03</span>
@@ -141,7 +141,7 @@ export default function Services() {
               </div>
             </div>
             <div className="relative w-full md:w-1/3 lg:w-2/5 shrink-0">
-              <div className="overflow-hidden h-48 sm:h-56 md:h-64 lg:h-72 w-full rounded-3xl md:max-w-[300px]">
+              <div className="overflow-hidden h-48 sm:h-56 md:h-64 lg:h-72 w-full rounded-3xl md:max-w-75">
                 <Image
                   src="/csi.jpg"
                   className="object-cover border-2 w-full h-full border-white service-img"
@@ -152,7 +152,7 @@ export default function Services() {
               </div>
             </div>
           </div>
-          <div className="service-card relative w-full max-w-6xl bg-black rounded-[3rem] p-8 md:p-16 flex flex-col md:flex-row gap-8 items-center cursor-pointer">
+          <div className="service-card relative w-full max-w-7xl bg-black rounded-[3rem] p-8 md:p-14 flex flex-col md:flex-row gap-8 items-center cursor-pointer">
             <div className="flex-1 text-white w-full md:w-2/3 lg:w-3/5 service-content">
               <div className="flex items-center gap-4 mb-6">
                 <span className="text-2xl font-bold italic">04</span>
@@ -175,7 +175,7 @@ export default function Services() {
               </div>
             </div>
             <div className="relative w-full md:w-1/3 lg:w-2/5 shrink-0">
-              <div className="overflow-hidden h-48 sm:h-56 md:h-64 lg:h-72 w-full rounded-3xl md:max-w-[300px]">
+              <div className="overflow-hidden h-48 sm:h-56 md:h-64 lg:h-72 w-full rounded-3xl md:max-w-75">
                 <Image
                   src="/exam-center.jpg"
                   className="object-cover border-2 w-full h-full border-white service-img"
@@ -187,7 +187,7 @@ export default function Services() {
               <i className="i bi bi-arrow-up-right transition-all duration-300"></i>
             </div>
           </div>
-          <div className="service-card relative w-full max-w-6xl bg-black rounded-[3rem] p-10 md:p-16 flex flex-col md:flex-row gap-10 items-center cursor-pointer">
+          <div className="service-card relative w-full max-w-7xl bg-black rounded-[3rem] p-10 md:p-14 flex flex-col md:flex-row gap-8 items-center cursor-pointer">
             <div className="flex-1 text-white md:flex-row w-full md:w-[70%] service-content">
               <div className="flex items-center gap-4 mb-6">
                 <span className="text-2xl font-bold italic">05</span>
@@ -211,7 +211,7 @@ export default function Services() {
               </div>
             </div>
             <div className="relative w-full md:w-[40%]">
-              <div className="overflow-hidden h-full w-full rounded-3xl mid:h-[210px] md:w-[300px]">
+              <div className="overflow-hidden h-full w-full rounded-3xl mid:h-[210px] md:w-75">
                 <Image
                   src="/events.jpg"
                   className="object-cover border-2 w-full h-full service-img border-white"

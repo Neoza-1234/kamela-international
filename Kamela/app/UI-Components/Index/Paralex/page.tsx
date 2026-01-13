@@ -55,7 +55,7 @@ export default function Paralex() {
   return (
     <div className="mb-10 paralex-container">
       <div className="text-center">
-        <h2 className="mt-1">
+        <h2 className="my-5">
           Our Commitment <span className="text-(--prime)">To Excellence</span>
         </h2>
       </div>

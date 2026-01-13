@@ -1,6 +1,4 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 @import "tailwindcss";
 
@@ -18,7 +16,6 @@
   --text-color-secondary: #545454;
   --navbar: #f8f9fa;
   --footer: #1a1a1a;
-
 
   --font-montserrat: "Montserrat", sans-serif;
   --font-inter: "Inter", sans-serif;
@@ -81,13 +78,13 @@ body {
 }
 
 /*navbar*/
-.menu-link a{
+.menu-link a {
   font-family: var(--font-montserrat);
   font-weight: 500;
 }
 
 /*hero*/
-.hero{
+.hero {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -96,48 +93,48 @@ body {
   z-index: 1;
 }
 
-h1{
+h1 {
   font-size: var(--biggest-font-size);
   font-weight: 600;
   font-family: var(--font-montserrat);
 }
 
-h2{
+h2 {
   font-size: var(--h1-font-size);
   font-weight: 600;
   font-family: var(--font-montserrat);
 }
 
-h3{
+h3 {
   font-size: var(--small-font-size);
   font-family: var(--font-montserrat);
 }
 
-p{
+p {
   font-size: var(--normal-font-size);
   line-height: 1.6;
   font-family: var(--font-inter);
 }
 
 @media (max-width: 991px) {
-  .hero{
+  .hero {
     height: 100%;
     margin-top: 8%;
   }
 }
 
 @media (max-width: 575px) {
-  h1{
+  h1 {
     font-size: 2rem;
   }
-  .hero{
+  .hero {
     margin-top: 20%;
   }
 }
 
 /*Paralex*/
 
-.Paralex-wrap{
+.Paralex-wrap {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -146,8 +143,8 @@ p{
   will-change: transform, opacity;
 }
 
-.Paralex-wrap:after{
-  content: '';
+.Paralex-wrap:after {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -157,24 +154,24 @@ p{
   z-index: -1;
 }
 
-.Paralex-content{
+.Paralex-content {
   height: 100vh;
 }
 
 /*Service Section*/
 
-.service.img{
+.service.img {
   transform: scale(0);
   opacity: 0;
   transition: var(--transition-slow);
 }
 
-.service-card:hover .service-img{
+.service-card:hover .service-img {
   transform: scale(0.9);
   opacity: 1;
 }
 
-.service-card:hover .i{
+.service-card:hover .i {
   transform: rotate(45deg);
   background-color: -var(--prime);
   color: var(--body);
@@ -183,22 +180,22 @@ p{
 
 /*Accreditation Section*/
 
-.accreditation-swiper{
+.accreditation-swiper {
   padding: 20px !important;
 }
 
-.accreditation-img{
+.accreditation-img {
   transition: var(--transition-regular);
   cursor: pointer;
 }
 
-.accreditation-img:hover{
+.accreditation-img:hover {
   transform: scale(1.1);
 }
 
 /* Purpose*/
 
-.purpose{
+.purpose {
   background-image: url(../public/purpose.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -250,20 +247,20 @@ p{
   --animate-accordion-up: accordion-up 0.2s ease-out;
   /*---break---*/
   @keyframes accordion-down {
-  from {
-    height: 0;
+    from {
+      height: 0;
     }
-  to {
-    height: var(--radix-accordion-content-height);
+    to {
+      height: var(--radix-accordion-content-height);
     }
   }
   /*---break---*/
   @keyframes accordion-up {
-  from {
-    height: var(--radix-accordion-content-height);
+    from {
+      height: var(--radix-accordion-content-height);
     }
-  to {
-    height: 0;
+    to {
+      height: 0;
     }
   }
 }
@@ -317,21 +314,21 @@ p{
 
 /* About Us Bg*/
 
-.section-bg{
+.section-bg {
   background-image: url(../public/Team.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 500px;
   width: 100%;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   z-index: 1;
 }
 
-.section-bg::after{
+.section-bg::after {
   content: "";
   position: absolute;
   top: 0;

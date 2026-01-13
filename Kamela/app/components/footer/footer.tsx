@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Example() {
+export default function Footer() {
   return (
     <>
       <footer className="bg-black text-gray-400 text-sm md:text-base">
@@ -30,7 +30,7 @@ export default function Example() {
               <ul className="space-y-2 text-xs sm:text-sm">
                 <li>
                   <a
-                    href="/UI-Components/About Us"
+                    href="/UI-Components/About-Us"
                     className="hover:text-indigo-500 transition duration-200"
                   >
                     About Us
@@ -79,7 +79,7 @@ export default function Example() {
               <ul className="space-y-2 text-xs sm:text-sm">
                 <li>
                   <a
-                    href="/"
+                    href="/UI-Components/Solutions/Study"
                     className="hover:text-indigo-500 transition duration-200"
                   >
                     Study
@@ -87,7 +87,7 @@ export default function Example() {
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="/UI-Components/Solutions/Enterprise"
                     className="hover:text-indigo-500 transition duration-200"
                   >
                     Enterprise
@@ -95,7 +95,7 @@ export default function Example() {
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="/UI-Components/Solutions/RPL"
                     className="hover:text-indigo-500 transition duration-200"
                   >
                     RPL
@@ -103,7 +103,7 @@ export default function Example() {
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="/UI-Components/Solutions/Assessment-Center"
                     className="hover:text-indigo-500 transition duration-200"
                   >
                     Assessment Center
@@ -148,7 +148,7 @@ export default function Example() {
             {/* Social Links */}
             <div className="flex items-center justify-center lg:justify-end gap-4 md:gap-5">
               <a
-                href=""
+                href="https://x.com/KamelaPty"
                 target="_blank"
                 rel="noreferrer"
                 className="text-gray-400 hover:text-indigo-500 transition duration-200 text-lg md:text-xl"
@@ -156,7 +156,7 @@ export default function Example() {
                 <i className="ri-twitter-x-line"></i>
               </a>
               <a
-                href=""
+                href="www.linkedin.com/in/kamela-international-60510b315"
                 target="_blank"
                 rel="noreferrer"
                 className="text-gray-400 hover:text-indigo-500 transition duration-200 text-lg md:text-xl"
@@ -172,7 +172,7 @@ export default function Example() {
                 <i className="ri-tiktok-fill"></i>
               </a>
               <a
-                href=""
+                href="https://www.facebook.com/kamelatraining?rdid=pnspctJDkZcOZRVv&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1EWQ5JuMLr%2F"
                 target="_blank"
                 rel="noreferrer"
                 className="text-gray-400 hover:text-indigo-500 transition duration-200 text-lg md:text-xl"

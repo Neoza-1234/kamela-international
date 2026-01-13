@@ -32,6 +32,7 @@ const navLinks: NavLink[] = [
       { label: "Events", href: "/UI-Components/Explore/Events" },
       { label: "Gallery", href: "/UI-Components/Explore/Gallery" },
       { label: "Careers", href: "/UI-Components/Explore/Careers" },
+      { label: "Learning Hub", href: "" },
     ],
   },
   { label: "Contact", href: "/UI-Components/Contact" },
@@ -90,7 +91,7 @@ export default function Navbar() {
                   </Link>
                   <div
                     className="absolute left-0 top-8 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300
-                                 bg-white shadow-xl border border-gray-50-10 rounded-lg z-500 min-w-[180px]"
+                                 bg-white shadow-xl border border-gray-50-10 rounded-lg z-500 min-w-45"
                   >
                     {link.dropdown.map((item) => (
                       <Link
@@ -117,11 +118,10 @@ export default function Navbar() {
 
           {/* Learning Hub Link */}
           <div className="flex justify-center items-center ml-6">
-            <Link href="https://kamelatraininghub.co.za"
-            target="_blank">
+            <Link href="https://kamelatraininghub.co.za" target="_blank">
               <button
-                className="hidden lg:flex justify-center items-center text-l px-3 py-2 font-bold rounded-full border
-                         bg-(--prime) text-white  hover:bg-white hover:text-(--black) transition-all duration-300 cursor-pointer border-(--prime) hover:border-(--prime)"
+                className="flex justify-center items-center text-sm px-3 py-2 font-bold rounded-full border sm:text-sm lg:text-xl
+                bg-(--prime) text-white  hover:bg-white hover:text-(--black) transition-all duration-300 cursor-pointer border-(--prime) hover:border-(--prime)"
               >
                 Learning Hub
               </button>
@@ -145,7 +145,7 @@ export default function Navbar() {
         className={
           "lg:hidden bg-(--navbar) border-t border-gray-400 overflow-hidden transition-all duration-500 " +
           (mobileMenuOpen
-            ? "max-h-[500px] opacity-100 py-4"
+            ? "max-h-125 opacity-100 py-4"
             : "max-h-0 opacity-0 py-0")
         }
       >
@@ -172,7 +172,7 @@ export default function Navbar() {
                     className={
                       "pl-6 pr-4 bg-gray-800/10 border-t border-gray-700/50 overflow-hidden transition-all duration-300 " +
                       (openDropdown[link.label]
-                        ? "max-h-[500px] opacity-100 py-2"
+                        ? "max-h-125 opacity-100 py-2"
                         : "max-h-0 opacity-0 py-0")
                     }
                   >

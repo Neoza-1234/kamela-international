@@ -122,7 +122,7 @@ export default function Enterprise() {
       {/* Why Corporates Choose Kamela Section */}
 
       <section className="py-20 px-4 bg-white flex flex-col justify-center items-center gap-6">
-        <h2 className="px-4 h-8 rounded-3xl text-center leading-tight text-green-500">
+        <h2 className="px-4 h-8 rounded-3xl text-center leading-tigh">
           Why Corporates Choose Kamela
         </h2>
         <p className=" md:text-[40px]/12 text-center leading-tight max-w-3xl">
