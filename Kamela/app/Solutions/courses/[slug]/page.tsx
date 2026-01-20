@@ -40,18 +40,20 @@ export async function generateMetadata({
   };
 }
 
-export default async function Page(
-  props: { params: { slug: string } } | { params: Promise<{ slug: string }> },
-) {
-  const { params } = await Promise.resolve(props);
-  const resolvedParams = await Promise.resolve(params);
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
 
   const { coursesData } = await import("@/data/courses");
-  const course = coursesData.find((c) => c.slug === resolvedParams.slug);
+  const course = coursesData.find((c) => c.slug === slug);
 
   if (!course) {
     notFound();
   }
+  
 
   return (
     <div className="min-h-screen mt-30">
