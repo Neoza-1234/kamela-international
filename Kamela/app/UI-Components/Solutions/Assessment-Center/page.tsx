@@ -58,13 +58,13 @@ export default function AssessmentCenter() {
           />
         </svg>
 
+        {/* Hero Content */}
+
         <div
           className="container mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gaps-12 items-center relative z-10"
           data-aos="zoom-in"
           data-aos-delay="100"
         >
-          {/* Hero Content */}
-
           <div className="hero-content">
             <h1 className="hero-title leading-tight flex justify-center items-center flex-col pr-5 text-(--prime)">
               QCTO-Accredited External Integrated Summative Assessment Centre
@@ -306,9 +306,9 @@ export default function AssessmentCenter() {
           <p className="text-white mb-6">
             Ensure your learners complete their qualifications in a professional and supportive environment.
           </p>
-          <Link href="/UI-Components/Contact">
+          <Link href="https://forms.office.com/r/Zn5Sa6jdjC" target="_blank">
           <button className="bg-white text-primary font-bold py-2 px-6 rounded-full hover:bg-gray-100 transition duration-300 cursor-pointer">
-            Contact Us Now
+            Registration Form
           </button>
           </Link>
         </div>

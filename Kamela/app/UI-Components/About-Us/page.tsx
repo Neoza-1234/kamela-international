@@ -355,20 +355,20 @@ export default function AboutUs() {
             },
             {
               start: { lat: -17.8292, lng: 31.054 }, // Harare, Zimbabwe
-              end: { lat: -1.2921, lng: 36.8219 }, // Nairobi, Kenya
+              end: { lat: -16.2921, lng: 36.8219 }, // Nairobi, Kenya
             },
 
             {
-              start: { lat: 51.5074, lng: -0.1278 }, // London
-              end: { lat: 28.6139, lng: 77.209 }, // New Delhi
+              start: { lat: -45.1076, lng: 28.0567 }, // Sandton, South Africa
+              end: { lat: -25.9653, lng:32.5892 }, // Maputo, Mozambique 
             },
             {
-              start: { lat: 28.6139, lng: 77.209 }, // New Delhi
-              end: { lat: 43.1332, lng: 131.9113 }, // Vladivostok
+              start: { lat: -45.1076, lng: 28.0567 }, // Sandton, South Africa
+              end: { lat: -15.4167, lng: 28.2833 }, // Lusaka, Zambia
             },
             {
-              start: { lat: 28.6139, lng: 77.209 }, // New Delhi
-              end: { lat: -1.2921, lng: 36.8219 }, // Nairobi
+              start: { lat: -45.1076, lng: 28.0567 }, // Sandton, South Africa
+              end: { lat: 25.2048, lng: 55.2708 }, // Dubai
             },
           ]}
         />
@@ -430,7 +430,7 @@ export default function AboutUs() {
           performance
         </p>
         <Link href="/UI-Components/Contact">
-          <button className="px-8 py-2.5 mt-4 text-sm bg-linear-to-r from-blue-700 to-orange-600 hover:scale-105 transition duration-300 text-white rounded-full cursor-pointer border border-transparent hover:border-white">
+          <button className="px-8 py-2.5 mt-4 text-sm bg-(--prime) hover:scale-105 transition duration-300 text-white rounded-full cursor-pointer border border-transparent hover:border-white">
             Book A Free Consultation
           </button>
         </Link>

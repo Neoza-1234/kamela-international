@@ -111,7 +111,7 @@ const Feature197 = ({ features = defaultFeatures }: Feature197Props) => {
               ))}
             </Accordion>
           </div>
-          <div className="relative m-auto hidden w-1/2 overflow-hidden rounded-xl bg-muted md:block">
+          <div className="relative m-auto hidden w-1/2 overflow-hidden rounded-xl md:block">
             <img
               src={activeImage}
               alt="Feature preview"

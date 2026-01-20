@@ -15,7 +15,7 @@ export default function ContactUs() {
         performance
       </p>
       <Link href="/UI-Components/Contact">
-        <button className="px-8 py-3 mt-4 text-sm bg-linear-to-r from-blue-700 to-orange-600 hover:scale-105 transition duration-300 text-white rounded-full cursor-pointer border border-transparent">
+        <button className="px-8 py-3 mt-4 text-sm bg-(--prime) hover:scale-105 transition duration-300 text-white rounded-full cursor-pointer border border-transparent">
           Book A Free Consultation
         </button>
       </Link>

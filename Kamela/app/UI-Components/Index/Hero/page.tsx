@@ -105,17 +105,10 @@ export default function Hero() {
 
           <div className="hero-img-container relative flex justify-around items-center">
             <Image
-              src="/icons/Underlay-2.png"
+              src="/icons/hero.png"
               alt="Hero Image"
-              width={540}
-              height={510}
-              className="hero-bg-elm absolute -right-30 -left-1 w-135 h-127.5 z-[-1]"
-            />
-            <Image
-              src="/hero.png"
-              alt="Hero Image"
-              width={365}
-              height={360}
+              width={400}
+              height={400}
               className="hero-img rounded-lg pb-10"
             />
           </div>

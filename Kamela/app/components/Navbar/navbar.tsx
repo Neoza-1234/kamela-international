@@ -31,8 +31,6 @@ const navLinks: NavLink[] = [
     dropdown: [
       { label: "Events", href: "/UI-Components/Explore/Events" },
       { label: "Gallery", href: "/UI-Components/Explore/Gallery" },
-      { label: "Careers", href: "/UI-Components/Explore/Careers" },
-      { label: "Learning Hub", href: "" },
     ],
   },
   { label: "Contact", href: "/UI-Components/Contact" },
@@ -70,11 +68,12 @@ export default function Navbar() {
 
           <Link href="/" className="logo">
             <Image
-              src="/icons/logob.png"
+              src="/icons/logoa.png"
               alt="Kamela Logo"
               width={120}
               height={40}
               cursor-pointer="true"
+              className="w-25 h-auto"
             />
           </Link>
 

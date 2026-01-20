@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils';
 const testimonials = [
   {
     tempId: 0,
-    testimonial: "Kamela has highly competent training facilitators who are passionate and eager to train for a positive changing environment and business improvement. Furthermore, Kamela also exhibits a propensity for technological advancements.",
+    testimonial: "Kamela has highly competent training facilitators who are passionate and eager to train for a positive changing environment and business improvement.",
     by: "NTOMBIZODIDI NDLOVU, HCM Manager at Alteram ",
     imgSrc: "/icons/alteram.png"
   },
@@ -20,19 +20,19 @@ const testimonials = [
   },
   {
     tempId: 2,
-    testimonial: "Kamela has been providing soft skills training services to our organization for the past 5 years with exceptional results. Kamela's Training expertise, corroborative and innovative spirit make them the go to company when you are looking for customized training",
+    testimonial: "Kamela has been providing soft skills training services to our organization for the past 5 years with exceptional results.",
     by: "MM Ngiba, Manager at Makhophila",
     imgSrc: "/icons/makhophila.png"
   },
   {
     tempId: 3,
-    testimonial: "Kamela International has provided professional training services to the University of Witwatersrand Campus Protection Services. Kamela International conducted themselves with the highest level of professionalism and integrity ",
+    testimonial: "Kamela International conducts themselves with the highest level of professionalism and integrity during training initiatives. ",
     by: "Donna-Lisa Mac Minn, Acting Deputy Director- Specialised Operation at Wits",
     imgSrc: "/icons/wits.png"
   },
   {
     tempId: 4,
-    testimonial: "The service provider, Kamela International, was appointed to provide a Power BI Session for the RAF Management Structure in Cape Town. We wish to acknowledge Kamela International for their outstanding professionalism and good work ethic ",
+    testimonial: "We wish to acknowledge Kamela International for their outstanding professionalism and good work ethic.",
     by: "Glynn Schlemmer, Senior HRD Officer at RAF",
     imgSrc: "/icons/raf.jpg"
   },
@@ -50,7 +50,7 @@ const testimonials = [
   },
   {
     tempId: 7,
-    testimonial: "Kamela International has conducted Computer Training for the staff at Wits University and has provided excellent training. The Director is always professional and goes out of his way to ensure that we are always satisfied",
+    testimonial: "The Director is always professional and goes out of his way to ensure that we are always satisfied",
     by: "G THULUKANAM, HUMAN RESOURCES DEVELOPMENT CONSULTANT at Wits",
     imgSrc: "/icons/wits.png"
   },
@@ -115,7 +115,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
       <img
         src={testimonial.imgSrc}
         alt={`${testimonial.by.split(',')[0]}`}
-        className="mb-4 h-20 w-60 bg-muted object-cover object-top"
+        className="mb-4 h-25 w-60 bg-muted object-cover object-top"
         style={{
           boxShadow: "3px 3px 0px hsl(var(--background))"
         }}

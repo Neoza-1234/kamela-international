@@ -1,6 +1,31 @@
+
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import { coursesData } from "@/data/courses";
 
 type TabId = "ict" | "business" | "governance" | "sales";
+
+const tabs: { id: TabId; label: string }[] = [
+  { id: "ict", label: "ICT" },
+  { id: "business", label: "Business Management & Admin" },
+  { id: "governance", label: "Governance & Operations" },
+  { id: "sales", label: "Sales, Retail & Customer Experience" },
+];
+
+function groupCoursesByCategory(data: typeof coursesData) {
+  const grouped: Record<TabId, typeof coursesData> = {
+    ict: [],
+    business: [],
+    governance: [],
+    sales: [],
+  };
+  data.forEach(course => {
+    if (grouped[course.category as TabId]) {
+      grouped[course.category as TabId].push(course);
+    }
+  });
+  return grouped;
+}
 
 const CourseSection = ({ initialTab = "ict" }: { initialTab?: TabId }) => {
   const [activeTab, setActiveTab] = useState<TabId>(initialTab);
@@ -9,196 +34,7 @@ const CourseSection = ({ initialTab = "ict" }: { initialTab?: TabId }) => {
     setActiveTab(initialTab);
   }, [initialTab]);
 
-  const courses = {
-    ict: [
-      {
-        name: "Occupational Certificate: Cloud Administrator ",
-        icon: "/icons/cloud-admin.svg",
-        description:
-          "Cloud administration fundamentals, including deployment, configuration, and management of cloud environments.",
-        nqfLevel: 4,
-        saqaid: "118699",
-        credits: 149,
-        duration: "12 months",
-        courseUrl: "/courses/cloud-administrator",
-      },
-      {
-        name: "Occupational Certificate: Software Developer ",
-        icon: "/icons/software-development.svg",
-        description:
-          "Software development fundamentals, including programming languages, application design, and database integration.",
-        nqfLevel: 6,
-        saqaid: "118707",
-        credits: 220,
-        duration: "24 months",
-        courseUrl: "/courses/software-developer",
-      },
-      {
-        name: "Occupational Certificate: Cybersecurity Analyst",
-        icon: "/icons/cyber-security.svg",
-        description:
-          "Essential security principles, threat management, and network protection for modern digital environments.",
-        nqfLevel: 5,
-        saqaid: "118986",
-        credits: 173,
-        duration: "10 months",
-        courseUrl: "/courses/cybersecurity-analyst",
-      },
-      {
-        name: "Occupational Certificate: Computer Technician",
-        icon: "/icons/computer-technician.svg",
-        description:
-          "Hardware and software troubleshooting, maintenance, and repair for computer systems.",
-        nqfLevel: 5,
-        saqaid: "101408",
-        credits: 282,
-        duration: "15 months",
-        courseUrl: "/courses/computer-technician",
-      },
-      {
-        name: "Occupational Certificate: Data Science Practitioner",
-        icon: "/icons/data-science.svg",
-        description:
-          "Data analysis, statistical modeling, and machine learning techniques for extracting insights from complex datasets.",
-        nqfLevel: 5,
-        saqaid: "118708",
-        credits: 185,
-        duration: "12 months",
-        courseUrl: "/courses/data-science-practitioner",
-      },
-    ],
-    business: [
-      {
-        name: "Occupational Certificate: Project Manager ",
-        icon: "/icons/project-management.svg",
-        description:
-          "Project planning, execution, and monitoring using industry-standard methodologies and tools.",
-        nqfLevel: 5,
-        saqaid: "101869",
-        credits: 240,
-        duration: "24 months",
-        courseUrl: "/courses/project-manager",
-      },
-      {
-        name: "Occupational Certificate: Contact Centre Manager",
-        icon: "/icons/contact-center-management.svg",
-        description:
-          "Contact centre operations, customer service excellence, and performance management.",
-        nqfLevel: 5,
-        saqaid: "99687",
-        credits: 285,
-        duration: "14 months",
-        courseUrl: "/courses/contact-centre-manager",
-      },
-      {
-        name: "Occupational Certificate: Supply Chain Practitioner ",
-        icon: "/icons/supply-chain.svg",
-        description:
-          "Supply chain operations, logistics management, and inventory control for efficient distribution.",
-        nqfLevel: 5,
-        saqaid: "110942",
-        credits: 145,
-        duration: "12 months",
-        courseUrl: "/courses/supply-chain-practitioner",
-      },
-      {
-        name: "Occupational Certificate: Supply Chain Manager",
-        icon: "/icons/supply-chain-management.svg",
-        description:
-          "Oversight of the entire supply chain, including procurement, logistics, and distribution.",
-        nqfLevel: 6,
-        saqaid: "111357",
-        credits: 180,
-        duration: "13 months",
-        courseUrl: "/courses/supply-chain-manager",
-      },
-      {
-        name: "Occupational Certificate: Office Administrator",
-        icon: "/icons/office-admin.svg",
-        description:
-          "Office administration, document management, and administrative support for efficient office operations.",
-        nqfLevel: 6,
-        saqaid: "1021161",
-        credits: 175,
-        duration: "13 months",
-        courseUrl: "/courses/office-administrator",
-      },
-      {
-        name: "Occupational Certificate: Office Supervisor",
-        icon: "/icons/office-supervisor.svg",
-        description:
-          "Office supervision, team leadership, and administrative oversight for efficient office operations.",
-        nqfLevel: 5,
-        saqaid: "118740",
-        credits: 240,
-        duration: "13 months",
-        courseUrl: "/courses/office-supervisor",
-      },
-      {
-        name: "HOC: Human Resource Management Administrator",
-        icon: "/icons/hr-management.svg",
-        description: "Administration knowledge .",
-        nqfLevel: 6,
-        saqaid: "121150",
-        credits: 120,
-        duration: "12 months",
-        courseUrl: "/courses/hr-management-administrator",
-      },
-    ],
-    governance: [
-      {
-        name: "Occupational Certificate: Quality Assurer ",
-        icon: "/icons/quality-assurer.svg",
-        description:
-          "Quality assurance principles, inspection techniques, and compliance verification for product and service delivery.",
-        nqfLevel: 5,
-        saqaid: "118769",
-        credits: 106,
-        duration: "10 months",
-        courseUrl: "/courses/quality-assurer",
-      },
-    ],
-    sales: [
-      {
-        name: "Occupational Certificate: Marketing Coordinator ",
-        icon: "/icons/marketing-coordinator.svg",
-        description: ".",
-        nqfLevel: 5,
-        saqaid: "118706",
-        credits: 175,
-        duration: "10 months",
-        courseUrl: "/courses/marketing-coordinator",
-      },
-      {
-        name: "National Occupational Certificate: Sales Representative ",
-        icon: "/icons/sales-representative.svg",
-        description: ".",
-        nqfLevel: 4,
-        saqaid: "121792",
-        credits: 155,
-        duration: "10 months",
-        courseUrl: "/courses/sales-representative",
-      },
-      {
-        name: "Occupational Certificate: Retail Supervisor",
-        icon: "/icons/retail-supervisor.svg",
-        description:
-          "Retail operations, inventory management, and customer service excellence in retail environments.",
-        nqfLevel: 5,
-        saqaid: "99573",
-        credits: 100,
-        duration: "18 months",
-        courseUrl: "/courses/retail-supervisor",
-      },
-    ],
-  };
-
-  const tabs: { id: TabId; label: string }[] = [
-    { id: "ict", label: "ICT" },
-    { id: "business", label: "Business Management & Admin" },
-    { id: "governance", label: "Governance & Operations" },
-    { id: "sales", label: "Sales, Retail & Customer Experience" },
-  ];
+  const courses = groupCoursesByCategory(coursesData);
 
   return (
     <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
@@ -230,7 +66,7 @@ const CourseSection = ({ initialTab = "ict" }: { initialTab?: TabId }) => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
           {courses[activeTab].map((course, index) => (
             <div
-              key={index}
+              key={course.slug}
               className="bg-white rounded-3xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden hover:-translate-y-1 flex flex-col"
             >
               <div className="p-5 flex flex-col grow">
@@ -290,12 +126,12 @@ const CourseSection = ({ initialTab = "ict" }: { initialTab?: TabId }) => {
                 </div>
 
                 {/* CTA Button */}
-                <a
-                  href={course.courseUrl}
+                <Link
+                  href={`/Solutions/courses/${course.slug}`}
                   className="w-full bg-linear-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold py-2.5 px-4 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg text-sm text-center block"
                 >
                   View Full Course
-                </a>
+                </Link>
               </div>
             </div>
           ))}

@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="flex flex-col items-center lg:items-start shrink-0">
             <Link href="/" className="logo mb-6 md:mb-8">
               <Image
-                src="/icons/logoa.png"
+                src="/icons/logoc.png"
                 alt="Kamela Logo"
                 width={150}
                 height={150}
@@ -50,14 +50,6 @@ export default function Footer() {
                     className="hover:text-indigo-500 transition duration-200"
                   >
                     Gallery
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/UI-Components/Explore/Careers"
-                    className="hover:text-indigo-500 transition duration-200"
-                  >
-                    Careers
                   </a>
                 </li>
                 <li>
@@ -156,7 +148,7 @@ export default function Footer() {
                 <i className="ri-twitter-x-line"></i>
               </a>
               <a
-                href="www.linkedin.com/in/kamela-international-60510b315"
+                href="https://www.linkedin.com/in/kamela-international-60510b315?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B89CsBFitTVKzYLc9QSwFDQ%3D%3D"
                 target="_blank"
                 rel="noreferrer"
                 className="text-gray-400 hover:text-indigo-500 transition duration-200 text-lg md:text-xl"

@@ -4,42 +4,46 @@ import Link from "next/link";
 export default function RPL() {
   return (
     <>
-      <svg
-        className="size-full absolute -z-10 inset-0"
-        width="1440"
-        height="720"
-        viewBox="0 0 1440 720"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path stroke="#E2E8F0" strokeOpacity=".7" d="M-15.227 702.342H1439.7" />
-        <circle
-          cx="711.819"
-          cy="372.562"
-          r="308.334"
-          stroke="#E2E8F0"
-          strokeOpacity=".7"
-        />
-        <circle
-          cx="16.942"
-          cy="20.834"
-          r="308.334"
-          stroke="#d9d9d9"
-          strokeOpacity=".7"
-        />
-        <path
-          stroke="#d9d9d9"
-          strokeOpacity=".7"
-          d="M-15.227 573.66H1439.7M-15.227 164.029H1439.7"
-        />
-        <circle
-          cx="782.595"
-          cy="411.166"
-          r="308.334"
-          stroke="#d9d9d9"
-          strokeOpacity=".7"
-        />
-      </svg>
+     <svg
+          className="size-full absolute -z-10 inset-0"
+          width="1440"
+          height="720"
+          viewBox="0 0 1440 720"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke="#D9D9D9"
+            strokeOpacity=".7"
+            d="M-15.227 702.342H1439.7"
+          />
+          <circle
+            cx="711.819"
+            cy="372.562"
+            r="308.334"
+            stroke="#D9D9D9"
+            strokeOpacity=".7"
+          />
+          <circle
+            cx="16.942"
+            cy="20.834"
+            r="308.334"
+            stroke="#D9D9D9"
+            strokeOpacity=".7"
+          />
+          <path
+            stroke="#D9D9D9"
+            strokeOpacity=".7"
+            d="M-15.227 573.66H1439.7M-15.227 164.029H1439.7"
+          />
+          <circle
+            cx="782.595"
+            cy="411.166"
+            r="308.334"
+            stroke="#D9D9D9"
+            strokeOpacity=".7"
+          />
+        </svg>
 
       <div className="flex flex-wrap justify-start items-center space-x-2 text-sm text-gray-500 font-medium mt-30 px-10 md:px-16 lg:px-24 xl:px-32 mb-3">
         <button type="button" aria-label="Home">
@@ -98,8 +102,8 @@ export default function RPL() {
           />
         </div>
         <div className="rpl-content">
-          <h2 className="about-rpl leading-tight flex justify-center items-center flex-col pr-5 ">
-            Understanding What Is Recognition Of Prior Learning (RPL)?
+          <h2 className="about-rpl leading-tight flex justify-center items-center flex-col pr-5  ">
+            Understanding What Recognition Of Prior Learning (RPL) Is
           </h2>
           <div className=" flex justify-start items-center gap-3 flex-wrap">
             <p className="rpl-paragraph max-w-lg mt-6">
@@ -116,7 +120,7 @@ export default function RPL() {
               RPL is particularly beneficial for those who have gained
               significant skills and knowledge through practical experience but
               may not have formal qualifications to demonstrate their
-              capabilities. By recognizing prior learning, RPL helps bridge the
+              capabilities. By recognizing prior learning, we at Kamela International help bridge the
               gap between experience and formal education, enabling individuals
               to advance their careers, enhance employability, and pursue
               further education or training opportunities.
@@ -234,29 +238,34 @@ export default function RPL() {
 
       {/* Eligibility and Requirements Section */}
 
-      <div className="container mx-auto px-6 py-20">
+      <div className="container mx-auto px-8 py-20">
         <h2 className="text-center mb-12">RPL Eligibility and Requirements</h2>
         <div className="max-w-4xl mx-auto">
-          <ul className="list-disc list-inside space-y-4">
+          <ul className="list-item list-inside space-y-4">
             <li>
+              <i className="ri-check-double-line w-30 h-30 pb-3"></i>
               Individuals must have relevant prior learning experiences that can
               be documented and assessed.
             </li>
             <li>
+              <i className="ri-check-double-line w-30 h-30 pb-3"></i>
               A comprehensive portfolio of evidence, including work samples,
               references, and other supporting documents, is typically required.
             </li>
             <li>
+              <i className="ri-check-double-line w-30 h-30 pb-3"></i>
               Candidates should be prepared to undergo an assessment process,
               which may include interviews or practical demonstrations of
               skills.
             </li>
             <li>
+              <i className="ri-check-double-line w-30 h-30 pb-3"></i>
               RPL is suitable for individuals seeking to gain qualifications in
               various fields, including vocational education, professional
               certifications, and academic degrees.
             </li>
             <li>
+              <i className="ri-check-double-line w-30 h-30 pb-3"></i>
               Employer validation may be necessary to confirm the authenticity
               of prior learning experiences.
             </li>
@@ -266,34 +275,98 @@ export default function RPL() {
 
       {/* Approved Qualifications for RPL */}
 
-      <div className="container mx-auto px-6 py-20">
+      <div className="container mx-auto px-8 py-20">
         <h2 className="text-center mb-12">
           Approved Qualifications for RPL at Kamela International
         </h2>
-        <div className="max-w-4xl mx-auto">
-          <ul className="list-disc list-inside space-y-4">
-            <li>Vocational Education and Training (VET) Qualifications</li>
-            <li>Professional Certifications in Various Industries</li>
-            <li>Academic Degrees and Diplomas</li>
-            <li>Industry-Specific Skill Certifications</li>
-            <li>Continuing Professional Development (CPD) Programs</li>
-          </ul>
+
+        <section className="flex flex-col justify-center items-center gap-6">
+        <div className="relative max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <i className="ri-code-s-slash-line"></i>
+            <p className="font-bold">Occupational Certificate: Software Developer</p>
+          </div>
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <i className="ri-computer-line"></i>
+            <p className="font-bold">Occupational Certificate: Computer Technician</p>
+          </div>
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <i className="ri-lock-password-line"></i>
+            <p className="font-bold">Occupational Certificate: Cybersecurity Analyst</p>
+          </div>
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <i className="ri-numbers-line"></i>
+            <p className="font-bold">Occupational Certificate: Data Science Practitioner</p>
+          </div>
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <i className="ri-trello-line"></i>
+            <p className="font-bold">Occupational Certificate: Project Manager</p>
+          </div>
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <i className="ri-verified-badge-line"></i>
+            <p className="font-bold">Occupational Certificate: Quality Assurer</p>
+          </div>
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <i className="ri-contacts-book-line"></i>
+            <p className="font-bold">Occupational Certificate: Contact Centre Manager</p>
+          </div>
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <i className="ri-shopping-bag-4-line"></i>
+            <p className="font-bold"> Occupational Certificate: Retail Supervisor</p>
+          </div>
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <i className="ri-truck-line"></i>
+            <p className="font-bold">Occupational Certificate: Supply Chain Practitioner </p>
+          </div>
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <i className="ri-ai-generate-3d-line"></i>
+            <p className="font-bold">Occupational Certificate: Supply Chain Manager</p>
+          </div>
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <i className="ri-advertisement-line"></i>
+            <p className="font-bold">Occupational Certificate: Marketing Coordinator</p>
+          </div>
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <i className="ri-store-2-line"></i>
+            <p className="font-bold">National Occupational Certificate: Sales Representative</p>
+          </div>
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <i className="ri-building-2-line"></i>
+            <p className="font-bold">Occupational Certificate: Office Administrator</p>
+          </div>
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <i className="ri-eye-2-line"></i>
+            <p className="font-bold">Occupational Certificate: Office Supervisor</p>
+          </div>
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <i className="ri-team-line"></i>
+            <p className="font-bold">"Higher Occupational Certificate: Human Resource Management Administrator</p>
+          </div>
         </div>
+      </section>
+        
       </div>
 
       {/* CTA Section */}
       <div className="container mx-auto px-6 py-20">
-        <div className="bg-linear-to-r from-primary to-secondary rounded-3xl p-8 text-center">
+        <div className="bg-black rounded-3xl p-8 text-center">
           <h2 className="text-white mb-4">Ready to Start Your RPL Journey?</h2>
           <p className="text-white mb-6">
             Apply for Recognition of Prior Learning today and take the next step
             in your career.
           </p>
+          <div className="flex justify-center items-center gap-4">
           <Link href="/UI-Components/Contact">
             <button className="bg-white text-primary font-bold py-2 px-6 rounded-full hover:bg-gray-100 transition duration-300 cursor-pointer">
-              Apply Now
+              Book A Free Consultation 
             </button>
           </Link>
+          <Link href="https://forms.office.com/r/4BMZTXFiEb" target="_blank">
+            <button className="bg-white text-primary font-bold py-2 px-6 rounded-full hover:bg-gray-100 transition duration-300 cursor-pointer">
+              RPL Registration 
+            </button>
+          </Link>
+          </div>
         </div>
       </div>
     </>

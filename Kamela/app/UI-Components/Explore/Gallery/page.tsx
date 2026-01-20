@@ -15,7 +15,7 @@ export default function Gallery() {
           <div className="text-(--prime) font-semibold">Gallery</div>
         </div>
         <h1 className="text-3xl font-semibold text-center mx-auto mt-30 text-(--prime)">
-          Kamela International Galleery
+          Kamela International Gallery
         </h1>
         <h3 className="text-center mt-2 max-w-lg mx-auto">
           {" "}
