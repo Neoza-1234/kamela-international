@@ -434,7 +434,7 @@ export const coursesData: Course[] = [
         topics: [
           "Apply Logical Thinking and Maths Refresher, 3 Credits",
           "Apply Code to Use a Software Toolkit/Platform in the Field of Study or Employment, 4 Credits",
-          "Use Spreadsheets to Analyse and Visualise Data, 3 Credits",
+          "Use Spreadsheets to Analyse and Visualize Data, 3 Credits",
           "Use a Visual Analytics Platform to Analyse and Visualise Data, 4 Credits",
           "Apply Statistical Tools and Techniques, 4 Credits",
           "Collect and Pre-Process Large Amounts of Unruly Data, 12 Credits",
@@ -701,7 +701,7 @@ export const coursesData: Course[] = [
     duration: "12 months",
     outcomes: [
       "Monitor and coordinate supply chain activities across the procurement, warehousing, and distribution lifecycle",
-      "Manage stock, inventory accuracy, storage practices, and order fulfilment",
+      "Manage stock, inventory accuracy, storage practices, and order fulfillment",
       "Apply ERP/WMS systems (SAP, Oracle, Sage) to automate supply chain tasks and generate operational reports",
       "Analyse cost, efficiency, and risks, providing actionable recommendations for optimisation",
       "Support procurement and vendor management, including sourcing, ordering, and contract compliance",

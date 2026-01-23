@@ -24,6 +24,7 @@ export async function generateStaticParams() {
 {
   /* Generate metadata for SEO */
 }
+
 export async function generateMetadata({
   params,
 }: {
@@ -33,9 +34,7 @@ export async function generateMetadata({
   const course = getCourseBySlug(slug);
 
   if (!course) {
-    return {
-      title: "Course Not Found",
-    };
+    return { title: "Course Not Found" };
   }
 
   return {
@@ -43,6 +42,7 @@ export async function generateMetadata({
     description: course.description,
   };
 }
+
 
 export default async function CoursePage({
   params,

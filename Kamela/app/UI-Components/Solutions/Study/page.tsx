@@ -12,7 +12,6 @@ type TabId = "ict" | "business" | "governance" | "sales";
 export default function Study() {
   const searchParams = useSearchParams();
 
-  // Initialize state directly from searchParams
   const getInitialTab = (): TabId => {
     const tab = searchParams.get("tab") as TabId;
     if (tab && ["ict", "business", "governance", "sales"].includes(tab)) {
