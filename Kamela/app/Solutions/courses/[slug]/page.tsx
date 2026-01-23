@@ -99,7 +99,7 @@ export default async function CoursePage({
       {/* Back Button */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <Link
-          href="/UI-Components/Solutions/Study"
+          href="/Solutions/Study"
           className="inline-flex items-center gap-2 text-black hover:text-blue-700 font-medium transition-colors"
         >
           <ArrowLeft className="w-5 h-5" />

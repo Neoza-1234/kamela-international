@@ -1,5 +1,5 @@
 
-import Index from "./UI-Components/Index/Index";
+import Index from "./Index/Index";
 
 export default function Home() {
   return (

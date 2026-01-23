@@ -31,7 +31,7 @@ export default function Footer() {
               <ul className="space-y-2 text-xs sm:text-sm">
                 <li>
                   <Link
-                    href="/UI-Components/About-Us"
+                    href="/About-Us"
                     className="hover:text-indigo-500 transition duration-200"
                   >
                     About Us
@@ -39,7 +39,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/UI-Components/Explore/Events"
+                    href="/Explore/Events"
                     className="hover:text-indigo-500 transition duration-200"
                   >
                     Events
@@ -47,7 +47,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/UI-Components/Explore/Gallery"
+                    href="/Explore/Gallery"
                     className="hover:text-indigo-500 transition duration-200"
                   >
                     Gallery
@@ -55,7 +55,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/UI-Components/Contact"
+                    href="/Contact"
                     className="hover:text-indigo-500 transition duration-200"
                   >
                     Contact
@@ -72,7 +72,7 @@ export default function Footer() {
               <ul className="space-y-2 text-xs sm:text-sm">
                 <li>
                   <Link
-                    href="/UI-Components/Solutions/Study"
+                    href="/Solutions/Study"
                     className="hover:text-indigo-500 transition duration-200"
                   >
                     Study
@@ -80,7 +80,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/UI-Components/Solutions/Enterprise"
+                    href="/Solutions/Enterprise"
                     className="hover:text-indigo-500 transition duration-200"
                   >
                     Enterprise
@@ -88,7 +88,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/UI-Components/Solutions/RPL"
+                    href="/Solutions/RPL"
                     className="hover:text-indigo-500 transition duration-200"
                   >
                     RPL
@@ -96,7 +96,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/UI-Components/Solutions/Assessment-Center"
+                    href="/Solutions/Assessment-Center"
                     className="hover:text-indigo-500 transition duration-200"
                   >
                     Assessment Center

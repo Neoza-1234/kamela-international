@@ -403,7 +403,7 @@ export default function RPL() {
             in your career.
           </p>
           <div className="flex justify-center items-center gap-4">
-            <Link href="/UI-Components/Contact">
+            <Link href="/Contact">
               <button className="px-8 py-2.5 mt-4 text-sm bg-linear-to-r from-indigo-600 to-orange-700 hover:scale-105 transition duration-300 text-white rounded-full cursor-pointer">
                 Book A Free Consultation
               </button>

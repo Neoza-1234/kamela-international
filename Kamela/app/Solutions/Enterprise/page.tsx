@@ -79,7 +79,7 @@ export default function Enterprise() {
           <div className="mt-6 flex justify-center">
             <button
               onClick={scrollToEnterpriseServices}
-              className="inline-block rounded-3xl bg-white text-(--prime) px-12 py-3 text-sm font-medium transition hover:bg-(--prime) hover:text-white border-2 border-(--prime) cursor-pointer"
+              className=" rounded-3xl bg-white text-(--prime) px-12 py-3 text-sm font-medium transition hover:bg-(--prime) hover:text-white border-2 border-(--prime) cursor-pointer"
             >
               Our Services
             </button>
@@ -378,7 +378,7 @@ export default function Enterprise() {
 
             <div className="mt-4 md:mt-8">
               <a
-                href="/UI-Components/Contact"
+                href="/Contact"
                 className="px-8 py-2.5 mt-4 text-sm bg-linear-to-r from-indigo-600 to-orange-700 hover:scale-105 transition duration-300 text-white rounded-full"
               >
                 Get Started Today

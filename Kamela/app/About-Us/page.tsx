@@ -362,7 +362,7 @@ export default function AboutUs() {
           workforce, we deliver the training that transforms potential into
           performance
         </p>
-        <Link href="/UI-Components/Contact">
+        <Link href="/Contact">
           <button className="px-8 py-2.5 mt-4 text-sm bg-linear-to-r from-indigo-600 to-orange-700 hover:scale-105 transition duration-300 text-white rounded-full">
             Book A Free Consultation
           </button>

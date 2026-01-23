@@ -301,7 +301,7 @@ export default function AssessmentCenter() {
       {/* CTA Section */}
 
       <div className="container mx-auto px-6 py-20">
-        <div className="bg-linear-to-r from-primary to-secondary rounded-3xl p-8 text-center">
+        <div className="bg-black rounded-3xl p-8 text-center">
           <h2 className="text-white mb-4">Book Your Assessment with Us Today</h2>
           <p className="text-white mb-6">
             Ensure your learners complete their qualifications in a professional and supportive environment.

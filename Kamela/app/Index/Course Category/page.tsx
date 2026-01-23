@@ -22,7 +22,7 @@ export default function CourseCategory() {
           
           {/* ICT - Large Featured Card */}
           <Link
-            href="/UI-Components/Solutions/Study?tab=ict"
+            href="/Solutions/Study?tab=ict"
             className="col-span-1 sm:col-span-2 lg:col-span-3 lg:row-span-2 h-64 sm:h-80 lg:h-full min-h-100"
           >
             <div className="overflow-hidden relative rounded-3xl cursor-pointer h-full group">
@@ -45,7 +45,7 @@ export default function CourseCategory() {
 
           {/* Sales & Retail */}
           <Link
-            href="/UI-Components/Solutions/Study?tab=sales"
+            href="/Solutions/Study?tab=sales"
             className="col-span-1 sm:col-span-1 lg:col-span-2 h-64 sm:h-48 lg:h-auto"
           >
             <div className="overflow-hidden relative rounded-3xl cursor-pointer h-full group">
@@ -68,7 +68,7 @@ export default function CourseCategory() {
 
           {/* Business, Management & Administration */}
           <Link
-            href="/UI-Components/Solutions/Study?tab=business"
+            href="/Solutions/Study?tab=business"
             className="col-span-1 sm:col-span-1 lg:col-span-2 h-64 sm:h-48 lg:h-auto"
           >
             <div className="overflow-hidden relative rounded-3xl cursor-pointer h-full group">
@@ -91,7 +91,7 @@ export default function CourseCategory() {
 
           {/* Governance & Operations */}
           <Link
-            href="/UI-Components/Solutions/Study?tab=governance"
+            href="/Solutions/Study?tab=governance"
             className="col-span-1 sm:col-span-2 lg:col-span-3 h-64 sm:h-56 lg:h-auto"
           >
             <div className="overflow-hidden relative rounded-3xl cursor-pointer h-full group">

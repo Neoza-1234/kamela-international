@@ -90,13 +90,13 @@ export default function Hero() {
             </h1>
             <div className=" flex justify-start items-center gap-3 flex-wrap mt-6">
               <button className="mt-9 border-(--prime) border-2 px-3 py-3 rounded-full text-(--prime) font-semibold hover:bg-(--prime) hover:text-white transition-all duration-300 flex items-center gap-6">
-                <Link href="/UI-Components/Solutions/Study">
+                <Link href="/Solutions/Study">
                   Explore Courses<i className="bi bi-arrow-right ps-1"></i>
                 </Link>
               </button>
 
               <button className="mt-9 border-(--prime) border-2 px-3 py-3 rounded-full text-(--prime) font-semibold hover:bg-(--prime) hover:text-white transition-all duration-300 flex items-center gap-6">
-                <Link href="/UI-Components/Solutions/Enterprise">
+                <Link href="/Solutions/Enterprise">
                   Corporate Solutions <i className="bi bi-arrow-right ps-1"></i>
                 </Link>
               </button>

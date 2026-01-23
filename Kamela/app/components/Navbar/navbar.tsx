@@ -12,17 +12,17 @@ type NavLink = {
 };
 
 const navLinks: NavLink[] = [
-  { label: "About Us", href: "/UI-Components/About-Us" },
+  { label: "About Us", href: "/About-Us" },
   {
     label: "Solutions",
     href: "#",
     dropdown: [
-      { label: "Study", href: "/UI-Components/Solutions/Study" },
-      { label: "Enterprise", href: "/UI-Components/Solutions/Enterprise" },
+      { label: "Study", href: "/Solutions/Study" },
+      { label: "Enterprise", href: "/Solutions/Enterprise" },
       { label: "RPL", href: "/UI-Components/Solutions/RPL" },
       {
         label: "Assessment Center",
-        href: "/UI-Components/Solutions/Assessment-Center",
+        href: "/Solutions/Assessment-Center",
       },
     ],
   },
@@ -30,11 +30,11 @@ const navLinks: NavLink[] = [
     label: "Explore",
     href: "#",
     dropdown: [
-      { label: "Events", href: "/UI-Components/Explore/Events" },
-      { label: "Gallery", href: "/UI-Components/Explore/Gallery" },
+      { label: "Events", href: "/Explore/Events" },
+      { label: "Gallery", href: "/Explore/Gallery" },
     ],
   },
-  { label: "Contact", href: "/UI-Components/Contact" },
+  { label: "Contact", href: "/Contact" },
 ];
 
 export default function Navbar() {
@@ -88,7 +88,7 @@ export default function Navbar() {
         {/* Logo Section */}
         <Link href="/" className="logo shrink-0">
           <Image
-            src="/icons/logoa.png"
+            src="/icons/logo-a.png"
             alt="Kamela Logo"
             width={120}
             height={40}
@@ -150,7 +150,6 @@ export default function Navbar() {
           )}
         </nav>
 
-        {/* Right Side: Learning Hub + Mobile Menu Toggle */}
         <div className="flex items-center gap-4">
           {/* Learning Hub Button - Desktop Only */}
           <Link
