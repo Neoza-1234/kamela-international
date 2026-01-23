@@ -72,9 +72,9 @@ export default function Events() {
                     relevant to your professional growth.
                   </p>
 
-                  <Link href="/UI-Components/Contact">
+                  <Link href="/UI-Components/Explore/Events">
                     <button className="inline-block rounded-3xl bg-white text-(--prime) px-12 py-3 text-sm font-medium transition hover:bg-(--prime) hover:text-white border-2 border-(--prime)">
-                      Access Events
+                      Event Page Coming Soon
                     </button>
                   </Link>
 

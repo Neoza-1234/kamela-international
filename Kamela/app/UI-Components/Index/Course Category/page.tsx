@@ -1,5 +1,5 @@
-"use client";
 
+import Image from "next/image";
 import Link from "next/link";
 
 export default function CourseCategory() {
@@ -15,59 +15,97 @@ export default function CourseCategory() {
           </span>
         </h2>
       </div>
-      <div className="flex justify-center items-center min-h-screen">
-        <div className="grid max-w-5xl w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-8">
-          <Link href="/UI-Components/Solutions/Study?tab=ict" className="col-span-1 lg:col-span-3 lg:row-span-3">
-            <div className="overflow-hidden relative rounded-3xl cursor-pointer h-full">
-              <img
+      <div className="flex justify-center items-center min-h-screen px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl w-full">
+        {/* Main Grid Container */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mt-8">
+          
+          {/* ICT - Large Featured Card */}
+          <Link
+            href="/UI-Components/Solutions/Study?tab=ict"
+            className="col-span-1 sm:col-span-2 lg:col-span-3 lg:row-span-2 h-64 sm:h-80 lg:h-full min-h-100"
+          >
+            <div className="overflow-hidden relative rounded-3xl cursor-pointer h-full group">
+              <Image
                 src="/ICT.jpg"
-                alt="Course Category 1"
-                className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                alt="Information & Communication Technology"
+                width={1920}
+                height={1080}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
+              {/* Gradient Overlay */}
+              <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent"></div>
               <div className="absolute bottom-4 left-4 text-white px-3 py-1">
-                <h3 className="text-lg font-semibold ">
+                <h3 className="text-xl sm:text-2xl font-bold drop-shadow-lg">
                   Information & Communication Technology
                 </h3>
               </div>
             </div>
           </Link>
 
-          <Link href="/UI-Components/Solutions/Study?tab=sales" className="col-span-1 lg:col-span-2">
-            <div className="overflow-hidden relative rounded-3xl cursor-pointer h-full">
-              <img
+          {/* Sales & Retail */}
+          <Link
+            href="/UI-Components/Solutions/Study?tab=sales"
+            className="col-span-1 sm:col-span-1 lg:col-span-2 h-64 sm:h-48 lg:h-auto"
+          >
+            <div className="overflow-hidden relative rounded-3xl cursor-pointer h-full group">
+              <Image
                 src="/sales-&-retail.jpg"
-                alt="Course Category 2"
-                className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                alt="Sales & Retail"
+                width={1920}
+                height={1080}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
+              {/* Gradient Overlay */}
+              <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent"></div>
               <div className="absolute bottom-4 left-4 text-white px-3 py-1">
-                <h3 className="text-lg font-semibold">Sales & Retail</h3>
+                <h3 className="text-lg sm:text-xl font-bold drop-shadow-lg">
+                  Sales & Retail
+                </h3>
               </div>
             </div>
           </Link>
 
-          <Link href="/UI-Components/Solutions/Study?tab=business" className="col-span-1 lg:col-span-2">
-            <div className="overflow-hidden relative rounded-3xl cursor-pointer h-full">
-              <img
-                src="/bussiness.jpg"
-                alt="Course Category 3"
-                className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+          {/* Business, Management & Administration */}
+          <Link
+            href="/UI-Components/Solutions/Study?tab=business"
+            className="col-span-1 sm:col-span-1 lg:col-span-2 h-64 sm:h-48 lg:h-auto"
+          >
+            <div className="overflow-hidden relative rounded-3xl cursor-pointer h-full group">
+              <Image
+                src="/business.jpg"
+                alt="Business, Management & Administration"
+                width={1920}
+                height={1080}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
+              {/* Gradient Overlay */}
+              <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent"></div>
               <div className="absolute bottom-4 left-4 text-white px-3 py-1">
-                <h3 className="text-lg font-semibold">
+                <h3 className="text-lg sm:text-xl font-bold drop-shadow-lg">
                   Business, Management & Administration
                 </h3>
               </div>
             </div>
           </Link>
-          <Link href="/UI-Components/Solutions/Study?tab=governance" className="col-span-1 lg:col-span-2">
-            <div className="overflow-hidden relative rounded-3xl cursor-pointer h-full">
-              <img
+
+          {/* Governance & Operations */}
+          <Link
+            href="/UI-Components/Solutions/Study?tab=governance"
+            className="col-span-1 sm:col-span-2 lg:col-span-3 h-64 sm:h-56 lg:h-auto"
+          >
+            <div className="overflow-hidden relative rounded-3xl cursor-pointer h-full group">
+              <Image
                 src="/operations.jpg"
-                alt="Course Category 4"
-                className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                alt="Governance & Operations"
+                width={1920}
+                height={1080}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
+              {/* Gradient Overlay */}
+              <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent"></div>
               <div className="absolute bottom-4 left-4 text-white px-3 py-1">
-                <h3 className="text-lg font-semibold">
+                <h3 className="text-lg sm:text-xl font-bold drop-shadow-lg">
                   Governance & Operations
                 </h3>
               </div>
@@ -75,6 +113,7 @@ export default function CourseCategory() {
           </Link>
         </div>
       </div>
+    </div>
     </div>
   );
 }

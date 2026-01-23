@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 
 export default function ContactUs() {
@@ -10,12 +8,12 @@ export default function ContactUs() {
       </h1>
       <div className="h-0.75 w-32 my-1 bg-linear-to-l from-transparent to-blue-700"></div>
       <p className="md:text-base text-white max-w-xl pt-5">
-        Whether you're advancing your own career or strengthening your
+        Whether you are advancing your own career or strengthening your
         workforce, we deliver the training that transforms potential into
         performance
       </p>
       <Link href="/UI-Components/Contact">
-        <button className="px-8 py-3 mt-4 text-sm bg-(--prime) hover:scale-105 transition duration-300 text-white rounded-full cursor-pointer border border-transparent">
+        <button className="px-8 py-2.5 mt-4 text-sm bg-linear-to-r from-indigo-600 to-orange-700 hover:scale-105 transition duration-300 text-white rounded-full">
           Book A Free Consultation
         </button>
       </Link>

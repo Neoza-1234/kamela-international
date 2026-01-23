@@ -38,10 +38,10 @@ export default function ContactPage() {
       
      
       setTimeout(() => setStatus("idle"), 5000);
-    } catch (error) {
-      setStatus("error");
-      setErrorMessage("Failed to send message. Please try again.");
-    }
+   } catch {
+  setStatus("error");
+  setErrorMessage("Failed to send message. Please try again.");
+}
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -111,7 +111,7 @@ export default function ContactPage() {
             <p className="hero-paragraph max-w-lg mt-6">
               Connect with our dedicated team today for tailored advice on RPL
               pathways, course enrollment, and enterprise development strategies to accelerate your
-              professional growth. We're here to guide you every step of the
+              professional growth. We are here to guide you every step of the
               way.
             </p>
           </div>
@@ -123,7 +123,7 @@ export default function ContactPage() {
             alt="Hero Image"
             width={500}
             height={900}
-            className="hero-img rounded-3xl "
+            className="hero-img rounded-3xl w-auto h-auto "
           />
         </div>
       </div>
@@ -134,13 +134,13 @@ export default function ContactPage() {
 
       <section className="flex overflow-hidden mt-30 mb-20">
         <div className="flex-1 hidden lg:block">
-          <img src="/contact2.jpg" className="w-full h-screen object-cover" />
+          <Image src="/contact2.jpg" width={1920} height={1080} className="w-full h-screen object-cover" alt={""} />
         </div>
         <div className="py-12 flex-1 lg:flex lg:justify-center lg:h-screen lg:overflow-auto">
           <div className="max-w-lg flex-1 mx-auto px-4 text-black">
             <div>
               <h2 className="sm:text-4xl">
-                We'd love to hear from you! Please fill out the form below and we'll get back to you within 24hrs.
+                We would love to hear from you! Please fill out the form below and we will get back to you within 24hrs.
               </h2>
             </div>
             <form

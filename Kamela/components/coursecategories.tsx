@@ -1,7 +1,9 @@
+"use client"
 
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import Link from "next/link";
 import { coursesData } from "@/data/courses";
+import Image from "next/image";
 
 type TabId = "ict" | "business" | "governance" | "sales";
 
@@ -64,7 +66,7 @@ const CourseSection = ({ initialTab = "ict" }: { initialTab?: TabId }) => {
 
         {/* Course Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-          {courses[activeTab].map((course, index) => (
+          {courses[activeTab].map((course) => (
             <div
               key={course.slug}
               className="bg-white rounded-3xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden hover:-translate-y-1 flex flex-col"
@@ -77,9 +79,11 @@ const CourseSection = ({ initialTab = "ict" }: { initialTab?: TabId }) => {
 
                 {/* Icon Section */}
                 <div className="w-25 h-25 mx-auto mb-4 rounded-xl p-3 flex items-center justify-center">
-                  <img
+                  <Image
                     src={course.icon}
                     alt={course.name}
+                    width={100}
+                    height={100}
                     className="w-full h-full object-contain"
                   />
                 </div>

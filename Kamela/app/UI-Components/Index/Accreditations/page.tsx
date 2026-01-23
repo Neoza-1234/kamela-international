@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -14,22 +13,16 @@ import acc4 from "@/public/icons/acc-4.png";
 const Accreditation = [acc1, acc2, acc3, acc4];
 
 export default function Accreditations() {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
   return (
     <>
       <div className="px-[8%] lg:px-[12%] py-20 services">
         <div className="text-center mb-12">
-          <h3 className=" mt-5">Our Accreditations</h3>
+          <h3 className=" mt-5">Our Accreditation's</h3>
           <h2 className="mt-1">
             Kamela International is{" "}
             <span className="text-(--prime)">
-              fully accredited, registered, and recognized by QCTO and other leading industry
-              bodies and authorities
+              fully accredited, registered, and recognized by QCTO and other
+              leading industry bodies and authorities
             </span>
           </h2>
         </div>

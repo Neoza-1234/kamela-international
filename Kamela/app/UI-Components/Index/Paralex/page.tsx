@@ -2,8 +2,18 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { ReactNode } from "react";
 
-const ParalexData = [
+interface ParallaxItem {
+  id: number;
+  tag: string;
+  number: string;
+  title: ReactNode;
+  description: string;
+  bg: string;
+}
+
+const ParalexData: ParallaxItem[] = [
   {
     id: 1,
     tag: "Workplace skills development",
@@ -66,7 +76,7 @@ export default function Paralex() {
   );
 }
 
-function ParalexSection({ item }: { item: any }) {
+function ParalexSection({ item }: { item: ParallaxItem }) {
   const ref = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -76,6 +86,7 @@ function ParalexSection({ item }: { item: any }) {
 
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.15]);
   const translateY = useTransform(scrollYProgress, [0, 1], [0, 200]);
+  
   return (
     <motion.div
       ref={ref}

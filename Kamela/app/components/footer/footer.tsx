@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
+
 export default function Footer() {
   return (
     <>
@@ -29,36 +30,36 @@ export default function Footer() {
               </p>
               <ul className="space-y-2 text-xs sm:text-sm">
                 <li>
-                  <a
+                  <Link
                     href="/UI-Components/About-Us"
                     className="hover:text-indigo-500 transition duration-200"
                   >
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/UI-Components/Explore/Events"
                     className="hover:text-indigo-500 transition duration-200"
                   >
                     Events
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/UI-Components/Explore/Gallery"
                     className="hover:text-indigo-500 transition duration-200"
                   >
                     Gallery
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/UI-Components/Contact"
                     className="hover:text-indigo-500 transition duration-200"
                   >
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -70,36 +71,36 @@ export default function Footer() {
               </p>
               <ul className="space-y-2 text-xs sm:text-sm">
                 <li>
-                  <a
+                  <Link
                     href="/UI-Components/Solutions/Study"
                     className="hover:text-indigo-500 transition duration-200"
                   >
                     Study
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/UI-Components/Solutions/Enterprise"
                     className="hover:text-indigo-500 transition duration-200"
                   >
                     Enterprise
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/UI-Components/Solutions/RPL"
                     className="hover:text-indigo-500 transition duration-200"
                   >
                     RPL
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/UI-Components/Solutions/Assessment-Center"
                     className="hover:text-indigo-500 transition duration-200"
                   >
                     Assessment Center
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -111,20 +112,20 @@ export default function Footer() {
               </p>
               <ul className="space-y-2 text-xs sm:text-sm">
                 <li>
-                  <a
+                  <Link
                     href="/"
                     className="hover:text-indigo-500 transition duration-200"
                   >
                     Privacy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/"
                     className="hover:text-indigo-500 transition duration-200"
                   >
                     Terms
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -139,38 +140,38 @@ export default function Footer() {
 
             {/* Social Links */}
             <div className="flex items-center justify-center lg:justify-end gap-4 md:gap-5">
-              <a
+              <Link
                 href="https://x.com/KamelaPty"
                 target="_blank"
                 rel="noreferrer"
                 className="text-gray-400 hover:text-indigo-500 transition duration-200 text-lg md:text-xl"
               >
                 <i className="ri-twitter-x-line"></i>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.linkedin.com/in/kamela-international-60510b315?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B89CsBFitTVKzYLc9QSwFDQ%3D%3D"
                 target="_blank"
                 rel="noreferrer"
                 className="text-gray-400 hover:text-indigo-500 transition duration-200 text-lg md:text-xl"
               >
                 <i className="ri-linkedin-fill"></i>
-              </a>
-              <a
+              </Link>
+              <Link
                 href=""
                 target="_blank"
                 rel="noreferrer"
                 className="text-gray-400 hover:text-indigo-500 transition duration-200 text-lg md:text-xl"
               >
                 <i className="ri-tiktok-fill"></i>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.facebook.com/kamelatraining?rdid=pnspctJDkZcOZRVv&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1EWQ5JuMLr%2F"
                 target="_blank"
                 rel="noreferrer"
                 className="text-gray-400 hover:text-indigo-500 transition duration-200 text-lg md:text-xl"
               >
                 <i className="ri-facebook-fill"></i>
-              </a>
+              </Link>
             </div>
             
           </div>
@@ -180,12 +181,12 @@ export default function Footer() {
         <div className="border-t border-gray-700 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32 py-4 md:py-6 text-center text-xs sm:text-sm text-gray-500">
           <p>
             © 2026{" "}
-            <a
+            <Link
               href="/"
               className="text-gray-400 hover:text-indigo-500 transition duration-200"
             >
               Kamela International
-            </a>
+            </Link>
           </p>
         </div>
       </footer>

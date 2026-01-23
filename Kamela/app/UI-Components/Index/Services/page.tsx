@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 
 export default function Services() {
@@ -50,7 +48,7 @@ export default function Services() {
                 <h4 className="font-semibold text-white mb-2">Ideal for:</h4>
                 <p className="leading-relaxed">
                   Youth, unemployed individuals, career changers, adult
-                  learners, and professionals seeking upskilling.
+                  learners, and professionals seeking up-skilling.
                 </p>
               </div>
             </div>
@@ -90,7 +88,7 @@ export default function Services() {
                 <h4 className="font-semibold text-white mb-2">Ideal for:</h4>
                 <p className="leading-relaxed">
                   Corporate teams, government departments, SMEs, enterprise
-                  development programs and workforce upskilling.
+                  development programs and workforce up-skilling.
                 </p>
               </div>
             </div>

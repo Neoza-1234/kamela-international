@@ -73,18 +73,17 @@ export default function Enterprise() {
         <div className="hero-content">
           <h1 className="hero-title leading-tight flex justify-center items-center flex-col text-center text-(--prime)">
             Corporate Training <br></br> Workforce Development Talent Pipelines{" "}
-            <br></br> Digital Upskilling
+            <br></br> Digital Up-skilling
           </h1>
-          
-            <div className="mt-6 flex justify-center">
-              <button
-                onClick={scrollToEnterpriseServices}
-                className="inline-block rounded-3xl bg-white text-(--prime) px-12 py-3 text-sm font-medium transition hover:bg-(--prime) hover:text-white border-2 border-(--prime)"
-              >
-                Our Services
-              </button>
-            </div>
-          
+
+          <div className="mt-6 flex justify-center">
+            <button
+              onClick={scrollToEnterpriseServices}
+              className="inline-block rounded-3xl bg-white text-(--prime) px-12 py-3 text-sm font-medium transition hover:bg-(--prime) hover:text-white border-2 border-(--prime) cursor-pointer"
+            >
+              Our Services
+            </button>
+          </div>
         </div>
 
         <div className="hero-img-container relative flex justify-around items-center pt-5">
@@ -106,12 +105,12 @@ export default function Enterprise() {
             A Leading Provider Of Corporate Training Solutions
           </h2>
           <p>
-            Kamela International partners with organisations across South Africa
+            Kamela International partners with organizations across South Africa
             and Africa to deliver high-impact enterprise development, workforce
             transformation, and talent enablement solutions. Our programmes are
-            designed to strengthen organisational capacity, build future-ready
+            designed to strengthen organizational capacity, build future-ready
             skills, and accelerate economic inclusion through scalable,
-            digital-enabled training interventions. We support corporates,
+            digital-enabled training interventions. We support cooperates,
             SMMEs, NGOs, and government institutions with evidence-based
             learning models that drive productivity, innovation, and long-term
             sustainability.
@@ -119,11 +118,11 @@ export default function Enterprise() {
         </div>
       </section>
 
-      {/* Why Corporates Choose Kamela Section */}
+      {/* Why Cooperates Choose Kamela Section */}
 
       <section className="py-20 px-4 bg-white flex flex-col justify-center items-center gap-6">
-        <h2 className="px-4 h-8 rounded-3xl text-center leading-tigh">
-          Why Corporates Choose Kamela
+        <h2 className="px-4 h-8 rounded-3xl text-center leading-tight">
+          Why Cooperates Choose Kamela
         </h2>
         <p className=" md:text-[40px]/12 text-center leading-tight max-w-3xl">
           Our enterprise development solutions are trusted because they offer
@@ -134,15 +133,15 @@ export default function Enterprise() {
             <p className="font-bold">Proven Track Record</p>
             <p>
               We have successfully delivered programmes for leading
-              organisations in mining, logistics, public sector,
+              organizations in mining, logistics, public sector,
               telecommunications, manufacturing, and academia.
             </p>
           </div>
           <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
             <i className="ri-check-double-line w-30 h-30 pb-3"></i>
-            <p className="font-bold">Customised Skills Solutions</p>
+            <p className="font-bold">Customized Skills Solutions</p>
             <p>
-              Training is tailored to each client's operational environment,
+              Training is tailored to each clients operational environment,
               workforce needs, and strategic goals.
             </p>
           </div>
@@ -185,10 +184,10 @@ export default function Enterprise() {
 
       <section className="flex flex-col items-center justify-center px-4 md:px-0 w-full mb-15">
         <h2 className=" text-center">
-          Trusted By leading Corporate & Public Organisations
+          Trusted By leading Corporate & Public Organizations
         </h2>
         <div className="max-w-4xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 w-full mt-14">
-          <div className="border border-secondary p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
+          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
             <Image
               src="/icons/anglo-american.svg"
               alt="Logo"
@@ -196,10 +195,15 @@ export default function Enterprise() {
               height={100}
             />
           </div>
-          <div className="border border-secondary p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
-            <Image src="/icons/alteram.png" alt="Logo" width={100} height={100} />
+          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
+            <Image
+              src="/icons/alteram.png"
+              alt="Logo"
+              width={100}
+              height={100}
+            />
           </div>
-          <div className="border border-secondary p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
+          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
             <Image
               src="/icons/master-plastics.webp"
               alt="Logo"
@@ -207,22 +211,37 @@ export default function Enterprise() {
               height={100}
             />
           </div>
-          <div className="border border-secondary p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
+          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
             <Image src="/icons/wits.png" alt="Logo" width={100} height={100} />
           </div>
-          <div className="border border-secondary p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
+          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
             <Image src="/icons/unisa.jpg" alt="Logo" width={100} height={100} />
           </div>
-          <div className="border border-secondary p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
-            <Image src="/icons/transnet.png" alt="Logo" width={100} height={100} />
+          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
+            <Image
+              src="/icons/transnet.png"
+              alt="Logo"
+              width={100}
+              height={100}
+            />
           </div>
-          <div className="border border-secondary p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
-            <Image src="/icons/marshalls.jpg" alt="Logo" width={100} height={100} />
+          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
+            <Image
+              src="/icons/marshalls.jpg"
+              alt="Logo"
+              width={100}
+              height={100}
+            />
           </div>
-          <div className="border border-secondary p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
-            <Image src="/icons/makhophila.png" alt="Logo" width={100} height={100} />
+          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
+            <Image
+              src="/icons/makhophila.png"
+              alt="Logo"
+              width={100}
+              height={100}
+            />
           </div>
-          <div className="border border-secondary p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
+          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
             <Image src="/icons/raf.jpg" alt="Logo" width={50} height={50} />
           </div>
         </div>
@@ -240,11 +259,11 @@ export default function Enterprise() {
                   Training Solutions Tailored For Enterprise Success
                 </h2>
                 <p className="mt-6 dark:text-gray-300">
-                  We partner with organisations to deliver customised training
+                  We partner with organizations to deliver customized training
                   solutions that drive workforce transformation, enterprise
                   development, and talent pipeline growth. We work closely with
                   clients to design and implement programmes that enhance
-                  employee performance, improve organisational capacity, and
+                  employee performance, improve organizational capacity, and
                   accelerate economic inclusion.
                 </p>
               </div>
@@ -264,7 +283,7 @@ export default function Enterprise() {
               <div className="max-w-xl lg:max-w-lg dark:text-gray-400">
                 <p>
                   Our enterprise training solutions are designed to meet the
-                  unique needs of each organisation. Whether it's upskilling
+                  unique needs of each organization. Whether its up-skilling
                   employees, developing SMMEs, or building talent pipelines, we
                   create programmes that deliver measurable impact and long-term
                   value.
@@ -279,7 +298,7 @@ export default function Enterprise() {
                         In-House Training.{" "}
                       </strong>
                       We offer flexible in-house training programs tailored to
-                      your organization's specific needs. Delivered on-site by
+                      your organizations specific needs. Delivered on-site by
                       experienced facilitators, our sessions ensure minimal
                       disruption to operations while maximizing learning
                       outcomes for your team.
@@ -297,7 +316,7 @@ export default function Enterprise() {
                       solutions designed to meet the needs of modern learners.
                       Our virtual programs combine expert instruction with
                       interactive content, allowing individuals and teams to
-                      upskill from anywhere, at any time.
+                      up-skill from anywhere, at any time.
                     </span>
                   </li>
                   <li className="flex gap-x-3">
@@ -332,7 +351,7 @@ export default function Enterprise() {
           <h2 className=" mb-6">Our Enterprise Solutions</h2>
           <p>
             Kamela International offers a comprehensive suite of enterprise
-            solutions designed to meet the diverse needs of organisations across
+            solutions designed to meet the diverse needs of organizations across
             South Africa and Africa. Our services include
           </p>
         </div>
@@ -350,17 +369,17 @@ export default function Enterprise() {
             </h2>
 
             <p className="hidden text-gray-500 md:mt-4 md:block">
-              Partner with Kamela International to access customised training
+              Partner with Kamela International to access customized training
               solutions that empower your employees, develop SMMEs, and build
-              talent pipelines for the future. Let's work together to create a
+              talent pipelines for the future. Lets work together to create a
               skilled, inclusive, and competitive workforce that drives your
-              organisation's success.
+              organizations success.
             </p>
 
             <div className="mt-4 md:mt-8">
               <a
                 href="/UI-Components/Contact"
-                className="inline-block rounded-3xl bg-white px-12 py-3 text-sm font-medium text-(--prime) transition hover:bg-(--prime) hover:text-white border-2 border-(--prime)"
+                className="px-8 py-2.5 mt-4 text-sm bg-linear-to-r from-indigo-600 to-orange-700 hover:scale-105 transition duration-300 text-white rounded-full"
               >
                 Get Started Today
               </a>

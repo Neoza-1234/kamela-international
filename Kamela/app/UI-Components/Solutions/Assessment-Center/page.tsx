@@ -72,7 +72,7 @@ export default function AssessmentCenter() {
             <div className=" flex justify-start items-center gap-3 flex-wrap">
               <p className="hero-paragraph max-w-lg mt-6">
                 Kamela International is a fully accredited QCTO Assessment
-                Centre, authorised to conduct External Integrated Summative
+                Centre, authorized to conduct External Integrated Summative
                 Assessments (EISA) for selected Occupational Qualifications.
               </p>
             </div>
@@ -307,7 +307,7 @@ export default function AssessmentCenter() {
             Ensure your learners complete their qualifications in a professional and supportive environment.
           </p>
           <Link href="https://forms.office.com/r/Zn5Sa6jdjC" target="_blank">
-          <button className="bg-white text-primary font-bold py-2 px-6 rounded-full hover:bg-gray-100 transition duration-300 cursor-pointer">
+          <button className="px-8 py-2.5 mt-4 text-sm bg-linear-to-r from-indigo-600 to-orange-700 hover:scale-105 transition duration-300 text-white rounded-full">
             Registration Form
           </button>
           </Link>

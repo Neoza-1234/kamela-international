@@ -1,5 +1,6 @@
+import Image from "next/image";
 import { notFound } from "next/navigation";
-import { getCourseBySlug } from "@/data/courses";
+import { getCourseBySlug, getAllCourseSlugs } from "@/data/courses";
 import {
   ArrowLeft,
   Clock,
@@ -12,14 +13,17 @@ import Link from "next/link";
 import CourseTabs from "@/components/CourseTabs";
 import Journey from "@/components/journey";
 
-// Generate static paths for all courses
+{
+  /* Generate static paths for all courses */
+}
 export async function generateStaticParams() {
-  const mod = await import("@/data/courses");
-  const slugs = await Promise.resolve(mod.getAllCourseSlugs());
+  const slugs = getAllCourseSlugs();
   return slugs.map((slug: string) => ({ slug }));
 }
 
-// Generate metadata for SEO
+{
+  /* Generate metadata for SEO */
+}
 export async function generateMetadata({
   params,
 }: {
@@ -40,20 +44,17 @@ export async function generateMetadata({
   };
 }
 
-export default async function Page({
+export default async function CoursePage({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-
-  const { coursesData } = await import("@/data/courses");
-  const course = coursesData.find((c) => c.slug === slug);
+  const course = getCourseBySlug(slug);
 
   if (!course) {
     notFound();
   }
-  
 
   return (
     <div className="min-h-screen mt-30">
@@ -148,9 +149,11 @@ export default async function Page({
             {/* Right Image */}
             <div className="lg:w-96 shrink-0">
               <div className="rounded-xl p-2">
-                <img
+                <Image
                   src={course.icon}
                   alt={course.name}
+                  height={80}
+                  width={100}
                   className="w-full h-80 object-cover rounded-xl"
                 />
               </div>
@@ -234,7 +237,7 @@ export default async function Page({
               id="section-program"
               className="bg-white rounded-2xl p-6 shadow-sm scroll-mt-24"
             >
-              <h2 className="mb-4">Program Details</h2>
+              <h2 className="text-2xl font-semibold mb-4">Program Details</h2>
               <div className="space-y-4">
                 <div>
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">
@@ -245,7 +248,7 @@ export default async function Page({
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-gray-800 mb-2">
+                  <h3 className="text-lg font-semibold text-gray-800 mb-2">
                     Learning Approach
                   </h3>
                   <p className="text-slate-700">
@@ -268,9 +271,13 @@ export default async function Page({
             </section>
 
             {/* Learning Journey */}
-
-            <section id="section-journey" className="p-6">
-              <h2 className="my-4">How Your Learning Journey Will Look Like</h2>
+            <section
+              id="section-journey"
+              className="bg-white rounded-2xl p-6 shadow-sm scroll-mt-24"
+            >
+              <h2 className="text-2xl font-semibold mb-4">
+                How Your Learning Journey Will Look Like
+              </h2>
               <Journey />
             </section>
 
@@ -279,20 +286,24 @@ export default async function Page({
               id="section-curriculum"
               className="bg-white rounded-2xl p-6 shadow-sm scroll-mt-24"
             >
-              <h2 className="mb-4">
+              <h2 className="text-2xl font-semibold mb-4">
                 Curriculum Modules
               </h2>
               <div className="space-y-4">
-                {course.modules.map((mod: any, idx: number) => (
-                  <div key={idx} className="border-l-4 border-blue-600 pl-4">
-                    <h3 className="font-semibold text-lg mb-2">{mod.title}</h3>
-                    <ul className="list-disc list-inside text-slate-600 space-y-1">
-                      {mod.topics.map((t: string, i: number) => (
-                        <li key={i}>{t}</li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
+                {course.modules.map(function (mod: any, idx: number) {
+                  return (
+                    <div key={idx} className="border-l-4 border-blue-600 pl-4">
+                      <h3 className="font-semibold text-lg mb-2">
+                        {mod.title}
+                      </h3>
+                      <ul className="list-disc list-inside text-slate-600 space-y-1">
+                        {mod.topics.map((t: string, i: number) => (
+                          <li key={i}>{t}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  );
+                })}
               </div>
             </section>
 

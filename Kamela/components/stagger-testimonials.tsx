@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import Image from 'next/image';
 
 
 const testimonials = [
@@ -27,7 +28,7 @@ const testimonials = [
   {
     tempId: 3,
     testimonial: "Kamela International conducts themselves with the highest level of professionalism and integrity during training initiatives. ",
-    by: "Donna-Lisa Mac Minn, Acting Deputy Director- Specialised Operation at Wits",
+    by: "Donna-Lisa Mac Minn, Acting Deputy Director- Specialized Operation at Wits",
     imgSrc: "/icons/wits.png"
   },
   {
@@ -95,8 +96,8 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
       className={cn(
         "absolute left-1/2 top-1/2 cursor-pointer border-2 p-8 transition-all duration-500 ease-in-out",
         isCenter 
-          ? "z-10 bg-black text-primary-foreground border-primary" 
-          : "z-0 bg-card text-card-foreground border-border hover:border-primary/50"
+          ? "z-10 bg-black text-white border-black" 
+          : "z-0 bg-white text-card-grey border-border hover:border-b-blue-500"
       )}
       style={{
         width: cardSize,
@@ -104,31 +105,33 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
         borderRadius: 20,
         transform: `
           translate(-50%, -50%) 
-          translateX(${(cardSize / 1.5) * position}px)
+          translateX(${(cardSize / 1.2) * position}px)
           translateY(${isCenter ? -65 : position % 2 ? 15 : -15}px)
           rotate(${isCenter ? 0 : position % 2 ? 2.5 : -2.5}deg)
         `,
-        boxShadow: isCenter ? "0px 8px 0px 4px hsl(var(--border))" : "0px 0px 0px 0px transparent"
+        boxShadow: isCenter ? "0px 8px 0px 4px hsl(var(--gray))" : "0px 0px 0px 0px transparent"
       }}
     >
      
-      <img
+      <Image
         src={testimonial.imgSrc}
         alt={`${testimonial.by.split(',')[0]}`}
-        className="mb-4 h-25 w-60 bg-muted object-cover object-top"
+        height={100}
+        width={100}
+        className="mb-4 bg-white object-cover object-top"
         style={{
-          boxShadow: "3px 3px 0px hsl(var(--background))"
+          boxShadow: "3px 3px 0px hsl var-gray"
         }}
       />
       <h3 className={cn(
         "text-base sm:text-xl",
         isCenter ? "text-primary-foreground" : "text-foreground"
       )}>
-        "{testimonial.testimonial}"
+        {testimonial.testimonial}
       </h3>
       <p className={cn(
         "absolute bottom-8 left-8 right-8 mt-2 italic",
-        isCenter ? "text-primary-foreground/80" : "text-muted-foreground"
+        isCenter ? "text-white" : "text-grey"
       )}>
         - {testimonial.by}
       </p>
@@ -161,7 +164,7 @@ export const StaggerTestimonials: React.FC = () => {
   useEffect(() => {
     const updateSize = () => {
       const { matches } = window.matchMedia("(min-width: 640px)");
-      setCardSize(matches ? 365 : 290);
+      setCardSize(matches ? 385 : 300);
     };
 
     updateSize();
@@ -193,7 +196,7 @@ export const StaggerTestimonials: React.FC = () => {
           onClick={() => handleMove(-1)}
           className={cn(
             "flex h-14 w-14 items-center justify-center text-2xl transition-colors rounded-2xl",
-            "bg-background border-2 border-border hover:bg-black hover:text-primary-foreground",
+            "bg-white border-2 border-border hover:bg-black hover:text-white",
             "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           )}
           aria-label="Previous testimonial"
@@ -204,7 +207,7 @@ export const StaggerTestimonials: React.FC = () => {
           onClick={() => handleMove(1)}
           className={cn(
             "flex h-14 w-14 items-center justify-center text-2xl transition-colors rounded-2xl",
-            "bg-background border-2 border-border hover:bg-black hover:text-primary-foreground",
+            "bg-white border-2 border-border hover:bg-black hover:text-white",
             "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           )}
           aria-label="Next testimonial"

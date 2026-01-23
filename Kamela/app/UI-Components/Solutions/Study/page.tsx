@@ -5,20 +5,23 @@ import Image from "next/image";
 import CourseSection from "@/components/coursecategories";
 
 import { useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 type TabId = "ict" | "business" | "governance" | "sales";
 
 export default function Study() {
   const searchParams = useSearchParams();
-  const [activeTab, setActiveTab] = useState<TabId>("ict");
 
-  useEffect(() => {
+  // Initialize state directly from searchParams
+  const getInitialTab = (): TabId => {
     const tab = searchParams.get("tab") as TabId;
     if (tab && ["ict", "business", "governance", "sales"].includes(tab)) {
-      setActiveTab(tab);
+      return tab;
     }
-  }, [searchParams]);
+    return "ict";
+  };
+
+  const [activeTab] = useState<TabId>(getInitialTab);
 
   return (
     <>
@@ -104,6 +107,7 @@ export default function Study() {
             </div>
           </main>
         </div>
+
         <CourseSection initialTab={activeTab} />
 
         {/* Why Choose Us Section */}
@@ -148,7 +152,7 @@ export default function Study() {
             </div>
             <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
               <i className="ri-rocket-2-fill text-white w-30 h-30 pb-3"></i>
-              <p className=" text-gray-100">Flexable Learning</p>
+              <p className=" text-gray-100">Flexible Learning</p>
               <p className=" text-gray-200">
                 Study anywhere with a mix of online learning, blended classes
                 and face-to-face support (program dependent)
@@ -172,13 +176,13 @@ export default function Study() {
           <div className="bg-black rounded-3xl p-8 text-center">
             <h2 className="text-white mb-4">Ready to take the next step?</h2>
             <p className="text-white mb-6">
-              Whether you're a student eager to learn or a professional looking
+              Whether you are a student eager to learn or a professional looking
               to grow, our courses are designed to help you succeed. After
-              exploring our programs, contact us today—let's shape your future
+              exploring our programs, contact us today—lets shape your future
               together!
             </p>
             <Link href="/UI-Components/Contact">
-              <button className="bg-white text-primary font-bold py-2 px-6 rounded-full hover:bg-gray-100 transition duration-300 cursor-pointer">
+              <button className="px-8 py-2.5 mt-4 text-sm bg-linear-to-r from-indigo-600 to-orange-700 hover:scale-105 transition duration-300 text-white rounded-full">
                 Contact Us Today
               </button>
             </Link>

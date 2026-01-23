@@ -36,7 +36,7 @@ export const coursesData: Course[] = [
     description:
       "Learning cloud administration fundamentals, including deployment, configuration, and management of cloud environments.",
     fullDescription:
-      "This comprehensive program prepares you for a career in cloud administration. You'll learn to deploy, configure, and manage cloud infrastructure across major platforms such as Micrososft Azure. The course covers essential skills in virtualization, security, monitoring, and automation.",
+      "This comprehensive program prepares you for a career in cloud administration. You'll learn to deploy, configure, and manage cloud infrastructure across major platforms such as Microsoft Azure. The course covers essential skills in virtualization, security, monitoring, and automation.",
     nqfLevel: 4,
     saqaid: "118699",
     credits: 149,
@@ -66,11 +66,11 @@ export const coursesData: Course[] = [
       {
         title: "Practical Skill Modules (55 Credits) ",
         topics: [
-          "Conduct Effective Sever Maintenance and Optimisation, 8 Credits",
+          "Conduct Effective Sever Maintenance and Optimization, 8 Credits",
           "Monitor On-Demand Availability of Data Storage, Storage Capacity and Storage Services over the Internet, 8 Credits",
           "Provide Cloud Network Administration and Support for Optimal Performance, 16 Credits",
           "Ensure Integrity of the Cloud Ecosystem by Implementing Security Measures, 8 Credits",
-          "Access and Visualise Structured Data Using Spreadsheets, 8 Credits",
+          "Access and Visualize Structured Data Using Spreadsheets, 8 Credits",
           "Participate in a Design Thinking for Innovation Workshop, 3 Credits",
           "Function Ethically and Effectively in the Workplace, 4 Credits",
         ],
@@ -156,14 +156,14 @@ export const coursesData: Course[] = [
       {
         title: "Practical Skill Modules (89 Credits)",
         topics: [
-          "Use Software to Communicate and Visualise Information, 3 Credits",
+          "Use Software to Communicate and Visualize Information, 3 Credits",
           "Use & Manage Spreadsheets and Workbooks, 3 Credits",
-          "Use Desktop Applications to Analyse, Visualise and Report on Data, 3 Credits",
-          "Use a Visual Analytics Platform and Visualisation Tools to Analyse, Visualise and report on Data, 3 Credits",
+          "Use Desktop Applications to Analyze, Visualize and Report on Data, 3 Credits",
+          "Use a Visual Analytics Platform and Visualization Tools to Analyze, Visualize and report on Data, 3 Credits",
           "Query and Massage Data, 3 Credits",
           "Apply Logical Thinking and Maths, 3 Credits",
           "Apply Code to use a Software Toolkit/Platform in the Field of Study or Employment, 3 Credits",
-          "Develop Software using HTML5, Opensource Frameworks and Libraries, 16 Credits",
+          "Develop Software using HTML5, Open-source Frameworks and Libraries, 16 Credits",
           "Design and Build Web Applications, Desktop Graphical User Interfaces or Mobile Apps, 8 Credits",
           "Use a Cloud Automation Platform to Create Solutions, 8 Credits",
           "Develop Software using Python, 12 Credits",
@@ -241,7 +241,7 @@ export const coursesData: Course[] = [
         title: "Knowledge Modules (53 Credits)",
         topics: [
           "Introduction to Cybersecurity, 8 Credits",
-          "Fundamentals of Network Security and Defence, 12 Credits",
+          "Fundamentals of Network Security and Defense, 12 Credits",
           "Cybersecurity and Cyber Threats and Attacks, 12 Credits",
           "Introduction to Cybersecurity Governance, Legislation and Ethics, 4 Credits",
           "Fundamentals of Design Thinking and Innovation, 1 Credit",
@@ -258,8 +258,8 @@ export const coursesData: Course[] = [
           "Assess Risks and Vulnerabilities and Current Security Measures, 20 Credits",
           "Implement Protection, Prevention and Detection Measures to Mitigate Risk, Violations and Vulnerabilities, 20 Credits",
           "Apply Logical Thinking and Maths, 6 Credits",
-          "Apply Basic Scriptwriting for Cybersecurity Toolsets, 4 Credits",
-          "Access and Visualise Structured Data Using Spreadsheets, 5 Credits",
+          "Apply Basic Scriptwriting for Cybersecurity Toolset, 4 Credits",
+          "Access and Visualize Structured Data Using Spreadsheets, 5 Credits",
           "Apply Design Thinking Methodologies, 4 Credits",
           "Function Ethically and Effectively as a Member of a Multidisciplinary Team, 5 Credits",
         ],
@@ -377,7 +377,7 @@ export const coursesData: Course[] = [
         "Learn both in-person and remote support techniques",
         "Build customer service excellence alongside technical skills",
         "Access to hardware labs and diagnostic tools for practical training",
-        "Gain access to recognized certifications such as CompTIA A+, CompTIA Network+, Micrososft and CISCO",
+        "Gain access to recognized certifications such as CompTIA A+, CompTIA Network+, Microsoft and CISCO",
       ],
     },
     programDetails: {
@@ -423,7 +423,7 @@ export const coursesData: Course[] = [
           "Basic Statistics for Data Analytics, 10 Credits",
           "Statistics Essentials for Data Analytics, 4 Credits",
           "Data Science and Data Analysis, 12 Credits",
-          " Data Analysis and Visualisation, 16 Credits",
+          " Data Analysis and Visualization, 16 Credits",
           "Governance, Legislation and Ethics, 3 Credits",
           "Design Thinking and Innovation, 4 Credits",
           "4IR and Future Skills, 1 Credit",
@@ -694,7 +694,7 @@ export const coursesData: Course[] = [
     description:
       "Learn supply chain operations, logistics management, and inventory control for efficient distribution.",
     fullDescription:
-      "Learn procurement, logistics and inventory management to optimise supply chain operations across industries.",
+      "Learn procurement, logistics and inventory management to optimize supply chain operations across industries.",
     nqfLevel: 5,
     saqaid: "110942",
     credits: 180,
@@ -711,7 +711,7 @@ export const coursesData: Course[] = [
       {
         title: "Knowledge Modules (84 Credits)",
         topics: [
-          "Introduction to Supply Chain Management, 10 Credits", 
+          "Introduction to Supply Chain Management, 10 Credits",
           "Demand Execution Management Operations, 10 Credits",
           "Transport and Distribution Operations, 10 Credits",
           "Inventory Management, 10 Credits",
@@ -731,7 +731,6 @@ export const coursesData: Course[] = [
           "Monitor Implementation of Demand Execution and Customer Relationship Activities, 8 Credits",
           "Monitor Execution of Operational Activities for Transportation, Warehousing and Production, 11 Credits",
           "Monitor Operational Procurement Related Activities, 5 Credits",
-
         ],
       },
       {
@@ -798,7 +797,7 @@ export const coursesData: Course[] = [
       {
         title: "Knowledge Modules (76 Credits)",
         topics: [
-          "Supply Chain Management Theory, 14 Credits", 
+          "Supply Chain Management Theory, 14 Credits",
           "Supply Chain Service Delivery Operational Planning, 19 Credits",
           "Operational Performance Management and Improvement, 16 Credits",
           "Risks, Compliance Management and Supply Chain Vulnerability, 12 Credits",
@@ -808,8 +807,8 @@ export const coursesData: Course[] = [
       {
         title: "Practical Skill Modules (68 Credits)",
         topics: [
-          "Translate the Supply Chain, Priorities, Objectives and Targets into Operational Plans and Performance Objectives, 14 Credits", 
-          "Align Supply Chain Operational Schedules with Associated Operational Plans and Performance Objectives, 10 Credits", 
+          "Translate the Supply Chain, Priorities, Objectives and Targets into Operational Plans and Performance Objectives, 14 Credits",
+          "Align Supply Chain Operational Schedules with Associated Operational Plans and Performance Objectives, 10 Credits",
           "Develop a Risk Management Strategy, 8 Credits",
           "Develop Procedures for the Implementation of Operational Plans, 12 Credits",
           "Determine Contract Specifications and Service Level Agreements, 6 Credits",
@@ -827,12 +826,12 @@ export const coursesData: Course[] = [
       },
     ],
     careerOpportunities: [
-      "Supply Chain Manager", 
-      "Procurement Manager", 
+      "Supply Chain Manager",
+      "Procurement Manager",
       "Operations Manager",
       "Distribution Manager",
       "Logistics Manager",
-     ],
+    ],
     purposeAndValue: {
       purpose:
         "The Occupational Certificate: Supply Chain Manager is designed to develop advanced supply chain leadership and operational management competencies. Learners gain the expertise to oversee end-to-end supply chain functions, including procurement, logistics, warehousing, demand forecasting, production planning, and compliance.",
@@ -988,16 +987,16 @@ export const coursesData: Course[] = [
       {
         title: "Knowledge Modules (75 Credits)",
         topics: [
-          "Role, Functions and Fundamentals of Office Supervision, 25 Credits", 
-          "Communications, 25 Credits.", 
-          "Internal Controls in an Office Environment, 25 Credits"
+          "Role, Functions and Fundamentals of Office Supervision, 25 Credits",
+          "Communications, 25 Credits.",
+          "Internal Controls in an Office Environment, 25 Credits",
         ],
       },
       {
         title: "Practical Skill Modules (75 Credits)",
         topics: [
-          "Provide Planning Support on Recruitment, Selection and Disciplinary Processes of an Organisation, 10 Credits", 
-          "Organising and Coordinating Work Activities, 10 Credits", 
+          "Provide Planning Support on Recruitment, Selection and Disciplinary Processes of an Organisation, 10 Credits",
+          "Organising and Coordinating Work Activities, 10 Credits",
           "Coaching and Mentoring of Personnel Clerks, Filing Clerks and Data Capturers in an Office Environment, 10 Credits",
           "Handle Internal Communications within an Office Environment, 15 Credits",
           "Handle Conflicts and Solve Problems within an Office Environment, 10 Credits",
@@ -1008,8 +1007,8 @@ export const coursesData: Course[] = [
       {
         title: "Work Experience Modules (90 Credits)",
         topics: [
-          "Recruitment, Selection and Discipline Maintenance Support, 10 Credits", 
-          "Scheduling and Coordination of Various Activities in and Outside Own Department, 15 Credits", 
+          "Recruitment, Selection and Discipline Maintenance Support, 10 Credits",
+          "Scheduling and Coordination of Various Activities in and Outside Own Department, 15 Credits",
           "Coaching, Mentoring and Team Building, 10 Credits",
           "Communications, 25 Credits",
           "Conflict Resolution in an Office, 10 Credits",
@@ -1019,12 +1018,11 @@ export const coursesData: Course[] = [
       },
     ],
     careerOpportunities: [
-      "Office Supervisor/Team Leader", 
+      "Office Supervisor/Team Leader",
       "Senior Administrative Officer",
       "Administration Team Leader",
       "Executive Assistant (Advanced Office Management)",
       "Operations Support Supervisor",
-
     ],
     purposeAndValue: {
       purpose:
@@ -1074,8 +1072,8 @@ export const coursesData: Course[] = [
       {
         title: "Knowledge Modules (42 Credits)",
         topics: [
-          "Introduction to Organisations and Human Resource Management, 4 Credits.", 
-          "Data Management and Interpretation, 12 Credits", 
+          "Introduction to Organisations and Human Resource Management, 4 Credits.",
+          "Data Management and Interpretation, 12 Credits",
           "Administration of Staff Procurement, 16 Credits",
           "Professional Administration for HRM Service Delivery, 6 Credits",
           "HRM Record Keeping, 4 Credits",
@@ -1084,8 +1082,8 @@ export const coursesData: Course[] = [
       {
         title: "Practical Skill Modules (42 Credits)",
         topics: [
-          "Collect and Process HRM Data, 12 Credits", 
-          "Coordinate and Provide Administrative Services for a Full Range of HRM Processes, 12 Credits", 
+          "Collect and Process HRM Data, 12 Credits",
+          "Coordinate and Provide Administrative Services for a Full Range of HRM Processes, 12 Credits",
           "Coordinate HRM Communication to Enhance Employment Relations, 8 Credits",
           "Compile, Maintain and ensure the Safeguarding of all HRM Records, 10 Credits",
         ],
@@ -1093,15 +1091,15 @@ export const coursesData: Course[] = [
       {
         title: "Work Experience Modules (36 Credits)",
         topics: [
-          "HRM Data Collection and Data Management Processes, 8 Credits", 
-          "Administrative Processes for Full Range of HRM Services and Processes, 12 Credits", 
+          "HRM Data Collection and Data Management Processes, 8 Credits",
+          "Administrative Processes for Full Range of HRM Services and Processes, 12 Credits",
           "Organisational Communication Processes, 8 Credits",
           "Processes for Compiling, Maintaining, and Securing HRM Records, 8 Credits",
         ],
       },
     ],
     careerOpportunities: [
-      "HR Administrator", 
+      "HR Administrator",
       "HR Assistant",
       "Recruitment Support Officer",
       "HR Clerk",
@@ -1109,7 +1107,7 @@ export const coursesData: Course[] = [
     ],
     purposeAndValue: {
       purpose:
-        "This qualification equips learners with practical and theoretical skills to support HR operations across organisations. Learners will develop competencies in managing HR administrative functions, maintaining employee records, assisting in recruitment, administering benefits, and ensuring compliance with HR policies and labour legislation.",
+        "This qualification equips learners with practical and theoretical skills to support HR operations across organizations. Learners will develop competencies in managing HR administrative functions, maintaining employee records, assisting in recruitment, administering benefits, and ensuring compliance with HR policies and labour legislation.",
       value: [
         "Learn essential HR systems and employee data management",
         "Understand employment legislation and compliance requirements",
@@ -1131,6 +1129,8 @@ export const coursesData: Course[] = [
       ],
     },
   },
+
+  // GOVERNANCE COURSES
   {
     slug: "quality-assurer",
     category: "governance",
@@ -1157,7 +1157,7 @@ export const coursesData: Course[] = [
       {
         title: "Knowledge Modules (38 Credits)",
         topics: [
-          "Quality Management and Quality Management Systems, 11 Credits", 
+          "Quality Management and Quality Management Systems, 11 Credits",
           "Quality Management and the 4th Industrial Revolution, 3 Credits",
           "Process Management, 6 Credits",
           "Fundamental Management Principles, 4 Credits",
@@ -1166,10 +1166,10 @@ export const coursesData: Course[] = [
           "Internal and External Stakeholders, 2 Credits",
         ],
       },
-       {
+      {
         title: "Practical Skill Modules (24 Credits)",
         topics: [
-          "Implement and Maintain Quality Assurance Processes in Compliance with Regulatory and Customer Requirements, 4 Credits", 
+          "Implement and Maintain Quality Assurance Processes in Compliance with Regulatory and Customer Requirements, 4 Credits",
           "Conduct Quality Assurance to Ensure Product/Service Conforms to Standards and Regulatory Requirements, 4 Credits",
           "Manage Documentation and Records within Quality Assurance Processes, 2 Credits",
           "Improve the Effectiveness and Efficiency of Quality Assurance Processes, 2 Credits",
@@ -1180,23 +1180,23 @@ export const coursesData: Course[] = [
           "Conduct Internal Audits of the Quality Management System Policies and Procedures, 4 Credits",
         ],
       },
-       {
+      {
         title: "Work Experience Modules (44 Credits)",
         topics: [
-          "Conduct Quality Assurance at Various Stages of the Process, 28 Credits", 
+          "Conduct Quality Assurance at Various Stages of the Process, 28 Credits",
           "Maintain Productive and Effective Work Teams for a Quality Business Unit, 16 Credits",
         ],
       },
     ],
     careerOpportunities: [
-      "Quality Assurer", 
+      "Quality Assurer",
       "QA Inspector",
       "Junior Quality Auditor",
       "QA Technician",
     ],
     purposeAndValue: {
       purpose:
-        "The Occupational Certificate: Quality Assurer develops learners’ competencies in monitoring, evaluating, and ensuring compliance with quality standards across various organisational contexts. This qualification equips learners with the technical, procedural, and analytical skills necessary to implement and maintain robust quality assurance systems, conduct audits, and support continuous improvement initiatives.",
+        "The Occupational Certificate: Quality Assurer develops learner's competencies in monitoring, evaluating, and ensuring compliance with quality standards across various organizational contexts. This qualification equips learners with the technical, procedural, and analytical skills necessary to implement and maintain robust quality assurance systems, conduct audits, and support continuous improvement initiatives.",
       value: [
         "Master quality inspection and testing methodologies",
         "Learn ISO and industry quality standards",
@@ -1217,6 +1217,7 @@ export const coursesData: Course[] = [
       ],
     },
   },
+  // SALES AND RETAIL COURSES
   {
     slug: "marketing-coordinator",
     category: "sales",
@@ -1240,8 +1241,8 @@ export const coursesData: Course[] = [
       {
         title: "Knowledge Modules (36 Credits)",
         topics: [
-          "Marketing Business skills, 5 Credits", 
-          "Ready for Work Standards, 4 Credits", 
+          "Marketing Business skills, 5 Credits",
+          "Ready for Work Standards, 4 Credits",
           "Campaign /Project Management, 4 Credits",
           "Marketing Business Tools, 8 Credits",
           "Business Calculations, 4 Credits",
@@ -1253,8 +1254,8 @@ export const coursesData: Course[] = [
       {
         title: "Practical Skill Modules (36 Credits)",
         topics: [
-          "Coordinate Key Deliverables of Products and Services to a Target Market, 7 Credits", 
-          "Support the Deliverables Across the Full Spectrum of the Communication Mix, 8 Credits", 
+          "Coordinate Key Deliverables of Products and Services to a Target Market, 7 Credits",
+          "Support the Deliverables Across the Full Spectrum of the Communication Mix, 8 Credits",
           "Coordinate Marketing and Sales Activities, 8 Credits",
           "Coordinate Customer Relationship Management (CRM) activities, 7 Credits",
           "Undertake Administrative Tasks Related to Marketing Metrics and Processing of Payments, 6 Credits",
@@ -1263,15 +1264,15 @@ export const coursesData: Course[] = [
       {
         title: "Work Experience Modules (103 Credits)",
         topics: [
-          "Processes and Procedures for Coordinating Key Deliverables of Products and Services to a Target Market, 24 Credits", 
-          "Processes and Procedures for Supporting the Deliverables Across the Full Spectrum of the Communication Mix, 20 Credits", 
+          "Processes and Procedures for Coordinating Key Deliverables of Products and Services to a Target Market, 24 Credits",
+          "Processes and Procedures for Supporting the Deliverables Across the Full Spectrum of the Communication Mix, 20 Credits",
           "Processes and Procedures for Coordinating Marketing and Sales Activities, 27 Credits",
           "Processes and Procedures for Coordinating Customer Relationship Management Activities, 17 Credits",
           " Processes and Procedures within the Scope of Administrative Tasks Related to Marketing Metrics and Processing of Payments, 15 Credits",
         ],
       },
     ],
-    
+
     careerOpportunities: ["Marketing Coordinator", "Marketing Assistant"],
     purposeAndValue: {
       purpose:
@@ -1320,30 +1321,30 @@ export const coursesData: Course[] = [
       {
         title: "Knowledge Modules (25 Credits)",
         topics: [
-          "Customer Relationship Management, 10 Credits", 
-          "Marketing, Promotions and Sales, 10 Credits", 
+          "Customer Relationship Management, 10 Credits",
+          "Marketing, Promotions and Sales, 10 Credits",
           "Competitors and Positioning Strategies, 5 Credits",
         ],
       },
       {
         title: "Practical Skill Modules (45 Credits)",
         topics: [
-          "Manage Customer Relationships within the Scope of a Sales Representative in the Wholesale and Retail Industry, Credits 15", 
-          "Market, Promote and Sell Products, 20 Credits", 
+          "Manage Customer Relationships within the Scope of a Sales Representative in the Wholesale and Retail Industry, Credits 15",
+          "Market, Promote and Sell Products, 20 Credits",
           "Implement Product-Positioning Strategies within the Competitive Environment, 10 Credits",
         ],
       },
       {
         title: "Work Experience Modules (85 Credits)",
         topics: [
-          "Management of Customer Relationships within the Scope of a Sales Representative in the Wholesale and Retail Industry, 30 Credits", 
-          "Marketing, Promoting and Selling Products, 30 Credits", 
+          "Management of Customer Relationships within the Scope of a Sales Representative in the Wholesale and Retail Industry, 30 Credits",
+          "Marketing, Promoting and Selling Products, 30 Credits",
           "Implementation of Product Positioning Strategies within the Competitive Environment, 25 Credits",
         ],
       },
     ],
     careerOpportunities: [
-      "Sales Representative", 
+      "Sales Representative",
       "Sales Consultant",
       "Field Sales Agent",
       "Retail Sales Associate",
@@ -1398,8 +1399,8 @@ export const coursesData: Course[] = [
       {
         title: "Knowledge Modules (20 Credits)",
         topics: [
-          "Concepts and principles of supervising Wholesale or Retail staff, 10 Credits", 
-          "Concepts and principles of monitoring and improving performance, 4 Credits", 
+          "Concepts and principles of supervising Wholesale or Retail staff, 10 Credits",
+          "Concepts and principles of monitoring and improving performance, 4 Credits",
           "Concepts and principles for the implementation and maintenance of retail or wholesale operations, 3 Credits",
           "Concepts and principles of enhancing customer service, 3 Credits",
         ],
@@ -1407,8 +1408,8 @@ export const coursesData: Course[] = [
       {
         title: "Practical Skill Modules (20 Credits)",
         topics: [
-          "Supervise retail or wholesale staff, 6 Credits", 
-          "Monitor and control the work performance of a team, 6 Credits", 
+          "Supervise retail or wholesale staff, 6 Credits",
+          "Monitor and control the work performance of a team, 6 Credits",
           "Supervise operations, 4 Credits",
           "Supervise service to internal and external retail and wholesale customers, 2 Credits",
           "Resolve queries and complaints from internal and external retail and wholesale customers, 2 Credits",
@@ -1417,14 +1418,14 @@ export const coursesData: Course[] = [
       {
         title: "Work Experience Modules (60 Credits)",
         topics: [
-          "Processes and procedures for supervising wholesale or retail staff, 30 Credits", 
-          "Processes and procedures for supervising, implementing and maintaining processes and procedures in a specific area of responsibility in a wholesale or retail outlet, 20 Credits", 
+          "Processes and procedures for supervising wholesale or retail staff, 30 Credits",
+          "Processes and procedures for supervising, implementing and maintaining processes and procedures in a specific area of responsibility in a wholesale or retail outlet, 20 Credits",
           "Processes and procedures for enhancing customer service in a wholesale or retail outlet, 10 Credits",
         ],
       },
     ],
     careerOpportunities: [
-      "Retail Supervisor", 
+      "Retail Supervisor",
       "Store Manager",
       "Customer Service Lead",
       "Merchandising Controller",
@@ -1447,7 +1448,7 @@ export const coursesData: Course[] = [
       learningApproach:
         "Practical retail training through store simulations, inventory management exercises, team supervision scenarios, and customer service role-plays. Includes POS system training, merchandising workshops, and supervisory leadership development sessions.",
       requirements: [
-        "Grade 12 qualification with mathematics litercay and communication",
+        "Grade 12 qualification with mathematics literacy and communication",
         "Recommended: retail or customer service experience",
         "Strong interpersonal and organizational skills",
       ],

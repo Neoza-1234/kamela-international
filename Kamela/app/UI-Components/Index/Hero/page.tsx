@@ -105,7 +105,7 @@ export default function Hero() {
 
           <div className="hero-img-container relative flex justify-around items-center">
             <Image
-              src="/icons/hero.png"
+              src="/icons/hero-img.png"
               alt="Hero Image"
               width={400}
               height={400}

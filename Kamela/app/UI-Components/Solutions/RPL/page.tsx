@@ -1,49 +1,64 @@
 import Image from "next/image";
 import Link from "next/link";
+import {
+  Code,
+  Computer,
+  FingerprintPattern,
+  Database,
+  FolderKanban,
+  BookOpenCheck,
+  Headset,
+  Store,
+  Container,
+  Forklift,
+  ChartCandlestick,
+  BadgeDollarSign,
+  Briefcase,
+  Building2,
+  UsersRound,
+} from "lucide-react";
 
 export default function RPL() {
   return (
     <>
-     <svg
-          className="size-full absolute -z-10 inset-0"
-          width="1440"
-          height="720"
-          viewBox="0 0 1440 720"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            stroke="#D9D9D9"
-            strokeOpacity=".7"
-            d="M-15.227 702.342H1439.7"
-          />
-          <circle
-            cx="711.819"
-            cy="372.562"
-            r="308.334"
-            stroke="#D9D9D9"
-            strokeOpacity=".7"
-          />
-          <circle
-            cx="16.942"
-            cy="20.834"
-            r="308.334"
-            stroke="#D9D9D9"
-            strokeOpacity=".7"
-          />
-          <path
-            stroke="#D9D9D9"
-            strokeOpacity=".7"
-            d="M-15.227 573.66H1439.7M-15.227 164.029H1439.7"
-          />
-          <circle
-            cx="782.595"
-            cy="411.166"
-            r="308.334"
-            stroke="#D9D9D9"
-            strokeOpacity=".7"
-          />
-        </svg>
+      {/* BG SVG */}
+
+      <svg
+        className="size-full absolute -z-10 inset-0"
+        width="1440"
+        height="720"
+        viewBox="0 0 1440 720"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path stroke="#D9D9D9" strokeOpacity=".7" d="M-15.227 702.342H1439.7" />
+        <circle
+          cx="711.819"
+          cy="372.562"
+          r="308.334"
+          stroke="#D9D9D9"
+          strokeOpacity=".7"
+        />
+        <circle
+          cx="16.942"
+          cy="20.834"
+          r="308.334"
+          stroke="#D9D9D9"
+          strokeOpacity=".7"
+        />
+        <path
+          stroke="#D9D9D9"
+          strokeOpacity=".7"
+          d="M-15.227 573.66H1439.7M-15.227 164.029H1439.7"
+        />
+        <circle
+          cx="782.595"
+          cy="411.166"
+          r="308.334"
+          stroke="#D9D9D9"
+          strokeOpacity=".7"
+        />
+      </svg>
 
       <div className="flex flex-wrap justify-start items-center space-x-2 text-sm text-gray-500 font-medium mt-30 px-10 md:px-16 lg:px-24 xl:px-32 mb-3">
         <button type="button" aria-label="Home">
@@ -120,10 +135,11 @@ export default function RPL() {
               RPL is particularly beneficial for those who have gained
               significant skills and knowledge through practical experience but
               may not have formal qualifications to demonstrate their
-              capabilities. By recognizing prior learning, we at Kamela International help bridge the
-              gap between experience and formal education, enabling individuals
-              to advance their careers, enhance employability, and pursue
-              further education or training opportunities.
+              capabilities. By recognizing prior learning, we at Kamela
+              International help bridge the gap between experience and formal
+              education, enabling individuals to advance their careers, enhance
+              employability, and pursue further education or training
+              opportunities.
             </p>
           </div>
         </div>
@@ -184,7 +200,7 @@ export default function RPL() {
             <i className="ri-check-double-line w-30 h-30 pb-3"></i>
             <p className="font-bold">Increases confidence and self-esteem</p>
             <p>
-              Having prior learning recognized can boost an individual's
+              Having prior learning recognized can boost an individuals
               confidence in their abilities and knowledge.
             </p>
           </div>
@@ -248,8 +264,8 @@ export default function RPL() {
               be documented and assessed.
             </li>
             <li>
-              <i className="ri-check-double-line w-30 h-30 pb-3"></i>
-              A comprehensive portfolio of evidence, including work samples,
+              <i className="ri-check-double-line w-30 h-30 pb-3"></i>A
+              comprehensive portfolio of evidence, including work samples,
               references, and other supporting documents, is typically required.
             </li>
             <li>
@@ -281,70 +297,101 @@ export default function RPL() {
         </h2>
 
         <section className="flex flex-col justify-center items-center gap-6">
-        <div className="relative max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
-            <i className="ri-code-s-slash-line"></i>
-            <p className="font-bold">Occupational Certificate: Software Developer</p>
+          <div className="relative max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+              <Code />
+              <p className="font-bold">
+                Occupational Certificate: Software Developer
+              </p>
+            </div>
+            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+              <Computer />
+              <p className="font-bold">
+                Occupational Certificate: Computer Technician
+              </p>
+            </div>
+            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+              <FingerprintPattern />
+              <p className="font-bold">
+                Occupational Certificate: Cybersecurity Analyst
+              </p>
+            </div>
+            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+              <Database />
+              <p className="font-bold">
+                Occupational Certificate: Data Science Practitioner
+              </p>
+            </div>
+            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+              <FolderKanban />
+              <p className="font-bold">
+                Occupational Certificate: Project Manager
+              </p>
+            </div>
+            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+              <BookOpenCheck />
+              <p className="font-bold">
+                Occupational Certificate: Quality Assurer
+              </p>
+            </div>
+            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+              <Headset />
+              <p className="font-bold">
+                Occupational Certificate: Contact Centre Manager
+              </p>
+            </div>
+            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+              <Store />
+              <p className="font-bold">
+                {" "}
+                Occupational Certificate: Retail Supervisor
+              </p>
+            </div>
+            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+              <Container />
+              <p className="font-bold">
+                Occupational Certificate: Supply Chain Practitioner{" "}
+              </p>
+            </div>
+            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+              <Forklift />
+              <p className="font-bold">
+                Occupational Certificate: Supply Chain Manager
+              </p>
+            </div>
+            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+              <ChartCandlestick />
+              <p className="font-bold">
+                Occupational Certificate: Marketing Coordinator
+              </p>
+            </div>
+            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+              <BadgeDollarSign />
+              <p className="font-bold">
+                National Occupational Certificate: Sales Representative
+              </p>
+            </div>
+            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+              <Briefcase />
+              <p className="font-bold">
+                Occupational Certificate: Office Administrator
+              </p>
+            </div>
+            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+              <Building2 />
+              <p className="font-bold">
+                Occupational Certificate: Office Supervisor
+              </p>
+            </div>
+            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+              <UsersRound />
+              <p className="font-bold">
+                Higher Occupational Certificate: Human Resource Management
+                Administrator
+              </p>
+            </div>
           </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
-            <i className="ri-computer-line"></i>
-            <p className="font-bold">Occupational Certificate: Computer Technician</p>
-          </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
-            <i className="ri-lock-password-line"></i>
-            <p className="font-bold">Occupational Certificate: Cybersecurity Analyst</p>
-          </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
-            <i className="ri-numbers-line"></i>
-            <p className="font-bold">Occupational Certificate: Data Science Practitioner</p>
-          </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
-            <i className="ri-trello-line"></i>
-            <p className="font-bold">Occupational Certificate: Project Manager</p>
-          </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
-            <i className="ri-verified-badge-line"></i>
-            <p className="font-bold">Occupational Certificate: Quality Assurer</p>
-          </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
-            <i className="ri-contacts-book-line"></i>
-            <p className="font-bold">Occupational Certificate: Contact Centre Manager</p>
-          </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
-            <i className="ri-shopping-bag-4-line"></i>
-            <p className="font-bold"> Occupational Certificate: Retail Supervisor</p>
-          </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
-            <i className="ri-truck-line"></i>
-            <p className="font-bold">Occupational Certificate: Supply Chain Practitioner </p>
-          </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
-            <i className="ri-ai-generate-3d-line"></i>
-            <p className="font-bold">Occupational Certificate: Supply Chain Manager</p>
-          </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
-            <i className="ri-advertisement-line"></i>
-            <p className="font-bold">Occupational Certificate: Marketing Coordinator</p>
-          </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
-            <i className="ri-store-2-line"></i>
-            <p className="font-bold">National Occupational Certificate: Sales Representative</p>
-          </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
-            <i className="ri-building-2-line"></i>
-            <p className="font-bold">Occupational Certificate: Office Administrator</p>
-          </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
-            <i className="ri-eye-2-line"></i>
-            <p className="font-bold">Occupational Certificate: Office Supervisor</p>
-          </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
-            <i className="ri-team-line"></i>
-            <p className="font-bold">"Higher Occupational Certificate: Human Resource Management Administrator</p>
-          </div>
-        </div>
-      </section>
-        
+        </section>
       </div>
 
       {/* CTA Section */}
@@ -356,16 +403,16 @@ export default function RPL() {
             in your career.
           </p>
           <div className="flex justify-center items-center gap-4">
-          <Link href="/UI-Components/Contact">
-            <button className="bg-white text-primary font-bold py-2 px-6 rounded-full hover:bg-gray-100 transition duration-300 cursor-pointer">
-              Book A Free Consultation 
-            </button>
-          </Link>
-          <Link href="https://forms.office.com/r/4BMZTXFiEb" target="_blank">
-            <button className="bg-white text-primary font-bold py-2 px-6 rounded-full hover:bg-gray-100 transition duration-300 cursor-pointer">
-              RPL Registration 
-            </button>
-          </Link>
+            <Link href="/UI-Components/Contact">
+              <button className="px-8 py-2.5 mt-4 text-sm bg-linear-to-r from-indigo-600 to-orange-700 hover:scale-105 transition duration-300 text-white rounded-full cursor-pointer">
+                Book A Free Consultation
+              </button>
+            </Link>
+            <Link href="https://forms.office.com/r/4BMZTXFiEb" target="_blank">
+              <button className="px-8 py-2.5 mt-4 text-sm bg-linear-to-r from-indigo-600 to-orange-700 hover:scale-105 transition duration-300 text-white rounded-full cursor-pointer">
+                RPL Registration
+              </button>
+            </Link>
           </div>
         </div>
       </div>

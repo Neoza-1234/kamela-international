@@ -1,10 +1,8 @@
-"use client";
-
 import Image from "next/image";
-import { motion } from "motion/react";
-import WorldMap from "@/components/ui/world-map";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import Link from "next/link";
+import AfricanImpact from "@/components/worldmap";
+import {Medal, Handshake, Earth, Lightbulb, Waypoints, HandFist} from "lucide-react"
 
 const ImageHeader = ({ src, alt }: { src: string; alt: string }) => (
   <div className="flex flex-1 w-full h-full min-h-24 rounded-xl overflow-hidden relative">
@@ -17,11 +15,6 @@ const ImageHeader = ({ src, alt }: { src: string; alt: string }) => (
   </div>
 );
 
-function BentoData() {
-  return (
-    <div className="flex flex-1 w-full h-full min-h-24 rounded-3xl bg-linear-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
-  );
-}
 const items = [
   {
     title: "Information Technology",
@@ -33,7 +26,7 @@ const items = [
     title: "Business Administration and Management",
     description:
       "Explore essential business skills including project management, human resources and marketing",
-    header: <ImageHeader src="/bussiness.jpg" alt="Business Image" />,
+    header: <ImageHeader src="/business.jpg" alt="Business Image" />,
   },
   {
     title: "Leadership, Supervision & Project Management",
@@ -159,7 +152,7 @@ export default function AboutUs() {
                   professionals across Africa.
                 </p>
                 <p className="mb-8 text-base text-body-color dark:text-dark-6">
-                  We partner with government entities, universities, corporates,
+                  We partner with government entities, universities, cooperates,
                   and global technology providers to deliver programs that
                   address Africa's most urgent needs: employability, innovation,
                   productivity, and economic growth.
@@ -173,16 +166,14 @@ export default function AboutUs() {
       {/* ======= Core Values Section ======= */}
 
       <section className="py-20 px-4 bg-black flex flex-col justify-center items-center gap-6">
-        <h3 className="px-4 h-8 text-slate-200 rounded-lg">
-          Our Core Values
-        </h3>
+        <h3 className="px-4 h-8 text-slate-200 rounded-lg">Our Core Values</h3>
         <h2 className=" md:text-[40px]/12 text-gray-100 max-w-lg text-center leading-tight">
           Our values define our identity, drive our decisions, and shape every
           learner and client experience.
         </h2>
         <div className="relative max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
           <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
-            <i className="ri-medal-fill text-white w-30 h-30 pb-3"></i>
+            <Medal className="text-white"/>
             <p className=" text-gray-100">Excellence</p>
             <p className=" text-gray-200">
               We maintain uncompromising quality across curriculum design,
@@ -191,7 +182,7 @@ export default function AboutUs() {
             </p>
           </div>
           <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
-            <i className="ri-shake-hands-fill text-white w-30 h-30 pb-3"></i>
+            <Handshake className="text-white" />
             <p className=" text-gray-100">Integrity</p>
             <p className=" text-gray-200">
               We operate with transparency, accountability, and ethical
@@ -200,7 +191,7 @@ export default function AboutUs() {
             </p>
           </div>
           <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
-            <i className="ri-lightbulb-ai-fill text-white w-30 h-30 pb-3"></i>
+            <Lightbulb className="text-white"/>
             <p className=" text-gray-100">Innovation</p>
             <p className=" text-gray-200">
               We embrace digital learning, modern pedagogies, artificial
@@ -209,7 +200,7 @@ export default function AboutUs() {
             </p>
           </div>
           <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
-            <i className="ri-team-fill text-white w-30 h-30 pb-3"></i>
+            <Waypoints className="text-white"/>
             <p className=" text-gray-100">Collaboration</p>
             <p className=" text-gray-200">
               We build strong relationships with industry partners to ensure
@@ -217,16 +208,16 @@ export default function AboutUs() {
             </p>
           </div>
           <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
-            <i className="ri-rocket-2-fill text-white w-30 h-30 pb-3"></i>
+            < HandFist className="text-white"/>
             <p className=" text-gray-100">Empowerment</p>
             <p className=" text-gray-200">
-              We uplift individuals, organisations, and communities by creating
+              We uplift individuals, organizations, and communities by creating
               pathways to employment, entrepreneurship, and economic
               participation.
             </p>
           </div>
           <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
-            <i className="ri-earth-fill text-white w-30 h-30 pb-3"></i>
+            <Earth className="text-white"/>
             <p className=" text-gray-100">Inclusivity</p>
             <p className=" text-gray-200">
               We provide equitable access to education for youth, unemployed
@@ -246,7 +237,7 @@ export default function AboutUs() {
               Our Expanded <span className="text-(--prime)">Vision</span>
             </h2>
             <p className="md:text-lg max-w-2xl mx-auto py-6 px-6">
-              To be the recognised leader in occupational training, digital
+              To be the recognized leader in occupational training, digital
               transformation, and competency assessment across Southern
               Africa—producing a workforce that is innovative, future-ready, and
               economically impactful. Our long-term goal is to train and empower
@@ -260,7 +251,7 @@ export default function AboutUs() {
               Our Institutional <span className="text-(--prime)">Mission</span>
             </h2>
             <p className="md:text-lg max-w-2xl mx-auto py-6 px-6">
-              We exist to empower individuals and organisations through
+              We exist to empower individuals and organizations through
               excellence in accredited skills development. We are dedicated to:
             </p>
 
@@ -314,65 +305,7 @@ export default function AboutUs() {
 
       {/* ======= World Map ======= */}
 
-      <div className=" py-40 dark:bg-black bg-white w-full">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="md:text-4xl dark:text-white text-black">
-            Our Footprint Across{" "}
-            <span className="text-(--prime)">
-              {" Africa".split("").map((word, idx) => (
-                <motion.span
-                  key={idx}
-                  className="inline-block"
-                  initial={{ x: -10, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: idx * 0.04 }}
-                >
-                  {word}
-                </motion.span>
-              ))}
-            </span>
-          </h2>
-          <p className=" md:text-lg text-neutral-500 max-w-2xl mx-auto py-6 px-6">
-            Kamela International delivers training and workforce development
-            solutions within South Africa and across the African continent.
-          </p>
-        </div>
-        <WorldMap
-          dots={[
-            {
-              start: {
-                lat: -45.1076,
-                lng: 28.0567,
-              }, //  Sandton, South Africa
-              end: {
-                lat: -22.57,
-                lng: 17.1,
-              }, // Windhoek, Namibia
-            },
-            {
-              start: { lat: -45.1076, lng: 28.0567 }, // Sandton, South Africa
-              end: { lat: -17.8292, lng: 31.054 }, // Harare, Zimbabwe
-            },
-            {
-              start: { lat: -17.8292, lng: 31.054 }, // Harare, Zimbabwe
-              end: { lat: -16.2921, lng: 36.8219 }, // Nairobi, Kenya
-            },
-
-            {
-              start: { lat: -45.1076, lng: 28.0567 }, // Sandton, South Africa
-              end: { lat: -25.9653, lng:32.5892 }, // Maputo, Mozambique 
-            },
-            {
-              start: { lat: -45.1076, lng: 28.0567 }, // Sandton, South Africa
-              end: { lat: -15.4167, lng: 28.2833 }, // Lusaka, Zambia
-            },
-            {
-              start: { lat: -45.1076, lng: 28.0567 }, // Sandton, South Africa
-              end: { lat: 25.2048, lng: 55.2708 }, // Dubai
-            },
-          ]}
-        />
-      </div>
+      <AfricanImpact />
 
       {/* ======= Program Focus Area ======= */}
 
@@ -400,8 +333,8 @@ export default function AboutUs() {
                   i === 3 || i === 6
                     ? "md:col-span-4"
                     : i === 7 || i === 8
-                    ? "md:col-span-3"
-                    : "md:col-span-2"
+                      ? "md:col-span-3"
+                      : "md:col-span-2"
                 }
               />
             ))}
@@ -425,12 +358,12 @@ export default function AboutUs() {
         </h1>
         <div className="h-0.75 w-32 my-1 bg-linear-to-l from-transparent to-blue-700"></div>
         <p className="md:text-base text-white max-w-xl pt-5">
-          Whether you're advancing your own career or strengthening your
+          Whether you are advancing your own career or strengthening your
           workforce, we deliver the training that transforms potential into
           performance
         </p>
         <Link href="/UI-Components/Contact">
-          <button className="px-8 py-2.5 mt-4 text-sm bg-(--prime) hover:scale-105 transition duration-300 text-white rounded-full cursor-pointer border border-transparent hover:border-white">
+          <button className="px-8 py-2.5 mt-4 text-sm bg-linear-to-r from-indigo-600 to-orange-700 hover:scale-105 transition duration-300 text-white rounded-full">
             Book A Free Consultation
           </button>
         </Link>

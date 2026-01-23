@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 
 import {
@@ -27,21 +28,21 @@ const defaultFeatures: FeatureItem[] = [
     title: "Early-Stage Talent Development",
     image: "/icons/talent-development.svg",
     description:
-      "We help organisations transform new entrants into high-performing, work-ready professionals. This includes include workplace readiness, digital literacy, communication & professional conduct, professional writing & reporting, professional writing & reporting, customer service excellence and Basic project management. These programs are ideally suited for interns, graduates, entry-level employees, apprentices and learnership candidates.",
+      "We help organizations transform new entrants into high-performing, work-ready professionals. This includes include workplace readiness, digital literacy, communication & professional conduct, professional writing & reporting, professional writing & reporting, customer service excellence and Basic project management. These programs are ideally suited for interns, graduates, entry-level employees, apprentices and learnership candidates.",
   },
   {
     id: 2,
-    title: "Talent Re-Skilling & Upskilling Solutions",
+    title: "Talent Re-Skilling & Up-skilling Solutions",
     image: "/icons/upskilling.svg",
     description:
-      "We design reskilling programmes to help companies adopt new technologies, improve productivity, and remain competitive. Our focus areas include: Information Technology, Business & Administration, Retail & Sales.",
+      "We design re-skilling programmes to help companies adopt new technologies, improve productivity, and remain competitive. Our focus areas include: Information Technology, Business & Administration, Retail & Sales.",
   },
   {
     id: 3,
     title: "BBBEE-aligned Enterprise Development",
     image: "/icons/bbbee.svg",
     description:
-      "We support SMMEs with skills development as well as digital upskilling, helping them to grow and contribute to your BBBEE scorecard.",
+      "We support SMMEs with skills development as well as digital up-skilling, helping them to grow and contribute to your BBBEE scorecard.",
   },
   {
     id: 4,
@@ -55,14 +56,14 @@ const defaultFeatures: FeatureItem[] = [
     title: "Work Integrated Learning (WIL) Solutions",
     image: "/icons/wil.svg",
     description:
-      "We support employee development and organisational performance through practical, workplace-driven learning experiences. Our focus areas include leadership & supervisory skills, customer service excellence, negotiation & conflict management, project management fundamentals, emotional intelligence, time management, workplace problem solving  and financial literacy.",
+      "We support employee development and organizational performance through practical, workplace-driven learning experiences. Our focus areas include leadership & supervisory skills, customer service excellence, negotiation & conflict management, project management fundamentals, emotional intelligence, time management, workplace problem solving  and financial literacy.",
   },
   {
     id: 6,
     title: "Recruitment as a Service (RaaS)",
     image: "/icons/recruitment.svg",
     description:
-      "We provide end-to-end recruitment and placement tailored for internships, learnerships, graduate programmes and entry-level positions, ensuring a seamless hiring process for organisations seeking fresh talent.",
+      "We provide end-to-end recruitment and placement tailored for internships, learnerships, graduate programmes and entry-level positions, ensuring a seamless hiring process for organizations seeking fresh talent.",
   },
 ];
 
@@ -85,25 +86,27 @@ const Feature197 = ({ features = defaultFeatures }: Feature197Props) => {
                     }}
                     className="cursor-pointer py-5 no-underline! transition"
                   >
-                    <h6
+                    <h2
                       className={`text-xl font-semibold ${
                         tab.id === activeTabId
-                          ? "text-foreground"
-                          : "text-muted-foreground"
+                          ? "text-black"
+                          : "text-gray-600"
                       }`}
                     >
                       {tab.title}
-                    </h6>
+                    </h2>
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="mt-3 text-muted-foreground">
+                    <p className="mt-3 text-gray-500">
                       {tab.description}
                     </p>
                     <div className="mt-4 md:hidden">
-                      <img
+                      <Image
                         src={tab.image}
                         alt={tab.title}
-                        className="h-full max-h-80 w-full rounded-md object-cover"
+                        height={500}
+                        width={500}
+                        className="h-full max-h-80 w-full object-cover"
                       />
                     </div>
                   </AccordionContent>
@@ -112,10 +115,12 @@ const Feature197 = ({ features = defaultFeatures }: Feature197Props) => {
             </Accordion>
           </div>
           <div className="relative m-auto hidden w-1/2 overflow-hidden rounded-xl md:block">
-            <img
+            <Image
               src={activeImage}
               alt="Feature preview"
-              className="aspect-4/3 rounded-md object-cover pl-4"
+              width={500}
+              height={500}
+              className="aspect-4/3 object-cover pl-4"
             />
           </div>
         </div>

@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
-import { p } from "framer-motion/client";
 import Navbar from "./components/Navbar/navbar";
 import Footer from "./components/Footer/footer";
+import 'remixicon/fonts/remixicon.css';
+
 
 const inter = Inter({
   subsets: ["latin"],

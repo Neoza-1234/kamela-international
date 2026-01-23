@@ -1,3 +1,4 @@
+"use client"
 
 import React from "react";
 import { Book, Settings, BriefcaseBusiness, Medal } from "lucide-react";
@@ -14,7 +15,7 @@ const Journey = () => {
       <div className="grid gap-4 grid-cols-2 lg:grid-cols-4">
         <Card
           title="1.Theory Modules"
-          subtitle="EISA Preperation Test"
+          subtitle="EISA Preparation Test"
           Icon={Book}
         />
         <Card 
@@ -42,7 +43,7 @@ const Card: React.FC<CardProps> = ({ title, subtitle, Icon,}) => {
     <a
       className="w-full p-4 rounded-3xl border border-slate-300 relative overflow-hidden group bg-white"
     >
-      <div className="absolute inset-0 bg-secondary translate-y-full group-hover:translate-y-[0%] transition-transform duration-300" />
+      <div className="absolute inset-0 bg-(--secondary) translate-y-full group-hover:translate-y-[0%] transition-transform duration-300" />
 
       <Icon className="absolute z-10 -top-12 -right-12 text-9xl text-slate-100 group-hover:text-secondary transition-transform duration-300" />
       <Icon className="mb-2 text-2xl text-secondary group-hover:text-white transition-colors relative z-10 duration-300" />
