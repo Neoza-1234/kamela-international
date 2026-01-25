@@ -18,9 +18,7 @@ Kamela International offers:
 
 | Layer        | Tool/Framework            |
 |--------------|---------------------------|
-| Frontend     | HTML, CSS, JavaScript,Next js |
+| Frontend     |Next js |
 | Styling      | Tailwind CSS      |
-| Animations   | GSAP |
-| CMS          | Sanity |
-| Hosting      | Vercile |
+| Hosting      |  AfriHost|
 | Versioning   | Git + GitHub              |
