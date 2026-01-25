@@ -13,14 +13,19 @@ import Link from "next/link";
 import CourseTabs from "@/components/CourseTabs";
 import Journey from "@/components/journey";
 
-{
-  /* Generate static paths for all courses */
-}
-export async function generateStaticParams() {
-  const slugs = getAllCourseSlugs();
-  return slugs.map((slug: string) => ({ slug }));
-}
+export const dynamicParams = false;
+export const revalidate = false;
 
+/* Generate static paths for all courses */
+export async function generateStaticParams() {
+  try {
+    const slugs = getAllCourseSlugs();
+    return slugs.map((slug: string) => ({ slug }));
+  } catch (error) {
+    console.error('Error generating static params:', error);
+    return [];
+  }
+}
 {
   /* Generate metadata for SEO */
 }
@@ -123,22 +128,22 @@ export default async function CoursePage({
 
               {/* Quick Stats */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div className="rounded-xl p-4 bg-white shadow-sm">
+                <div className="l p-4">
                   <Award className="w-6 h-6 mb-2 text-blue-600" />
                   <div className="text-sm text-gray-600">NQF Level</div>
                   <div className="text-2xl font-bold">{course.nqfLevel}</div>
                 </div>
-                <div className="rounded-xl p-4 bg-white shadow-sm">
+                <div className=" p-4 ">
                   <BookOpen className="w-6 h-6 mb-2 text-blue-600" />
                   <div className="text-sm text-gray-600">Credits</div>
                   <div className="text-2xl font-bold">{course.credits}</div>
                 </div>
-                <div className="rounded-xl p-4 bg-white shadow-sm">
+                <div className=" p-4 ">
                   <Clock className="w-6 h-6 mb-2 text-blue-600" />
                   <div className="text-sm text-gray-600">Duration</div>
                   <div className="text-2xl font-bold">{course.duration}</div>
                 </div>
-                <div className="rounded-xl p-4 bg-white shadow-sm">
+                <div className=" p-4 ">
                   <IdCard className="w-6 h-6 mb-2 text-blue-600" />
                   <div className="text-sm text-gray-600">SAQA ID</div>
                   <div className="text-2xl font-bold">{course.saqaid}</div>
@@ -172,21 +177,21 @@ export default async function CoursePage({
             {/* Course Overview */}
             <section
               id="section-overview"
-              className="bg-white rounded-2xl p-6 shadow-sm scroll-mt-24"
+              className="p-6 scroll-mt-24"
             >
-              <h2 className="text-2xl font-semibold mb-4">Course Overview</h2>
+              <h2 className="mb-4">Course Overview</h2>
               <p className="text-slate-700">{course.description}</p>
             </section>
 
             {/* Purpose & Value */}
             <section
               id="section-purpose"
-              className="bg-white rounded-2xl p-6 shadow-sm scroll-mt-24"
+              className=" p-6 scroll-mt-24"
             >
-              <h2 className="text-2xl font-semibold mb-4">Purpose & Value</h2>
+              <h2 className="mb-4">Purpose & Value</h2>
               <div className="space-y-4">
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                  <h3 className=" font-semibold text-gray-800 mb-2">
                     Purpose
                   </h3>
                   <p className="text-slate-700 leading-relaxed">
@@ -194,7 +199,7 @@ export default async function CoursePage({
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-800 mb-3">
+                  <h3 className=" font-semibold text-gray-800 mb-3">
                     Value Proposition
                   </h3>
                   <ul className="space-y-2">
@@ -214,9 +219,9 @@ export default async function CoursePage({
             {/* Key Outcomes */}
             <section
               id="section-outcomes"
-              className="bg-white rounded-2xl p-6 shadow-sm scroll-mt-24"
+              className=" p-6 scroll-mt-24"
             >
-              <h2 className="text-2xl font-semibold mb-4">Key Outcomes</h2>
+              <h2 className="mb-4">Key Outcomes</h2>
               <p className="text-slate-700 mb-4">
                 Upon successful completion, learners will be able to:
               </p>
@@ -235,12 +240,12 @@ export default async function CoursePage({
             {/* Program Details */}
             <section
               id="section-program"
-              className="bg-white rounded-2xl p-6 shadow-sm scroll-mt-24"
+              className="p-6 croll-mt-24"
             >
-              <h2 className="text-2xl font-semibold mb-4">Program Details</h2>
+              <h2 className="mb-4">Program Details</h2>
               <div className="space-y-4">
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                  <h3 className="font-semibold text-gray-800 mb-2">
                     Duration
                   </h3>
                   <p className="text-slate-700">
@@ -248,7 +253,7 @@ export default async function CoursePage({
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                  <h3 className="font-semibold text-gray-800 mb-2">
                     Learning Approach
                   </h3>
                   <p className="text-slate-700">
@@ -256,7 +261,7 @@ export default async function CoursePage({
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                  <h3 className="font-semibold text-gray-800 mb-2">
                     Entry Requirements
                   </h3>
                   <ul className="list-disc list-inside text-slate-700 space-y-1">
@@ -273,9 +278,9 @@ export default async function CoursePage({
             {/* Learning Journey */}
             <section
               id="section-journey"
-              className="bg-white rounded-2xl p-6 shadow-sm scroll-mt-24"
+              className="p-6 scroll-mt-24"
             >
-              <h2 className="text-2xl font-semibold mb-4">
+              <h2 className=" mb-4">
                 How Your Learning Journey Will Look Like
               </h2>
               <Journey />
@@ -284,7 +289,7 @@ export default async function CoursePage({
             {/* Modules */}
             <section
               id="section-curriculum"
-              className="bg-white rounded-2xl p-6 shadow-sm scroll-mt-24"
+              className=" p-6 scroll-mt-24"
             >
               <h2 className="text-2xl font-semibold mb-4">
                 Curriculum Modules
@@ -310,9 +315,9 @@ export default async function CoursePage({
             {/* Career Opportunities */}
             <section
               id="section-careers"
-              className="bg-white rounded-2xl p-6 shadow-sm scroll-mt-24"
+              className=" p-6 scroll-mt-24"
             >
-              <h2 className="text-2xl font-semibold mb-4">
+              <h2 className="mb-4">
                 Career Opportunities
               </h2>
               <p className="text-slate-700 mb-4">
@@ -323,7 +328,7 @@ export default async function CoursePage({
                 {course.careerOpportunities.map((c: string, i: number) => (
                   <div
                     key={i}
-                    className="p-3 bg-blue-50 rounded-lg border border-blue-200"
+                    className="p-3 bg-blue-100 rounded-lg border border-blue-200"
                   >
                     <p className="font-medium text-gray-800">{c}</p>
                   </div>

@@ -1303,7 +1303,7 @@ export const coursesData: Course[] = [
     category: "sales",
     name: "National Occupational Certificate: Sales Representative",
     icon: "/icons/sales-representative.svg",
-    description: "Sales techniques, customer engagement and product knowledge.",
+    description: "Learning sales techniques, customer engagement and product knowledge.",
     fullDescription:
       "Learn core selling skills, customer engagement and retail sales fundamentals.",
     nqfLevel: 4,

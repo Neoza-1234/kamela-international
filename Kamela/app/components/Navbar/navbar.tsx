@@ -19,7 +19,7 @@ const navLinks: NavLink[] = [
     dropdown: [
       { label: "Study", href: "/Solutions/Study" },
       { label: "Enterprise", href: "/Solutions/Enterprise" },
-      { label: "RPL", href: "/UI-Components/Solutions/RPL" },
+      { label: "RPL", href: "/Solutions/RPL" },
       {
         label: "Assessment Center",
         href: "/Solutions/Assessment-Center",
