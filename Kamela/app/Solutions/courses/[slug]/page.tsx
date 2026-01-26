@@ -193,7 +193,7 @@ export default async function CoursePage({
             {/* Program Details */}
             <section
               id="section-program"
-              className="p-6 croll-mt-24"
+              className="p-6 scroll-mt-24"
             >
               <h2 className="mb-4">Program Details</h2>
               <div className="space-y-4">
