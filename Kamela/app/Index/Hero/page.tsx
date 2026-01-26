@@ -35,46 +35,7 @@ export default function Hero() {
   return (
     <>
       <section id="hero" className="d-flex align-items-center">
-        <svg
-          className="size-full absolute -z-10 inset-0"
-          width="1440"
-          height="720"
-          viewBox="0 0 1440 720"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            stroke="#D9D9D9"
-            strokeOpacity=".7"
-            d="M-15.227 702.342H1439.7"
-          />
-          <circle
-            cx="711.819"
-            cy="372.562"
-            r="308.334"
-            stroke="#D9D9D9"
-            strokeOpacity=".7"
-          />
-          <circle
-            cx="16.942"
-            cy="20.834"
-            r="308.334"
-            stroke="#D9D9D9"
-            strokeOpacity=".7"
-          />
-          <path
-            stroke="#D9D9D9"
-            strokeOpacity=".7"
-            d="M-15.227 573.66H1439.7M-15.227 164.029H1439.7"
-          />
-          <circle
-            cx="782.595"
-            cy="411.166"
-            r="308.334"
-            stroke="#D9D9D9"
-            strokeOpacity=".7"
-          />
-        </svg>
+        
 
         <div
           className="container mx-auto px-6 py-50 grid grid-cols-1 md:grid-cols-2 gaps-12 items-center relative z-10"

@@ -13,23 +13,14 @@ import Link from "next/link";
 import CourseTabs from "@/components/CourseTabs";
 import Journey from "@/components/journey";
 
-export const dynamicParams = false;
-export const revalidate = false;
 
 /* Generate static paths for all courses */
 export async function generateStaticParams() {
-  try {
-    const slugs = getAllCourseSlugs();
-    return slugs.map((slug: string) => ({ slug }));
-  } catch (error) {
-    console.error('Error generating static params:', error);
-    return [];
-  }
-}
-{
-  /* Generate metadata for SEO */
+  const slugs = getAllCourseSlugs();
+  return slugs.map((slug: string) => ({ slug }));
 }
 
+/* Generate metadata for SEO */
 export async function generateMetadata({
   params,
 }: {
@@ -48,7 +39,6 @@ export async function generateMetadata({
   };
 }
 
-
 export default async function CoursePage({
   params,
 }: {
@@ -63,43 +53,6 @@ export default async function CoursePage({
 
   return (
     <div className="min-h-screen mt-30">
-      {/* Background SVG */}
-      <svg
-        className="size-full absolute -z-10 inset-0"
-        width="1440"
-        height="720"
-        viewBox="0 0 1440 720"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path stroke="#E2E8F0" strokeOpacity=".7" d="M-15.227 702.342H1439.7" />
-        <circle
-          cx="711.819"
-          cy="372.562"
-          r="308.334"
-          stroke="#E2E8F0"
-          strokeOpacity=".7"
-        />
-        <circle
-          cx="16.942"
-          cy="20.834"
-          r="308.334"
-          stroke="#d9d9d9"
-          strokeOpacity=".7"
-        />
-        <path
-          stroke="#d9d9d9"
-          strokeOpacity=".7"
-          d="M-15.227 573.66H1439.7M-15.227 164.029H1439.7"
-        />
-        <circle
-          cx="782.595"
-          cy="411.166"
-          r="308.334"
-          stroke="#d9d9d9"
-          strokeOpacity=".7"
-        />
-      </svg>
 
       {/* Back Button */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
