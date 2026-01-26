@@ -1,4 +1,4 @@
-# Kamela-Website- 
+# Kamela-International
 
 This to this the official repository for **Kamela International's** website, a platform to offering training services and establishing **Kamela's** branding. This site is designed to be scalable, animated and powered by a headless CMS for dynamic content management.
 
