@@ -157,7 +157,7 @@ export default function Footer() {
                 <i className="ri-linkedin-fill"></i>
               </Link>
               <Link
-                href=""
+                href="https://www.tiktok.com/@kamela.international"
                 target="_blank"
                 rel="noreferrer"
                 className="text-gray-400 hover:text-indigo-500 transition duration-200 text-lg md:text-xl"

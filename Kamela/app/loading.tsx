@@ -1,20 +1,66 @@
-
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const loader = () => {
   return (
     <StyledWrapper>
       <svg viewBox="0 0 240 240" height={240} width={240} className="loader">
-        <circle strokeLinecap="round" strokeDashoffset={-330} strokeDasharray="0 660" strokeWidth={20} stroke="#000" fill="none" r={105} cy={120} cx={120} className="loader-ring loader-ring-a" />
-        <circle strokeLinecap="round" strokeDashoffset={-110} strokeDasharray="0 220" strokeWidth={20} stroke="#000" fill="none" r={35} cy={120} cx={120} className="loader-ring loader-ring-b" />
-        <circle strokeLinecap="round" strokeDasharray="0 440" strokeWidth={20} stroke="#000" fill="none" r={70} cy={120} cx={85} className="loader-ring loader-ring-c" />
-        <circle strokeLinecap="round" strokeDasharray="0 440" strokeWidth={20} stroke="#000" fill="none" r={70} cy={120} cx={155} className="loader-ring loader-ring-d" />
+        <circle
+          strokeLinecap="round"
+          strokeDashoffset={-330}
+          strokeDasharray="0 660"
+          strokeWidth={20}
+          stroke="#000"
+          fill="none"
+          r={105}
+          cy={120}
+          cx={120}
+          className="loader-ring loader-ring-a"
+        />
+        <circle
+          strokeLinecap="round"
+          strokeDashoffset={-110}
+          strokeDasharray="0 220"
+          strokeWidth={20}
+          stroke="#000"
+          fill="none"
+          r={35}
+          cy={120}
+          cx={120}
+          className="loader-ring loader-ring-b"
+        />
+        <circle
+          strokeLinecap="round"
+          strokeDasharray="0 440"
+          strokeWidth={20}
+          stroke="#000"
+          fill="none"
+          r={70}
+          cy={120}
+          cx={85}
+          className="loader-ring loader-ring-c"
+        />
+        <circle
+          strokeLinecap="round"
+          strokeDasharray="0 440"
+          strokeWidth={20}
+          stroke="#000"
+          fill="none"
+          r={70}
+          cy={120}
+          cx={155}
+          className="loader-ring loader-ring-d"
+        />
       </svg>
     </StyledWrapper>
   );
-}
+};
 
 const StyledWrapper = styled.div`
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   .loader {
     width: 6em;
     height: 6em;
@@ -30,12 +76,12 @@ const StyledWrapper = styled.div`
 
   .loader-ring-b {
     animation-name: ringB;
-    stroke: #0866ff
+    stroke: #0866ff;
   }
 
   .loader-ring-c {
     animation-name: ringC;
-    stroke: #ff4500
+    stroke: #ff4500;
   }
 
   .loader-ring-d {
@@ -45,7 +91,8 @@ const StyledWrapper = styled.div`
 
   /* Animations */
   @keyframes ringA {
-    from, 4% {
+    from,
+    4% {
       stroke-dasharray: 0 660;
       stroke-width: 20;
       stroke-dashoffset: -330;
@@ -63,7 +110,8 @@ const StyledWrapper = styled.div`
       stroke-dashoffset: -595;
     }
 
-    40%, 54% {
+    40%,
+    54% {
       stroke-dasharray: 0 660;
       stroke-width: 20;
       stroke-dashoffset: -660;
@@ -81,7 +129,8 @@ const StyledWrapper = styled.div`
       stroke-dashoffset: -925;
     }
 
-    90%, to {
+    90%,
+    to {
       stroke-dasharray: 0 660;
       stroke-width: 20;
       stroke-dashoffset: -990;
@@ -89,7 +138,8 @@ const StyledWrapper = styled.div`
   }
 
   @keyframes ringB {
-    from, 12% {
+    from,
+    12% {
       stroke-dasharray: 0 220;
       stroke-width: 20;
       stroke-dashoffset: -110;
@@ -107,7 +157,8 @@ const StyledWrapper = styled.div`
       stroke-dashoffset: -195;
     }
 
-    48%, 62% {
+    48%,
+    62% {
       stroke-dasharray: 0 220;
       stroke-width: 20;
       stroke-dashoffset: -220;
@@ -125,7 +176,8 @@ const StyledWrapper = styled.div`
       stroke-dashoffset: -305;
     }
 
-    98%, to {
+    98%,
+    to {
       stroke-dasharray: 0 220;
       stroke-width: 20;
       stroke-dashoffset: -330;
@@ -151,7 +203,8 @@ const StyledWrapper = styled.div`
       stroke-dashoffset: -175;
     }
 
-    36%, 58% {
+    36%,
+    58% {
       stroke-dasharray: 0 440;
       stroke-width: 20;
       stroke-dashoffset: -220;
@@ -169,7 +222,8 @@ const StyledWrapper = styled.div`
       stroke-dashoffset: -395;
     }
 
-    94%, to {
+    94%,
+    to {
       stroke-dasharray: 0 440;
       stroke-width: 20;
       stroke-dashoffset: -440;
@@ -177,7 +231,8 @@ const StyledWrapper = styled.div`
   }
 
   @keyframes ringD {
-    from, 8% {
+    from,
+    8% {
       stroke-dasharray: 0 440;
       stroke-width: 20;
       stroke-dashoffset: 0;
@@ -195,7 +250,8 @@ const StyledWrapper = styled.div`
       stroke-dashoffset: -175;
     }
 
-    44%, 50% {
+    44%,
+    50% {
       stroke-dasharray: 0 440;
       stroke-width: 20;
       stroke-dashoffset: -220;
@@ -213,11 +269,13 @@ const StyledWrapper = styled.div`
       stroke-dashoffset: -395;
     }
 
-    86%, to {
+    86%,
+    to {
       stroke-dasharray: 0 440;
       stroke-width: 20;
       stroke-dashoffset: -440;
     }
-  }`;
+  }
+`;
 
 export default loader;

@@ -1,3 +1,5 @@
+
+
 import Image from "next/image";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import Link from "next/link";
@@ -342,7 +344,7 @@ export default function AboutUs() {
 
           <div className="flex justify-center items-center gap-6 flex-wrap mt-10">
             <button className="mt-9 border-(--prime) border-2 px-3 py-3 rounded-full text-(--prime) font-semibold hover:bg-(--prime) hover:text-white transition-all duration-300 flex items-center gap-6">
-              <Link href="/UI-Components/Solutions/Study">
+              <Link href="/Solutions/Study">
                 Find Our Courses<i className="bi bi-arrow-right ps-1"></i>
               </Link>
             </button>

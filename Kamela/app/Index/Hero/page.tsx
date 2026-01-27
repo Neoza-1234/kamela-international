@@ -3,6 +3,7 @@
 import CountUp from "react-countup";
 import Image from "next/image";
 import Link from "next/link";
+import {ArrowUpRight} from "lucide-react";
 
 const statsData = [
   {
@@ -35,8 +36,6 @@ export default function Hero() {
   return (
     <>
       <section id="hero" className="d-flex align-items-center">
-        
-
         <div
           className="container mx-auto px-6 py-50 grid grid-cols-1 md:grid-cols-2 gaps-12 items-center relative z-10"
           data-aos="zoom-in"
@@ -50,17 +49,35 @@ export default function Hero() {
               </span>
             </h1>
             <div className=" flex justify-start items-center gap-3 flex-wrap mt-6">
-              <button className="mt-9 border-(--prime) border-2 px-3 py-3 rounded-full text-(--prime) font-semibold hover:bg-(--prime) hover:text-white transition-all duration-300 flex items-center gap-6">
-                <Link href="/Solutions/Study">
-                  Explore Courses<i className="bi bi-arrow-right ps-1"></i>
-                </Link>
-              </button>
+              <Link
+                href="/Solutions/Study"
+                className="group bg-(--prime) text-white font-medium flex flex-row justify-between items-center py-2 px-5 rounded-full max-w-64 w-52 md:py-3 border border-(--prime) transition-all duration-200 ease-in-out hover:bg-transparent hover:text-(--prime)"
+              >
+                <span className="flex text-start transform transition-transform duration-200 ease-in-out group-hover:translate-x-13">
+                  Explore Courses
+                </span>
+                <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center transform transition-all duration-200 ease-in-out group-hover:-translate-x-37 group-hover:rotate-45 group-hover:bg-black">
+                  <ArrowUpRight
+                    className="w-4 h-4 text-black transition-colors duration-200 ease-in-out group-hover:text-white"
+                    strokeWidth={1.67}
+                  />
+                </div>
+              </Link>
 
-              <button className="mt-9 border-(--prime) border-2 px-3 py-3 rounded-full text-(--prime) font-semibold hover:bg-(--prime) hover:text-white transition-all duration-300 flex items-center gap-6">
-                <Link href="/Solutions/Enterprise">
-                  Corporate Solutions <i className="bi bi-arrow-right ps-1"></i>
-                </Link>
-              </button>
+              <Link
+                href="/Solutions/Enterprise"
+                className="group bg-(--prime) text-white font-medium flex flex-row justify-between items-center py-2 px-5 rounded-full max-w-64 w-57 md:py-3 border border-(--prime) transition-all duration-200 ease-in-out hover:bg-transparent hover:text-(--prime)"
+              >
+                <span className="flex text-start transform transition-transform duration-200 ease-in-out group-hover:translate-x-8">
+                  Corporate Solutions 
+                </span>
+                <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center transform transition-all duration-200 ease-in-out group-hover:-translate-x-41 group-hover:rotate-45 group-hover:bg-black">
+                  <ArrowUpRight
+                    className="w-4 h-4 text-black transition-colors duration-200 ease-in-out group-hover:text-white"
+                    strokeWidth={1.67}
+                  />
+                </div>
+              </Link>
             </div>
           </div>
 
@@ -76,7 +93,7 @@ export default function Hero() {
         </div>
       </section>
 
-      <div className="px-[8%] lg:px-[12%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-12">
+      <div className="px-[8%] lg:px-[12%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-6">
         {statsData.map((stat, index) => (
           <div key={index} className="text-center">
             <h2 className="text-(--prime) font-bold text-4xl">

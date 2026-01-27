@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import {ArrowUpRight} from "lucide-react";
 
 export default function About() {
   return (
@@ -75,11 +76,20 @@ export default function About() {
               excel in modern workplaces and growing sectors.
             </p>
             <div className="flex justify-center items-center gap-6 flex-wrap mt-10">
-              <button className="mt-9 border-(--prime) border-2 px-3 py-3 rounded-full text-(--prime) font-semibold hover:bg-(--prime) hover:text-white transition-all duration-300 flex items-center gap-6">
-                <Link href="/UI-Components/About-Us">
-                  Explore More<i className="bi bi-arrow-right ps-1"></i>
-                </Link>
-              </button>
+              <Link
+                href="/About-Us"
+                className="group bg-(--prime) text-white font-medium flex flex-row justify-between items-center py-2 px-5 rounded-full max-w-64 w-52 md:py-3 border border-(--prime) transition-all duration-200 ease-in-out hover:bg-transparent hover:text-(--prime)"
+              >
+                <span className="flex text-start transform transition-transform duration-200 ease-in-out group-hover:translate-x-13">
+                  Explore More
+                </span>
+                <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center transform transition-all duration-200 ease-in-out group-hover:-translate-x-37 group-hover:rotate-45 group-hover:bg-black">
+                  <ArrowUpRight
+                    className="w-4 h-4 text-black transition-colors duration-200 ease-in-out group-hover:text-white"
+                    strokeWidth={1.67}
+                  />
+                </div>
+              </Link>
             </div>
           </div>
         </div>
