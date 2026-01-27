@@ -1,10 +1,16 @@
-
-
 import Image from "next/image";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import Link from "next/link";
 import AfricanImpact from "@/components/worldmap";
-import {Medal, Handshake, Earth, Lightbulb, Waypoints, HandFist} from "lucide-react"
+import {
+  Medal,
+  Handshake,
+  Earth,
+  Lightbulb,
+  Waypoints,
+  HandFist,
+  ArrowUpRight,
+} from "lucide-react";
 
 const ImageHeader = ({ src, alt }: { src: string; alt: string }) => (
   <div className="flex flex-1 w-full h-full min-h-24 rounded-xl overflow-hidden relative">
@@ -113,7 +119,7 @@ export default function AboutUs() {
                       alt="about image"
                       width={500}
                       height={400}
-                      className=" rounded-2xl w-125 h-100  "
+                      className=" rounded-2xl w-125 h-100 object-cover "
                     />
                   </div>
                   <div className="py-3 sm:py-4 bg-cover">
@@ -122,7 +128,7 @@ export default function AboutUs() {
                       alt="about image"
                       width={500}
                       height={400}
-                      className=" rounded-2xl w-125 h-100 "
+                      className=" rounded-2xl w-125 h-100 object-cover "
                     />
                   </div>
                 </div>
@@ -133,7 +139,7 @@ export default function AboutUs() {
                       alt="about image"
                       width={500}
                       height={400}
-                      className=" rounded-2xl w-125 h-100"
+                      className=" rounded-2xl w-125 h-100 object-cover"
                     />
                   </div>
                 </div>
@@ -174,8 +180,8 @@ export default function AboutUs() {
           learner and client experience.
         </h2>
         <div className="relative max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-          <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
-            <Medal className="text-white"/>
+          <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300">
+            <Medal className="text-white" />
             <p className=" text-gray-100">Excellence</p>
             <p className=" text-gray-200">
               We maintain uncompromising quality across curriculum design,
@@ -183,7 +189,7 @@ export default function AboutUs() {
               support. Excellence is our standard and our promise.
             </p>
           </div>
-          <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+          <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300">
             <Handshake className="text-white" />
             <p className=" text-gray-100">Integrity</p>
             <p className=" text-gray-200">
@@ -192,8 +198,8 @@ export default function AboutUs() {
               communities.
             </p>
           </div>
-          <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
-            <Lightbulb className="text-white"/>
+          <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300">
+            <Lightbulb className="text-white" />
             <p className=" text-gray-100">Innovation</p>
             <p className=" text-gray-200">
               We embrace digital learning, modern pedagogies, artificial
@@ -201,16 +207,16 @@ export default function AboutUs() {
               engaging, and forward-looking training solutions
             </p>
           </div>
-          <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
-            <Waypoints className="text-white"/>
+          <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300">
+            <Waypoints className="text-white" />
             <p className=" text-gray-100">Collaboration</p>
             <p className=" text-gray-200">
               We build strong relationships with industry partners to ensure
               programme relevance, workplace integration, and meaningful impact.
             </p>
           </div>
-          <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
-            < HandFist className="text-white"/>
+          <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300">
+            <HandFist className="text-white" />
             <p className=" text-gray-100">Empowerment</p>
             <p className=" text-gray-200">
               We uplift individuals, organizations, and communities by creating
@@ -218,8 +224,8 @@ export default function AboutUs() {
               participation.
             </p>
           </div>
-          <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
-            <Earth className="text-white"/>
+          <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300">
+            <Earth className="text-white" />
             <p className=" text-gray-100">Inclusivity</p>
             <p className=" text-gray-200">
               We provide equitable access to education for youth, unemployed
@@ -238,7 +244,7 @@ export default function AboutUs() {
             <h2 className="md:text-4xl dark:text-white text-black">
               Our Expanded <span className="text-(--prime)">Vision</span>
             </h2>
-            <p className="md:text-lg max-w-2xl mx-auto py-6 px-6">
+            <p className="md:text-lg max-w-3xl mx-auto py-6 px-6">
               To be the recognized leader in occupational training, digital
               transformation, and competency assessment across Southern
               Africa—producing a workforce that is innovative, future-ready, and
@@ -252,7 +258,7 @@ export default function AboutUs() {
             <h2 className="md:text-4xl dark:text-white text-black">
               Our Institutional <span className="text-(--prime)">Mission</span>
             </h2>
-            <p className="md:text-lg max-w-2xl mx-auto py-6 px-6">
+            <p className="md:text-lg max-w-3xl mx-auto py-6 px-6">
               We exist to empower individuals and organizations through
               excellence in accredited skills development. We are dedicated to:
             </p>
@@ -317,7 +323,7 @@ export default function AboutUs() {
             <h2 className="md:text-4xl dark:text-white text-black">
               Our Program Focus <span className="text-(--prime)">Areas</span>
             </h2>
-            <p className="md:text-lg max-w-2xl mx-auto py-6 px-6">
+            <p className="md:text-lg max-w-3xl mx-auto py-6 px-6">
               Kamela International provides occupational training and
               development across high-demand sectors aligned to the South
               African labour market and digital economy
@@ -343,11 +349,20 @@ export default function AboutUs() {
           </BentoGrid>
 
           <div className="flex justify-center items-center gap-6 flex-wrap mt-10">
-            <button className="mt-9 border-(--prime) border-2 px-3 py-3 rounded-full text-(--prime) font-semibold hover:bg-(--prime) hover:text-white transition-all duration-300 flex items-center gap-6">
-              <Link href="/Solutions/Study">
-                Find Our Courses<i className="bi bi-arrow-right ps-1"></i>
+            <Link
+                href="/About-Us"
+                className="group bg-(--prime) text-white font-medium flex flex-row justify-between items-center py-2 px-5 rounded-full max-w-64 w-52 md:py-3 border border-(--prime) transition-all duration-200 ease-in-out hover:bg-transparent hover:text-(--prime)"
+              >
+                <span className="flex text-start transform transition-transform duration-200 ease-in-out group-hover:translate-x-13">
+                  Explour Courses
+                </span>
+                <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center transform transition-all duration-200 ease-in-out group-hover:-translate-x-37 group-hover:rotate-45 group-hover:bg-black">
+                  <ArrowUpRight
+                    className="w-4 h-4 text-black transition-colors duration-200 ease-in-out group-hover:text-white"
+                    strokeWidth={1.67}
+                  />
+                </div>
               </Link>
-            </button>
           </div>
         </div>
       </section>
@@ -364,11 +379,22 @@ export default function AboutUs() {
           workforce, we deliver the training that transforms potential into
           performance
         </p>
-        <Link href="/Contact">
-          <button className="px-8 py-2.5 mt-4 text-sm bg-linear-to-r from-indigo-600 to-orange-700 hover:scale-105 transition duration-300 text-white rounded-full">
-            Book A Free Consultation
-          </button>
-        </Link>
+        <div className="mt-7">
+      <Link
+        href="/Contact"
+        className="group bg-blue-700 text-white font-medium flex flex-row justify-between items-center py-2 px-5 rounded-full max-w-75 w-70 md:py-3 border border-blue-700 transition-all duration-200 ease-in-out hover:bg-transparent hover:text-white"
+      >
+        <span className="flex text-start transform transition-transform duration-200 ease-in-out group-hover:translate-x-13">
+          Book A Free Consultation
+        </span>
+        <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center transform transition-all duration-200 ease-in-out group-hover:-translate-x-50 group-hover:rotate-45 group-hover:bg-black">
+          <ArrowUpRight
+            className="w-4 h-4 text-black transition-colors duration-200 ease-in-out group-hover:text-white"
+            strokeWidth={1.67}
+          />
+        </div>
+      </Link>
+      </div>
       </section>
     </>
   );

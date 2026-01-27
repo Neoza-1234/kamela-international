@@ -3,7 +3,7 @@
 import Link from "next/dist/client/link";
 import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, ArrowUpRight } from "lucide-react";
 
 type NavLink = {
   label: string;
@@ -152,18 +152,22 @@ export default function Navbar() {
 
         <div className="flex items-center gap-4">
           {/* Learning Hub Button - Desktop Only */}
-          <Link
-            href="https://kamelatraininghub.co.za"
-            target="_blank"
-            className="hidden lg:block"
-          >
-            <button
-              className="flex justify-center items-center px-4 py-2 font-bold rounded-full border text-lg
-              bg-(--prime) text-white hover:bg-white hover:text-(--black) transition-all duration-300 cursor-pointer border-(--prime)"
-            >
-              Learning Hub
-            </button>
-          </Link>
+          <a
+                href="https://kamelatraininghub.co.za"
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" hidden lg:flex group bg-(--prime) text-white font-medium  flex-row justify-between items-center py-2 px-5 rounded-full max-w-64 w-40 md:py-3 border border-(--prime) transition-all duration-200 ease-in-out hover:bg-transparent hover:text-(--prime)"
+              >
+                <span className="flex text-start transform transition-transform duration-200 ease-in-out group-hover:translate-x-13">
+                  The Hub
+                </span>
+                <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center transform transition-all duration-200 ease-in-out group-hover:-translate-x-27 group-hover:rotate-45 group-hover:bg-black">
+                  <ArrowUpRight
+                    className="w-4 h-4 text-black transition-colors duration-200 ease-in-out group-hover:text-white"
+                    strokeWidth={1.67}
+                  />
+                </div>
+              </a>
 
           {/* Mobile Menu Toggle Button */}
           <button

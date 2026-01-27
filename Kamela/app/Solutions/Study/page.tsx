@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import CourseSection from "@/components/coursecategories";
+import { ArrowUpRight } from "lucide-react";
 
 import { useSearchParams } from "next/navigation";
 import { useState } from "react";
@@ -70,12 +71,12 @@ export default function Study() {
 
         {/* Why Choose Us Section */}
 
-        <section className="py-10 px-4 flex flex-col justify-center items-center gap-6">
-          <h2 className=" md:text-[40px]/12 max-w-lg text-center leading-tight">
+        <section className="bg-black py-10 px-4 flex flex-col justify-center items-center gap-6">
+          <h2 className=" md:text-[40px]/12 max-w-lg text-center text-white leading-tight">
             Why Choose Us
           </h2>
           <div className="relative max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-            <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300">
               <i className="ri-medal-fill text-white w-30 h-30 pb-3"></i>
               <p className=" text-gray-100">Accredited Training Provider </p>
               <p className=" text-gray-200">
@@ -83,7 +84,7 @@ export default function Study() {
                 from MICT SETA, W&R SETA, TETA and SERVICES SETA.
               </p>
             </div>
-            <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300">
               <i className="ri-shake-hands-fill text-white w-30 h-30 pb-3"></i>
               <p className=" text-gray-100">Job Readiness Support</p>
               <p className=" text-gray-200">
@@ -91,7 +92,7 @@ export default function Study() {
                 equip you with the skills and confidence for workplace success.
               </p>
             </div>
-            <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300">
               <i className="ri-lightbulb-ai-fill text-white w-30 h-30 pb-3"></i>
               <p className=" text-gray-100">Flexible Financing </p>
               <p className=" text-gray-200">
@@ -99,7 +100,7 @@ export default function Study() {
                 allowing budget-friendly investment in your future.
               </p>
             </div>
-            <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300">
               <i className="ri-team-fill text-white w-30 h-30 pb-3"></i>
               <p className=" text-gray-100">Diverse Course Catalogue</p>
               <p className=" text-gray-200">
@@ -108,7 +109,7 @@ export default function Study() {
                 industry-relevant skills.
               </p>
             </div>
-            <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300">
               <i className="ri-rocket-2-fill text-white w-30 h-30 pb-3"></i>
               <p className=" text-gray-100">Flexible Learning</p>
               <p className=" text-gray-200">
@@ -116,7 +117,7 @@ export default function Study() {
                 and face-to-face support (program dependent)
               </p>
             </div>
-            <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <div className="bg-linear-to-b from-[#020204] to-[#191130] border border-gray-700 rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300">
               <i className="ri-earth-fill text-white w-30 h-30 pb-3"></i>
               <p className=" text-gray-100">Inclusivity</p>
               <p className=" text-gray-200">
@@ -130,20 +131,31 @@ export default function Study() {
 
         {/* CTA Section */}
 
-        <div className="container mx-auto px-6 py-20">
+        <div className="container mx-auto px-6 py-20 flex justify-center items-center">
           <div className="bg-black rounded-3xl p-8 text-center">
             <h2 className="text-white mb-4">Ready to take the next step?</h2>
-            <p className="text-white mb-6">
+            <p className="text-white mb-6 max-w-5xl">
               Whether you are a student eager to learn or a professional looking
               to grow, our courses are designed to help you succeed. After
               exploring our programs, contact us today—lets shape your future
               together!
             </p>
-            <Link href="/Contact">
-              <button className="px-8 py-2.5 mt-4 text-sm bg-linear-to-r from-indigo-600 to-orange-700 hover:scale-105 transition duration-300 text-white rounded-full">
-                Contact Us Today
-              </button>
+            <div className="flex items-center justify-center">
+            <Link
+              href="/Contact"
+              className="group bg-blue-700 text-white font-medium flex flex-row justify-between items-center py-2 px-5 rounded-full max-w-65 w-50 md:py-3 border border-blue-700 transition-all duration-200 ease-in-out hover:bg-transparent hover:text-white"
+            >
+              <span className="flex text-start transform transition-transform duration-200 ease-in-out group-hover:translate-x-13">
+                Contact Us
+              </span>
+              <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center transform transition-all duration-200 ease-in-out group-hover:-translate-x-30 group-hover:rotate-45 group-hover:bg-black">
+                <ArrowUpRight
+                  className="w-4 h-4 text-black transition-colors duration-200 ease-in-out group-hover:text-white"
+                  strokeWidth={1.67}
+                />
+              </div>
             </Link>
+            </div>
           </div>
         </div>
       </div>

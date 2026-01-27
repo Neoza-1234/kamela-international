@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useMemo, memo } from "react";
+import { useRef, useMemo, memo, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import DottedMap from "dotted-map";
 import Image from "next/image";
@@ -14,50 +14,52 @@ interface MapProps {
   lineColor?: string;
 }
 
-// Memoized animated point component to prevent re-renders
-const AnimatedPoint = memo(({ x, y, color }: { x: number; y: number; color: string }) => (
+// Simplified static point component (no continuous animation)
+const StaticPoint = memo(({ x, y, color }: { x: number; y: number; color: string }) => (
+  <circle cx={x} cy={y} r="3" fill={color} />
+));
+
+StaticPoint.displayName = "StaticPoint";
+
+// Pulsing point only animates once on mount
+const PulsingPoint = memo(({ x, y, color }: { x: number; y: number; color: string }) => (
   <g>
-    <circle cx={x} cy={y} r="2" fill={color} />
-    <circle cx={x} cy={y} r="2" fill={color} opacity="0.5">
-      <animate
-        attributeName="r"
-        from="2"
-        to="8"
-        dur="1.5s"
-        begin="0s"
-        repeatCount="indefinite"
-      />
-      <animate
-        attributeName="opacity"
-        from="0.5"
-        to="0"
-        dur="1.5s"
-        begin="0s"
-        repeatCount="indefinite"
-      />
-    </circle>
+    <circle cx={x} cy={y} r="3" fill={color} />
+    <motion.circle
+      cx={x}
+      cy={y}
+      r="3"
+      fill={color}
+      initial={{ r: 3, opacity: 0.8 }}
+      animate={{ r: 12, opacity: 0 }}
+      transition={{ duration: 1.5, ease: "easeOut" }}
+    />
   </g>
 ));
 
-AnimatedPoint.displayName = "AnimatedPoint";
+PulsingPoint.displayName = "PulsingPoint";
 
 function WorldMap({ dots = [], lineColor = "#0866ff" }: MapProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
-  // Optimize SVG map generation with proper memoization
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  
   const svgMap = useMemo(() => {
-    const map = new DottedMap({ height: 100, grid: "diagonal" });
+    const map = new DottedMap({ height: 60, grid: "diagonal" }); 
     const isDark = theme === "dark";
     return map.getSVG({
       radius: 0.22,
-      color: isDark ? "#FFFFFF40" : "#00000040",
+      color: isDark ? "#FFFFFF30" : "#00000030", 
       shape: "circle",
       backgroundColor: isDark ? "black" : "white",
     });
   }, [theme]);
 
-  // Memoize the SVG data URL to prevent recreation
   const svgDataUrl = useMemo(
     () => `data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`,
     [svgMap]
@@ -78,15 +80,40 @@ function WorldMap({ dots = [], lineColor = "#0866ff" }: MapProps) {
     return `M ${start.x} ${start.y} Q ${midX} ${midY} ${end.x} ${end.y}`;
   };
 
-  // Pre-calculate all points to avoid recalculation during render
-  const projectedDots = useMemo(
+  // Pre-calculate all paths and points
+  const pathData = useMemo(
     () =>
-      dots.map((dot) => ({
-        start: projectPoint(dot.start.lat, dot.start.lng),
-        end: projectPoint(dot.end.lat, dot.end.lng),
-      })),
+      dots.map((dot) => {
+        const start = projectPoint(dot.start.lat, dot.start.lng);
+        const end = projectPoint(dot.end.lat, dot.end.lng);
+        return {
+          path: createCurvedPath(start, end),
+          start,
+          end,
+        };
+      }),
     [dots]
   );
+
+  // Don't render animations until mounted (prevents SSR issues)
+  if (!mounted) {
+    return (
+      <div className="w-full aspect-2/1 dark:bg-black bg-white rounded-lg relative font-sans">
+        <Image
+          src={svgDataUrl}
+          className="h-full w-full pointer-events-none select-none"
+          style={{
+            maskImage: "linear-gradient(to bottom, transparent, white 10%, white 90%, transparent)",
+            WebkitMaskImage: "linear-gradient(to bottom, transparent, white 10%, white 90%, transparent)",
+          }}
+          alt="world map"
+          height={400}
+          width={800}
+          draggable={false}
+        />
+      </div>
+    );
+  }
 
   return (
     <div className="w-full aspect-2/1 dark:bg-black bg-white rounded-lg relative font-sans">
@@ -98,10 +125,10 @@ function WorldMap({ dots = [], lineColor = "#0866ff" }: MapProps) {
           WebkitMaskImage: "linear-gradient(to bottom, transparent, white 10%, white 90%, transparent)",
         }}
         alt="world map"
-        height={495}
-        width={1056}
+        height={400}
+        width={800}
         draggable={false}
-        priority
+        loading="lazy"
       />
       <svg
         ref={svgRef}
@@ -117,27 +144,29 @@ function WorldMap({ dots = [], lineColor = "#0866ff" }: MapProps) {
           </linearGradient>
         </defs>
 
-        {projectedDots.map((dot, i) => (
+        {/* Animated paths - animate once on mount */}
+        {pathData.map((data, i) => (
           <motion.path
             key={`path-${i}`}
-            d={createCurvedPath(dot.start, dot.end)}
+            d={data.path}
             fill="none"
             stroke="url(#path-gradient)"
             strokeWidth="1"
-            initial={{ pathLength: 0 }}
-            animate={{ pathLength: 1 }}
+            initial={{ pathLength: 0, opacity: 0 }}
+            animate={{ pathLength: 1, opacity: 1 }}
             transition={{
-              duration: 1,
-              delay: 0.5 * i,
+              duration: 1.2,
+              delay: 0.3 * i,
               ease: "easeOut",
             }}
           />
         ))}
 
-        {projectedDots.map((dot, i) => (
+        {/* Points with single pulse animation */}
+        {pathData.map((data, i) => (
           <g key={`points-${i}`}>
-            <AnimatedPoint x={dot.start.x} y={dot.start.y} color={lineColor} />
-            <AnimatedPoint x={dot.end.x} y={dot.end.y} color={lineColor} />
+            <PulsingPoint x={data.start.x} y={data.start.y} color={lineColor} />
+            <PulsingPoint x={data.end.x} y={data.end.y} color={lineColor} />
           </g>
         ))}
       </svg>

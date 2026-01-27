@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 
 export default function ContactUs() {
   return (
@@ -12,11 +13,22 @@ export default function ContactUs() {
         workforce, we deliver the training that transforms potential into
         performance
       </p>
-      <Link href="/Contact">
-        <button className="px-8 py-2.5 mt-4 text-sm bg-linear-to-r from-indigo-600 to-orange-700 hover:scale-105 transition duration-300 text-white rounded-full">
+      <div className="mt-7">
+      <Link
+        href="/Contact"
+        className="group bg-blue-700 text-white font-medium flex flex-row justify-between items-center py-2 px-5 rounded-full max-w-75 w-70 md:py-3 border border-blue-700 transition-all duration-200 ease-in-out hover:bg-transparent hover:text-white"
+      >
+        <span className="flex text-start transform transition-transform duration-200 ease-in-out group-hover:translate-x-13">
           Book A Free Consultation
-        </button>
+        </span>
+        <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center transform transition-all duration-200 ease-in-out group-hover:-translate-x-50 group-hover:rotate-45 group-hover:bg-black">
+          <ArrowUpRight
+            className="w-4 h-4 text-black transition-colors duration-200 ease-in-out group-hover:text-white"
+            strokeWidth={1.67}
+          />
+        </div>
       </Link>
+      </div>
     </section>
   );
 }
