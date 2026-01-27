@@ -16,6 +16,7 @@ import {
   Briefcase,
   Building2,
   UsersRound,
+  ArrowUpRight,
 } from "lucide-react";
 
 export default function RPL() {
@@ -365,16 +366,36 @@ export default function RPL() {
             in your career.
           </p>
           <div className="flex justify-center items-center gap-4">
-            <Link href="/Contact">
-              <button className="px-8 py-2.5 mt-4 text-sm bg-linear-to-r from-indigo-600 to-orange-700 hover:scale-105 transition duration-300 text-white rounded-full cursor-pointer">
+            <Link
+              href="/Contact"
+              className="group bg-blue-700 text-white font-medium flex flex-row justify-between items-center py-2 px-5 rounded-full max-w-70 w-70 md:py-3 border border-blue-700 transition-all duration-200 ease-in-out hover:bg-transparent hover:text-white"
+            >
+              <span className="flex text-start transform transition-transform duration-200 ease-in-out group-hover:translate-x-8">
                 Book A Free Consultation
-              </button>
+              </span>
+              <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center transform transition-all duration-200 ease-in-out group-hover:-translate-x-53 group-hover:rotate-45 group-hover:bg-black">
+                <ArrowUpRight
+                  className="w-4 h-4 text-black transition-colors duration-200 ease-in-out group-hover:text-white"
+                  strokeWidth={1.67}
+                />
+              </div>
             </Link>
-            <Link href="https://forms.office.com/r/4BMZTXFiEb" target="_blank">
-              <button className="px-8 py-2.5 mt-4 text-sm bg-linear-to-r from-indigo-600 to-orange-700 hover:scale-105 transition duration-300 text-white rounded-full cursor-pointer">
-                RPL Registration
-              </button>
-            </Link>
+            <a
+              href="https://forms.office.com/r/4BMZTXFiEb"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-blue-700 text-white font-medium flex flex-row justify-between items-center py-2 px-5 rounded-full max-w-65 w-55 md:py-3 border border-blue-700 transition-all duration-200 ease-in-out hover:bg-transparent hover:text-white"
+            >
+              <span className="flex text-start transform transition-transform duration-200 ease-in-out group-hover:translate-x-15">
+                Register
+              </span>
+              <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center transform transition-all duration-200 ease-in-out group-hover:-translate-x-40 group-hover:rotate-45 group-hover:bg-black">
+                <ArrowUpRight
+                  className="w-4 h-4 text-black transition-colors duration-200 ease-in-out group-hover:text-white"
+                  strokeWidth={1.67}
+                />
+              </div>
+            </a>
           </div>
         </div>
       </div>

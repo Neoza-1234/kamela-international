@@ -1,11 +1,8 @@
-
-
 import Image from "next/image";
 import Link from "next/link";
 import { Feature197 } from "@/components/accordion-feature-section";
 import Servicebtn from "@/components/servicebtn";
-
-
+import {ArrowUpRight} from "lucide-react";
 
 export default function Enterprise() {
   return (
@@ -36,7 +33,7 @@ export default function Enterprise() {
           </h1>
 
           <div className="mt-6 flex justify-center">
-            <Servicebtn/> 
+            <Servicebtn />
           </div>
         </div>
 
@@ -82,7 +79,7 @@ export default function Enterprise() {
           Our enterprise development solutions are trusted because they offer
         </p>
         <div className="relative max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300">
             <i className="ri-check-double-line w-30 h-30 pb-3"></i>
             <p className="font-bold">Proven Track Record</p>
             <p>
@@ -91,7 +88,7 @@ export default function Enterprise() {
               telecommunications, manufacturing, and academia.
             </p>
           </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300">
             <i className="ri-check-double-line w-30 h-30 pb-3"></i>
             <p className="font-bold">Customized Skills Solutions</p>
             <p>
@@ -99,7 +96,7 @@ export default function Enterprise() {
               workforce needs, and strategic goals.
             </p>
           </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300">
             <i className="ri-check-double-line w-30 h-30 pb-3"></i>
             <p className="font-bold">Digital & Blended Learning</p>
             <p>
@@ -107,7 +104,7 @@ export default function Enterprise() {
               assessments ensure employees learn anywhere, anytime.
             </p>
           </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300">
             <i className="ri-check-double-line w-30 h-30 pb-3"></i>
             <p className="font-bold">Enterprise Development & Incubation</p>
             <p>
@@ -115,7 +112,7 @@ export default function Enterprise() {
               development training aligned to B-BBEE requirements.
             </p>
           </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300">
             <i className="ri-check-double-line w-30 h-30 pb-3"></i>
             <p className="font-bold">Talent Pipeline Development</p>
             <p>
@@ -123,7 +120,7 @@ export default function Enterprise() {
               employability and professional performance
             </p>
           </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300">
             <i className="ri-check-double-line w-30 h-30 pb-3"></i>
             <p className="font-bold">National Implementation Capability</p>
             <p>
@@ -331,12 +328,20 @@ export default function Enterprise() {
             </p>
 
             <div className="mt-4 md:mt-8">
-              <a
-                href="/Contact"
-                className="px-8 py-2.5 mt-4 text-sm bg-linear-to-r from-indigo-600 to-orange-700 hover:scale-105 transition duration-300 text-white rounded-full"
-              >
-                Get Started Today
-              </a>
+              <Link
+              href="/Contact"
+              className="group bg-blue-700 text-white font-medium flex flex-row justify-between items-center py-2 px-5 rounded-full max-w-65 w-50 md:py-3 border border-blue-700 transition-all duration-200 ease-in-out hover:bg-transparent hover:text-black"
+            >
+              <span className="flex text-start transform transition-transform duration-200 ease-in-out group-hover:translate-x-8">
+                Let's Collaborate
+              </span>
+              <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center transform transition-all duration-200 ease-in-out group-hover:-translate-x-35 group-hover:rotate-45 group-hover:bg-black">
+                <ArrowUpRight
+                  className="w-4 h-4 text-black transition-colors duration-200 ease-in-out group-hover:text-white"
+                  strokeWidth={1.67}
+                />
+              </div>
+            </Link>
             </div>
           </div>
         </div>
