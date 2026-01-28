@@ -2,7 +2,7 @@
 
 @import "tailwindcss";
 @import "tw-animate-css";
-
+@import "remixicon/fonts/remixicon.css";
 
 
 :root {
@@ -127,8 +127,6 @@ p {
 
 /*Service Section*/
 
-
-
 .service-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
@@ -207,7 +205,7 @@ p {
 /* Purpose*/
 
 .purpose {
-  background-image: url(../public/purpose.jpg);
+  background-image: url(/purpose.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -301,7 +299,7 @@ p {
 /* About Us Bg*/
 
 .section-bg {
-  background-image: url(../public/Team.jpg);
+  background-image: url(/Team.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

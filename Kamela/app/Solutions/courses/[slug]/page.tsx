@@ -1,3 +1,5 @@
+
+
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getCourseBySlug, getAllCourseSlugs } from "@/data/courses";
@@ -27,7 +29,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const course = getCourseBySlug(slug);
+  const course = await getCourseBySlug(slug);
 
   if (!course) {
     return { title: "Course Not Found" };
@@ -45,7 +47,7 @@ export default async function CoursePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const course = getCourseBySlug(slug);
+  const course = await getCourseBySlug(slug);
 
   if (!course) {
     notFound();

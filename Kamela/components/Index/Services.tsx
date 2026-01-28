@@ -116,7 +116,7 @@ const servicesData = [
   },
 ];
 
-{/* Reusable Card Component */}
+// Reusable Card Component
 interface ServiceCardProps {
   service: (typeof servicesData)[0];
   index: number;
@@ -202,7 +202,7 @@ export default function Services() {
   return (
     <section
       className="px-[5%] sm:px-[8%] lg:px-[12%] py-12 sm:py-16 lg:py-20 services"
-      aria-labelledby="services-heading "
+      aria-labelledby="services-heading"
     >
       <div className="flex flex-col items-center gap-8 sm:gap-10 lg:gap-12">
         {/* Header */}

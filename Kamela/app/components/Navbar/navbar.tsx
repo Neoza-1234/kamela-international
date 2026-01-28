@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/dist/client/link";
+import Link from "next/link";
 import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import { Menu, X, ChevronDown, ArrowUpRight } from "lucide-react";
