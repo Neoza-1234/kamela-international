@@ -6,11 +6,11 @@ import CourseSection from "@/components/coursecategories";
 import { ArrowUpRight } from "lucide-react";
 
 import { useSearchParams } from "next/navigation";
-import { useState } from "react";
+import { useState, Suspense } from "react";
 
 type TabId = "ict" | "business" | "governance" | "sales";
 
-export default function Study() {
+function StudyContent() {
   const searchParams = useSearchParams();
 
   const getInitialTab = (): TabId => {
@@ -160,5 +160,13 @@ export default function Study() {
         </div>
       </div>
     </>
+  );
+}
+
+export default function Study() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>
+      <StudyContent />
+    </Suspense>
   );
 }

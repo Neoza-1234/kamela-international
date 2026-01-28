@@ -1,6 +1,10 @@
+"use client";
+
+"use client";
+
 import styled from "styled-components";
 
-const loader = () => {
+const Loader = () => {
   return (
     <StyledWrapper>
       <svg viewBox="0 0 240 240" height={240} width={240} className="loader">
@@ -278,4 +282,4 @@ const StyledWrapper = styled.div`
   }
 `;
 
-export default loader;
+export default Loader;
