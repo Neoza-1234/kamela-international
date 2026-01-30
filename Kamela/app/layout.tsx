@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/navbar/navbar";
-import Footer from "./components/footer/footer";
+import Navbar from "./components/Navbar/Navbar";
 import "remixicon/fonts/remixicon.css";
+import Footer from "./components/Footer/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -77,7 +77,7 @@ export default function RootLayout({
 
         <Navbar />
         {children}
-        <Footer />
+        <Footer/>
       </body>
     </html>
   );
