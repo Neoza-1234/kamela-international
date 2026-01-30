@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 
-export default function Footer() {
+export default function footer() {
   return (
     <>
       <footer className="bg-black text-gray-400 text-sm md:text-base">
