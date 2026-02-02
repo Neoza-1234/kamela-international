@@ -17,7 +17,7 @@ export default function About() {
         <div className="container mx:auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="about-image flex justify-center">
             <Image
-              src="/kamela-3.jpg"
+              src="/kamela-about.jpg"
               alt="About Kamela International"
               width={500}
               height={300}
@@ -46,7 +46,7 @@ export default function About() {
           </div>
           <div className="about-image flex justify-center">
             <Image
-              src="/kamela-4.jpg"
+              src="/kamela-about-2.jpg"
               alt="About Kamela International"
               width={500}
               height={300}
