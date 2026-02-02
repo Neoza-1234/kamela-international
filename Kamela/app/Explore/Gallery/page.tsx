@@ -28,8 +28,8 @@ export default function Gallery() {
             <div>
               <Image
                 className="h-auto max-w-full rounded-xl"
-                src="/kamela-1.jpg"
-                alt=""
+                src="/gallery-1.jpg"
+                alt="gallery image"
                 width={500}
                 height={500}
               />
@@ -37,8 +37,8 @@ export default function Gallery() {
             <div>
               <Image
                 className="h-auto max-w-full rounded-xl"
-                src="/kamela-2.jpg"
-                alt=""
+                src="/gallery-2.jpg"
+                alt="gallery image"
                 width={500}
                 height={500}
               />
@@ -46,8 +46,8 @@ export default function Gallery() {
             <div>
               <Image
                 className="h-auto max-w-full rounded-xl"
-                src="/kamela-5.jpg"
-                alt=""
+                src="/gallery-3.jpg"
+                alt="gallery image"
                 width={500}
                 height={500}
               />
@@ -58,7 +58,7 @@ export default function Gallery() {
               <Image
                 className="h-auto max-w-full rounded-xl"
                 src="/Kamela-6.jpg"
-                alt=""
+                alt="gallery image"
                 width={500}
                 height={500}
               />
@@ -67,7 +67,7 @@ export default function Gallery() {
               <Image
                 className="h-auto max-w-full rounded-xl"
                 src="/Kamela-7.jpg"
-                alt=""
+                alt="gallery image"
                 width={500}
                 height={500}
               />
@@ -76,7 +76,7 @@ export default function Gallery() {
               <Image
                 className="h-auto max-w-full rounded-xl"
                 src="/Kamela-8.jpg"
-                alt=""
+                alt="gallery image"
                 width={500}
                 height={500}
               />
@@ -87,7 +87,7 @@ export default function Gallery() {
               <Image
                 className="h-auto max-w-full rounded-xl"
                 src="/Kamela-9.jpg"
-                alt=""
+                alt="gallery image"
                 width={500}
                 height={500}
               />
@@ -96,7 +96,7 @@ export default function Gallery() {
               <Image
                 className="h-auto max-w-full rounded-xl"
                 src="/Kamela-10.jpg"
-                alt=""
+                alt="gallery image"
                 width={500}
                 height={500}
               />
@@ -105,7 +105,7 @@ export default function Gallery() {
               <Image
                 className="h-auto max-w-full rounded-xl"
                 src="/Kamela-11.jpg"
-                alt=""
+                alt="gallery image"
                 width={500}
                 height={500}
               />
@@ -116,7 +116,7 @@ export default function Gallery() {
               <Image
                 className="h-auto max-w-full rounded-xl"
                 src="/Kamela-12.jpg"
-                alt=""
+                alt="gallery image"
                 width={500}
                 height={500}
               />
@@ -125,7 +125,7 @@ export default function Gallery() {
               <Image
                 className="h-auto max-w-full rounded-xl"
                 src="/Kamela-14.jpg"
-                alt=""
+                alt="gallery image"
                 width={500}
                 height={500}
               />
@@ -134,7 +134,7 @@ export default function Gallery() {
               <Image
                 className="h-auto max-w-full rounded-xl"
                 src="/Kamela-13.jpg"
-                alt=""
+                alt="gallery image"
                 width={500}
                 height={500}
               />
