@@ -350,7 +350,7 @@ export default function AboutUs() {
 
           <div className="flex justify-center items-center gap-6 flex-wrap mt-10">
             <Link
-                href="/About-Us"
+                href="/Solutions/Study"
                 className="group bg-(--prime) text-white font-medium flex flex-row justify-between items-center py-2 px-5 rounded-full max-w-64 w-52 md:py-3 border border-(--prime) transition-all duration-200 ease-in-out hover:bg-transparent hover:text-(--prime)"
               >
                 <span className="flex text-start transform transition-transform duration-200 ease-in-out group-hover:translate-x-13">
