@@ -58,7 +58,7 @@ export default function About() {
         <div className="container mx:auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-40">
           <div className="about-image flex justify-center">
             <Image
-              src="/Kamela-5.jpg"
+              src="/gallery-3.jpg"
               alt="About Kamela International"
               width={500}
               height={300}
