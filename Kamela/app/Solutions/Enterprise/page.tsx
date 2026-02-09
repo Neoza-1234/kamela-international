@@ -225,7 +225,7 @@ export default function Enterprise() {
               width={1184}
               height={1376}
               alt="training"
-              src="/Kamela-18.jpg"
+              src="/Kamela18.jpg"
               className="w-3xl max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-228 dark:bg-gray-800 dark:ring-white/10"
             />
           </div>

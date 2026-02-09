@@ -38,7 +38,7 @@ export default function AssessmentCenter() {
 
           <div className="hero-img-container relative flex justify-around items-center pt-5">
             <Image
-              src="/Kamela-8.jpg"
+              src="/Kamela8.jpg"
               alt="Hero Image"
               width={500}
               height={700}
