@@ -28,7 +28,7 @@ export default function Gallery() {
             <div>
               <img
                 className="w-full rounded-xl shadow"
-                src="/kamela-10.jpg"
+                src="/kamela10.jpg"
                 width="232"
                 height="290"
                 alt="Image 01"
@@ -37,7 +37,7 @@ export default function Gallery() {
             <div>
               <img
                 className="w-full rounded-xl shadow"
-                src="/kamela-12.jpg"
+                src="/kamela12.jpg"
                 width="232"
                 height="290"
                 alt="Image 02"
@@ -46,7 +46,7 @@ export default function Gallery() {
             <div>
               <img
                 className="w-full rounded-xl shadow"
-                src="/kamela-14.jpg"
+                src="/kamela14.jpg"
                 width="232"
                 height="174"
                 alt="Image 03"
@@ -58,7 +58,7 @@ export default function Gallery() {
             <div>
               <img
                 className="w-full rounded-xl shadow"
-                src="/kamela-9.jpg"
+                src="/kamela9.jpg"
                 width="232"
                 height="155"
                 alt="Image 04"
@@ -67,7 +67,7 @@ export default function Gallery() {
             <div>
               <img
                 className="w-full rounded-xl shadow"
-                src="/kamela-15.jpg"
+                src="/kamela15.jpg"
                 width="232"
                 height="349"
                 alt="Image 05"
@@ -76,7 +76,7 @@ export default function Gallery() {
             <div>
               <img
                 className="w-full rounded-xl shadow"
-                src="/kamela-17.jpg"
+                src="/kamela17.jpg"
                 width="232"
                 height="349"
                 alt="Image 06"
@@ -88,7 +88,7 @@ export default function Gallery() {
             <div>
               <img
                 className="w-full rounded-xl shadow"
-                src="/kamela-14.jpg"
+                src="/kamela14.jpg"
                 width="232"
                 height="349"
                 alt="Image 07"
@@ -97,7 +97,7 @@ export default function Gallery() {
             <div>
               <img
                 className="w-full rounded-xl shadow"
-                src="/kamela-6.jpg"
+                src="/kamela6.jpg"
                 width="232"
                 height="155"
                 alt="Image 08"
@@ -106,7 +106,7 @@ export default function Gallery() {
             <div>
               <img
                 className="w-full rounded-xl shadow"
-                src="/kamela-7.jpg"
+                src="/kamela7.jpg"
                 width="232"
                 height="349"
                 alt="Image 09"
@@ -118,7 +118,7 @@ export default function Gallery() {
             <div>
               <img
                 className="w-full rounded-xl shadow"
-                src="/kamela-13.jpg"
+                src="/kamela13.jpg"
                 width="232"
                 height="290"
                 alt="Image 10"
