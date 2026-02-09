@@ -28,21 +28,21 @@ const defaultFeatures: FeatureItem[] = [
     title: "Early-Stage Talent Development",
     image: "/icons/talent-development.svg",
     description:
-      "We help organizations transform new entrants into high-performing, work-ready professionals. This includes include workplace readiness, digital literacy, communication & professional conduct, professional writing & reporting, professional writing & reporting, customer service excellence and Basic project management. These programs are ideally suited for interns, graduates, entry-level employees, apprentices and learnership candidates.",
+      "We help organizations transform new entrants into high-performing, work-ready professionals. This includes include workplace readiness, digital literacy, communication & professional conduct, professional writing & reporting, customer service excellence and basic project management. These programs are ideally suited for interns, graduates, entry-level employees, apprentices and learnership candidates.",
   },
   {
     id: 2,
     title: "Talent Re-Skilling & Up-skilling Solutions",
     image: "/icons/upskilling.svg",
     description:
-      "We design re-skilling programmes to help companies adopt new technologies, improve productivity, and remain competitive. Our focus areas include: Information Technology, Business & Administration, Retail & Sales.",
+      "We design re-skilling programs to help companies adopt new technologies, improve productivity, and remain competitive. Our focus areas include: Information Technology, Business & Administration, Retail & Sales.",
   },
   {
     id: 3,
     title: "BBBEE-aligned Enterprise Development",
     image: "/icons/bbbee.svg",
     description:
-      "We support SMMEs with skills development as well as digital up-skilling, helping them to grow and contribute to your BBBEE scorecard.",
+      "We support SMMEs with skills development as well as digital up-skilling, helping them to grow and contribute to their BBBEE scorecard.",
   },
   {
     id: 4,
@@ -63,7 +63,7 @@ const defaultFeatures: FeatureItem[] = [
     title: "Recruitment as a Service (RaaS)",
     image: "/icons/recruitment.svg",
     description:
-      "We provide end-to-end recruitment and placement tailored for internships, learnerships, graduate programmes and entry-level positions, ensuring a seamless hiring process for organizations seeking fresh talent.",
+      "We provide end-to-end recruitment and placement tailored for internships, learnerships, graduate programs and entry-level positions, ensuring a seamless hiring process for organizations seeking fresh talent.",
   },
 ];
 

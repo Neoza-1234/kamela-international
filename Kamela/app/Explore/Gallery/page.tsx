@@ -23,122 +23,121 @@ export default function Gallery() {
           International.{" "}
         </h3>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 px-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-10 px-10 md:px-15 lg:px-20 xl:px-30">
           <div className="grid gap-4">
             <div>
-              <Image
-                className="h-auto max-w-full rounded-xl"
-                src="/gallery-1.jpg"
-                alt="gallery image"
-                width={500}
-                height={500}
+              <img
+                className="w-full rounded-xl shadow"
+                src="/kamela-10.jpg"
+                width="232"
+                height="290"
+                alt="Image 01"
               />
             </div>
             <div>
-              <Image
-                className="h-auto max-w-full rounded-xl"
-                src="/gallery-2.jpg"
-                alt="gallery image"
-                width={500}
-                height={500}
+              <img
+                className="w-full rounded-xl shadow"
+                src="/kamela-12.jpg"
+                width="232"
+                height="290"
+                alt="Image 02"
               />
             </div>
             <div>
-              <Image
-                className="h-auto max-w-full rounded-xl"
-                src="/gallery-3.jpg"
-                alt="gallery image"
-                width={500}
-                height={500}
+              <img
+                className="w-full rounded-xl shadow"
+                src="/kamela-14.jpg"
+                width="232"
+                height="174"
+                alt="Image 03"
               />
             </div>
           </div>
+
           <div className="grid gap-4">
             <div>
-              <Image
-                className="h-auto max-w-full rounded-xl"
-                src="/Kamela-6.jpg"
-                alt="gallery image"
-                width={500}
-                height={500}
+              <img
+                className="w-full rounded-xl shadow"
+                src="/kamela-9.jpg"
+                width="232"
+                height="155"
+                alt="Image 04"
               />
             </div>
             <div>
-              <Image
-                className="h-auto max-w-full rounded-xl"
-                src="/Kamela-7.jpg"
-                alt="gallery image"
-                width={500}
-                height={500}
+              <img
+                className="w-full rounded-xl shadow"
+                src="/kamela-15.jpg"
+                width="232"
+                height="349"
+                alt="Image 05"
               />
             </div>
             <div>
-              <Image
-                className="h-auto max-w-full rounded-xl"
-                src="/Kamela-8.jpg"
-                alt="gallery image"
-                width={500}
-                height={500}
+              <img
+                className="w-full rounded-xl shadow"
+                src="/kamela-17.jpg"
+                width="232"
+                height="349"
+                alt="Image 06"
               />
             </div>
           </div>
+
           <div className="grid gap-4">
             <div>
-              <Image
-                className="h-auto max-w-full rounded-xl"
-                src="/Kamela-9.jpg"
-                alt="gallery image"
-                width={500}
-                height={500}
+              <img
+                className="w-full rounded-xl shadow"
+                src="/kamela-14.jpg"
+                width="232"
+                height="349"
+                alt="Image 07"
               />
             </div>
             <div>
-              <Image
-                className="h-auto max-w-full rounded-xl"
-                src="/Kamela-10.jpg"
-                alt="gallery image"
-                width={500}
-                height={500}
+              <img
+                className="w-full rounded-xl shadow"
+                src="/kamela-6.jpg"
+                width="232"
+                height="155"
+                alt="Image 08"
               />
             </div>
             <div>
-              <Image
-                className="h-auto max-w-full rounded-xl"
-                src="/Kamela-11.jpg"
-                alt="gallery image"
-                width={500}
-                height={500}
+              <img
+                className="w-full rounded-xl shadow"
+                src="/kamela-7.jpg"
+                width="232"
+                height="349"
+                alt="Image 09"
               />
             </div>
           </div>
+
           <div className="grid gap-4">
             <div>
-              <Image
-                className="h-auto max-w-full rounded-xl"
-                src="/Kamela-12.jpg"
-                alt="gallery image"
-                width={500}
-                height={500}
+              <img
+                className="w-full rounded-xl shadow"
+                src="/kamela-13.jpg"
+                width="232"
+                height="290"
+                alt="Image 10"
               />
             </div>
-            <div>
-              <Image
-                className="h-auto max-w-full rounded-xl"
-                src="/Kamela-14.jpg"
-                alt="gallery image"
-                width={500}
-                height={500}
-              />
-            </div>
-            <div>
-              <Image
-                className="h-auto max-w-full rounded-xl"
-                src="/Kamela-13.jpg"
-                alt="gallery image"
-                width={500}
-                height={500}
-              />
-            </div>
+            <img
+              className="w-full rounded-xl shadow"
+              src="/gallery-2.jpg"
+              width="232"
+              height="155"
+              alt="Image 11"
+            />
+            <img
+              className="w-full rounded-xl shadow"
+              src="/about2.jpg"
+              width="232"
+              height="309"
+              alt="Image 12"
+            />
           </div>
         </div>
       </div>

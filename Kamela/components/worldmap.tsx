@@ -9,7 +9,7 @@ export default function AfricanImpact() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <div ref={ref} className="py-40 dark:bg-black bg-white w-full">
+    <div ref={ref} className="py-10 dark:bg-black w-full">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl dark:text-white text-black font-bold">
           Our Footprint Across <span className="text-purple_blue">Africa</span>
@@ -58,7 +58,7 @@ export default function AfricanImpact() {
         />
       ) : (
         // Placeholder to maintain layout while loading
-        <div className="w-full aspect-2/1 dark:bg-black bg-white rounded-lg" />
+        <div className="w-full aspect-2/1 dark:bg-black rounded-lg" />
       )}
     </div>
   );

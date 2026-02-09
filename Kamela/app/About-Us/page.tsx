@@ -107,7 +107,7 @@ export default function AboutUs() {
 
       {/* ======= About Us Section ======= */}
 
-      <section className="overflow-hidden pt-20 pb-12 px-10 lg:pt-30 lg:pb-22.5 bg-white dark:bg-dark">
+      <section className="overflow-hidden pt-10 pb-10 px-10 lg:pt-10 lg:pb-10 dark:bg-dark">
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center justify-between -mx-4">
             <div className="w-full px-4 lg:w-6/12">
@@ -118,8 +118,8 @@ export default function AboutUs() {
                       src="/About1.jpg"
                       alt="about image"
                       width={500}
-                      height={400}
-                      className=" rounded-2xl w-125 h-100 object-cover "
+                      height={500}
+                      className=" rounded-2xl w-125 h-100 object-fill"
                     />
                   </div>
                   <div className="py-3 sm:py-4 bg-cover">
@@ -127,8 +127,8 @@ export default function AboutUs() {
                       src="/about2.jpg"
                       alt="about image"
                       width={500}
-                      height={400}
-                      className=" rounded-2xl w-125 h-100 object-cover "
+                      height={500}
+                      className=" rounded-2xl w-125 h-100 object-fill "
                     />
                   </div>
                 </div>
@@ -138,8 +138,8 @@ export default function AboutUs() {
                       src="/about3.jpg"
                       alt="about image"
                       width={500}
-                      height={400}
-                      className=" rounded-2xl w-125 h-100 object-cover"
+                      height={500}
+                      className=" rounded-2xl w-125 h-100 object-fill"
                     />
                   </div>
                 </div>
@@ -147,20 +147,20 @@ export default function AboutUs() {
             </div>
 
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-              <div className="mt-10 lg:mt-0">
-                <h2 className="mb-5 text-dark dark:text-white sm:text-[40px]/[48px] text-center">
+              <div className="mt-5 lg:mt-0">
+                <h2 className="mb-5 dark:text-white sm:text-[40px]/[48px] text-center">
                   <span className="text-(--prime) leading-tight">
-                    10 Years of Empowering Skills & <br></br> Shaping Futures
+                    10 Years of Empowering Skills & Shaping Futures
                   </span>
                 </h2>
-                <p className="mb-5 text-base text-body-color dark:text-dark-6">
+                <p className="mb-5 dark:text-dark-6">
                   Kamela International is a leading training, digital
                   transformation, enterprise development, and assessment
                   institution committed to producing highly skilled
                   professionals across Africa.
                 </p>
-                <p className="mb-8 text-base text-body-color dark:text-dark-6">
-                  We partner with government entities, universities, cooperates,
+                <p className="mb-5 dark:text-dark-6">
+                  We partner with government entities, universities, corporates,
                   and global technology providers to deliver programs that
                   address Africa's most urgent needs: employability, innovation,
                   productivity, and economic growth.
@@ -238,10 +238,10 @@ export default function AboutUs() {
 
       {/* ======= Mission, Vision, Values ======= */}
 
-      <section className="py-15 dark:bg-black bg-white">
+      <section className="py-10 dark:bg-black bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="md:text-4xl dark:text-white text-black">
+            <h2 className="md:text-4xl dark:text-white">
               Our Expanded <span className="text-(--prime)">Vision</span>
             </h2>
             <p className="md:text-lg max-w-3xl mx-auto py-6 px-6">
@@ -354,7 +354,7 @@ export default function AboutUs() {
                 className="group bg-(--prime) text-white font-medium flex flex-row justify-between items-center py-2 px-5 rounded-full max-w-64 w-52 md:py-3 border border-(--prime) transition-all duration-200 ease-in-out hover:bg-transparent hover:text-(--prime)"
               >
                 <span className="flex text-start transform transition-transform duration-200 ease-in-out group-hover:translate-x-13">
-                  Explour Courses
+                  Explore Courses
                 </span>
                 <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center transform transition-all duration-200 ease-in-out group-hover:-translate-x-37 group-hover:rotate-45 group-hover:bg-black">
                   <ArrowUpRight
@@ -369,12 +369,12 @@ export default function AboutUs() {
 
       {/* ======= Contact Us Section ======= */}
 
-      <section className="flex flex-col items-center justify-center mx-auto max-md:mx-2 max-md:px-2 max-w-5xl w-full text-center rounded-3xl py-20 px-8 md:py-24 bg-black my-15">
+      <section className="flex flex-col items-center justify-center mx-auto max-md:mx-2 max-md:px-2 max-w-5xl w-full text-center rounded-3xl py-10 px-8 md:py-24 bg-black my-10">
         <h1 className="text-white leading-tight">
           Contact us today and take the <br></br>next step toward growth{" "}
         </h1>
-        <div className="h-0.75 w-32 my-1 bg-linear-to-l from-transparent to-blue-700"></div>
-        <p className="md:text-base text-white max-w-xl pt-5">
+        <div className="h-0.75 w-38 my-1 bg-linear-to-l from-transparent to-blue-700"></div>
+        <p className="md:text-base text-white max-w-2xl pt-5">
           Whether you are advancing your own career or strengthening your
           workforce, we deliver the training that transforms potential into
           performance

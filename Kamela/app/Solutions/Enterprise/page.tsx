@@ -58,7 +58,7 @@ export default function Enterprise() {
           <p>
             Kamela International partners with organizations across South Africa
             and Africa to deliver high-impact enterprise development, workforce
-            transformation, and talent enablement solutions. Our programmes are
+            transformation, and talent enablement solutions. Our programs are
             designed to strengthen organizational capacity, build future-ready
             skills, and accelerate economic inclusion through scalable,
             digital-enabled training interventions. We support cooperates,
@@ -69,11 +69,11 @@ export default function Enterprise() {
         </div>
       </section>
 
-      {/* Why Cooperates Choose Kamela Section */}
+      {/* Why Corporates Choose Kamela Section */}
 
-      <section className="py-20 px-4 bg-white flex flex-col justify-center items-center gap-6">
+      <section className="py-20 px-4 flex flex-col justify-center items-center gap-6">
         <h2 className="px-4 h-8 rounded-3xl text-center leading-tight">
-          Why Cooperates Choose Kamela
+          Why Corporates Choose Kamela
         </h2>
         <p className=" md:text-[40px]/12 text-center leading-tight max-w-3xl">
           Our enterprise development solutions are trusted because they offer
@@ -213,7 +213,7 @@ export default function Enterprise() {
                   We partner with organizations to deliver customized training
                   solutions that drive workforce transformation, enterprise
                   development, and talent pipeline growth. We work closely with
-                  clients to design and implement programmes that enhance
+                  clients to design and implement programs that enhance
                   employee performance, improve organizational capacity, and
                   accelerate economic inclusion.
                 </p>

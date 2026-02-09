@@ -39,7 +39,7 @@ const PulsingPoint = memo(({ x, y, color }: { x: number; y: number; color: strin
 
 PulsingPoint.displayName = "PulsingPoint";
 
-function WorldMap({ dots = [], lineColor = "#0866ff" }: MapProps) {
+function WorldMap({ dots = [], lineColor = "#155dfc" }: MapProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
