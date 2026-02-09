@@ -862,7 +862,7 @@ export const coursesData: Course[] = [
     name: "Occupational Certificate: Office Administrator",
     icon: "/icons/office-admin.svg",
     description:
-      "learn office administration, document management, and administrative support for efficient office operations.",
+      "Learn office administration, document management, and administrative support for efficient office operations.",
     fullDescription:
       "Gain practical skills in office systems, records management and administration to support business functions.",
     nqfLevel: 5,
@@ -1053,9 +1053,9 @@ export const coursesData: Course[] = [
     category: "business",
     name: "HOC: Human Resource Management Administrator",
     icon: "/icons/hr-management.svg",
-    description: "Administration knowledge.",
+    description: "Learn foundational, day-to-day operational support for the HR department to ensure efficient handling of personnel records, employee queries, and compliance.",
     fullDescription:
-      "Practical HR administration skills including employee records, basic payroll and HR processes.",
+      "Gain practical HR administration skills such as maintaining databases, facilitating onboarding/offboarding, managing payroll inputs, and assisting with recruitment logistics to maintain a smooth employee lifecycle.",
     nqfLevel: 5,
     saqaid: "121150",
     credits: 120,

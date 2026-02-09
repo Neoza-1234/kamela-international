@@ -26,7 +26,7 @@ export default function Gallery() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-10 px-10 md:px-15 lg:px-20 xl:px-30">
           <div className="grid gap-4">
             <div>
-              <img
+              <Image
                 className="w-full rounded-xl shadow"
                 src="/gallery-4.jpg"
                 width="232"
@@ -35,7 +35,7 @@ export default function Gallery() {
               />
             </div>
             <div>
-              <img
+              <Image
                 className="w-full rounded-xl shadow"
                 src="/gallery-5.jpg"
                 width="232"
@@ -44,7 +44,7 @@ export default function Gallery() {
               />
             </div>
             <div>
-              <img
+              <Image
                 className="w-full rounded-xl shadow"
                 src="/gallery-6.jpg"
                 width="232"
@@ -56,7 +56,7 @@ export default function Gallery() {
 
           <div className="grid gap-4">
             <div>
-              <img
+              <Image
                 className="w-full rounded-xl shadow"
                 src="/gallery-7.jpg"
                 width="232"
@@ -65,7 +65,7 @@ export default function Gallery() {
               />
             </div>
             <div>
-              <img
+              <Image
                 className="w-full rounded-xl shadow"
                 src="/gallery-8.jpg"
                 width="232"
@@ -74,7 +74,7 @@ export default function Gallery() {
               />
             </div>
             <div>
-              <img
+              <Image
                 className="w-full rounded-xl shadow"
                 src="/gallery-9.jpg"
                 width="232"
@@ -86,16 +86,16 @@ export default function Gallery() {
 
           <div className="grid gap-4">
             <div>
-              <img
+              <Image
                 className="w-full rounded-xl shadow"
-                src="/.jpg"
+                src="/gallery-12.jpg"
                 width="232"
                 height="349"
                 alt="Image 07"
               />
             </div>
             <div>
-              <img
+              <Image
                 className="w-full rounded-xl shadow"
                 src="/gallery-10.jpg"
                 width="232"
@@ -104,7 +104,7 @@ export default function Gallery() {
               />
             </div>
             <div>
-              <img
+              <Image
                 className="w-full rounded-xl shadow"
                 src="/kamela7.jpg"
                 width="232"
@@ -116,7 +116,7 @@ export default function Gallery() {
 
           <div className="grid gap-4">
             <div>
-              <img
+              <Image
                 className="w-full rounded-xl shadow"
                 src="/gallery-11.jpg"
                 width="232"
@@ -124,14 +124,14 @@ export default function Gallery() {
                 alt="Image 10"
               />
             </div>
-            <img
+            <Image
               className="w-full rounded-xl shadow"
               src="/gallery-2.jpg"
               width="232"
               height="155"
               alt="Image 11"
             />
-            <img
+            <Image
               className="w-full rounded-xl shadow"
               src="/about2.jpg"
               width="232"
@@ -140,6 +140,8 @@ export default function Gallery() {
             />
           </div>
         </div>
+
+        
       </div>
     </>
   );
