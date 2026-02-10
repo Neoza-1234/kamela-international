@@ -31,7 +31,7 @@ export default function About() {
               Its mission is to empower individuals, businesses, and communities
               by providing accredited, future-oriented training that leads to
               genuine competence, true confidence, and meaningful
-              opportunities..
+              opportunities.
             </p>
           </div>
         </div>

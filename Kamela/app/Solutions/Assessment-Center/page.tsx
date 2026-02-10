@@ -216,37 +216,37 @@ export default function AssessmentCenter() {
 
         <div className="container mx-auto px-6 py-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="rpl-journey-step p-6 text-center border border-secondary rounded-3xl hover:-translate-y-1 transition duration-300">
+          <div className="rpl-journey-step p-6 text-center border border-secondary rounded-3xl hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
             <h3 className="font-bold mb-4">Step 1: Registration & Verification</h3>
             <p>
               Learners submit documents + proof of internal assessments.
             </p>
           </div>
-          <div className="rpl-journey-step p-6 text-center border border-secondary rounded-3xl hover:-translate-y-1 transition duration-300">
+          <div className="rpl-journey-step p-6 text-center border border-secondary rounded-3xl hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
             <h3 className="font-bold mb-4">Step 2: Booking & Scheduling</h3>
             <p>
               Exam dates are confirmed and communicated.
             </p>
           </div>
-          <div className="rpl-journey-step p-6 text-center border border-secondary rounded-3xl hover:-translate-y-1 transition duration-300">
+          <div className="rpl-journey-step p-6 text-center border border-secondary rounded-3xl hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
             <h3 className="font-bold mb-4">Step 3: Assessment Day</h3>
             <p>
               Learners complete knowledge + practical assessments at the centre.
             </p>
           </div>
-          <div className="rpl-journey-step p-6 text-center border border-secondary rounded-3xl hover:-translate-y-1 transition duration-300">
+          <div className="rpl-journey-step p-6 text-center border border-secondary rounded-3xl hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
             <h3 className="font-bold mb-4">Step 4: Moderation & Quality Review</h3>
             <p>
               Results are verified by accredited moderators.
             </p>
           </div>
-          <div className="rpl-journey-step p-6 text-center border border-secondary rounded-3xl hover:-translate-y-1 transition duration-300">
+          <div className="rpl-journey-step p-6 text-center border border-secondary rounded-3xl hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
             <h3 className="font-bold mb-4">Step 5: Submission to QCTO</h3>
             <p>
               Final results are captured and submitted for certification.
             </p>
           </div>
-           <div className="rpl-journey-step p-6 text-center border border-secondary rounded-3xl hover:-translate-y-1 transition duration-300">
+           <div className="rpl-journey-step p-6 text-center border border-secondary rounded-3xl hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
             <h3 className="font-bold mb-4">Step 6: Certification</h3>
             <p>
               Learners receive a QCTO Occupational Certificate upon successful completion.

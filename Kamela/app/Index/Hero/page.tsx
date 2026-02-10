@@ -8,25 +8,25 @@ import {ArrowUpRight} from "lucide-react";
 const statsData = [
   {
     value: "16",
-    suffix: "",
+    suffix: "+",
     title: "Accredited Courses",
     desc: "Accredited by QCTO and recognized across Africa.",
   },
   {
     value: "3000",
-    suffix: "",
+    suffix: "+",
     title: "Students Empowered",
     desc: "Transforming lives through quality education and skills development.",
   },
   {
     value: "50",
-    suffix: "",
+    suffix: "+",
     title: "Corporate Clients",
     desc: "Trusted by leading organizations across the South Africa.",
   },
   {
     value: "10",
-    suffix: "",
+    suffix: "+",
     title: "Years of Excellence",
     desc: "Consistent delivery of high-quality training and development programs.",
   },
@@ -37,7 +37,7 @@ export default function Hero() {
     <>
       <section id="hero" className="d-flex align-items-center">
         <div
-          className="container mx-auto px-6 py-50 grid grid-cols-1 md:grid-cols-2 gaps-12 items-center relative z-10"
+          className="container mx-auto px-6 py-30 grid grid-cols-1 md:grid-cols-2 gaps-12 items-center relative z-10"
           data-aos="zoom-in"
           data-aos-delay="100"
         >
@@ -48,6 +48,11 @@ export default function Hero() {
                 Skills, Technology, and Innovation
               </span>
             </h1>
+            <p className="hero-description mt-6 text-lg/8">
+              Unlocking Africa's potential by equipping people and organizations
+              with high-impact skills, digital capabilities, leadership
+              excellence, and meaningful training opportunities.
+            </p>
             <div className=" flex justify-start items-center gap-3 flex-wrap mt-6">
               <Link
                 href="/Solutions/Study"
@@ -85,8 +90,8 @@ export default function Hero() {
             <Image
               src="/icons/hero-img.png"
               alt="Hero Image"
-              width={400}
-              height={400}
+              width={500}
+              height={500}
               className="hero-img rounded-lg pb-10"
             />
           </div>

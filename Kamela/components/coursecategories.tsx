@@ -43,7 +43,7 @@ const CourseSection = ({ initialTab = "ict" }: { initialTab?: TabId }) => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="mb-3">Explore Our Courses</h1>
+          <h2 className="mb-3">Explore Our Courses</h2>
           <p>Choose a category to discover accredited qualifications</p>
         </div>
 

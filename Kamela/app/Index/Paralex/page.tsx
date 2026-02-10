@@ -100,7 +100,7 @@ function ParalexSection({ item }: { item: ParallaxItem }) {
     >
       <div className="Paralex-content flex flex-col justify-center px[8%] py-20">
         <div className="flex justify-between items-center gap-5 py-7 px-15">
-          <span className="text-white border border-gray-300 px-4 p-2 rounded-full uppercase">
+          <span className="text-white border border-gray-300 px-4 p-2 rounded-full uppercase ">
             {item.tag}
           </span>
           <h2 className="text-(--prime)">{item.number}</h2>

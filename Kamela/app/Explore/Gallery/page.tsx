@@ -14,14 +14,11 @@ export default function Gallery() {
           <i className="ri-arrow-drop-right-line"></i>
           <div className="text-(--prime) font-semibold">Gallery</div>
         </div>
-        <h1 className="text-3xl font-semibold text-center mx-auto mt-30 text-(--prime)">
-          Kamela International Gallery
-        </h1>
-        <h3 className="text-center mt-2 max-w-lg mx-auto">
+        <h2 className="text-center mt-5 max-w-2xl mx-auto">
           {" "}
           Capturing every moment of excellence and achievement at Kamela
           International.{" "}
-        </h3>
+        </h2>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-10 px-10 md:px-15 lg:px-20 xl:px-30">
           <div className="grid gap-4">
@@ -97,7 +94,7 @@ export default function Gallery() {
             <div>
               <Image
                 className="w-full rounded-xl shadow"
-                src="/gallery-10.jpg"
+                src="/gallery-10.webp"
                 width="232"
                 height="155"
                 alt="Image 08"
@@ -141,7 +138,127 @@ export default function Gallery() {
           </div>
         </div>
 
-        
+        <h2 className="text-center mt-15 max-w-2xl mx-auto">
+          Empowering future developers and managers with essential skills and knowledge for career success
+        </h2>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 pt-10 px-10 md:px-15 lg:px-20 xl:px-30">
+          <div className="grid gap-4">
+            <div>
+              <Image
+                className="w-full rounded-xl shadow"
+                src="/gallery-15.jpg"
+                width="232"
+                height="290"
+                alt="Image 13"
+              />
+            </div>
+            <div>
+              <Image
+                className="w-full rounded-xl shadow"
+                src="/gallery-16.jpg"
+                width="232"
+                height="290"
+                alt="Image 14"
+              />
+            </div>
+            <div>
+              <Image
+                className="w-full rounded-xl shadow"
+                src="/gallery-17.jpg"
+                width="232"
+                height="174"
+                alt="Image 15"
+              />
+            </div>
+          </div>
+
+          <div className="grid gap-4">
+            <div>
+              <Image
+                className="w-full rounded-xl shadow"
+                src="/gallery-18.jpg"
+                width="232"
+                height="155"
+                alt="Image 16"
+              />
+            </div>
+            <div>
+              <Image
+                className="w-full rounded-xl shadow"
+                src="/gallery-19.jpg"
+                width="232"
+                height="349"
+                alt="Image 17"
+              />
+            </div>
+            <div>
+              <Image
+                className="w-full rounded-xl shadow"
+                src="/gallery-22.jpg"
+                width="232"
+                height="250"
+                alt="Image 18"
+              />
+            </div>
+          </div>
+
+          <div className="grid gap-4">
+            <div>
+              <Image
+                className="w-full rounded-xl shadow"
+                src="/About1.jpg"
+                width="232"
+                height="349"
+                alt="Image 19"
+              />
+            </div>
+            <div>
+              <Image
+                className="w-full rounded-xl shadow"
+                src="/gallery-24.webp"
+                width="232"
+                height="155"
+                alt="Image 20"
+              />
+            </div>
+            <div>
+              <Image
+                className="w-full rounded-xl shadow"
+                src="/gallery-25.jpg"
+                width="232"
+                height="250"
+                alt="Image 09"
+              />
+            </div>
+          </div>
+
+          <div className="grid gap-4">
+            <div>
+              <Image
+                className="w-full rounded-xl shadow"
+                src="/gallery-23.webp"
+                width="232"
+                height="290"
+                alt="Image 10"
+              />
+            </div>
+            <Image
+              className="w-full rounded-xl shadow"
+              src="/gallery-3.jpg"
+              width="232"
+              height="155"
+              alt="Image 11"
+            />
+            <Image
+              className="w-full rounded-xl shadow"
+              src="/gallery-26.jpg"
+              width="232"
+              height="309"
+              alt="Image 12"
+            />
+          </div>
+        </div>
       </div>
     </>
   );

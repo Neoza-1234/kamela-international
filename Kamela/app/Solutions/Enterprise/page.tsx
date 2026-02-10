@@ -79,7 +79,7 @@ export default function Enterprise() {
           Our enterprise development solutions are trusted because they offer
         </p>
         <div className="relative max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300">
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300 hover:shadow-2xl">
             <i className="ri-check-double-line w-30 h-30 pb-3"></i>
             <p className="font-bold">Proven Track Record</p>
             <p>
@@ -88,7 +88,7 @@ export default function Enterprise() {
               telecommunications, manufacturing, and academia.
             </p>
           </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300">
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300 hover:shadow-2xl">
             <i className="ri-check-double-line w-30 h-30 pb-3"></i>
             <p className="font-bold">Customized Skills Solutions</p>
             <p>
@@ -96,7 +96,7 @@ export default function Enterprise() {
               workforce needs, and strategic goals.
             </p>
           </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300">
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300 hover:shadow-2xl">
             <i className="ri-check-double-line w-30 h-30 pb-3"></i>
             <p className="font-bold">Digital & Blended Learning</p>
             <p>
@@ -104,7 +104,7 @@ export default function Enterprise() {
               assessments ensure employees learn anywhere, anytime.
             </p>
           </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300">
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300 hover:shadow-2xl">
             <i className="ri-check-double-line w-30 h-30 pb-3"></i>
             <p className="font-bold">Enterprise Development & Incubation</p>
             <p>
@@ -112,7 +112,7 @@ export default function Enterprise() {
               development training aligned to B-BBEE requirements.
             </p>
           </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300">
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300 hover:shadow-2xl">
             <i className="ri-check-double-line w-30 h-30 pb-3"></i>
             <p className="font-bold">Talent Pipeline Development</p>
             <p>
@@ -120,7 +120,7 @@ export default function Enterprise() {
               employability and professional performance
             </p>
           </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300">
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300 hover:shadow-2xl">
             <i className="ri-check-double-line w-30 h-30 pb-3"></i>
             <p className="font-bold">National Implementation Capability</p>
             <p>
@@ -138,7 +138,7 @@ export default function Enterprise() {
           Trusted By leading Corporate & Public Organizations
         </h2>
         <div className="max-w-4xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 w-full mt-14">
-          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
+          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200 hover:shadow-lg">
             <Image
               src="/icons/anglo-american.svg"
               alt="Logo"
@@ -146,7 +146,7 @@ export default function Enterprise() {
               height={100}
             />
           </div>
-          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
+          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200 hover:shadow-lg">
             <Image
               src="/icons/alteram.png"
               alt="Logo"
@@ -154,7 +154,7 @@ export default function Enterprise() {
               height={100}
             />
           </div>
-          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
+          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200 hover:shadow-lg">
             <Image
               src="/icons/master-plastics.webp"
               alt="Logo"
@@ -162,13 +162,13 @@ export default function Enterprise() {
               height={100}
             />
           </div>
-          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
+          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200 hover:shadow-lg">
             <Image src="/icons/wits.png" alt="Logo" width={100} height={100} />
           </div>
-          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
+          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200 hover:shadow-lg">
             <Image src="/icons/unisa.jpg" alt="Logo" width={100} height={100} />
           </div>
-          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
+          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200 hover:shadow-lg">
             <Image
               src="/icons/transnet.png"
               alt="Logo"
@@ -176,7 +176,7 @@ export default function Enterprise() {
               height={100}
             />
           </div>
-          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
+          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200 hover:shadow-lg">
             <Image
               src="/icons/marshalls.jpg"
               alt="Logo"
@@ -184,7 +184,7 @@ export default function Enterprise() {
               height={100}
             />
           </div>
-          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
+          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200 hover:shadow-lg">
             <Image
               src="/icons/makhophila.png"
               alt="Logo"
@@ -192,7 +192,7 @@ export default function Enterprise() {
               height={100}
             />
           </div>
-          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200">
+          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200 hover:shadow-lg">
             <Image src="/icons/raf.jpg" alt="Logo" width={50} height={50} />
           </div>
         </div>
@@ -351,7 +351,7 @@ export default function Enterprise() {
           src="/contact.jpg"
           width={500}
           height={500}
-          className="h-56 w-full object-cover rounded-3xl sm:h-full"
+          className="h-56 w-full object-cover rounded-3xl sm:h-full shadow-2xl"
         />
       </section>
     </>

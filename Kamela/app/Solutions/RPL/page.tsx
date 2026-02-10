@@ -76,7 +76,7 @@ export default function RPL() {
             alt="RPL Image"
             width={500}
             height={600}
-            className="rpl-image rounded-3xl "
+            className="rpl-image rounded-3xl shadow-2xl "
           />
         </div>
         <div className="rpl-content">
@@ -115,7 +115,7 @@ export default function RPL() {
           Benefits of Recognition of Prior Learning (RPL)
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
             <i className="ri-check-double-line w-30 h-30 pb-3 text-blue-700"></i>
             <p className="font-bold">Faster achievement of a qualification</p>
             <p>
@@ -124,7 +124,7 @@ export default function RPL() {
             </p>
           </div>
 
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
             <i className="ri-check-double-line w-30 h-30 pb-3 text-blue-700"></i>
             <p className="font-bold">Reduced training time and cost</p>
             <p>
@@ -133,7 +133,7 @@ export default function RPL() {
             </p>
           </div>
 
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
             <i className="ri-check-double-line w-30 h-30 pb-3 text-blue-700"></i>
             <p className="font-bold">Recognition of real experience</p>
             <p>
@@ -141,7 +141,7 @@ export default function RPL() {
               experience, enhancing employability and career advancement.
             </p>
           </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
             <i className="ri-check-double-line w-30 h-30 pb-3 text-blue-700"></i>
             <p className="font-bold">Supports promotions and career mobility</p>
             <p>
@@ -149,7 +149,7 @@ export default function RPL() {
               by formally recognizing their competencies.
             </p>
           </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
             <i className="ri-check-double-line w-30 h-30 pb-3 text-blue-700"></i>
             <p className="font-bold">
               Ideal for experienced workers without formal qualifications
@@ -159,7 +159,7 @@ export default function RPL() {
               experience but lack formal certifications.
             </p>
           </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
             <i className="ri-check-double-line w-30 h-30 pb-3 text-blue-700"></i>
             <p className="font-bold">Increases confidence and self-esteem</p>
             <p>
@@ -177,35 +177,35 @@ export default function RPL() {
           Your RPL Journey with Kamela International
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="rpl-journey-step p-6 text-center border border-secondary rounded-3xl hover:-translate-y-1 transition duration-300">
+          <div className="rpl-journey-step p-6 text-center border border-secondary rounded-3xl hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
             <h3 className="font-bold mb-4">Step 1: Initial Consultation</h3>
             <p>
               Discuss your prior learning experiences and career goals with our
               RPL experts.
             </p>
           </div>
-          <div className="rpl-journey-step p-6 text-center border border-secondary rounded-3xl hover:-translate-y-1 transition duration-300">
+          <div className="rpl-journey-step p-6 text-center border border-secondary rounded-3xl hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
             <h3 className="font-bold mb-4">Step 2: Documentation</h3>
             <p>
               Gather and submit documentation that supports your prior learning
               and experience.
             </p>
           </div>
-          <div className="rpl-journey-step p-6 text-center border border-secondary rounded-3xl hover:-translate-y-1 transition duration-300">
+          <div className="rpl-journey-step p-6 text-center border border-secondary rounded-3xl hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
             <h3 className="font-bold mb-4">Step 3: Assessment</h3>
             <p>
               Our experts will assess your documentation and determine the level
               of recognition.
             </p>
           </div>
-          <div className="rpl-journey-step p-6 text-center border border-secondary rounded-3xl hover:-translate-y-1 transition duration-300">
+          <div className="rpl-journey-step p-6 text-center border border-secondary rounded-3xl hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
             <h3 className="font-bold mb-4">Step 4: Outcome</h3>
             <p>
               Receive your accredited qualification or certification based on
               the assessment.
             </p>
           </div>
-          <div className="rpl-journey-step p-6 text-center border border-secondary rounded-3xl hover:-translate-y-1 transition duration-300">
+          <div className="rpl-journey-step p-6 text-center border border-secondary rounded-3xl hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
             <h3 className="font-bold mb-4">Step 5: Further Development</h3>
             <p>
               Explore additional training or education opportunities to further
@@ -261,92 +261,92 @@ export default function RPL() {
 
         <section className="flex flex-col justify-center items-center gap-6">
           <div className="relative max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
               <Code className="text-blue-700"/>
               <p className="font-bold">
                 Occupational Certificate: Software Developer
               </p>
             </div>
-            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
               <Computer className="text-blue-700"/>
               <p className="font-bold">
                 Occupational Certificate: Computer Technician
               </p>
             </div>
-            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
               <FingerprintPattern className="text-blue-700"/>
               <p className="font-bold">
                 Occupational Certificate: Cybersecurity Analyst
               </p>
             </div>
-            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
               <Database className="text-blue-700"/>
               <p className="font-bold">
                 Occupational Certificate: Data Science Practitioner
               </p>
             </div>
-            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
               <FolderKanban className="text-blue-700"/>
               <p className="font-bold">
                 Occupational Certificate: Project Manager
               </p>
             </div>
-            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
               <BookOpenCheck className="text-blue-700"/>
               <p className="font-bold">
                 Occupational Certificate: Quality Assurer
               </p>
             </div>
-            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
               <Headset className="text-blue-700"/>
               <p className="font-bold">
                 Occupational Certificate: Contact Centre Manager
               </p>
             </div>
-            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
               <Store className="text-blue-700"/>
               <p className="font-bold">
                 {" "}
                 Occupational Certificate: Retail Supervisor
               </p>
             </div>
-            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
               <Container className="text-blue-700"/>
               <p className="font-bold">
                 Occupational Certificate: Supply Chain Practitioner{" "}
               </p>
             </div>
-            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
               <Forklift className="text-blue-700"/>
               <p className="font-bold">
                 Occupational Certificate: Supply Chain Manager
               </p>
             </div>
-            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
               <ChartCandlestick className="text-blue-700"/>
               <p className="font-bold">
                 Occupational Certificate: Marketing Coordinator
               </p>
             </div>
-            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
               <BadgeDollarSign className="text-blue-700"/>
               <p className="font-bold">
                 National Occupational Certificate: Sales Representative
               </p>
             </div>
-            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
               <Briefcase className="text-blue-700"/>
               <p className="font-bold">
                 Occupational Certificate: Office Administrator
               </p>
             </div>
-            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
               <Building2 className="text-blue-700"/>
               <p className="font-bold">
                 Occupational Certificate: Office Supervisor
               </p>
             </div>
-            <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300">
+            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
               <UsersRound className="text-blue-700"/>
               <p className="font-bold">
                 Higher Occupational Certificate: Human Resource Management

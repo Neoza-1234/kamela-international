@@ -119,7 +119,7 @@ export default function AboutUs() {
                       alt="about image"
                       width={500}
                       height={500}
-                      className=" rounded-2xl w-125 h-100 object-fill"
+                      className=" rounded-2xl w-125 h-100 object-fill shadow-2xl"
                     />
                   </div>
                   <div className="py-3 sm:py-4 bg-cover">
@@ -128,7 +128,7 @@ export default function AboutUs() {
                       alt="about image"
                       width={500}
                       height={500}
-                      className=" rounded-2xl w-125 h-100 object-fill "
+                      className=" rounded-2xl w-125 h-100 object-fill shadow-2xl"
                     />
                   </div>
                 </div>
@@ -139,7 +139,7 @@ export default function AboutUs() {
                       alt="about image"
                       width={500}
                       height={500}
-                      className=" rounded-2xl w-125 h-100 object-fill"
+                      className=" rounded-2xl w-125 h-100 object-fill shadow-2xl"
                     />
                   </div>
                 </div>
@@ -175,7 +175,7 @@ export default function AboutUs() {
 
       <section className="py-20 px-4 bg-black flex flex-col justify-center items-center gap-6">
         <h3 className="px-4 h-8 text-slate-200 rounded-lg">Our Core Values</h3>
-        <h2 className=" md:text-[40px]/12 text-gray-100 max-w-lg text-center leading-tight">
+        <h2 className=" md:text-[40px]/12 text-gray-100 max-w-2xl text-center leading-tight">
           Our values define our identity, drive our decisions, and shape every
           learner and client experience.
         </h2>
