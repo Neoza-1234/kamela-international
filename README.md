@@ -1,13 +1,13 @@
 # Kamela-International
 
-This to this the official repository for **Kamela International's** website, a platform to offering training services and establishing **Kamela's** branding. This site is designed to be scalable, animated and powered by a headless CMS for dynamic content management.
+This is the official repository for **Kamela International's** website, a platform to offering training services and establishing **Kamela's** branding. .
 
 ---
 
 ##  Project Overview
 
 Kamela International offers:
-- ✨ Service catalog for both individuals and enterprises with animated sections and scroll-triggered reveals
+- ✨ Service catalog for both individuals and enterprises
 - 📚 Training modules powered by a headless CMS
 - 📞 Contact and CTA sections optimized for conversion
 - 🌐 Responsive design with performance-first architecture
@@ -20,5 +20,5 @@ Kamela International offers:
 |--------------|---------------------------|
 | Frontend     |Next js |
 | Styling      | Tailwind CSS      |
-| Hosting      |  AfriHost|
+| Hosting      |  Vercel|
 | Versioning   | Git + GitHub              |
