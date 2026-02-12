@@ -116,7 +116,7 @@ const servicesData = [
   },
 ];
 
-{/* Reusable Card Component */}
+
 interface ServiceCardProps {
   service: (typeof servicesData)[0];
   index: number;
@@ -207,9 +207,6 @@ export default function Services() {
       <div className="flex flex-col items-center gap-8 sm:gap-10 lg:gap-12">
         {/* Header */}
         <header className="text-center max-w-4xl px-4 mt-50">
-          <h3 id="services-heading" className="text-lg sm:text-xl mb-2 sm:mb-3">
-            Our Services
-          </h3>
           <h2 className=" sm:text-3xl md:text-4xl lg:text-5xl leading-tight">
             Explore our extensive training solutions across{" "}
             <span className="text-(--prime)">

@@ -5,7 +5,7 @@ export default function CourseCategory() {
   return (
     <div className="px-[8%] lg:px-0 py-20 course-category">
       <div className="text-center mt-8">
-        <h3 className="">Course Categories</h3>
+        
         <h2>
           We focus on key sectors essential for South Africa's stability and
           growth, providing{" "}
@@ -25,7 +25,7 @@ export default function CourseCategory() {
                 href="/Solutions/Study?tab=ict"
                 className="h-100 md:h-125 lg:h-150"
               >
-                <div className="overflow-hidden relative rounded-3xl cursor-pointer h-full group">
+                <div className="overflow-hidden relative rounded-3xl cursor-pointer h-full group hover:shadow-lg hover:shadow-black/30 transition-shadow duration-300">
                   <Image
                     src="/ICT.jpg"
                     alt="Information & Communication Technology"
@@ -48,7 +48,7 @@ export default function CourseCategory() {
                 href="/Solutions/Study?tab=business"
                 className="h-75 md:h-70 lg:h-80"
               >
-                <div className="overflow-hidden relative rounded-3xl cursor-pointer h-full group">
+                <div className="overflow-hidden relative rounded-3xl cursor-pointer h-full group hover:shadow-lg hover:shadow-black/30 transition-shadow duration-300">
                   <Image
                     src="/business.jpg"
                     alt="Business, Management & Administration"
@@ -74,7 +74,7 @@ export default function CourseCategory() {
                 href="/Solutions/Study?tab=sales"
                 className="h-75 md:h-70 lg:h-80"
               >
-                <div className="overflow-hidden relative rounded-3xl cursor-pointer h-full group">
+                <div className="overflow-hidden relative rounded-3xl cursor-pointer h-full group hover:shadow-lg hover:shadow-black/30 transition-shadow duration-300">
                   <Image
                     src="/sales-&-retail.jpg"
                     alt="Sales & Retail"
@@ -97,7 +97,7 @@ export default function CourseCategory() {
                 href="/Solutions/Study?tab=governance"
                 className="h-100 md:h-125 lg:h-150"
               >
-                <div className="overflow-hidden relative rounded-3xl cursor-pointer h-full group">
+                <div className="overflow-hidden relative rounded-3xl cursor-pointer h-full group hover:shadow-lg hover:shadow-black/30 transition-shadow duration-300">
                   <Image
                     src="/operations.jpg"
                     alt="Governance & Operations"

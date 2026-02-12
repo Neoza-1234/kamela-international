@@ -17,13 +17,12 @@ export default function Accreditations() {
     <>
       <div className="px-[8%] lg:px-[12%] py-20 services">
         <div className="text-center mb-12">
-          <h3 className=" mt-5">Our Accreditation's</h3>
           <h2 className="mt-1">
             Kamela International is{" "}
             <span className="text-(--prime)">
-              fully accredited, registered, and recognized by QCTO and other
+              fully accredited, registered, and recognized by QCTO</span> and other
               leading industry bodies and authorities
-            </span>
+            
           </h2>
         </div>
       </div>

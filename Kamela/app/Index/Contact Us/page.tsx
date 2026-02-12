@@ -8,7 +8,7 @@ export default function ContactUs() {
         Contact us today and take the next step toward growth{" "}
       </h1>
       <div className="h-0.75 w-32 my-1 bg-linear-to-l from-transparent to-blue-700"></div>
-      <p className="md:text-base text-white max-w-xl pt-5">
+      <p className="md:text-base text-white max-w-2xl pt-5">
         Whether you are advancing your own career or strengthening your
         workforce, we deliver the training that transforms potential into
         performance

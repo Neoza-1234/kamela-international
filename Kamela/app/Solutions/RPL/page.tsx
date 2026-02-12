@@ -1,28 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import {
-  Code,
-  Computer,
-  FingerprintPattern,
-  Database,
-  FolderKanban,
-  BookOpenCheck,
-  Headset,
-  Store,
-  Container,
-  Forklift,
-  ChartCandlestick,
-  BadgeDollarSign,
-  Briefcase,
-  Building2,
-  UsersRound,
-  ArrowUpRight,
-} from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import RPLqualifications from "@/components/rpl";
 
 export default function RPL() {
   return (
     <>
-
       <div className="flex flex-wrap justify-start items-center space-x-2 text-sm text-gray-500 font-medium mt-30 px-10 md:px-16 lg:px-24 xl:px-32 mb-3">
         <button type="button" aria-label="Home">
           <Link href="/#">Home</Link>
@@ -41,7 +24,7 @@ export default function RPL() {
         data-aos-delay="100"
       >
         <div className="hero-content">
-          <h1 className="hero-title leading-tight flex justify-center items-center flex-col pr-5 text-(--prime) ">
+          <h1 className="hero-title leading-tight flex justify-center items-center flex-col pr-5">
             Recognition of Prior Learning (RPL) Services
           </h1>
           <div className=" flex justify-start items-center gap-3 flex-wrap">
@@ -56,13 +39,13 @@ export default function RPL() {
           </div>
         </div>
 
-        <div className="hero-img-container relative flex justify-around items-center pt-5">
+        <div className="hero-img-container relative flex justify-around items-center">
           <Image
-            src="/RPL.jpg"
+            src="/recognitionpl.png"
             alt="Hero Image"
             width={500}
-            height={600}
-            className="hero-img rounded-3xl "
+            height={500}
+            className="hero-img rounded-xl shadow-2xl "
           />
         </div>
       </div>
@@ -227,8 +210,8 @@ export default function RPL() {
               be documented and assessed.
             </li>
             <li>
-              <i className="ri-check-double-line w-30 h-30 pb-3 text-blue-700"></i>A
-              comprehensive portfolio of evidence, including work samples,
+              <i className="ri-check-double-line w-30 h-30 pb-3 text-blue-700"></i>
+              A comprehensive portfolio of evidence, including work samples,
               references, and other supporting documents, is typically required.
             </li>
             <li>
@@ -254,108 +237,7 @@ export default function RPL() {
 
       {/* Approved Qualifications for RPL */}
 
-      <div className="container mx-auto px-8 py-20">
-        <h2 className="text-center mb-12">
-          Approved Qualifications for RPL at Kamela International
-        </h2>
-
-        <section className="flex flex-col justify-center items-center gap-6">
-          <div className="relative max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
-              <Code className="text-blue-700"/>
-              <p className="font-bold">
-                Occupational Certificate: Software Developer
-              </p>
-            </div>
-            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
-              <Computer className="text-blue-700"/>
-              <p className="font-bold">
-                Occupational Certificate: Computer Technician
-              </p>
-            </div>
-            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
-              <FingerprintPattern className="text-blue-700"/>
-              <p className="font-bold">
-                Occupational Certificate: Cybersecurity Analyst
-              </p>
-            </div>
-            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
-              <Database className="text-blue-700"/>
-              <p className="font-bold">
-                Occupational Certificate: Data Science Practitioner
-              </p>
-            </div>
-            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
-              <FolderKanban className="text-blue-700"/>
-              <p className="font-bold">
-                Occupational Certificate: Project Manager
-              </p>
-            </div>
-            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
-              <BookOpenCheck className="text-blue-700"/>
-              <p className="font-bold">
-                Occupational Certificate: Quality Assurer
-              </p>
-            </div>
-            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
-              <Headset className="text-blue-700"/>
-              <p className="font-bold">
-                Occupational Certificate: Contact Centre Manager
-              </p>
-            </div>
-            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
-              <Store className="text-blue-700"/>
-              <p className="font-bold">
-                {" "}
-                Occupational Certificate: Retail Supervisor
-              </p>
-            </div>
-            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
-              <Container className="text-blue-700"/>
-              <p className="font-bold">
-                Occupational Certificate: Supply Chain Practitioner{" "}
-              </p>
-            </div>
-            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
-              <Forklift className="text-blue-700"/>
-              <p className="font-bold">
-                Occupational Certificate: Supply Chain Manager
-              </p>
-            </div>
-            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
-              <ChartCandlestick className="text-blue-700"/>
-              <p className="font-bold">
-                Occupational Certificate: Marketing Coordinator
-              </p>
-            </div>
-            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
-              <BadgeDollarSign className="text-blue-700"/>
-              <p className="font-bold">
-                National Occupational Certificate: Sales Representative
-              </p>
-            </div>
-            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
-              <Briefcase className="text-blue-700"/>
-              <p className="font-bold">
-                Occupational Certificate: Office Administrator
-              </p>
-            </div>
-            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
-              <Building2 className="text-blue-700"/>
-              <p className="font-bold">
-                Occupational Certificate: Office Supervisor
-              </p>
-            </div>
-            <div className="bg-gray-200 border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-1 transition duration-300 hover:shadow-2xl">
-              <UsersRound className="text-blue-700"/>
-              <p className="font-bold">
-                Higher Occupational Certificate: Human Resource Management
-                Administrator
-              </p>
-            </div>
-          </div>
-        </section>
-      </div>
+      <RPLqualifications />
 
       {/* CTA Section */}
       <div className="container mx-auto px-6 py-20">

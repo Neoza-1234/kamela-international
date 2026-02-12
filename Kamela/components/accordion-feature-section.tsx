@@ -26,42 +26,42 @@ const defaultFeatures: FeatureItem[] = [
   {
     id: 1,
     title: "Early-Stage Talent Development",
-    image: "/icons/talent-development.svg",
+    image: "/icons/talentdev.svg",
     description:
       "We help organizations transform new entrants into high-performing, work-ready professionals. This includes include workplace readiness, digital literacy, communication & professional conduct, professional writing & reporting, customer service excellence and basic project management. These programs are ideally suited for interns, graduates, entry-level employees, apprentices and learnership candidates.",
   },
   {
     id: 2,
     title: "Talent Re-Skilling & Up-skilling Solutions",
-    image: "/icons/upskilling.svg",
+    image: "/icons/reskilling.svg",
     description:
       "We design re-skilling programs to help companies adopt new technologies, improve productivity, and remain competitive. Our focus areas include: Information Technology, Business & Administration, Retail & Sales.",
   },
   {
     id: 3,
     title: "BBBEE-aligned Enterprise Development",
-    image: "/icons/bbbee.svg",
+    image: "/icons/enterprisedev.svg",
     description:
       "We support SMMEs with skills development as well as digital up-skilling, helping them to grow and contribute to their BBBEE scorecard.",
   },
   {
     id: 4,
     title: "National Learnership Delivery",
-    image: "/icons/learnership.svg",
+    image: "/icons/nationalimplementation.svg",
     description:
-      "Full-service implementation including recruitment, hosting, training, mentoring, and compliance.",
+      "We offer a full-service learnership implementation plan which includes recruitment, hosting, training, mentoring, and compliance anywhere in South Africa. Our learnerships are designed to equip learners with the skills and experience needed to succeed in the workforce, while also helping organizations meet their skills development and BBBEE requirements.",
   },
   {
     id: 5,
     title: "Work Integrated Learning (WIL) Solutions",
-    image: "/icons/wil.svg",
+    image: "/icons/workil.svg",
     description:
       "We support employee development and organizational performance through practical, workplace-driven learning experiences. Our focus areas include leadership & supervisory skills, customer service excellence, negotiation & conflict management, project management fundamentals, emotional intelligence, time management, workplace problem solving  and financial literacy.",
   },
   {
     id: 6,
     title: "Recruitment as a Service (RaaS)",
-    image: "/icons/recruitment.svg",
+    image: "/icons/recruitmentaas.svg",
     description:
       "We provide end-to-end recruitment and placement tailored for internships, learnerships, graduate programs and entry-level positions, ensuring a seamless hiring process for organizations seeking fresh talent.",
   },

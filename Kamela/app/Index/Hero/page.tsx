@@ -37,7 +37,7 @@ export default function Hero() {
     <>
       <section id="hero" className="d-flex align-items-center">
         <div
-          className="container mx-auto px-6 py-30 grid grid-cols-1 md:grid-cols-2 gaps-12 items-center relative z-10"
+          className="container mx-auto px-6 pt-27 pb-10 grid grid-cols-1 md:grid-cols-2 gaps-12 items-center relative z-10"
           data-aos="zoom-in"
           data-aos-delay="100"
         >

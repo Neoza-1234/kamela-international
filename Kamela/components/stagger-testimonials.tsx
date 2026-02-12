@@ -50,10 +50,10 @@ const testimonials = [
   },
   {
     tempId: 6,
-    testimonial: "Kamela's software development learnership gave me the foundation I needed to enter the IT field.",
-    by: "Neo",
+    testimonial: "Kamela's software development program gave me the foundation I needed to enter the IT field.",
+    by: "Neo Chuene",
     title: "Student",
-    imgSrc: "/icons/students.png"
+    imgSrc: "/icons/learner.png"
   },
   {
     tempId: 7,
@@ -64,24 +64,31 @@ const testimonials = [
   },
   {
     tempId: 8,
-    testimonial: "I appreciated the flexible schedule that allowed me to balance studies and work.",
+    testimonial: "I appreciated the flexible schedule that allowed me to balance studies and work when I was in Kamela's project management program.",
     by: "Jessica",
     title: "Student",
-    imgSrc: "/icons/students.png"
+    imgSrc: "/icons/learner.png"
   },
   {
     tempId: 9,
-    testimonial: "I found the interactive sessions engaging and career-focused. I also appreciate the team in how they handled the training sessions the whole time",
+    testimonial: "I found the interactive sessions engaging and career-focused. I also appreciate the team in how they handled the training sessions the whole time.",
     by: "Lunga Makhubu",
     title: "Student",
-    imgSrc: "/icons/students.png"
+    imgSrc: "/icons/learner.png"
   },
   {
     tempId: 10,
-    testimonial: "For the past two years, Kamela has been our go-to training provider for such as HPE Blade Administration, CompTiA Security+, Fortigate, Risk Management and other essential topics",
+    testimonial: "For the past two years, Kamela has been our go-to training provider for such as HPE Blade Administration, CompTiA Security+, Fortigate, Risk Management and other essential topics.",
     by: "Busani Hadebe",
     title: "22KA Training and Consulting (Pty) Ltd",
     imgSrc: "/icons/22ka.png"
+  },
+  {
+    tempId: 11,
+    testimonial: "Kamela's training programs are comprehensive and practical, helping me develop both technical and soft skills. I also appreciate the support from their workplace readiness program.",
+    by: "Boitumelo",
+    title: "Student",
+    imgSrc: "/icons/learner.png"
   },
 ];
 

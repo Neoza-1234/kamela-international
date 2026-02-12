@@ -7,12 +7,8 @@ export default function About() {
     <>
       <div className="px-[8%] lg:px-[12%] py-20 about">
         <div className="text-center mb-12">
-          <h3 className=" mt-15">About Kamela International</h3>
-          <h2 className="mt-1">
-            Innovating{" "}
-            <span className="text-(--prime)">Skills Development</span> for the
-            Future Workforce
-          </h2>
+          
+          
         </div>
         <div className="container mx:auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="about-image flex justify-center">
@@ -25,10 +21,13 @@ export default function About() {
             />
           </div>
           <div className="content mt-8 relative justify-center items-center ">
+            <h2 className="mb-15 flex justify-items-start items-start sm:text-4xl lg:text-5xl font-bold leading-tight">
+            Innovating Skills Development for the Future Workforce
+          </h2>
             <p className="mb-4">
               Kamela International is a Pan-African organization focused on
               skills development, training, enterprise growth, and assessment.
-              Its mission is to empower individuals, businesses, and communities
+              Our mission is to empower individuals, businesses, and communities
               by providing accredited, future-oriented training that leads to
               genuine competence, true confidence, and meaningful
               opportunities.
@@ -36,7 +35,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="container mx:auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-40">
+        <div className="container mx:auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-25">
           <div className="content mt-8  justify-end items-center ">
             <p className="mb-4">
               At Kamela, we believe that education is the doorway to
@@ -55,7 +54,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="container mx:auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-40">
+        <div className="container mx:auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-25">
           <div className="about-image flex justify-center">
             <Image
               src="/gallery-3.jpg"

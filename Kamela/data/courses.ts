@@ -32,7 +32,7 @@ export const coursesData: Course[] = [
     slug: "cloud-administrator",
     category: "ict",
     name: "Occupational Certificate: Cloud Administrator",
-    icon: "/icons/cloud-admin.svg",
+    icon: "/icons/cloud.svg",
     description:
       "Learning cloud administration fundamentals, including deployment, configuration, and management of cloud environments.",
     fullDescription:
@@ -119,7 +119,7 @@ export const coursesData: Course[] = [
     slug: "software-developer",
     category: "ict",
     name: "Occupational Certificate: Software Developer",
-    icon: "/icons/software-development.svg",
+    icon: "/icons/softwaredev.svg",
     description:
       "Learning software development fundamentals, including programming languages, application design, and database integration.",
     fullDescription:
@@ -219,7 +219,7 @@ export const coursesData: Course[] = [
     slug: "cybersecurity-analyst",
     category: "ict",
     name: "Occupational Certificate: Cybersecurity Analyst",
-    icon: "/icons/cyber-security.svg",
+    icon: "/icons/cybers.svg",
     description:
       "Learning essential security principles, threat management, and network protection for modern digital environments.",
     fullDescription:
@@ -311,7 +311,7 @@ export const coursesData: Course[] = [
     slug: "computer-technician",
     category: "ict",
     name: "Occupational Certificate: Computer Technician",
-    icon: "/icons/computer-technician.svg",
+    icon: "/icons/computert.svg",
     description:
       "Learning hardware and software troubleshooting, maintenance, and repair for computer systems.",
     fullDescription:
@@ -396,7 +396,7 @@ export const coursesData: Course[] = [
     slug: "data-science-practitioner",
     category: "ict",
     name: "Occupational Certificate: Data Science Practitioner",
-    icon: "/icons/data-science.svg",
+    icon: "/icons/datas.svg",
     description:
       "Learning data analysis, statistical modeling, and machine learning techniques for extracting insights from complex datasets.",
     fullDescription:
@@ -491,7 +491,7 @@ export const coursesData: Course[] = [
     slug: "project-manager",
     category: "business",
     name: "Occupational Certificate: Project Manager",
-    icon: "/icons/project-management.svg",
+    icon: "/icons/projectm.svg",
     description:
       "Learning project planning, execution, and monitoring using industry-standard methodologies and tools.",
     fullDescription:
@@ -588,7 +588,7 @@ export const coursesData: Course[] = [
     slug: "contact-centre-manager",
     category: "business",
     name: "Occupational Certificate: Contact Centre Manager",
-    icon: "/icons/contact-center-management.svg",
+    icon: "/icons/contactcm.svg",
     description:
       "Learn contact centre operations, customer service excellence, and performance management.",
     fullDescription:
@@ -690,7 +690,7 @@ export const coursesData: Course[] = [
     slug: "supply-chain-practitioner",
     category: "business",
     name: "Occupational Certificate: Supply Chain Practitioner",
-    icon: "/icons/supply-chain.svg",
+    icon: "/icons/supplycp.svg",
     description:
       "Learn supply chain operations, logistics management, and inventory control for efficient distribution.",
     fullDescription:
@@ -776,7 +776,7 @@ export const coursesData: Course[] = [
     slug: "supply-chain-manager",
     category: "business",
     name: "Occupational Certificate: Supply Chain Manager",
-    icon: "/icons/supply-chain-management.svg",
+    icon: "/icons/supplycm.svg",
     description:
       "Learning to have oversight of the entire supply chain, including procurement, logistics, and distribution.",
     fullDescription:
@@ -860,7 +860,7 @@ export const coursesData: Course[] = [
     slug: "office-administrator",
     category: "business",
     name: "Occupational Certificate: Office Administrator",
-    icon: "/icons/office-admin.svg",
+    icon: "/icons/officeadmin.svg",
     description:
       "Learn office administration, document management, and administrative support for efficient office operations.",
     fullDescription:
@@ -966,7 +966,7 @@ export const coursesData: Course[] = [
     slug: "office-supervisor",
     category: "business",
     name: "Occupational Certificate: Office Supervisor",
-    icon: "/icons/office-supervisor.svg",
+    icon: "/icons/offices.svg",
     description:
       "Learning office supervision, team leadership, and administrative oversight for efficient office operations.",
     fullDescription:
@@ -1052,7 +1052,7 @@ export const coursesData: Course[] = [
     slug: "hr-management-administrator",
     category: "business",
     name: "HOC: Human Resource Management Administrator",
-    icon: "/icons/hr-management.svg",
+    icon: "/icons/hradmin.svg",
     description: "Learn foundational, day-to-day operational support for the HR department to ensure efficient handling of personnel records, employee queries, and compliance.",
     fullDescription:
       "Gain practical HR administration skills such as maintaining databases, facilitating onboarding/offboarding, managing payroll inputs, and assisting with recruitment logistics to maintain a smooth employee lifecycle.",
@@ -1135,7 +1135,7 @@ export const coursesData: Course[] = [
     slug: "quality-assurer",
     category: "governance",
     name: "Occupational Certificate: Quality Assurer",
-    icon: "/icons/quality-assurer.svg",
+    icon: "/icons/qualitys.svg",
     description:
       "Learning quality assurance principles, inspection techniques, and compliance verification for product and service delivery.",
     fullDescription:
@@ -1222,7 +1222,7 @@ export const coursesData: Course[] = [
     slug: "marketing-coordinator",
     category: "sales",
     name: "Occupational Certificate: Marketing Coordinator",
-    icon: "/icons/marketing-coordinator.svg",
+    icon: "/icons/marketingc.svg",
     description: "Learning marketing coordination and campaign support.",
     fullDescription:
       "Build practical skills in campaign coordination, content support and basic marketing analytics.",
@@ -1302,7 +1302,7 @@ export const coursesData: Course[] = [
     slug: "sales-representative",
     category: "sales",
     name: "National Occupational Certificate: Sales Representative",
-    icon: "/icons/sales-representative.svg",
+    icon: "/icons/salesr.svg",
     description: "Learning sales techniques, customer engagement and product knowledge.",
     fullDescription:
       "Learn core selling skills, customer engagement and retail sales fundamentals.",
@@ -1378,7 +1378,7 @@ export const coursesData: Course[] = [
     slug: "retail-supervisor",
     category: "business",
     name: "Occupational Certificate: Retail Supervisor",
-    icon: "/icons/retail-supervisor.svg",
+    icon: "/icons/retails.svg",
     description:
       "Learn retail operations, inventory management, and customer service excellence in retail environments.",
     fullDescription:

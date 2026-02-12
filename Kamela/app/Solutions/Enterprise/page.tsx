@@ -27,31 +27,30 @@ export default function Enterprise() {
         data-aos-delay="100"
       >
         <div className="hero-content">
-          <h1 className="hero-title leading-tight flex justify-center items-center flex-col text-center text-(--prime)">
-            Corporate Training <br></br> Workforce Development Talent Pipelines{" "}
-            <br></br> Digital Up-skilling
+          <h1 className="hero-title leading-tight flex justify-center items-center flex-col sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center">
+            Empower, Elevate, and Sustain Talent Through Transformative Learning
           </h1>
 
-          <div className="mt-6 flex justify-center">
+          <div className="mt-6 flex justify-center items-center gap-4">
             <Servicebtn />
           </div>
         </div>
 
         <div className="hero-img-container relative flex justify-around items-center pt-5">
           <Image
-            src="/corporate2.jpg"
+            src="/enterprise.png"
             alt="Hero Image"
-            width={365}
-            height={250}
-            className="hero-img rounded-3xl "
+            width={400}
+            height={100}
+            className="hero-img rounded-xl shadow-2xl"
           />
         </div>
       </div>
 
       {/* Introduction Section */}
 
-      <section className="max-w-7xl mx-auto px-6 py-5">
-        <div className="text-center mb-12">
+      <section className="max-w-5xl mx-auto px-6 py-5">
+        <div className="mb-12 text-center flex flex-col justify-center items-center">
           <h2 className=" mb-6">
             A Leading Provider Of Corporate Training Solutions
           </h2>
@@ -298,11 +297,11 @@ export default function Enterprise() {
         id="enterprise-services"
         className="enterprise-services max-w-7xl mx-auto px-6 py-5"
       >
-        <div className="text-center mb-12">
+        <div className="text-center ">
           <h2 className=" mb-6">Our Enterprise Solutions</h2>
-          <p>
+          <p className="text-center">
             Kamela International offers a comprehensive suite of enterprise
-            solutions designed to meet the diverse needs of organizations across
+            solutions <br></br>designed to meet the diverse needs of organizations across
             South Africa and Africa. Our services include
           </p>
         </div>
@@ -314,12 +313,12 @@ export default function Enterprise() {
 
       <section className="overflow-hidden sm:grid sm:grid-cols-2 mb-8">
         <div className="p-8 md:p-12 lg:px-16 lg:py-24">
-          <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+          <div className="mx-auto max-w-xl ltr:sm:text-left rtl:sm:text-right">
             <h2 className="font-bold md:text-3xl">
               Ready to Transform Your Workforce and Drive Enterprise Success?
             </h2>
 
-            <p className="hidden text-gray-500 md:mt-4 md:block">
+            <p className="text-gray-500 md:mt-4 md:block">
               Partner with Kamela International to access customized training
               solutions that empower your employees, develop SMMEs, and build
               talent pipelines for the future. Lets work together to create a

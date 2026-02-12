@@ -69,11 +69,11 @@ const CourseSection = ({ initialTab = "ict" }: { initialTab?: TabId }) => {
           {courses[activeTab].map((course) => (
             <div
               key={course.slug}
-              className=" rounded-3xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden hover:-translate-y-2 flex flex-col"
+              className=" rounded-3xl shadow-md hover:shadow-xl transition-all border hover:border-blue-500 duration-300 overflow-hidden hover:-translate-y-2 flex flex-col"
             >
               <div className="p-5 flex flex-col grow">
                 {/* Course Name */}
-                <h3 className=" text-slate-900 mb-3 line-clamp-2 min-h-14">
+                <h3 className="mb-3 line-clamp-2 min-h-14">
                   {course.name}
                 </h3>
 
