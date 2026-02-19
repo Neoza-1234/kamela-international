@@ -7,6 +7,7 @@ import Purpose from "./Purpose/page";
 import Services from "./Services/page";
 import Testimonials  from "./Testimonials/page";
 import ContactUs from "./Contact Us/page";
+import WhyChooseUs from "./Why Choose Us/page";
 
 export default function Index() {
   return (
@@ -14,10 +15,11 @@ export default function Index() {
       <Hero />
       <About />
       <CourseCategory />
+      <Accreditations />
       <Paralex />
       <Services />
-      <Accreditations />
       <Purpose />
+      <WhyChooseUs />
       <Testimonials />
       <ContactUs />
     </>

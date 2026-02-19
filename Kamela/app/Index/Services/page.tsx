@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-
 const servicesData = [
   {
     id: "01",
@@ -56,7 +55,7 @@ const servicesData = [
     title: "CSI Skills Development",
     description:
       "A partnership-driven model supporting social impact initiatives.",
-    image: "/csi.jpg",
+    image: "/gallery-2.jpg",
     imageAlt: "CSI Skills Development",
     sections: [
       {
@@ -116,7 +115,6 @@ const servicesData = [
   },
 ];
 
-
 interface ServiceCardProps {
   service: (typeof servicesData)[0];
   index: number;
@@ -132,7 +130,6 @@ function ServiceCard({ service, index }: ServiceCardProps) {
       >
         {/* Content Section */}
         <div className="flex-1 text-white w-full md:w-3/5 lg:w-3/5 space-y-6">
-          {/* Header */}
           <header className="flex items-center gap-3 sm:gap-4">
             <span
               className="text-xl sm:text-2xl font-bold italic text-gray-400"
@@ -146,7 +143,7 @@ function ServiceCard({ service, index }: ServiceCardProps) {
           </header>
 
           {/* Description */}
-          <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
+          <p className="sm:text-base text-gray-300 leading-relaxed">
             {service.description}
           </p>
 
@@ -197,21 +194,18 @@ function ServiceCard({ service, index }: ServiceCardProps) {
   );
 }
 
-
 export default function Services() {
   return (
     <section
-      className="px-[5%] sm:px-[8%] lg:px-[12%] py-12 sm:py-16 lg:py-20 services"
+      className="px-[5%] sm:px-[8%] lg:px-[12%] pb-20 services"
       aria-labelledby="services-heading "
     >
       <div className="flex flex-col items-center gap-8 sm:gap-10 lg:gap-12">
         {/* Header */}
         <header className="text-center max-w-4xl px-4 mt-50">
           <h2 className=" sm:text-3xl md:text-4xl lg:text-5xl leading-tight">
-            Explore our extensive training solutions across{" "}
-            <span className="text-(--prime)">
-              five fundamental service streams
-            </span>
+            Explore Our Extensive Training Solutions Across Five Fundamental
+            Service Streams
           </h2>
         </header>
 

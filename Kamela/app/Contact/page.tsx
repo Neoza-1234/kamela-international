@@ -5,6 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 import HoverDevCards from "@/components/contactinfo";
 
+
+/* ─── Brand tokens ────────────────────────────────────────────── */
+const BRAND = {
+  orange: "#ff4500",
+  blue: "#0866ff",
+} as const;
+
+
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -68,13 +76,23 @@ export default function ContactPage() {
         data-aos-delay="100"
       >
         <div className="hero-content">
-          <h1 className="hero-title leading-tight flex justify-center items-center flex-col pr-5 text-(--prime)">
-            Take the next step toward success!
-          </h1>
+           <h1 className="sm:text-5xl font-black leading-tight mb-5">
+              Take The Next Step With{" "}
+              <span
+                style={{
+                  backgroundImage: `linear-gradient(90deg, ${BRAND.orange}, ${BRAND.blue})`,
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                }}
+              >
+                 Kamela International's Expert Guidance and Support
+              </span>
+            </h1>
           <div className=" flex justify-start items-center gap-3 flex-wrap">
             <p className="hero-paragraph max-w-lg mt-6">
               Connect with our dedicated team today for tailored advice on RPL
-              pathways, course enrollment, and enterprise development strategies to accelerate your
+              pathways, course enrollment, exam center bookings and enterprise development strategies to accelerate your
               professional growth. We are here to guide you every step of the
               way.
             </p>
@@ -87,6 +105,7 @@ export default function ContactPage() {
             alt="Hero Image"
             width={500}
             height={900}
+            loading="lazy"
             className="hero-img rounded-3xl w-auto h-auto "
           />
         </div>
@@ -98,13 +117,13 @@ export default function ContactPage() {
 
       <section className="flex overflow-hidden mt-30 mb-20">
         <div className="flex-1 hidden lg:block">
-          <Image src="/contact2.jpg" width={1920} height={1080} className="w-full h-screen object-cover" alt={""} />
+          <Image src="/contact2.jpg" width={1920} height={1080} className="w-full h-screen object-cover" loading="lazy" alt={""} />
         </div>
         <div className="py-12 flex-1 lg:flex lg:justify-center lg:h-screen lg:overflow-auto">
           <div className="max-w-lg flex-1 mx-auto px-4 text-black">
             <div>
               <h2 className="sm:text-4xl">
-                We would love to hear from you! Please fill out the form below and we will get back to you within 24hrs.
+                We would love to hear from you! Please fill out the form below and we will get back to you ASAP.
               </h2>
             </div>
             <form

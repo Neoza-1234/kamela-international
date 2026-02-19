@@ -4,14 +4,11 @@ import Link from "next/link";
 export default function CourseCategory() {
   return (
     <div className="px-[8%] lg:px-0 py-20 course-category">
-      <div className="text-center mt-8">
-        
+      <div className="text-center mt-8"> 
         <h2>
-          We focus on key sectors essential for South Africa's stability and
-          growth, providing{" "}
-          <span className="text-(--prime)">
-            <br></br>in-demand programs
-          </span>
+          We Focus On Key Sectors Essential For South Africa's Stability &
+          Growth, Providing
+            <br></br>In-Demand Programs In
         </h2>
       </div>
       <div className="flex justify-center items-center min-h-screen px-4 sm:px-6 lg:px-8">
@@ -21,7 +18,7 @@ export default function CourseCategory() {
             {/* Left Column */}
             <div className="flex flex-col gap-4">
               {/* ICT - */}
-              <Link
+              <Link 
                 href="/Solutions/Study?tab=ict"
                 className="h-100 md:h-125 lg:h-150"
               >
@@ -31,6 +28,7 @@ export default function CourseCategory() {
                     alt="Information & Communication Technology"
                     width={1920}
                     height={1080}
+                    loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   {/* Gradient Overlay */}
@@ -54,6 +52,7 @@ export default function CourseCategory() {
                     alt="Business, Management & Administration"
                     width={1920}
                     height={1080}
+                    loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   {/* Gradient Overlay */}
@@ -80,6 +79,7 @@ export default function CourseCategory() {
                     alt="Sales & Retail"
                     width={1920}
                     height={1080}
+                    loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   {/* Gradient Overlay */}
@@ -103,6 +103,7 @@ export default function CourseCategory() {
                     alt="Governance & Operations"
                     width={1920}
                     height={1080}
+                    loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   {/* Gradient Overlay */}

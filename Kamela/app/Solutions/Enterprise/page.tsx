@@ -1,355 +1,371 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Feature197 } from "@/components/accordion-feature-section";
+import { Feature197 } from "@/app/Solutions/Enterprise/accordion-feature-section";
 import Servicebtn from "@/components/servicebtn";
-import {ArrowUpRight} from "lucide-react";
+import { ArrowUpRight, CheckCheck, Globe, Layers, Cpu, Building2 } from "lucide-react";
+import { Metadata } from "next";
+import { StaggerTestimonials } from "@/components/stagger-testimonials";
+import EnterpriseInsights from "@/app/Solutions/Enterprise/enterpriseinsight";
 
+/* ─── SEO ─────────────────────────────────────────────────────── */
+export const metadata: Metadata = {
+  title: "Enterprise Solutions | Kamela International",
+  description:
+    "Kamela International partners with leading South African organizations to deliver accredited training, learnership programmes, BBBEE-aligned enterprise development, and workforce transformation solutions — nationally.",
+  keywords: [
+    "Enterprise Solutions South Africa",
+    "Corporate Training South Africa",
+    "Workforce Development",
+    "Learnership Programmes",
+    "BBBEE Skills Development",
+    "Talent Pipeline Development",
+    "Work Integrated Learning",
+    "SMME Development",
+    "Digital Up-skilling",
+    "Blended Learning Solutions",
+    "National Learnership Delivery",
+    "Kamela International",
+  ],
+  authors: [{ name: "Kamela International", url: "https://kamelatraining.co.za" }],
+  creator: "Kamela International",
+  publisher: "Kamela International",
+  metadataBase: new URL("https://kamelatraining.co.za"),
+  alternates: { canonical: "/Solutions/Enterprise" },
+  openGraph: {
+    title: "Enterprise Solutions | Kamela International",
+    description:
+      "Accredited workforce training, learnership delivery, BBBEE enterprise development, and talent pipeline solutions for South African organisations.",
+    url: "https://www.kamelatraining.co.za/Solutions/Enterprise",
+    siteName: "Kamela International",
+    images: [
+      {
+        url: "https://www.kamelatraining.co.za/gallery-2.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Enterprise Solutions - Kamela International",
+      },
+    ],
+    locale: "en_ZA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Enterprise Solutions | Kamela International",
+    description:
+      "Accredited workforce training, learnership delivery & talent pipeline development for South African organisations.",
+    images: ["https://www.kamelatraining.co.za/gallery-2.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+    },
+  },
+};
+
+/* ─── Brand Colors ───────────────────────────────────────────── */
+
+const BRAND = {
+  orange: "#ff4500",
+  blue: "#0866ff",
+} as const;
+
+
+/* ─── Why Choose Kamela — data ────────────────────────────────── */
+const whyKamela = [
+  {
+    icon: CheckCheck,
+    title: "Proven Track Record",
+    body: "Successfully delivered programmes for leading organisations in mining, logistics, public sector, telecoms, manufacturing, and academia.",
+  },
+  {
+    icon: Layers,
+    title: "Customized Skills Solutions",
+    body: "Training tailored to each client's operational environment, workforce needs, and strategic goals — not off-the-shelf.",
+  },
+  {
+    icon: Cpu,
+    title: "Digital & Blended Learning",
+    body: "LMS, virtual classrooms, digital labs, and workplace assessments ensure employees learn anywhere, anytime.",
+  },
+  {
+    icon: Building2,
+    title: "Enterprise Development & Incubation",
+    body: "SMME development, incubation, and supplier development training aligned to B-BBEE requirements.",
+  },
+  {
+    icon: Globe,
+    title: "National Implementation Capability",
+    body: "Programmes rolled out across all 9 provinces via digital, hybrid, or on-site delivery — seamlessly.",
+  },
+  {
+    icon: CheckCheck,
+    title: "Talent Pipeline Development",
+    body: "We prepare youth and early-career employees for long-term employability and high professional performance.",
+  },
+];
+
+/* ─── Partner logos ───────────────────────────────────────────── */
+const partners = [
+  { src: "/icons/anglo-american.svg", alt: "Anglo American", w: 100, h: 40 },
+  { src: "/icons/alteram.png", alt: "Alteram", w: 100, h: 40 },
+  { src: "/icons/master-plastics.webp", alt: "Master Plastics", w: 100, h: 40 },
+  { src: "/icons/wits.png", alt: "University of the Witwatersrand", w: 100, h: 40 },
+  { src: "/icons/unisa.jpg", alt: "UNISA", w: 100, h: 40 },
+  { src: "/icons/transnet.png", alt: "Transnet", w: 100, h: 40 },
+  { src: "/icons/marshalls.jpg", alt: "Marshalls", w: 100, h: 40 },
+  { src: "/icons/makhophila.png", alt: "Makhophila", w: 100, h: 40 },
+  { src: "/icons/raf.jpg", alt: "Road Accident Fund", w: 50, h: 50 },
+  { src: "/icons/uj.png", alt: "UJ", w: 100, h: 40 },
+  { src: "/icons/umgeni.png", alt: "Umgeni Water", w: 100, h: 40 },
+  { src: "/icons/acsa.png", alt: "ACSA", w: 100, h: 40 },
+  { src: "/icons/zppa.png", alt: "ZPPA", w: 100, h: 40 },
+  { src: "/icons/undp.svg", alt: "United Nations", w: 100, h: 40 },
+  { src: "/icons/eskom.jpg", alt: "Eskom", w: 100, h: 40 },
+];
+
+/* ─── Page ────────────────────────────────────────────────────── */
 export default function Enterprise() {
   return (
     <>
-      <div className="flex flex-wrap justify-start items-center space-x-2 text-sm text-gray-500 font-medium mt-30 px-10 md:px-16 lg:px-24 xl:px-32 mb-3">
-        <button type="button" aria-label="Home">
-          <Link href="/#">Home</Link>
-        </button>
-        <i className="ri-arrow-drop-right-line"></i>
-        <a href="#">Solutions</a>
-        <i className="ri-arrow-drop-right-line"></i>
-        <div style={{ color: "var(--prime)" }} className="font-semibold">
-          Enterprise
-        </div>
-      </div>
-
-      {/* Hero Section */}
-
-      <div
-        className="container mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10"
-        data-aos="zoom-in"
-        data-aos-delay="100"
+      {/* ── Breadcrumb ── */}
+      <nav
+        aria-label="Breadcrumb"
+        className="flex flex-wrap items-center gap-1.5 text-sm text-gray-500 font-medium mt-30 px-10 md:px-16 lg:px-24 xl:px-32 mb-3"
       >
-        <div className="hero-content">
-          <h1 className="hero-title leading-tight flex justify-center items-center flex-col sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center">
-            Empower, Elevate, and Sustain Talent Through Transformative Learning
-          </h1>
+        <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+        <span aria-hidden className="text-gray-300">/</span>
+        <span>Solutions</span>
+        <span aria-hidden className="text-gray-300">/</span>
+        <span className="text-(--prime) font-semibold">Enterprise</span>
+      </nav>
 
-          <div className="mt-6 flex justify-center items-center gap-4">
+      {/* ── Hero ── */}
+      <header className="container mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center relative z-10">
+        <div>
+          <h1
+              className="sm:text-5xl leading-tight text-start md:text-left"
+              style={{ color: "#0d0d14" }}
+            >
+              Elevate and Sustain{" "}
+              <span
+                style={{
+                  backgroundImage: `linear-gradient(90deg, ${BRAND.orange}, ${BRAND.blue})`,
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                }}
+              >
+                Workforce Talent 
+              </span>{" "}
+              Through Enterprise Development Solutions
+            </h1>
+          <p className="mt-4 md:text-xl leading-relaxed">
+            We partner with organisations to deliver customised training solutions that drive
+            workforce transformation, enterprise development, and talent pipeline growth -
+            enhancing employee performance and accelerating economic inclusion.
+          </p>
+          <div className="mt-8 flex items-center gap-4">
             <Servicebtn />
           </div>
         </div>
 
-        <div className="hero-img-container relative flex justify-around items-center pt-5">
+        <div className="relative flex justify-center items-center">
           <Image
-            src="/enterprise.png"
-            alt="Hero Image"
-            width={400}
-            height={100}
-            className="hero-img rounded-xl shadow-2xl"
+            src="/gallery-2.jpg"
+            alt="Kamela International enterprise training session"
+            width={700}
+            height={700}
+            priority
+            sizes="(max-width: 768px) 100vw, 50vw"
+            className="rounded-2xl shadow-2xl w-full object-cover"
           />
         </div>
-      </div>
+      </header>
 
-      {/* Introduction Section */}
+      {/* ── Insights Section ── */}
+      <EnterpriseInsights />
 
-      <section className="max-w-5xl mx-auto px-6 py-5">
-        <div className="mb-12 text-center flex flex-col justify-center items-center">
-          <h2 className=" mb-6">
-            A Leading Provider Of Corporate Training Solutions
+      {/* ── Trusted By ── */}
+      <section aria-labelledby="trusted-heading" className="flex flex-col items-center justify-center px-4 w-full py-20 gap-8">
+        <h2 id="trusted-heading" className="text-center sm:text-3xl">
+          Trusted By Leading Corporate &amp; Public Organisations
+        </h2>
+        <ul
+          aria-label="Partner organisations"
+          className="max-w-6xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-3 w-full mt-2"
+        >
+          {partners.map((p) => (
+            <li
+              key={p.src}
+              className="border-2 border-slate-200 p-4 h-20 grid place-content-center rounded-xl hover:-translate-y-1 transition-all duration-200 hover:shadow-lg hover:border-blue-600"
+            >
+              <Image
+                src={p.src}
+                alt={p.alt}
+                width={p.w}
+                height={p.h}
+                loading="lazy"
+                className="object-contain max-h-10"
+              />
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {/* ── Why Choose Kamela ── */}
+      <section aria-labelledby="why-heading" className="py-20 px-4">
+        <div className="max-w-7xl mx-auto flex flex-col items-center gap-4">
+          <h2 id="why-heading" className="text-center sm:text-3xl">
+            Why Corporates Choose Kamela
           </h2>
-          <p>
-            Kamela International partners with organizations across South Africa
-            and Africa to deliver high-impact enterprise development, workforce
-            transformation, and talent enablement solutions. Our programs are
-            designed to strengthen organizational capacity, build future-ready
-            skills, and accelerate economic inclusion through scalable,
-            digital-enabled training interventions. We support cooperates,
-            SMMEs, NGOs, and government institutions with evidence-based
-            learning models that drive productivity, innovation, and long-term
-            sustainability.
+          <p className="text-center text-gray-500 max-w-2xl">
+            Our enterprise development solutions are trusted because they offer:
           </p>
-        </div>
-      </section>
-
-      {/* Why Corporates Choose Kamela Section */}
-
-      <section className="py-20 px-4 flex flex-col justify-center items-center gap-6">
-        <h2 className="px-4 h-8 rounded-3xl text-center leading-tight">
-          Why Corporates Choose Kamela
-        </h2>
-        <p className=" md:text-[40px]/12 text-center leading-tight max-w-3xl">
-          Our enterprise development solutions are trusted because they offer
-        </p>
-        <div className="relative max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300 hover:shadow-2xl">
-            <i className="ri-check-double-line w-30 h-30 pb-3"></i>
-            <p className="font-bold">Proven Track Record</p>
-            <p>
-              We have successfully delivered programmes for leading
-              organizations in mining, logistics, public sector,
-              telecommunications, manufacturing, and academia.
-            </p>
-          </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300 hover:shadow-2xl">
-            <i className="ri-check-double-line w-30 h-30 pb-3"></i>
-            <p className="font-bold">Customized Skills Solutions</p>
-            <p>
-              Training is tailored to each clients operational environment,
-              workforce needs, and strategic goals.
-            </p>
-          </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300 hover:shadow-2xl">
-            <i className="ri-check-double-line w-30 h-30 pb-3"></i>
-            <p className="font-bold">Digital & Blended Learning</p>
-            <p>
-              Our LMS, virtual classrooms, digital labs, and workplace-based
-              assessments ensure employees learn anywhere, anytime.
-            </p>
-          </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300 hover:shadow-2xl">
-            <i className="ri-check-double-line w-30 h-30 pb-3"></i>
-            <p className="font-bold">Enterprise Development & Incubation</p>
-            <p>
-              We design and implement SMME development, incubation, and supplier
-              development training aligned to B-BBEE requirements.
-            </p>
-          </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300 hover:shadow-2xl">
-            <i className="ri-check-double-line w-30 h-30 pb-3"></i>
-            <p className="font-bold">Talent Pipeline Development</p>
-            <p>
-              We prepare youth and early-career employees for long-term
-              employability and professional performance
-            </p>
-          </div>
-          <div className="bg-white border border-secondary rounded-3xl p-6 space-y-3 hover:-translate-y-2 transition duration-300 hover:shadow-2xl">
-            <i className="ri-check-double-line w-30 h-30 pb-3"></i>
-            <p className="font-bold">National Implementation Capability</p>
-            <p>
-              We can roll out programmes in all 9 provinces with digital,
-              hybrid, or on-site delivery.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Trusted By Section */}
-
-      <section className="flex flex-col items-center justify-center px-4 md:px-0 w-full mb-15">
-        <h2 className=" text-center">
-          Trusted By leading Corporate & Public Organizations
-        </h2>
-        <div className="max-w-4xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 w-full mt-14">
-          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200 hover:shadow-lg">
-            <Image
-              src="/icons/anglo-american.svg"
-              alt="Logo"
-              width={100}
-              height={100}
-            />
-          </div>
-          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200 hover:shadow-lg">
-            <Image
-              src="/icons/alteram.png"
-              alt="Logo"
-              width={100}
-              height={100}
-            />
-          </div>
-          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200 hover:shadow-lg">
-            <Image
-              src="/icons/master-plastics.webp"
-              alt="Logo"
-              width={100}
-              height={100}
-            />
-          </div>
-          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200 hover:shadow-lg">
-            <Image src="/icons/wits.png" alt="Logo" width={100} height={100} />
-          </div>
-          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200 hover:shadow-lg">
-            <Image src="/icons/unisa.jpg" alt="Logo" width={100} height={100} />
-          </div>
-          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200 hover:shadow-lg">
-            <Image
-              src="/icons/transnet.png"
-              alt="Logo"
-              width={100}
-              height={100}
-            />
-          </div>
-          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200 hover:shadow-lg">
-            <Image
-              src="/icons/marshalls.jpg"
-              alt="Logo"
-              width={100}
-              height={100}
-            />
-          </div>
-          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200 hover:shadow-lg">
-            <Image
-              src="/icons/makhophila.png"
-              alt="Logo"
-              width={100}
-              height={100}
-            />
-          </div>
-          <div className="border border-black p-4 h-15 grid place-content-center rounded-md hover:-translate-y-2 transition duration-200 hover:shadow-lg">
-            <Image src="/icons/raf.jpg" alt="Logo" width={50} height={50} />
-          </div>
-        </div>
-      </section>
-
-      {/* Custom Training Solutions */}
-
-      <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0 dark:bg-gray-900">
-        <div className="absolute inset-0 -z-10 overflow-hidden"></div>
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
-          <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-            <div className="lg:pr-4">
-              <div className="lg:max-w-lg">
-                <h2 className="tracking-tight text-pretty sm:text-5xl dark:text-white">
-                  Training Solutions Tailored For Enterprise Success
-                </h2>
-                <p className="mt-6 dark:text-gray-300">
-                  We partner with organizations to deliver customized training
-                  solutions that drive workforce transformation, enterprise
-                  development, and talent pipeline growth. We work closely with
-                  clients to design and implement programs that enhance
-                  employee performance, improve organizational capacity, and
-                  accelerate economic inclusion.
-                </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8 w-full">
+            {whyKamela.map(({ icon: Icon, title, body }) => (
+              <div
+                key={title}
+                className="border border-slate-200 rounded-2xl p-6 space-y-3 hover:-translate-y-1 transition-all duration-300 hover:shadow-xl hover:border-blue-300"
+              >
+                <div className="w-10 h-10 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center">
+                  <Icon className="w-5 h-5 text-blue-600" aria-hidden />
+                </div>
+                <h3 className="font-bold text-gray-900">{title}</h3>
+                <p className="text-slate-500 leading-relaxed">{body}</p>
               </div>
-            </div>
-          </div>
-          <div className="-mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-            <Image
-              width={1184}
-              height={1376}
-              alt="training"
-              src="/Kamela18.jpg"
-              className="w-3xl max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-228 dark:bg-gray-800 dark:ring-white/10"
-            />
-          </div>
-          <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-            <div className="lg:pr-4">
-              <div className="max-w-xl lg:max-w-lg dark:text-gray-400">
-                <p>
-                  Our enterprise training solutions are designed to meet the
-                  unique needs of each organization. Whether its up-skilling
-                  employees, developing SMMEs, or building talent pipelines, we
-                  create programmes that deliver measurable impact and long-term
-                  value.
-                </p>
-                <ul role="list" className="mt-8 space-y-8 dark:text-gray-400">
-                  <li className="flex gap-x-3">
-                    <span>
-                      <strong
-                        className="font-semibold dark:text-white"
-                        style={{ color: "var(--prime)" }}
-                      >
-                        In-House Training.{" "}
-                      </strong>
-                      We offer flexible in-house training programs tailored to
-                      your organizations specific needs. Delivered on-site by
-                      experienced facilitators, our sessions ensure minimal
-                      disruption to operations while maximizing learning
-                      outcomes for your team.
-                    </span>
-                  </li>
-                  <li className="flex gap-x-3">
-                    <span>
-                      <strong
-                        className="font-semibold dark:text-white"
-                        style={{ color: "var(--prime)" }}
-                      >
-                        Online Training.{" "}
-                      </strong>{" "}
-                      We also deliver accessible and flexible online training
-                      solutions designed to meet the needs of modern learners.
-                      Our virtual programs combine expert instruction with
-                      interactive content, allowing individuals and teams to
-                      up-skill from anywhere, at any time.
-                    </span>
-                  </li>
-                  <li className="flex gap-x-3">
-                    <span>
-                      <strong
-                        className="font-semibold dark:text-white"
-                        style={{ color: "var(--prime)" }}
-                      >
-                        Blended Learning.{" "}
-                      </strong>{" "}
-                      Our blended learning solutions combine the best of
-                      in-person and online training methods. This approach
-                      maximizes engagement and retention by providing a mix of
-                      face-to-face instruction, digital content, and practical
-                      application.
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* Our Services Section */}
+      {/* ── Custom Training Solutions ── */}
+      <section aria-labelledby="training-heading" className="relative py-20 lg:py-32 overflow-hidden">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-12 gap-y-16 px-6 lg:grid-cols-2 lg:items-start lg:px-8">
+          {/* Text column */}
+          <div className="flex flex-col justify-start">
+            <h2 id="training-heading" className="sm:text-4xl leading-tight">
+              Training Solutions Tailored For Enterprise Success
+            </h2>
+            <p className="mt-6 text-gray-600 leading-relaxed">
+              We partner with organisations to deliver customised training solutions that drive
+              workforce transformation, enterprise development, and talent pipeline growth — designing
+              programmes that enhance employee performance and accelerate economic inclusion.
+            </p>
+            <p className="mt-4 text-gray-600 leading-relaxed">
+              Whether it's up-skilling employees, developing SMMEs, or building talent pipelines,
+              we create programmes that deliver measurable impact and long-term value.
+            </p>
 
+            <ul className="mt-8 space-y-6">
+              {[
+                {
+                  label: "In-House Training",
+                  body: "Flexible on-site programmes tailored to your organisation's needs, delivered by experienced facilitators with minimal disruption to operations.",
+                },
+                {
+                  label: "Online Training",
+                  body: "Accessible, flexible virtual programmes combining expert instruction with interactive content — enabling teams to up-skill from anywhere, anytime.",
+                },
+                {
+                  label: "Blended Learning",
+                  body: "The best of both worlds: face-to-face instruction, digital content, and practical application — maximising engagement and knowledge retention.",
+                },
+              ].map(({ label, body }) => (
+                <li key={label} className="flex gap-4">
+                  <div className="mt-1 w-2 h-2 rounded-full bg-blue-600 shrink-0" aria-hidden />
+                  <span className="text-gray-700">
+                    <strong className="font-semibold text-(--prime)">{label}. </strong>
+                    {body}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Image column */}
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl ring-1 ring-slate-200">
+              <Image
+                src="/Kamela18.jpg"
+                alt="Kamela International training session in progress"
+                width={800}
+                height={900}
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                loading="lazy"
+                className="w-full object-cover"
+              />
+            </div>
+        </div>
+      </section>
+
+      {/* ── Our Services ── */}
       <section
         id="enterprise-services"
-        className="enterprise-services max-w-7xl mx-auto px-6 py-5"
+        aria-labelledby="services-heading"
+        className="max-w-7xl mx-auto px-6 py-20"
       >
-        <div className="text-center ">
-          <h2 className=" mb-6">Our Enterprise Solutions</h2>
-          <p className="text-center">
-            Kamela International offers a comprehensive suite of enterprise
-            solutions <br></br>designed to meet the diverse needs of organizations across
-            South Africa and Africa. Our services include
+        <div className="text-center mb-2">
+          <h2 id="services-heading" className="sm:text-3xl mb-4">
+            Our Enterprise Solutions
+          </h2>
+          <p className="text-gray-500 max-w-2xl mx-auto">
+            Kamela International offers a comprehensive suite of enterprise solutions designed to meet
+            the diverse needs of organisations across South Africa and Africa.
           </p>
         </div>
-
         <Feature197 />
       </section>
 
-      {/* Call to Action Section */}
+      {/* ── Testimonials ── */}
+      <section aria-labelledby="testimonials-heading" className="mx-auto px-6 py-20">
+        <h2 id="testimonials-heading" className="text-center sm:text-3xl mb-12">
+          What Our Partners Say About Us
+        </h2>
+        <StaggerTestimonials />
+      </section>
 
-      <section className="overflow-hidden sm:grid sm:grid-cols-2 mb-8">
-        <div className="p-8 md:p-12 lg:px-16 lg:py-24">
-          <div className="mx-auto max-w-xl ltr:sm:text-left rtl:sm:text-right">
-            <h2 className="font-bold md:text-3xl">
+      {/* ── CTA ── */}
+      <section
+        aria-labelledby="cta-heading"
+        className="overflow-hidden sm:grid sm:grid-cols-2 mb-8 py-20 gap-8 max-w-7xl mx-auto px-6"
+      >
+        <div className="flex items-center py-8">
+          <div className="max-w-xl">
+            <h2 id="cta-heading" className="sm:text-3xl leading-tight">
               Ready to Transform Your Workforce and Drive Enterprise Success?
             </h2>
-
-            <p className="text-gray-500 md:mt-4 md:block">
-              Partner with Kamela International to access customized training
-              solutions that empower your employees, develop SMMEs, and build
-              talent pipelines for the future. Lets work together to create a
-              skilled, inclusive, and competitive workforce that drives your
-              organizations success.
+            <p className="mt-4 text-gray-600 leading-relaxed">
+              Partner with Kamela International to access customised training solutions that empower
+              your employees, develop SMMEs, and build talent pipelines for the future. Let's create a
+              skilled, inclusive, and competitive workforce together.
             </p>
-
-            <div className="mt-4 md:mt-8">
+            <div className="mt-8">
               <Link
-              href="/Contact"
-              className="group bg-blue-700 text-white font-medium flex flex-row justify-between items-center py-2 px-5 rounded-full max-w-65 w-50 md:py-3 border border-blue-700 transition-all duration-200 ease-in-out hover:bg-transparent hover:text-black"
-            >
-              <span className="flex text-start transform transition-transform duration-200 ease-in-out group-hover:translate-x-8">
-                Let's Collaborate
-              </span>
-              <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center transform transition-all duration-200 ease-in-out group-hover:-translate-x-35 group-hover:rotate-45 group-hover:bg-black">
-                <ArrowUpRight
-                  className="w-4 h-4 text-black transition-colors duration-200 ease-in-out group-hover:text-white"
-                  strokeWidth={1.67}
-                />
-              </div>
-            </Link>
+                href="/Contact"
+                className="group bg-blue-700 text-white font-medium inline-flex flex-row justify-between items-center py-3 px-5 rounded-full w-52 border border-blue-700 transition-all duration-200 ease-in-out hover:bg-transparent hover:text-black"
+              >
+                <span className="transform transition-transform duration-200 ease-in-out group-hover:translate-x-8">
+                  Let's Collaborate
+                </span>
+                <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center transform transition-all duration-200 ease-in-out group-hover:-translate-x-35 group-hover:rotate-45 group-hover:bg-black">
+                  <ArrowUpRight className="w-4 h-4 text-black transition-colors duration-200 ease-in-out group-hover:text-white" strokeWidth={1.67} />
+                </div>
+              </Link>
             </div>
           </div>
         </div>
 
         <Image
-          alt="contact"
           src="/contact.jpg"
-          width={500}
+          alt="Get in touch with Kamela International"
+          width={600}
           height={500}
+          loading="lazy"
+          sizes="(max-width: 640px) 100vw, 50vw"
           className="h-56 w-full object-cover rounded-3xl sm:h-full shadow-2xl"
         />
       </section>

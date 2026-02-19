@@ -29,6 +29,7 @@ export default function Gallery() {
                 width="232"
                 height="290"
                 alt="Image 01"
+                loading="lazy"
               />
             </div>
             <div>
@@ -38,6 +39,7 @@ export default function Gallery() {
                 width="232"
                 height="290"
                 alt="Image 02"
+                loading="lazy"
               />
             </div>
             <div>
@@ -47,6 +49,7 @@ export default function Gallery() {
                 width="232"
                 height="174"
                 alt="Image 03"
+                loading="lazy"
               />
             </div>
           </div>
@@ -59,6 +62,7 @@ export default function Gallery() {
                 width="232"
                 height="155"
                 alt="Image 04"
+                loading="lazy"
               />
             </div>
             <div>
@@ -68,6 +72,7 @@ export default function Gallery() {
                 width="232"
                 height="349"
                 alt="Image 05"
+                loading="lazy"
               />
             </div>
             <div>
@@ -77,6 +82,7 @@ export default function Gallery() {
                 width="232"
                 height="349"
                 alt="Image 06"
+                loading="lazy"
               />
             </div>
           </div>
@@ -89,6 +95,7 @@ export default function Gallery() {
                 width="232"
                 height="349"
                 alt="Image 07"
+                loading="lazy"
               />
             </div>
             <div>
@@ -98,6 +105,7 @@ export default function Gallery() {
                 width="232"
                 height="155"
                 alt="Image 08"
+                loading="lazy"
               />
             </div>
             <div>
@@ -107,6 +115,7 @@ export default function Gallery() {
                 width="232"
                 height="349"
                 alt="Image 09"
+                loading="lazy"
               />
             </div>
           </div>
@@ -119,6 +128,7 @@ export default function Gallery() {
                 width="232"
                 height="290"
                 alt="Image 10"
+                loading="lazy"
               />
             </div>
             <Image
@@ -127,6 +137,7 @@ export default function Gallery() {
               width="232"
               height="155"
               alt="Image 11"
+              loading="lazy"
             />
             <Image
               className="w-full rounded-xl shadow"
@@ -134,6 +145,7 @@ export default function Gallery() {
               width="232"
               height="309"
               alt="Image 12"
+              loading="lazy"
             />
           </div>
         </div>
@@ -151,6 +163,7 @@ export default function Gallery() {
                 width="232"
                 height="290"
                 alt="Image 13"
+                loading="lazy"
               />
             </div>
             <div>
@@ -160,6 +173,7 @@ export default function Gallery() {
                 width="232"
                 height="290"
                 alt="Image 14"
+                loading="lazy"
               />
             </div>
             <div>
@@ -169,6 +183,7 @@ export default function Gallery() {
                 width="232"
                 height="174"
                 alt="Image 15"
+                loading="lazy"
               />
             </div>
           </div>
@@ -181,6 +196,7 @@ export default function Gallery() {
                 width="232"
                 height="155"
                 alt="Image 16"
+                loading="lazy"
               />
             </div>
             <div>
@@ -190,6 +206,7 @@ export default function Gallery() {
                 width="232"
                 height="349"
                 alt="Image 17"
+                loading="lazy"
               />
             </div>
             <div>
@@ -199,6 +216,7 @@ export default function Gallery() {
                 width="232"
                 height="250"
                 alt="Image 18"
+                loading="lazy"
               />
             </div>
           </div>
@@ -211,6 +229,7 @@ export default function Gallery() {
                 width="232"
                 height="349"
                 alt="Image 19"
+                loading="lazy"
               />
             </div>
             <div>
@@ -220,6 +239,7 @@ export default function Gallery() {
                 width="232"
                 height="155"
                 alt="Image 20"
+                loading="lazy"
               />
             </div>
             <div>
@@ -229,6 +249,7 @@ export default function Gallery() {
                 width="232"
                 height="250"
                 alt="Image 09"
+                loading="lazy"
               />
             </div>
           </div>
@@ -241,6 +262,7 @@ export default function Gallery() {
                 width="232"
                 height="290"
                 alt="Image 10"
+                loading="lazy"
               />
             </div>
             <Image
@@ -249,6 +271,7 @@ export default function Gallery() {
               width="232"
               height="155"
               alt="Image 11"
+              loading="lazy"
             />
             <Image
               className="w-full rounded-xl shadow"
@@ -256,6 +279,7 @@ export default function Gallery() {
               width="232"
               height="309"
               alt="Image 12"
+              loading="lazy"
             />
           </div>
         </div>

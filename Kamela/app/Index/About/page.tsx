@@ -1,75 +1,89 @@
 import Link from "next/link";
 import Image from "next/image";
-import {ArrowUpRight} from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 export default function About() {
   return (
-    <>
-      <div className="px-[8%] lg:px-[12%] py-20 about">
-        <div className="text-center mb-12">
-          
-          
+    <section
+      aria-labelledby="about-heading"
+      className="relative overflow-hidden py-20 px-[8%] lg:px-[12%]"
+    >
+      <div className="relative z-10 max-w-7xl mx-auto">
+        <div className="mb-16 max-w-2xl">
+          <h2
+            id="about-heading"
+            className="sm:text-4xl lg:text-5xl leading-tight"
+          >
+            Innovating Skills Development For The Future Workforce
+          </h2>
         </div>
-        <div className="container mx:auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="about-image flex justify-center">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
+          <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-5/4">
             <Image
               src="/kamela-about.jpg"
-              alt="About Kamela International"
-              width={500}
-              height={300}
-              className="rounded-3xl shadow-2xl"
+              alt="Kamela International skills development training session"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              loading="lazy"
+              className="object-fill"
             />
           </div>
-          <div className="content mt-8 relative justify-center items-center ">
-            <h2 className="mb-15 flex justify-items-start items-start sm:text-4xl lg:text-5xl font-bold leading-tight">
-            Innovating Skills Development for the Future Workforce
-          </h2>
-            <p className="mb-4">
-              Kamela International is a Pan-African organization focused on
+
+          <div>
+            <p className="leading-relaxed">
+              Kamela International is a Pan-African organisation focused on
               skills development, training, enterprise growth, and assessment.
               Our mission is to empower individuals, businesses, and communities
               by providing accredited, future-oriented training that leads to
-              genuine competence, true confidence, and meaningful
-              opportunities.
+              genuine competence, true confidence, and meaningful opportunities.
             </p>
           </div>
         </div>
 
-        <div className="container mx:auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-25">
-          <div className="content mt-8  justify-end items-center ">
-            <p className="mb-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
+          <div className="order-2 md:order-1">
+            <p className="leading-relaxed">
               At Kamela, we believe that education is the doorway to
               empowerment, and skills development is the engine that drives
-              sustainable economic growth.
+              sustainable economic growth. We are dedicated to transforming the
+              skills landscape in South Africa and across the continent by
+              offering a wide range of accredited qualifications, skills
+              programs, and assessment services that are aligned with industry
+              needs and future trends.
             </p>
           </div>
-          <div className="about-image flex justify-center">
+
+          <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-5/4 order-1 md:order-2">
             <Image
               src="/kamela-about-2.jpg"
-              alt="About Kamela International"
-              width={500}
-              height={300}
-              className="rounded-3xl shadow-2xl"
+              alt="Kamela International learners collaborating in a workshop"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              loading="lazy"
+              className="object-fill"
             />
           </div>
         </div>
 
-        <div className="container mx:auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-25">
-          <div className="about-image flex justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-5/4">
             <Image
               src="/gallery-3.jpg"
-              alt="About Kamela International"
-              width={500}
-              height={300}
-              className="rounded-3xl shadow-2xl"
+              alt="Kamela International training facilities and learning environment"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              loading="lazy"
+              className="object-fill"
             />
           </div>
-          <div className="content mt-8 justify-center items-center ">
-            <p className="mb-4">
+
+          <div>
+            <p className="leading-relaxed mb-10">
               As a QCTO-accredited Skills Development Provider and a fully
               accredited QCTO Assessment Centre, Kamela provides an integrated
               ecosystem where learning, assessment, and workplace relevance come
-              together. Every qualification, every skills program, and every
+              together. Every qualification, every skills programme, and every
               assessment service is designed to ensure that learners gain
               practical, industry-aligned competencies that prepare them to
               excel in modern workplaces and growing sectors.
@@ -93,6 +107,6 @@ export default function About() {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }

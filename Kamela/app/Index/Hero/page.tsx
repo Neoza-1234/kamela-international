@@ -3,7 +3,7 @@
 import CountUp from "react-countup";
 import Image from "next/image";
 import Link from "next/link";
-import {ArrowUpRight} from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 const statsData = [
   {
@@ -35,6 +35,7 @@ const statsData = [
 export default function Hero() {
   return (
     <>
+      {/* ─── HERO SECTION ──────────────────────────────────────────────── */}
       <section id="hero" className="d-flex align-items-center">
         <div
           className="container mx-auto px-6 pt-27 pb-10 grid grid-cols-1 md:grid-cols-2 gaps-12 items-center relative z-10"
@@ -74,7 +75,7 @@ export default function Hero() {
                 className="group bg-(--prime) text-white font-medium flex flex-row justify-between items-center py-2 px-5 rounded-full max-w-64 w-57 md:py-3 border border-(--prime) transition-all duration-200 ease-in-out hover:bg-transparent hover:text-(--prime)"
               >
                 <span className="flex text-start transform transition-transform duration-200 ease-in-out group-hover:translate-x-8">
-                  Corporate Solutions 
+                  Corporate Solutions
                 </span>
                 <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center transform transition-all duration-200 ease-in-out group-hover:-translate-x-41 group-hover:rotate-45 group-hover:bg-black">
                   <ArrowUpRight
@@ -92,12 +93,14 @@ export default function Hero() {
               alt="Hero Image"
               width={500}
               height={500}
-              className="hero-img rounded-lg pb-10"
+              priority
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="w-full h-auto object-contain"
             />
           </div>
         </div>
       </section>
-
+      {/* ─── STATISTICS SECTION ──────────────────────────────────────────────── */}
       <div className="px-[8%] lg:px-[12%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-6">
         {statsData.map((stat, index) => (
           <div key={index} className="text-center">
@@ -110,8 +113,8 @@ export default function Hero() {
               />
               {stat.suffix}
             </h2>
-            <h3 className="font-semibold text-xl mt-2">{stat.title}</h3>
-            <p className="text-gray-600 mt-1">{stat.desc}</p>
+            <h3 className="font-semibold mt-2">{stat.title}</h3>
+            <p className="text-gray-500 mt-1">{stat.desc}</p>
           </div>
         ))}
       </div>

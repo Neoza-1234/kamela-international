@@ -5,8 +5,11 @@ import Link from "next/link";
 import { coursesData } from "@/data/courses";
 import Image from "next/image";
 
+/* ─── Types ───────────────────────────────────────────────────── */
 type TabId = "ict" | "business" | "governance" | "sales";
 
+
+/* ─── Tab config ──────────────────────────────────────────────── */
 const tabs: { id: TabId; label: string }[] = [
   { id: "ict", label: "ICT" },
   { id: "business", label: "Business Management & Admin" },
@@ -14,6 +17,8 @@ const tabs: { id: TabId; label: string }[] = [
   { id: "sales", label: "Sales, Retail & Customer Experience" },
 ];
 
+
+/* ─── Group courses by tab ────────────────────────────────────── */
 function groupCoursesByCategory(data: typeof coursesData) {
   const grouped: Record<TabId, typeof coursesData> = {
     ict: [],
@@ -29,6 +34,13 @@ function groupCoursesByCategory(data: typeof coursesData) {
   return grouped;
 }
 
+
+/* Pre-group once at module level — avoids re-grouping on every render */
+const groupedCourses = groupCoursesByCategory(coursesData);
+
+
+/* ─── Main component ──────────────────────────────────────────── */
+
 const CourseSection = ({ initialTab = "ict" }: { initialTab?: TabId }) => {
   const [activeTab, setActiveTab] = useState<TabId>(initialTab);
 
@@ -39,12 +51,12 @@ const CourseSection = ({ initialTab = "ict" }: { initialTab?: TabId }) => {
   const courses = groupCoursesByCategory(coursesData);
 
   return (
-    <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="mb-3">Explore Our Courses</h2>
-          <p>Choose a category to discover accredited qualifications</p>
+          <p className="text-gray-500">Choose a category to discover accredited qualifications</p>
         </div>
 
         {/* Tabs */}
@@ -84,6 +96,7 @@ const CourseSection = ({ initialTab = "ict" }: { initialTab?: TabId }) => {
                     alt={course.name}
                     width={100}
                     height={100}
+                    loading="lazy"
                     className="w-full h-full object-contain"
                   />
                 </div>

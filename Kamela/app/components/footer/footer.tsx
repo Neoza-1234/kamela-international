@@ -34,6 +34,7 @@ export default function footer() {
               <ul className="space-y-2 text-xs sm:text-sm">
                 <li>
                   <Link
+                  prefetch={false}
                     href="/About-Us"
                     className="hover:text-indigo-500 transition duration-200"
                   >
@@ -42,6 +43,7 @@ export default function footer() {
                 </li>
                 <li>
                   <Link
+                  prefetch={false}  
                     href="/Explore/Events"
                     className="hover:text-indigo-500 transition duration-200"
                   >
@@ -50,6 +52,7 @@ export default function footer() {
                 </li>
                 <li>
                   <Link
+                  prefetch={false}
                     href="/Explore/Gallery"
                     className="hover:text-indigo-500 transition duration-200"
                   >
@@ -58,6 +61,7 @@ export default function footer() {
                 </li>
                 <li>
                   <Link
+                  prefetch={false}
                     href="/Contact"
                     className="hover:text-indigo-500 transition duration-200"
                   >
@@ -116,6 +120,7 @@ export default function footer() {
               <ul className="space-y-2 text-xs sm:text-sm">
                 <li>
                   <Link
+                  prefetch={false}
                     href="/"
                     className="hover:text-indigo-500 transition duration-200"
                   >
@@ -124,6 +129,7 @@ export default function footer() {
                 </li>
                 <li>
                   <Link
+                  prefetch={false}
                     href="/"
                     className="hover:text-indigo-500 transition duration-200"
                   >
@@ -144,6 +150,7 @@ export default function footer() {
             {/* Social Links */}
             <div className="flex items-center justify-center lg:justify-end gap-4 md:gap-5">
               <Link
+              prefetch={false}
                 href="https://x.com/KamelaPty"
                 target="_blank"
                 rel="noreferrer"
@@ -152,6 +159,7 @@ export default function footer() {
                 <i className="ri-twitter-x-line"></i>
               </Link>
               <Link
+              prefetch={false}
                 href="https://www.linkedin.com/in/kamela-international-60510b315?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B89CsBFitTVKzYLc9QSwFDQ%3D%3D"
                 target="_blank"
                 rel="noreferrer"
@@ -160,6 +168,7 @@ export default function footer() {
                 <i className="ri-linkedin-fill"></i>
               </Link>
               <Link
+              prefetch={false}
                 href="https://www.tiktok.com/@kamela.international"
                 target="_blank"
                 rel="noreferrer"
@@ -168,6 +177,7 @@ export default function footer() {
                 <i className="ri-tiktok-fill"></i>
               </Link>
               <Link
+              prefetch={false}
                 href="https://www.facebook.com/kamelatraining?rdid=pnspctJDkZcOZRVv&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1EWQ5JuMLr%2F"
                 target="_blank"
                 rel="noreferrer"

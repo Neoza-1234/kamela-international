@@ -14,7 +14,8 @@ export default function ContactUs() {
         performance
       </p>
       <div className="mt-7">
-      <Link
+      <Link 
+      prefetch={null}
         href="/Contact"
         className="group bg-blue-700 text-white font-medium flex flex-row justify-between items-center py-2 px-5 rounded-full max-w-75 w-70 md:py-3 border border-blue-700 transition-all duration-200 ease-in-out hover:bg-transparent hover:text-white"
       >

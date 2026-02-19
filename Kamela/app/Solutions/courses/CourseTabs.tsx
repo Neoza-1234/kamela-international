@@ -29,7 +29,7 @@ export default function CourseTabs() {
   };
 
   return (
-    <div className="sticky top-20 z-40 bg-white">
+    <div className="sticky top-20 z-40 bg-white border-b border-slate-200">
       <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex overflow-x-auto scrollbar-hide">
           {tabs.map((tab) => {

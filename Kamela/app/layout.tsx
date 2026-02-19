@@ -21,7 +21,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title:
-    "Kamela International |  Empowering Africa's Workforce Through Skills, Technology, and Innovation",
+    "Kamela International | Empowering Africa's Workforce Through Skills, Technology, and Innovation",
   description:
     "Kamela International empowers learners with accredited training, flexible study options, and industry-aligned qualifications. Our supportive community helps students, professionals, and career changers gain the skills and confidence needed to thrive in today's workforce.",
 };

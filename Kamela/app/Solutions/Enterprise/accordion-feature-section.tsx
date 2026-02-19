@@ -68,11 +68,10 @@ const defaultFeatures: FeatureItem[] = [
 ];
 
 const Feature197 = ({ features = defaultFeatures }: Feature197Props) => {
-  const [activeTabId, setActiveTabId] = useState<number | null>(1);
-  const [activeImage, setActiveImage] = useState(features[0]?.image || "");
+  const [activeTabId, setActiveTabId] = useState<number>(features[0]?.id ?? 1);
 
   return (
-    <section className="py-32">
+    <section className="py-20">
       <div className="container mx-auto">
         <div className="mb-12 flex w-full items-start justify-between gap-12">
           <div className="w-full md:w-1/2">
@@ -80,48 +79,56 @@ const Feature197 = ({ features = defaultFeatures }: Feature197Props) => {
               {features.map((tab) => (
                 <AccordionItem key={tab.id} value={`item-${tab.id}`}>
                   <AccordionTrigger
-                    onClick={() => {
-                      setActiveImage(tab.image);
-                      setActiveTabId(tab.id);
-                    }}
+                    onClick={() => setActiveTabId(tab.id)}
                     className="cursor-pointer py-5 no-underline! transition"
                   >
                     <h2
                       className={`text-xl font-semibold ${
-                        tab.id === activeTabId
-                          ? "text-black"
-                          : "text-gray-600"
+                        tab.id === activeTabId ? "text-black" : "text-gray-600"
                       }`}
                     >
                       {tab.title}
                     </h2>
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="mt-3 text-gray-500">
-                      {tab.description}
-                    </p>
-                    <div className="mt-4 md:hidden">
-                      <Image
-                        src={tab.image}
-                        alt={tab.title}
-                        height={500}
-                        width={500}
-                        className="h-full max-h-80 w-full object-cover"
-                      />
-                    </div>
+                    <p className="mt-3 text-gray-500">{tab.description}</p>
+                    {/* Mobile: only render image when tab is open to avoid 6x hidden images on small screens */}
+                    {tab.id === activeTabId && (
+                      <div className="mt-4 md:hidden">
+                        <Image
+                          src={tab.image}
+                          alt={tab.title}
+                          height={500}
+                          width={500}
+                          className="h-full max-h-80 w-full object-cover"
+                          loading="lazy"
+                        />
+                      </div>
+                    )}
                   </AccordionContent>
                 </AccordionItem>
               ))}
             </Accordion>
           </div>
+
+          {/* Desktop: render ALL images but only show the active one — no reloads on tab switch */}
           <div className="relative m-auto hidden w-1/2 overflow-hidden rounded-xl md:block">
-            <Image
-              src={activeImage}
-              alt="Feature preview"
-              width={500}
-              height={500}
-              className="aspect-4/3 object-cover pl-4"
-            />
+            {features.map((tab, index) => (
+              <Image
+                key={tab.id}
+                src={tab.image}
+                alt={tab.title}
+                width={500}
+                height={500}
+                className={`aspect-4/3 object-cover pl-4 transition-opacity duration-300 ${
+                  tab.id === activeTabId
+                    ? "opacity-100"
+                    : "absolute inset-0 opacity-0 pointer-events-none"
+                }`}
+                priority={index === 0}
+                loading={index === 0 ? "eager" : "lazy"}
+              />
+            ))}
           </div>
         </div>
       </div>

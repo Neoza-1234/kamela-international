@@ -45,7 +45,7 @@ const Card: React.FC<CardProps> = ({ title, subtitle, Icon, href }) => {
   return (
     <a
       href={href}
-      className="w-full p-4 rounded-3xl border border-slate-300 relative overflow-hidden group bg-white"
+      className="w-full p-4 rounded-3xl border border-slate-300 relative overflow-hidden group"
     >
       <div className="absolute inset-0 bg-(--secondary) translate-y-full group-hover:translate-y-[0%] transition-transform duration-300" />
 
