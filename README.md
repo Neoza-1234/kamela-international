@@ -7,8 +7,8 @@ This is the official repository for **Kamela International's** website, a platfo
 ##  Project Overview
 
 Kamela International offers:
-- ✨ Service catalog for both individuals and enterprises
-- 📚 Training modules powered by a headless CMS
+- ✨ Service catalog for students, working proffesionals and enterprises
+- 📚 Full qualification catalouge alongside certificates for Azure, Aws, Comptia and others 
 - 📞 Contact and CTA sections optimized for conversion
 - 🌐 Responsive design with performance-first architecture
 
@@ -18,7 +18,7 @@ Kamela International offers:
 
 | Layer        | Tool/Framework            |
 |--------------|---------------------------|
-| Frontend     |Next js |
+| Frontend     |  Next js |
 | Styling      | Tailwind CSS      |
 | Hosting      |  Vercel|
 | Versioning   | Git + GitHub              |
