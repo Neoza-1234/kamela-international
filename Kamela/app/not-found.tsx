@@ -16,7 +16,7 @@ const ErrorPage = () => {
           <div className='flex flex-col items-center justify-center'>
             <div>
               <Image
-                src={'/icons/Not-Found.png'}
+                src={'/icons/error-not-found.png'}
                 alt='Not Found Image'
                 height={300}
                 width={600}

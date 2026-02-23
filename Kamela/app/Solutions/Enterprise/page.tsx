@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   creator: "Kamela International",
   publisher: "Kamela International",
   metadataBase: new URL("https://kamelatraining.co.za"),
-  alternates: { canonical: "/Solutions/Enterprise" },
+  alternates: { canonical: "https://kamelatraining.co.za/Solutions/Enterprise" },
   openGraph: {
     title: "Enterprise Solutions | Kamela International",
     description:
@@ -121,7 +121,7 @@ const partners = [
   { src: "/icons/makhophila.png", alt: "Makhophila", w: 100, h: 40 },
   { src: "/icons/raf.jpg", alt: "Road Accident Fund", w: 50, h: 50 },
   { src: "/icons/uj.png", alt: "UJ", w: 100, h: 40 },
-  { src: "/icons/umgeni.png", alt: "Umgeni Water", w: 100, h: 40 },
+  { src: "/icons/umngeni-water.png", alt: "Umgeni Water", w: 100, h: 40 },
   { src: "/icons/acsa.png", alt: "ACSA", w: 100, h: 40 },
   { src: "/icons/zppa.png", alt: "ZPPA", w: 100, h: 40 },
   { src: "/icons/undp.svg", alt: "United Nations", w: 100, h: 40 },

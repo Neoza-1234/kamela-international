@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   creator: "Kamela International",
   publisher: "Kamela International",
   metadataBase: new URL("https://kamelatraining.co.za"),
-  alternates: { canonical: "/Solutions/RPL" },
+  alternates: { canonical: "https://kamelatraining.co.za/Solutions/RPL" },
   openGraph: {
     title:
       "Recognition of Prior Learning (RPL) Services | Kamela International",

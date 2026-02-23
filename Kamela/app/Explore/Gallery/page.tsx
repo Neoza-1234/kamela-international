@@ -1,5 +1,49 @@
 import Link from "next/link";
 import Image from "next/image";
+import {Metadata} from "next";
+
+export const metadata: Metadata = { 
+  title: "Gallery - Kamela International",
+  description: "Explore the vibrant moments and achievements at Kamela International through our captivating gallery. Witness the essence of excellence and innovation in every image.",
+    keywords: [
+      "Kamela International Gallery",
+      "Kamela International Moments",
+      "Kamela International Achievements",
+      "Kamela International Excellence",
+      "Kamela International Innovation",
+      "Kamela International Events",
+      "Kamela International Team",
+      "Kamela International Culture",
+      "Kamela International Success",
+    ],
+    creator: "Kamela International",
+    publisher: "Kamela International",
+    metadataBase: new URL("https://kamelatraining.co.za"),
+     alternates: { canonical: "https://kamelatraining.co.za/Explore/Gallery" },
+      openGraph: {
+        title: "Gallery - Kamela International",
+        description: "Explore the vibrant moments and achievements at Kamela International through our captivating gallery. Witness the essence of excellence and innovation in every image.",
+        url: "https://kamelatraining.co.za/Explore/Gallery",
+        siteName: "Kamela International",
+        images: [
+          {
+            url: "https://kamelatraining.co.za/gallery-1.jpg",
+            width: 1200,
+            height: 630,
+            alt: "Gallery Image 1",
+          },
+          {
+            url: "https://kamelatraining.co.za/gallery-2.jpg",
+            width: 1200,
+            height: 630,
+            alt: "Gallery Image 2",
+          },
+        ],
+        locale: "en_US",
+        type: "website",
+        },
+};
+
 
 export default function Gallery() {
   return (

@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   creator: "Kamela International",
   publisher: "Kamela International",
   metadataBase: new URL("https://kamelatraining.co.za"),
-  alternates: { canonical: "/Assessment-Center" },
+  alternates: { canonical: "https://kamelatraining.co.za/Assessment-Center" },
   openGraph: {
     title:
       "QCTO-Accredited Assessment Centre | EISA 2026 | Kamela International",
