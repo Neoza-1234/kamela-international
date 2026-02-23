@@ -6,6 +6,8 @@ import Footer from "./components/footer/footer";
 import "remixicon/fonts/remixicon.css";
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import Script from "next/script";
+import TawkChat from "@/components/chatbot";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -24,7 +26,30 @@ export const metadata: Metadata = {
     "Kamela International | Empowering Africa's Workforce Through Skills, Technology, and Innovation",
   description:
     "Kamela International empowers learners with accredited training, flexible study options, and industry-aligned qualifications. Our supportive community helps students, professionals, and career changers gain the skills and confidence needed to thrive in today's workforce.",
+     keywords: [
+      "Kamela International",
+      "Skills Development",
+      "Kamela Training",
+      "Accredited Training",
+      "Flexible Study Options",
+      "Industry-Aligned Qualifications",
+      "Supportive Learning",
+      "Career Advancement",
+      "Professional Development",
+      "Kamela",
+      "QCTO",
+      "Accredited Courses",
+      "Online Learning",
+      "In-Person Training",
+      "Blended Learning",
+      "Workforce Empowerment",
+      "Career Growth",
+      "",
+    ],
+
 };
+
+
 
 export default function RootLayout({
   children,
@@ -81,6 +106,7 @@ export default function RootLayout({
         {children}
         <Analytics />
         <SpeedInsights />
+        <TawkChat />
         <Footer/>
       </body>
     </html>
