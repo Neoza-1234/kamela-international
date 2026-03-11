@@ -35,11 +35,6 @@ const challenges = [
       "South African organisations are battling a deepening skills deficit especially in the ICT sector. Vacancies go unfilled for months, institutional knowledge walks out the door with retiring staff, and entry-level candidates arrive underprepared — stalling growth, inflating recruitment costs, and leaving teams stretched thin.",
     solution:
       "Kamela deploys targeted learnership programmes, graduate readiness support, and customised up-skilling pathways that close critical gaps fast — converting raw potential into productive, work-ready contributors.",
-    solutionPoints: [
-      "Accredited learnership delivery across all 9 provinces",
-      "Entry-level talent development & workplace readiness",
-      "Recruitment-as-a-Service for graduate & internship pipelines",
-    ],
     accentStart: "rgba(255,69,0,0.22)",
     accentEnd: "rgba(180,30,0,0.10)",
     borderColor: "rgba(255,69,0,0.20)",
@@ -62,11 +57,6 @@ const challenges = [
       "Automation, AI, and digitisation are compressing technology adoption cycles from decades to months. Workforces trained for yesterday's economy find themselves misaligned to tomorrow's demands — and organisations that fail to re-skill fast enough lose competitive ground they may never recover.",
     solution:
       "Kamela's digital up-skilling and re-skilling solutions are built for speed and scale — blending LMS-driven e-learning, virtual classrooms, and digital labs with practical workplace application so employees adapt without operations grinding to a halt.",
-    solutionPoints: [
-      "Digital literacy & IT re-skilling programmes",
-      "Blended learning via LMS, virtual classrooms & digital labs",
-      "Business, retail & admin transformation curricula",
-    ],
     accentStart: "rgba(8,102,255,0.22)",
     accentEnd: "rgba(4,50,160,0.10)",
     borderColor: "rgba(8,102,255,0.20)",
@@ -89,11 +79,6 @@ const challenges = [
       "Without a deliberate pipeline strategy, organisations perpetually react to talent crises rather than preventing them. Succession gaps widen, diversity targets stall, and B-BBEE scorecards suffer — while competitors who invested in structured development move ahead.",
     solution:
       "Kamela designs enterprise talent pipelines end-to-end: sourcing, developing, and placing emerging talent while simultaneously strengthening existing workforce capability — turning your training spend into a measurable strategic asset.",
-    solutionPoints: [
-      "Work Integrated Learning (WIL) & supervisory development",
-      "BBBEE-aligned enterprise & SMME development",
-      "Emotional intelligence, leadership & management skills",
-    ],
     /* third card bridges both colours */
     accentStart: "rgba(255,69,0,0.16)",
     accentEnd: "rgba(8,102,255,0.14)",
@@ -242,21 +227,6 @@ function ChallengeCard({
           <p className="text-sm text-white/65 leading-relaxed mb-4">
             {challenge.solution}
           </p>
-
-          <ul className="space-y-2">
-            {challenge.solutionPoints.map((point, i) => (
-              <li key={i} className="flex items-start gap-2.5">
-                <CheckCircle
-                  style={{ color: BRAND.blue }}
-                  className="w-4 h-4 shrink-0 mt-0.5"
-                  aria-hidden
-                />
-                <span className="text-xs text-white/60 leading-snug">
-                  {point}
-                </span>
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
     </div>
@@ -305,8 +275,7 @@ export default function EnterpriseInsights() {
             </div>
             <p className="leading-relaxed max-w-sm lg:text-right">
               Three forces are converging to create the most disruptive talent
-              landscape South Africa has ever faced — and most organisations are
-              underprepared for all three.
+              landscape SA has ever faced
             </p>
           </div>
         </div>
@@ -355,9 +324,9 @@ function BottomBanner() {
             One training partner. All three problems solved.
           </p>
           <p className="leading-relaxed max-w-xl">
-            Kamela International is uniquely positioned as an accredited,
+            We are uniquely positioned as an accredited,
             full-service training provider with national reach — delivering
-            integrated skills, digital, and pipeline solutions under one roof,
+            integrated skills, digital and pipeline solutions under one roof,
             aligned to your BBBEE scorecard.
           </p>
         </div>

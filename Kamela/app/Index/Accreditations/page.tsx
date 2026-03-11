@@ -17,9 +17,9 @@ export default function Accreditations() {
     <>
       <div className="px-[8%] lg:px-[12%] py-20 services">
         <div className="text-center mb-12">
-          <h2 className="mt-1">
-            Kamela International is fully accredited, registered, and recognized
-            by QCTO and other leading industry bodies and authorities
+          <h2 className="">
+             Fully accredited and recognized
+            by QCTO, Service SETA, MICT SETA and other leading industry bodies and authorities
           </h2>
         </div>
       </div>
@@ -32,7 +32,7 @@ export default function Accreditations() {
           autoplay={{
             delay: 1500,
             disableOnInteraction: false,
-            pauseOnMouseEnter: false,
+            pauseOnMouseEnter: true,
           }}
           modules={[Autoplay]}
           breakpoints={{

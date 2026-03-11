@@ -13,7 +13,6 @@ import {
   Gavel,
   Send,
   Award,
-  ChevronRight,
 } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -230,64 +229,65 @@ export default function AssessmentCenter() {
       </nav>
 
       {/* ── Hero ── */}
-      <header className="relative overflow-hidden">
-        <div className="relative z-10 container mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h1 className="sm:text-5xl font-black leading-tight mb-5">
-              External Integrated Summative{" "}
-              <span
-                style={{
-                  backgroundImage: `linear-gradient(90deg, ${BRAND.orange}, ${BRAND.blue})`,
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  backgroundClip: "text",
-                }}
-              >
-                Assessment Centre
-              </span>
-            </h1>
-
-            <p className="leading-relaxed max-w-lg mb-8">
-              Kamela International is a fully accredited QCTO Assessment Centre,
-              authorised to conduct External Integrated Summative Assessments
-              (EISA) for selected Occupational Qualifications. Our experienced
-              assessors ensure a professional, compliant, and supportive
-              environment for candidates to complete their final qualification
-              assessments.
-            </p>
-
-            <div className="flex flex-wrap items-start gap-4">
-              <a
-                href="https://forms.office.com/r/Zn5Sa6jdjC"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group bg-(--prime) text-white font-medium inline-flex flex-row justify-between items-center py-3 px-5 rounded-full w-52 border border-(--prime) transition-all duration-200 ease-in-out hover:bg-transparent hover:text-(--prime) cursor-pointer"
-              >
-                <span className="transform transition-transform duration-200 ease-in-out group-hover:translate-x-8">
-                  Book Your EISA
-                </span>
-                <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center transform transition-all duration-200 ease-in-out group-hover:-translate-x-35 group-hover:rotate-45 group-hover:bg-black">
-                  <ArrowUpRight
-                    className="w-4 h-4 text-black transition-colors duration-200 ease-in-out group-hover:text-white"
-                    strokeWidth={1.67}
-                  />
-                </div>
-              </a>
-            </div>
-          </div>
-
-          {/* Right — image */}
-          <div className="relative">
-            <Image
-              src="/Kamela8.jpg"
-              alt="Kamela International QCTO-accredited assessment centre facilities"
-              width={560}
-              height={680}
-              priority
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="rounded-3xl shadow-2xl w-full object-cover"
+      <header className="container mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center relative z-10">
+        <div>
+          <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 text-blue-700 text-xs font-semibold px-3 py-1.5 rounded-full mb-5">
+            <span
+              className="w-1.5 h-1.5 rounded-full bg-blue-600"
+              aria-hidden
             />
+            QCTO Accredited Assesssment Center
           </div>
+          <h1 className="sm:text-5xl leading-tight text-start md:text-left">
+            External Integrated Summative{" "}
+            <span
+              style={{
+                backgroundImage: `linear-gradient(90deg, ${BRAND.orange}, ${BRAND.blue})`,
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+              }}
+            >
+              Assessment Centre
+            </span>{" "}
+          </h1>
+          <p className="mt-4 md:text-xl leading-relaxed opacity-70">
+            As an accredited QCTO assessment centre for
+            selected occupational qualifications, we partner with training
+            providers and companies conducting learnerships to provide a
+            professional, compliant and supportive environment for candidates to
+            complete their final qualification assessments.
+          </p>
+          <div className="flex flex-wrap items-start pt-8">
+            <a
+              href="https://forms.office.com/r/Zn5Sa6jdjC"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-(--prime) text-white font-medium inline-flex flex-row justify-between items-center py-3 px-5 rounded-full w-52 border border-(--prime) transition-all duration-200 ease-in-out hover:bg-transparent hover:text-(--prime) cursor-pointer"
+            >
+              <span className="transform transition-transform duration-200 ease-in-out group-hover:translate-x-8">
+                Book Your EISA
+              </span>
+              <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center transform transition-all duration-200 ease-in-out group-hover:-translate-x-35 group-hover:rotate-45 group-hover:bg-black">
+                <ArrowUpRight
+                  className="w-4 h-4 text-black transition-colors duration-200 ease-in-out group-hover:text-white"
+                  strokeWidth={1.67}
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div className="relative flex justify-center items-center">
+          <Image
+            src="/exam-center.jpg"
+            alt="Pre-EISA Exam Prepiration"
+            width={700}
+            height={700}
+            priority
+            sizes="(max-width: 768px) 100vw, 50vw"
+            className="rounded-2xl shadow-2xl w-full object-cover"
+          />
         </div>
       </header>
 
@@ -297,14 +297,11 @@ export default function AssessmentCenter() {
         className="px-6 py-16 md:px-16 lg:px-24 xl:px-32"
       >
         <div className="max-w-4xl mx-auto text-center">
-          <h2
-            id="why-heading"
-            className="sm:text-4xl font-black mb-5"
-          >
+          <h2 id="why-heading" className="sm:text-4xl font-black mb-5">
             Why Choose Our Assessment Centre?
           </h2>
           <p className="leading-relaxed max-w-3xl mx-auto">
-            Kamela International provides a fully equipped, compliant, and
+            We provide a fully equipped, compliant and
             professionally managed environment for learners to complete their
             final qualification assessments. We deliver credible and fair
             assessments through qualified assessors and moderators, modern
@@ -321,15 +318,12 @@ export default function AssessmentCenter() {
         className="py-20 px-5 md:px-16 lg:px-24 xl:px-32"
       >
         <div className="text-center mb-10">
-          <h2
-            id="schedule-heading"
-            className="sm:text-4xl mb-3"
-          >
+          <h2 id="schedule-heading" className="sm:text-4xl mb-3">
             2026 EISA Dates &amp; Qualifications
           </h2>
           <p className="text-gray-500 max-w-xl mx-auto">
-            All assessments are conducted at our accredited centre based in Brynston. Book early
-            to secure your preferred sitting date.
+            All assessments are conducted at our accredited centre based in
+            Brynston. Book early to secure your preferred sitting date.
           </p>
         </div>
 
@@ -443,13 +437,12 @@ export default function AssessmentCenter() {
                   borderColor: "rgba(255,255,255,0.06)",
                 }}
               >
-               
                 <div
                   aria-hidden
                   className="absolute -top-4 -right-4 w-20 h-20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-2xl"
                   style={{ background: accent }}
                 />
-               
+
                 <div
                   aria-hidden
                   className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
@@ -480,11 +473,10 @@ export default function AssessmentCenter() {
       {/* ── Assessment Fees ── */}
       <section
         aria-labelledby="fees-heading"
-        className="py-16 px-5 md:px-16 lg:px-24 xl:px-32">
+        className="py-16 px-5 md:px-16 lg:px-24 xl:px-32"
+      >
         <div className="max-w-3xl mx-auto text-center">
-          <h2
-            id="fees-heading"
-            className="mb-4">
+          <h2 id="fees-heading" className="mb-4">
             Assessment Centre Fees
           </h2>
           <p className="text-gray-500 leading-relaxed mb-6">
@@ -501,7 +493,6 @@ export default function AssessmentCenter() {
         className="py-20 px-4"
         style={{ background: "#06060a" }}
       >
-
         <div className="relative z-10 max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <h2
@@ -581,7 +572,7 @@ export default function AssessmentCenter() {
         className="container mx-auto px-6 py-20 flex justify-center"
       >
         <div
-          className="relative overflow-hidden rounded-3xl p-10 md:p-14 text-center w-full max-w-3xl"
+          className="relative overflow-hidden rounded-3xl p-10 md:p-14 text-center w-full max-w-5xl"
           style={{ background: "#09090f" }}
         >
           <div className="relative z-10">

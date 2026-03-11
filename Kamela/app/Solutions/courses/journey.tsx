@@ -39,9 +39,9 @@ const Journey = () => {
 
 const Card: React.FC<CardProps> = ({ title, subtitle, Icon }) => {
   return (
-    <a className="w-full p-4 rounded-3xl border-2 border-slate-300 relative overflow-hidden group hover:border-blue-600 transition duration-300">
+    <a className=" p-6 rounded-3xl border-2 border-slate-300 relative overflow-hidden group hover:border-blue-600 transition duration-300">
       <div className="absolute inset-0 bg-blue-600 translate-y-full group-hover:translate-y-[0%] transition-transform duration-500" />
-      <Icon className="mb-3 text-blue-600 group-hover:text-white transition-colors relative z-10 duration-300" />
+      <Icon className="mb-3 text-blue-600 group-hover:text-white transition-colors relative z-10 duration-300 " />
       <h3 className="font-medium text-black group-hover:text-white relative z-10 duration-300">
         {title}
       </h3>

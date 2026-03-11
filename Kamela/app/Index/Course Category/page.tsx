@@ -4,11 +4,10 @@ import Link from "next/link";
 export default function CourseCategory() {
   return (
     <div className="px-[8%] lg:px-0 py-20 course-category">
-      <div className="text-center mt-8"> 
+      <div className="text-center mt-8 max-w-3xl mx-auto"> 
         <h2>
-          We Focus On Key Sectors Essential For South Africa's Stability &
-          Growth, Providing
-            <br></br>In-Demand Programs In
+          Focusing On Key Sectors Essential For South Africa's Stability &
+          Growth, Providing In-Demand Programs In
         </h2>
       </div>
       <div className="flex justify-center items-center min-h-screen px-4 sm:px-6 lg:px-8">
@@ -35,7 +34,7 @@ export default function CourseCategory() {
                   <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent"></div>
                   <div className="absolute bottom-4 left-4 text-white px-3 py-1">
                     <h3 className="text-xl sm:text-2xl font-bold drop-shadow-lg">
-                      Information & Communication Technology
+                      View ICT Courses
                     </h3>
                   </div>
                 </div>
@@ -59,7 +58,7 @@ export default function CourseCategory() {
                   <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent"></div>
                   <div className="absolute bottom-4 left-4 text-white px-3 py-1">
                     <h3 className="text-lg sm:text-xl font-bold drop-shadow-lg">
-                      Business, Management & Administration
+                       View Business, Management & Admin Courses
                     </h3>
                   </div>
                 </div>
@@ -86,7 +85,7 @@ export default function CourseCategory() {
                   <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent"></div>
                   <div className="absolute bottom-4 left-4 text-white px-3 py-1">
                     <h3 className="text-lg sm:text-xl font-bold drop-shadow-lg">
-                      Sales & Retail
+                      View Sales & Retail Courses
                     </h3>
                   </div>
                 </div>
@@ -110,7 +109,7 @@ export default function CourseCategory() {
                   <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent"></div>
                   <div className="absolute bottom-4 left-4 text-white px-3 py-1">
                     <h3 className="text-lg sm:text-xl font-bold drop-shadow-lg">
-                      Governance & Operations
+                      View Governance & Operations Courses
                     </h3>
                   </div>
                 </div>

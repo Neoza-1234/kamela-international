@@ -26,8 +26,9 @@ export type Course = {
   };
 };
 
+
+// ICT Courses
 export const coursesData: Course[] = [
-  // ICT Courses
   {
     slug: "cloud-administrator",
     category: "ict",
@@ -486,6 +487,7 @@ export const coursesData: Course[] = [
     },
   },
 
+
   // BUSINESS COURSES
   {
     slug: "project-manager",
@@ -868,7 +870,7 @@ export const coursesData: Course[] = [
     nqfLevel: 5,
     saqaid: "102161",
     credits: 445,
-    duration: "42 months",
+    duration: "36 months",
     outcomes: [
       "Manage office systems, filing structures, electronic records, and correspondence",
       "Maintain organised workflows, documentation processes, and standard operating procedures",
@@ -1130,6 +1132,8 @@ export const coursesData: Course[] = [
     },
   },
 
+
+
   // GOVERNANCE COURSES
   {
     slug: "quality-assurer",
@@ -1217,6 +1221,9 @@ export const coursesData: Course[] = [
       ],
     },
   },
+
+
+
   // SALES AND RETAIL COURSES
   {
     slug: "marketing-coordinator",
@@ -1456,17 +1463,17 @@ export const coursesData: Course[] = [
   },
 ];
 
-// Helper function to get course by slug
+
 export function getCourseBySlug(slug: string): Course | undefined {
   return coursesData.find((course) => course.slug === slug);
 }
 
-// Helper function to get all course slugs
+
 export function getAllCourseSlugs(): string[] {
   return coursesData.map((course) => course.slug);
 }
 
-// Helper function to get courses by category
+
 export function getCoursesByCategory(category: string): Course[] {
   return coursesData.filter((course) => course.category === category);
 }

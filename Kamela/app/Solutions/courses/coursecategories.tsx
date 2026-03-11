@@ -35,7 +35,7 @@ function groupCoursesByCategory(data: typeof coursesData) {
 }
 
 
-/* Pre-group once at module level — avoids re-grouping on every render */
+
 const groupedCourses = groupCoursesByCategory(coursesData);
 
 
@@ -60,15 +60,15 @@ const CourseSection = ({ initialTab = "ict" }: { initialTab?: TabId }) => {
         </div>
 
         {/* Tabs */}
-        <div className="mb-10 flex flex-wrap gap-3 justify-center">
+        <div className="mb-10 flex flex-wrap gap-5 justify-center">
           {tabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
+              className={`px-6 py-3 rounded-3xl border-2 border-black text-black transition-all duration-300 hover:-translate-x-1 hover:-translate-y-1 hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-0 active:translate-y-0 active:rounded-2xl active:shadow-none flex flex-col ${
                 activeTab === tab.id
-                  ? "bg-blue-600 text-white shadow-lg shadow-blue-600/30 scale-105"
-                  : "bg-white text-slate-700 hover:bg-slate-100 shadow-sm"
+                  ? "bg-black text-white scale-105"
+                  : "bg-white text-gray-600 hover:bg-gray-100 hover:text-black cursor-pointer"
               }`}
             >
               {tab.label}
@@ -81,11 +81,11 @@ const CourseSection = ({ initialTab = "ict" }: { initialTab?: TabId }) => {
           {courses[activeTab].map((course) => (
             <div
               key={course.slug}
-              className=" rounded-3xl shadow-md hover:shadow-xl transition-all border hover:border-blue-500 duration-300 overflow-hidden hover:-translate-y-2 flex flex-col"
+              className="rounded-3xl border-2 border-black text-black transition-all duration-300 hover:-translate-x-1 hover:-translate-y-1 hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-0 active:translate-y-0 active:rounded-2xl active:shadow-none flex flex-col"
             >
               <div className="p-5 flex flex-col grow">
                 {/* Course Name */}
-                <h3 className="mb-3 line-clamp-2 min-h-14">
+                <h3 className="mb-3 line-clamp-2 min-h-14 font-bold">
                   {course.name}
                 </h3>
 

@@ -88,9 +88,12 @@ export default function Study() {
       <header className="relative overflow-hidden">
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12 md:gap-8 md:px-16 lg:px-24 xl:px-20 px-5 pt-15 pb-0 max-w-7xl mx-auto w-full">
           <div className="flex flex-col items-center md:items-start max-w-xl">
+            <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 text-blue-700 text-xs font-semibold px-3 py-1.5 rounded-full mb-5">
+            <span className="w-1.5 h-1.5 rounded-full bg-blue-600" aria-hidden />
+            Over 3000 Students Upskilled
+          </div>
             <h1
               className="sm:text-5xl leading-tight text-start md:text-left"
-              style={{ color: "#0d0d14" }}
             >
               A Supportive,{" "}
               <span
@@ -106,7 +109,7 @@ export default function Study() {
               Learning Community
             </h1>
 
-            <p className="text-start md:text-left leading-relaxed mt-6 max-w-lg">
+            <p className="text-start md:text-left leading-relaxed mt-6 max-w-lg opacity-70">
               At Kamela International, students are our priority. We deliver an engaging,
               supportive, and flexible learning experience — combining technology, mentorship,
               and industry-aligned qualifications to equip you with the skills and confidence
@@ -138,10 +141,10 @@ export default function Study() {
             <Image
               src="/icons/study-hero-img.png"
               alt="Kamela International students in a future-ready learning environment"
-              width={520}
-              height={440}
+              width={600}
+              height={600}
               priority
-              sizes="(max-width: 768px) 90vw, 480px"
+              sizes="(max-width: 768px)"
               className="relative z-10 w-full max-w-130 object-contain drop-shadow-2xl"
             />
           </div>

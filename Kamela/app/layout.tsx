@@ -6,6 +6,7 @@ import Footer from "./components/footer/footer";
 import "remixicon/fonts/remixicon.css";
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import Script from "next/script";
 
 
 const inter = Inter({
@@ -22,7 +23,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title:
-    "Kamela International | Empowering Africa's Workforce Through Skills, Technology, and Innovation",
+    "Kamela International | Leading Training Provider",
   description:
     "Kamela International empowers learners with accredited training, flexible study options, and industry-aligned qualifications. Our supportive community helps students, professionals, and career changers gain the skills and confidence needed to thrive in today's workforce.",
      keywords: [
@@ -107,6 +108,23 @@ export default function RootLayout({
 
         <Navbar/>
         {children}
+        <Script
+          id="tawk-to"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+              (function(){
+                var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+                s1.async=true;
+                s1.src='https://embed.tawk.to/6989b4f32fb5be1c3a2b2441/1jh0ulml8';
+                s1.charset='UTF-8';
+                s1.setAttribute('crossorigin','*');
+                s0.parentNode.insertBefore(s1,s0);
+              })();
+            `,
+          }}
+        />
         <Analytics />
         <SpeedInsights />
         <Footer/>

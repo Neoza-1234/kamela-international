@@ -147,9 +147,12 @@ export default function Enterprise() {
       {/* ── Hero ── */}
       <header className="container mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center relative z-10">
         <div>
+           <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 text-blue-700 text-xs font-semibold px-3 py-1.5 rounded-full mb-5">
+            <span className="w-1.5 h-1.5 rounded-full bg-blue-600" aria-hidden />
+            Drive Perfomance - Improve Staff Retention - Boost Productivity  
+          </div>
           <h1
               className="sm:text-5xl leading-tight text-start md:text-left"
-              style={{ color: "#0d0d14" }}
             >
               Elevate and Sustain{" "}
               <span
@@ -160,11 +163,11 @@ export default function Enterprise() {
                   backgroundClip: "text",
                 }}
               >
-                Workforce Talent 
+               Your Workforce Talent 
               </span>{" "}
-              Through Enterprise Development Solutions
+              
             </h1>
-          <p className="mt-4 md:text-xl leading-relaxed">
+          <p className="mt-4 md:text-xl leading-relaxed opacity-70">
             We partner with organisations to deliver customised training solutions that drive
             workforce transformation, enterprise development, and talent pipeline growth -
             enhancing employee performance and accelerating economic inclusion.

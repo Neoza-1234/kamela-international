@@ -26,7 +26,7 @@ const ErrorPage = () => {
               <h2>
                 Oops! The page you are looking for{' '}
                 <span className='instrument-font italic font-normal dark:text-white/70'>
-                  doesn't exist
+                  doesn't exist or has been moved.
                 </span>
               </h2>
             </div>

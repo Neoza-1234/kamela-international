@@ -80,7 +80,8 @@ export async function generateMetadata({
       `NQF Level ${course.nqfLevel}`,
       `SAQA ID ${course.saqaid}`,
       course.category,
-      "learnerships South Africa",
+      "learnerships in South Africa",
+      "learnerships",
       "accredited qualifications",
       "Kamela International",
       "skills development",
@@ -95,8 +96,8 @@ export async function generateMetadata({
       "blended learning",
       "comptia certifications",
       "azure certifications",
-      "online learning",
       "online courses",
+      "software developer",
     ],
     authors: [
       {
@@ -182,7 +183,7 @@ function StatCard({
   value: string | number;
 }) {
   return (
-    <div className="group relative overflow-hidden rounded-2xl border p-5 transition-all duration-300 hover:bg-indigo-200 hover:border-blue-500 hover:-translate-y-1">
+    <div className="group relative overflow-hidden p-6 rounded-3xl border-2 border-black text-black transition-all duration-300 hover:-translate-x-1 hover:-translate-y-1 hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-0 active:translate-y-0 active:rounded-2xl active:shadow-none flex flex-col">
       <Icon className="w-5 h-5 mb-3 text-blue-600" aria-hidden="true" />
       <p className="text-xs font-medium uppercase tracking-widest mb-1">
         {label}
@@ -251,7 +252,7 @@ export default async function CoursePage({
                 <h1 className="lg:text-5xl font-bold mb-5 leading-tight">
                   {course.name}
                 </h1>
-                <p className="text-lg leading-relaxed max-w-2xl mb-10">
+                <p className="text-lg leading-relaxed max-w-2xl mb-10 opacity-70">
                   {course.fullDescription}
                 </p>
 
@@ -286,10 +287,10 @@ export default async function CoursePage({
                   <Image
                     src={course.icon}
                     alt={`${course.name} course illustration`}
-                    width={400}
-                    height={320}
+                    width={450}
+                    height={450}
                     priority
-                    sizes="(max-width: 1024px) 100vw, 384px"
+                    sizes="(max-width: 1024px)"
                     className="w-full h-72 lg:h-80 object-cover"
                   />
                 </div>
@@ -364,7 +365,7 @@ export default async function CoursePage({
               </Section>
 
               {/* Program Details */}
-              <Section id="section-program" title="Program Details">
+              <Section id="section-program" title="Programme Details">
                 <div className="grid sm:grid-cols-2 gap-6">
                   <DetailBlock
                     label="Duration"
@@ -464,25 +465,23 @@ export default async function CoursePage({
 
             {/* ── Sidebar ── */}
             <aside className="space-y-5 lg:sticky lg:top-35 lg:self-start">
-              {/* CTA card */}
               <div
                 id="section-register"
                 className="relative overflow-hidden rounded-2xl bg-linear-to-br from-blue-600 to-blue-800 p-6 shadow-xl shadow-blue-700/20 scroll-mt-24"
               >
-                {/* Decorative circle */}
                 <div
                   aria-hidden="true"
-                  className="absolute -right-8 -top-8 w-40 h-40 rounded-full bg-orange-600/80"
+                  className="absolute right-8 top-3 w-40 h-40 rounded-full bg-orange-600/80"
                 />
                 <div
                   aria-hidden="true"
-                  className="absolute -right-4 -bottom-4 w-24 h-24 rounded-full bg-orange-600/80"
+                  className="absolute right-4 bottom-4 w-24 h-24 rounded-full bg-orange-600/80"
                 />
 
-                <h3 className="text-lg font-semibold text-white mb-2 relative z-10">
+                <h3 className="font-semibold text-white mb-2 relative z-10">
                   Ready to Apply?
                 </h3>
-                <p className="text-blue-100 text-sm leading-relaxed mb-5 relative z-10">
+                <p className="text-blue-100 leading-relaxed mb-5 relative z-10">
                   Complete our registration form and our admissions team will
                   reach out to guide you through the next steps.
                 </p>
@@ -495,7 +494,6 @@ export default async function CoursePage({
                   Register Now →
                 </Link>
 
-                {/* Trust badges */}
                 <div className="relative z-10 mt-5 pt-5 border-t border-white/20 grid grid-cols-2 gap-2">
                   <TrustBadge icon={ShieldCheck} label="SAQA Accredited" />
                   <TrustBadge icon={Users} label="Expert Facilitators" />

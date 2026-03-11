@@ -74,7 +74,7 @@ export default function Paralex() {
     <div className="pt-20 sm:py-20">
       <div className="text-center px-6 mb-4">
         <h2 className="text-3xl sm:text-4xl font-black text-gray-900 leading-tight">
-          Our Commitment To Exellence
+          We Are Committed To Excellence
         </h2>
       </div>
 

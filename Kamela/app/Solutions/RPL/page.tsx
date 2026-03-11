@@ -24,6 +24,7 @@ import {
   UsersRound,
 } from "lucide-react";
 import type { Metadata } from "next";
+import { link } from "node:fs";
 
 /* ─── SEO ─────────────────────────────────────────────────────── */
 export const metadata: Metadata = {
@@ -252,8 +253,12 @@ export default function RPL() {
       </nav>
 
       {/* ── Hero ── */}
-      <header className="container mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
+      <header className="container mx-auto px-6 py-15 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
         <div>
+          <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 text-blue-700 text-xs font-semibold px-3 py-1.5 rounded-full mb-5">
+            <span className="w-1.5 h-1.5 rounded-full bg-blue-600" aria-hidden />
+            Transform Experience Into Accredited Qualifications 
+          </div>
           <h1
               className="sm:text-5xl leading-tight text-start md:text-left"
               style={{ color: "#0d0d14" }}
@@ -269,14 +274,14 @@ export default function RPL() {
               >
                 Deserves Recognition 
               </span>{" "}
-              Through RPL Services
+              Through RPL
             </h1>
 
           <p className="mt-6 leading-relaxed max-w-lg">
             At Kamela International, we specialise in RPL services that empower
             individuals to have their existing skills formally recognised —
             earning accredited qualifications based on what you already know,
-            whether through work, life, or informal training.
+            whether through work, life or informal training.
           </p>
 
           <div className="mt-8 items-center ">
@@ -330,7 +335,7 @@ export default function RPL() {
           <div className="order-1 md:order-2">
             <h2
               id="about-rpl-heading"
-              className="sm:text-4xl leading-tight mb-6"
+              className="sm:text-4xl leading-tight mb-15"
             >
               Understanding Recognition of Prior Learning
             </h2>
@@ -481,9 +486,7 @@ export default function RPL() {
             <p className="sm:text-lg text-gray-500 max-w-2xl mx-auto">
               Choose from a wide range of occupational certificates across
               various industries, all available for Recognition of Prior
-              Learning (RPL) assessment. Whether you're looking to validate your
-              skills in technology, business, or any other field, we have the
-              right certificate for you.
+              Learning (RPL) assessment.
             </p>
           </div>
 
@@ -500,7 +503,7 @@ export default function RPL() {
                     <IconComponent className="w-7 h-7 sm:w-8 sm:h-8 text-blue-700" />
                   </div>
 
-                  <p className="font-semibold  sm:text-base leading-snug group-hover:text-blue-700 transition-colors duration-300">
+                  <p className="font-bold sm:text-base leading-snug group-hover:text-blue-700 transition-colors duration-300">
                     {cert.title}
                   </p>
 

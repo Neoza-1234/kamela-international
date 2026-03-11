@@ -127,9 +127,9 @@ const items = [
     header: <ImageHeader src="/corporate.jpg" alt="Enterprise Image" />,
   },
   {
-    title: "Microsoft Azure Cloud Certifications",
+    title: "Cloud Certifications",
     description:
-      "Achieve industry-recognized Microsoft Azure certifications to advance your cloud computing career.",
+      "Achieve industry-recognized Microsoft Azure/AWS certifications to advance your cloud computing career.",
     header: <ImageHeader src="/cloud.png" alt="Azure Image" />,
   },
   {
@@ -452,7 +452,7 @@ export default function AboutUs() {
               href="/Solutions/Study"
               className="group bg-(--prime) text-white font-medium flex flex-row justify-between items-center py-2 px-5 rounded-full max-w-64 w-52 md:py-3 border border-(--prime) transition-all duration-200 ease-in-out hover:bg-transparent hover:text-(--prime)"
             >
-              <span className="flex text-start transform transition-transform duration-200 ease-in-out group-hover:translate-x-13">
+              <span className="flex text-start transform transition-transform duration-200 ease-in-out group-hover:translate-x-9">
                 Explore Courses
               </span>
               <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center transform transition-all duration-200 ease-in-out group-hover:-translate-x-37 group-hover:rotate-45 group-hover:bg-black">

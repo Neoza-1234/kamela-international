@@ -43,7 +43,7 @@ export default function Purpose() {
                     <dt className="inline font-semibold text-gray-900">
                       <feature.icon
                         aria-hidden="true"
-                        className="absolute top-1 left-1 size-7 text-indigo-700"
+                        className="absolute top-1 left-1 size-7 text-blue-600"
                       />
                       {feature.name}
                     </dt>{" "}

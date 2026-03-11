@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { BookOpen, Award, Clock, Users, Briefcase, Mail, Route } from "lucide-react";
+import { BookOpen, Award, Clock, Users, Briefcase, Mail, Route, CircleQuestionMark } from "lucide-react";
 
 export default function CourseTabs() {
   const [activeTab, setActiveTab] = useState('overview');
@@ -10,10 +10,11 @@ export default function CourseTabs() {
     { id: 'overview', label: 'Overview', icon: BookOpen },
     { id: 'purpose', label: 'Purpose & Value', icon: BookOpen },
     { id: 'outcomes', label: 'Key Outcomes', icon: Award },
-    { id: 'program', label: 'Program Details', icon: Clock },
+    { id: 'program', label: 'Programme Details', icon: Clock },
     { id: 'journey', label: 'Learning Journey', icon: Route },
     { id: 'curriculum', label: 'Curriculum', icon: Users },
     { id: 'careers', label: 'Careers', icon: Briefcase },
+    { id: 'faq', label: 'FAQ', icon: CircleQuestionMark },
     { id: 'register', label: 'Register', icon: Mail }
   ];
 

@@ -44,7 +44,7 @@ function buildFaqs(
     {
       question: "Can I study while working full-time?",
       answer:
-        "Yes. Our programs use a blended learning approach that combines online self-study, virtual sessions, and scheduled contact days — designed to accommodate working professionals without requiring you to take extended leave. Due note that you will be required to ask for time off on the exam days and vital contact days to complete the practical assessments, workplace learning components and write the exam.",
+        "Yes. Our programs use a blended learning approach that combines online self-study, virtual sessions, and scheduled contact days — designed to accommodate working professionals without requiring you to take extended leave. Do note that you will be required to ask for time off on the exam days and vital contact days to complete the practical assessments, workplace learning components and write the exam.",
     },
     {
       question: "Is financial assistance or a learnership available?",
@@ -116,7 +116,7 @@ export default function CourseFaq({
                     onClick={() => toggle(idx)}
                     aria-expanded={isOpen}
                     aria-controls={`faq-answer-${idx}`}
-                    className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left"
+                    className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left cursor-pointer"
                   >
                     <span
                       className={`font-medium text-sm leading-snug transition-colors ${
