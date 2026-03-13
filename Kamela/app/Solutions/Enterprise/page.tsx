@@ -262,11 +262,12 @@ export default function Enterprise() {
         {/* Left Side */}
         <div>
           <h2 className="sm:text-5xl lg:text-7xl mt-2 mb-4 leading-tight">
-            Trusted By Leading Organisations Across Africa 
+            Trusted By Leading Organisations Across Africa
           </h2>
           <p className="text-gray-600 dark:text-gray-300 mb-6 text-sm sm:text-base">
-            Build sleek, responsive interfaces in record time with our carefully
-            crafted React and Tailwind CSS components.
+            We support various corporates, SMMEs, NGOs and government institutions with
+            evidence-based learning models that drive productivity, innovation
+            and long-term sustainability.
           </p>
         </div>
 
