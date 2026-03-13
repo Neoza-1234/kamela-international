@@ -870,7 +870,7 @@ export const coursesData: Course[] = [
     nqfLevel: 5,
     saqaid: "102161",
     credits: 445,
-    duration: "36 months",
+    duration: "24 months",
     outcomes: [
       "Manage office systems, filing structures, electronic records, and correspondence",
       "Maintain organised workflows, documentation processes, and standard operating procedures",

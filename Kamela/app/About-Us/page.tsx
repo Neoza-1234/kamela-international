@@ -247,22 +247,22 @@ export default function AboutUs() {
             <div className="w-full lg:w-1/2 xl:w-5/12">
               <div className="mt-5 lg:mt-0">
                 <h2
-              className="sm:text-5xl leading-tight text-start md:text-left pb-3"
-              style={{ color: "#0d0d14" }}
-            >
-              10 Years Of{" "}
-              <span
-                style={{
-                  backgroundImage: `linear-gradient(90deg, ${BRAND.orange}, ${BRAND.blue})`,
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  backgroundClip: "text",
-                }}
-              >
-                  Empowering Skills And Shaping Futures 
-              </span>{" "}
-              Through Accredited Training
-            </h2>
+                  className="sm:text-5xl leading-tight text-start md:text-left pb-3"
+                  style={{ color: "#0d0d14" }}
+                >
+                  10 Years Of{" "}
+                  <span
+                    style={{
+                      backgroundImage: `linear-gradient(90deg, ${BRAND.orange}, ${BRAND.blue})`,
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                      backgroundClip: "text",
+                    }}
+                  >
+                    Empowering Skills And Shaping Futures
+                  </span>{" "}
+                  Through Accredited Training
+                </h2>
                 <p className="mb-5 dark:text-dark-6">
                   Kamela International is a leading training, digital
                   transformation, enterprise development, and assessment
@@ -353,8 +353,8 @@ export default function AboutUs() {
             <h2 className="md:text-4xl dark:text-white">Our Expanded Vision</h2>
             <p className="md:text-lg max-w-5xl mx-auto py-6 px-6">
               To be the recognized leader in occupational training, digital
-              transformation, and competency assessment across Southern
-              Africa—producing a workforce that is innovative, future-ready, and
+              transformation, and competency assessment across Southern Africa,
+              producing a workforce that is innovative, future-ready, and
               economically impactful. Our long-term goal is to train and empower
               45,000 learners to become industry-relevant, employable, and
               globally competitive professionals.
@@ -369,44 +369,45 @@ export default function AboutUs() {
               We exist to empower individuals and organizations through
               excellence in accredited skills development. We are dedicated to:
             </p>
-{/* Mission pillars */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {missionPillars.map(({ title, body }, i) => (
-              <div
-                key={title}
-                className="group relative overflow-hidden rounded-2xl border p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-                style={{ borderColor: "rgba(0,0,0,0.08)" }}
-              >
-                {/* Numbered badge */}
+            {/* Mission pillars */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+              {missionPillars.map(({ title, body }, i) => (
                 <div
-                  className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-black text-white mx-auto mb-4"
-                  style={{
-                    background: i % 2 === 0 ? BRAND.orange : BRAND.blue,
-                  }}
-                  aria-hidden
+                  key={title}
+                  className="group relative overflow-hidden rounded-2xl border p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                  style={{ borderColor: "rgba(0,0,0,0.08)" }}
                 >
-                  {String(i + 1).padStart(2, "0")}
+                  {/* Numbered badge */}
+                  <div
+                    className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-black text-white mx-auto mb-4"
+                    style={{
+                      background: i % 2 === 0 ? BRAND.orange : BRAND.blue,
+                    }}
+                    aria-hidden
+                  >
+                    {String(i + 1).padStart(2, "0")}
+                  </div>
+                  {/* Hover top accent line */}
+                  <div
+                    aria-hidden
+                    className="absolute top-0 left-4 right-4 h-0.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    style={{
+                      background: i % 2 === 0 ? BRAND.orange : BRAND.blue,
+                    }}
+                  />
+                  <h3
+                    className="font-bold text-gray-900 mb-2 text-sm"
+                    style={{ color: i % 2 === 0 ? BRAND.orange : BRAND.blue }}
+                  >
+                    {title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {body}
+                  </p>
                 </div>
-                {/* Hover top accent line */}
-                <div
-                  aria-hidden
-                  className="absolute top-0 left-4 right-4 h-0.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                  style={{
-                    background: i % 2 === 0 ? BRAND.orange : BRAND.blue,
-                  }}
-                />
-                <h3
-                  className="font-bold text-gray-900 mb-2 text-sm"
-                  style={{ color: i % 2 === 0 ? BRAND.orange : BRAND.blue }}
-                >
-                  {title}
-                </h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{body}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-
         </div>
       </section>
 

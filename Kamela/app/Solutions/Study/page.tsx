@@ -70,6 +70,7 @@ export default function Study() {
   const [activeTab] = useState<TabId>(getInitialTab);
 
   return (
+    <>
     <div className="min-h-screen w-full flex flex-col">
 
       {/* ── Breadcrumb ── */}
@@ -87,13 +88,13 @@ export default function Study() {
       {/* ── Hero ── */}
       <header className="relative overflow-hidden">
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12 md:gap-8 md:px-16 lg:px-24 xl:px-20 px-5 pt-15 pb-0 max-w-7xl mx-auto w-full">
-          <div className="flex flex-col items-center md:items-start max-w-xl">
-            <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 text-blue-700 text-xs font-semibold px-3 py-1.5 rounded-full mb-5">
+          <div className="flex flex-col items-start md:items-start max-w-xl">
+            <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 text-blue-700 text-xs font-semibold px-3 py-1.5 rounded-full mb-5 uppercase">
             <span className="w-1.5 h-1.5 rounded-full bg-blue-600" aria-hidden />
             Over 3000 Students Upskilled
           </div>
             <h1
-              className="sm:text-5xl leading-tight text-start md:text-left"
+              className="sm:text-5xl leading-tight text-start md:text-left mt-4"
             >
               A Supportive,{" "}
               <span
@@ -171,7 +172,7 @@ export default function Study() {
             >
               Built for Every Learner
             </h2>
-            <p className="text-white/80 mt-3 max-w-md mx-auto leading-relaxed">
+            <p className="text-white mt-3 max-w-md mx-auto leading-relaxed">
               Six reasons thousands of South Africans choose Kamela International to build their future.
             </p>
           </div>
@@ -233,6 +234,7 @@ export default function Study() {
         </div>
       </section>
     </div>
+    </>
   );
 }
 
@@ -252,7 +254,7 @@ function WhyCard({
 }) {
   return (
     <div
-      className="group relative overflow-hidden rounded-2xl border p-6 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1"
+      className="group relative overflow-hidden rounded-3xl border p-6 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1"
       style={{
         background: "#0d0d16",
         borderColor: "rgba(255,255,255,0.06)",

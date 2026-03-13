@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ArrowBigRight } from "lucide-react";
 
 export default function CourseCategory() {
   return (
@@ -32,7 +33,8 @@ export default function CourseCategory() {
                   />
                   {/* Gradient Overlay */}
                   <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent"></div>
-                  <div className="absolute bottom-4 left-4 text-white px-3 py-1">
+                  <div className="absolute flex justify-between gap-4 bottom-4 left-4 text-white px-3">
+                     <ArrowBigRight className="pb-0.5"/>
                     <h3 className="text-xl sm:text-2xl font-bold drop-shadow-lg">
                       View ICT Courses
                     </h3>
@@ -56,7 +58,8 @@ export default function CourseCategory() {
                   />
                   {/* Gradient Overlay */}
                   <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent"></div>
-                  <div className="absolute bottom-4 left-4 text-white px-3 py-1">
+                  <div className="absolute flex justify-between gap-4 bottom-4 left-4 text-white px-3">
+                     <ArrowBigRight className="pb-0.5"/>
                     <h3 className="text-lg sm:text-xl font-bold drop-shadow-lg">
                        View Business, Management & Admin Courses
                     </h3>
@@ -83,7 +86,8 @@ export default function CourseCategory() {
                   />
                   {/* Gradient Overlay */}
                   <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent"></div>
-                  <div className="absolute bottom-4 left-4 text-white px-3 py-1">
+                  <div className="absolute flex justify-between gap-4 bottom-4 left-4 text-white px-3">
+                     <ArrowBigRight className="pb-0.5"/>
                     <h3 className="text-lg sm:text-xl font-bold drop-shadow-lg">
                       View Sales & Retail Courses
                     </h3>
@@ -107,7 +111,8 @@ export default function CourseCategory() {
                   />
                   {/* Gradient Overlay */}
                   <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent"></div>
-                  <div className="absolute bottom-4 left-4 text-white px-3 py-1">
+                  <div className="absolute flex justify-between gap-4 bottom-4 left-4 text-white px-3">
+                     <ArrowBigRight className="pb-0.5"/>
                     <h3 className="text-lg sm:text-xl font-bold drop-shadow-lg">
                       View Governance & Operations Courses
                     </h3>

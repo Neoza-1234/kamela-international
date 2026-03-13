@@ -2,39 +2,90 @@ import Image from "next/image";
 import Link from "next/link";
 import { Feature197 } from "@/app/Solutions/Enterprise/accordion-feature-section";
 import Servicebtn from "@/components/servicebtn";
-import { ArrowUpRight, CheckCheck, Globe, Layers, Cpu, Building2 } from "lucide-react";
+import {
+  ArrowUpRight,
+  CheckCheck,
+  Globe,
+  Layers,
+  Cpu,
+  Building2,
+} from "lucide-react";
 import { Metadata } from "next";
 import { StaggerTestimonials } from "@/components/stagger-testimonials";
 import EnterpriseInsights from "@/app/Solutions/Enterprise/enterpriseinsight";
+import EnterpriseServicesSchema from "@/components/Enterprise-service-schema";
 
 /* ─── SEO ─────────────────────────────────────────────────────── */
 export const metadata: Metadata = {
-  title: "Enterprise Solutions | Kamela International",
+  title:
+    "Corporate Training & Learnership Solutions | B-BBEE Skills Development | Kamela International",
   description:
-    "Kamela International partners with leading South African organizations to deliver accredited training, learnership programmes, BBBEE-aligned enterprise development, and workforce transformation solutions — nationally.",
+    "Partner with Kamela International to upskill your workforce, run accredited learnership programmes, boost your B-BBEE scorecard, and develop SMMEs — nationally. South Africa's trusted training provider for corporates, large employers and government entities.",
   keywords: [
-    "Enterprise Solutions South Africa",
-    "Corporate Training South Africa",
-    "Workforce Development",
-    "Learnership Programmes",
-    "BBBEE Skills Development",
-    "Talent Pipeline Development",
-    "Work Integrated Learning",
-    "SMME Development",
-    "Digital Up-skilling",
-    "Blended Learning Solutions",
-    "National Learnership Delivery",
-    "Kamela International",
+    "corporate training provider South Africa",
+    "employee upskilling South Africa",
+    "accredited corporate training",
+    "workforce development solutions",
+    "staff training and development South Africa",
+    "professional development programmes South Africa",
+    "corporate learning and development",
+    "blended learning solutions South Africa",
+    "digital upskilling South Africa",
+    "SAQA accredited training South Africa",
+    "QCTO accredited training South Africa",
+    "MICT SETA accredited training South Africa",
+    "Service SETA accredited training South Africa",
+    "ECSA accredited",
+    "learnership programmes South Africa",
+    "learnership implementation South Africa",
+    "national learnership delivery",
+    "learnership host employer",
+    "workplace-based learning South Africa",
+    "NQF Level 5 learnerships",
+    "occupational learnerships South Africa",
+    "QCTO learnerships for companies",
+    "learnership recruitment South Africa",
+    "learnership management South Africa",
+    "B-BBEE skills development",
+    "B-BBEE scorecard improvement",
+    "skills development spend B-BBEE",
+    "B-BBEE learnership tax incentive",
+    "B-BBEE training provider South Africa",
+    "Section 18A learnership tax rebate",
+    "B-BBEE compliance training",
+    "transformation training solutions",
+    "B-BBEE enterprise development",
+    "B-BBEE supplier development",
+    "SMME development South Africa",
+    "small business development training",
+    "enterprise development programme",
+    "supplier development South Africa",
+    "SMME upskilling programme",
+    "township enterprise development",
+    "recruitment as a service South Africa",
+    "learnership candidate recruitment",
+    "talent pipeline development",
+    "graduate recruitment South Africa",
+    "work integrated learning South Africa",
+    "entry level talent South Africa",
+    "Kamela International enterprise",
+    "Kamela International corporate training",
+    "Kamela International learnerships",
   ],
-  authors: [{ name: "Kamela International", url: "https://kamelatraining.co.za" }],
+  authors: [
+    { name: "Kamela International", url: "https://kamelatraining.co.za" },
+  ],
   creator: "Kamela International",
   publisher: "Kamela International",
   metadataBase: new URL("https://kamelatraining.co.za"),
-  alternates: { canonical: "https://kamelatraining.co.za/Solutions/Enterprise" },
+  alternates: {
+    canonical: "https://kamelatraining.co.za/Solutions/Enterprise",
+  },
   openGraph: {
-    title: "Enterprise Solutions | Kamela International",
+    title:
+      "Corporate Training & Learnership Solutions | B-BBEE Skills Development | Kamela International",
     description:
-      "Accredited workforce training, learnership delivery, BBBEE enterprise development, and talent pipeline solutions for South African organisations.",
+      "Upskill your workforce, run accredited learnerships, improve your B-BBEE scorecard and develop SMMEs with Kamela International — South Africa's national training partner for corporates and large employers.",
     url: "https://www.kamelatraining.co.za/Solutions/Enterprise",
     siteName: "Kamela International",
     images: [
@@ -42,7 +93,7 @@ export const metadata: Metadata = {
         url: "https://www.kamelatraining.co.za/gallery-2.jpg",
         width: 1200,
         height: 630,
-        alt: "Enterprise Solutions - Kamela International",
+        alt: "Kamela International — Corporate Training, Learnerships and B-BBEE Skills Development",
       },
     ],
     locale: "en_ZA",
@@ -50,9 +101,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Enterprise Solutions | Kamela International",
+    title: "Corporate Training & Learnership Solutions | Kamela International",
     description:
-      "Accredited workforce training, learnership delivery & talent pipeline development for South African organisations.",
+      "Accredited learnerships, B-BBEE skills development, employee upskilling, SMME development and recruitment as a service — nationally across South Africa.",
     images: ["https://www.kamelatraining.co.za/gallery-2.jpg"],
   },
   robots: {
@@ -73,7 +124,6 @@ const BRAND = {
   orange: "#ff4500",
   blue: "#0866ff",
 } as const;
-
 
 /* ─── Why Choose Kamela — data ────────────────────────────────── */
 const whyKamela = [
@@ -114,7 +164,12 @@ const partners = [
   { src: "/icons/anglo-american.svg", alt: "Anglo American", w: 100, h: 40 },
   { src: "/icons/alteram.png", alt: "Alteram", w: 100, h: 40 },
   { src: "/icons/master-plastics.webp", alt: "Master Plastics", w: 100, h: 40 },
-  { src: "/icons/wits.png", alt: "University of the Witwatersrand", w: 100, h: 40 },
+  {
+    src: "/icons/wits.png",
+    alt: "University of the Witwatersrand",
+    w: 100,
+    h: 40,
+  },
   { src: "/icons/unisa.jpg", alt: "UNISA", w: 100, h: 40 },
   { src: "/icons/transnet.png", alt: "Transnet", w: 100, h: 40 },
   { src: "/icons/marshalls.jpg", alt: "Marshalls", w: 100, h: 40 },
@@ -132,45 +187,53 @@ const partners = [
 export default function Enterprise() {
   return (
     <>
+      <EnterpriseServicesSchema />
       {/* ── Breadcrumb ── */}
       <nav
         aria-label="Breadcrumb"
         className="flex flex-wrap items-center gap-1.5 text-sm text-gray-500 font-medium mt-30 px-10 md:px-16 lg:px-24 xl:px-32 mb-3"
       >
-        <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
-        <span aria-hidden className="text-gray-300">/</span>
+        <Link href="/" className="hover:text-blue-600 transition-colors">
+          Home
+        </Link>
+        <span aria-hidden className="text-gray-300">
+          /
+        </span>
         <span>Solutions</span>
-        <span aria-hidden className="text-gray-300">/</span>
+        <span aria-hidden className="text-gray-300">
+          /
+        </span>
         <span className="text-(--prime) font-semibold">Enterprise</span>
       </nav>
 
       {/* ── Hero ── */}
       <header className="container mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center relative z-10">
         <div>
-           <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 text-blue-700 text-xs font-semibold px-3 py-1.5 rounded-full mb-5">
-            <span className="w-1.5 h-1.5 rounded-full bg-blue-600" aria-hidden />
-            Drive Perfomance - Improve Staff Retention - Boost Productivity  
+          <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 text-blue-700 text-xs font-semibold px-3 py-1.5 rounded-full mb-5 uppercase">
+            <span
+              className="w-1.5 h-1.5 rounded-full bg-blue-600"
+              aria-hidden
+            />
+            Drive Perfomance - Improve Staff Retention - Boost Productivity
           </div>
-          <h1
-              className="sm:text-5xl leading-tight text-start md:text-left"
+          <h1 className="sm:text-5xl leading-tight text-start md:text-left mt-4">
+            Elevate and Sustain{" "}
+            <span
+              style={{
+                backgroundImage: `linear-gradient(90deg, ${BRAND.orange}, ${BRAND.blue})`,
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+              }}
             >
-              Elevate and Sustain{" "}
-              <span
-                style={{
-                  backgroundImage: `linear-gradient(90deg, ${BRAND.orange}, ${BRAND.blue})`,
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  backgroundClip: "text",
-                }}
-              >
-               Your Workforce Talent 
-              </span>{" "}
-              
-            </h1>
+              Your Workforce Talent
+            </span>{" "}
+          </h1>
           <p className="mt-4 md:text-xl leading-relaxed opacity-70">
-            We partner with organisations to deliver customised training solutions that drive
-            workforce transformation, enterprise development, and talent pipeline growth -
-            enhancing employee performance and accelerating economic inclusion.
+            We partner with organisations to deliver customised training
+            solutions that drive workforce transformation, enterprise
+            development, and talent pipeline growth - enhancing employee
+            performance and accelerating economic inclusion.
           </p>
           <div className="mt-8 flex items-center gap-4">
             <Servicebtn />
@@ -194,30 +257,36 @@ export default function Enterprise() {
       <EnterpriseInsights />
 
       {/* ── Trusted By ── */}
-      <section aria-labelledby="trusted-heading" className="flex flex-col items-center justify-center px-4 w-full py-20 gap-8">
-        <h2 id="trusted-heading" className="text-center sm:text-3xl">
-          Trusted By Leading Corporate &amp; Public Organisations
-        </h2>
-        <ul
-          aria-label="Partner organisations"
-          className="max-w-6xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-3 w-full mt-2"
-        >
-          {partners.map((p) => (
-            <li
-              key={p.src}
-              className="border-2 border-slate-200 p-4 h-20 grid place-content-center rounded-xl hover:-translate-y-1 transition-all duration-200 hover:shadow-lg hover:border-blue-600"
+
+      <section className="max-w-7xl mx-auto my-10 md:my-20 px-4 sm:px-6 grid md:grid-cols-2 gap-8 md:gap-10 items-center dark:border-gray-700 p-4 sm:p-6 rounded-3xl">
+        {/* Left Side */}
+        <div>
+          <h2 className="sm:text-5xl lg:text-7xl mt-2 mb-4 leading-tight">
+            Trusted By Leading Organisations Across Africa 
+          </h2>
+          <p className="text-gray-600 dark:text-gray-300 mb-6 text-sm sm:text-base">
+            Build sleek, responsive interfaces in record time with our carefully
+            crafted React and Tailwind CSS components.
+          </p>
+        </div>
+
+        {/* Right Side */}
+        <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4">
+          {partners.map((url, idx) => (
+            <div
+              key={idx}
+              className="relative w-full aspect-square p-2 bg-white dark:bg-gray-800 shadow-sm border-2 border-gray-200 rounded-2xl dark:border-gray-700"
             >
               <Image
-                src={p.src}
-                alt={p.alt}
-                width={p.w}
-                height={p.h}
+                src={url.src}
+                alt={url.alt}
+                fill
                 loading="lazy"
-                className="object-contain max-h-10"
+                className="object-contain p-2"
               />
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       </section>
 
       {/* ── Why Choose Kamela ── */}
@@ -247,7 +316,10 @@ export default function Enterprise() {
       </section>
 
       {/* ── Custom Training Solutions ── */}
-      <section aria-labelledby="training-heading" className="relative py-20 lg:py-32 overflow-hidden">
+      <section
+        aria-labelledby="training-heading"
+        className="relative py-20 lg:py-32 overflow-hidden"
+      >
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-12 gap-y-16 px-6 lg:grid-cols-2 lg:items-start lg:px-8">
           {/* Text column */}
           <div className="flex flex-col justify-start">
@@ -255,13 +327,16 @@ export default function Enterprise() {
               Training Solutions Tailored For Enterprise Success
             </h2>
             <p className="mt-6 text-gray-600 leading-relaxed">
-              We partner with organisations to deliver customised training solutions that drive
-              workforce transformation, enterprise development, and talent pipeline growth — designing
-              programmes that enhance employee performance and accelerate economic inclusion.
+              We partner with organisations to deliver customised training
+              solutions that drive workforce transformation, enterprise
+              development, and talent pipeline growth — designing programmes
+              that enhance employee performance and accelerate economic
+              inclusion.
             </p>
             <p className="mt-4 text-gray-600 leading-relaxed">
-              Whether it's up-skilling employees, developing SMMEs, or building talent pipelines,
-              we create programmes that deliver measurable impact and long-term value.
+              Whether it's up-skilling employees, developing SMMEs, or building
+              talent pipelines, we create programmes that deliver measurable
+              impact and long-term value.
             </p>
 
             <ul className="mt-8 space-y-6">
@@ -280,9 +355,14 @@ export default function Enterprise() {
                 },
               ].map(({ label, body }) => (
                 <li key={label} className="flex gap-4">
-                  <div className="mt-1 w-2 h-2 rounded-full bg-blue-600 shrink-0" aria-hidden />
+                  <div
+                    className="mt-1 w-2 h-2 rounded-full bg-blue-600 shrink-0"
+                    aria-hidden
+                  />
                   <span className="text-gray-700">
-                    <strong className="font-semibold text-(--prime)">{label}. </strong>
+                    <strong className="font-semibold text-(--prime)">
+                      {label}.{" "}
+                    </strong>
                     {body}
                   </span>
                 </li>
@@ -291,17 +371,17 @@ export default function Enterprise() {
           </div>
 
           {/* Image column */}
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl ring-1 ring-slate-200">
-              <Image
-                src="/Kamela18.jpg"
-                alt="Kamela International training session in progress"
-                width={800}
-                height={900}
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                loading="lazy"
-                className="w-full object-cover"
-              />
-            </div>
+          <div className="relative rounded-2xl overflow-hidden shadow-2xl ring-1 ring-slate-200">
+            <Image
+              src="/Kamela18.jpg"
+              alt="Kamela International training session in progress"
+              width={800}
+              height={900}
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              loading="lazy"
+              className="w-full object-cover"
+            />
+          </div>
         </div>
       </section>
 
@@ -316,15 +396,19 @@ export default function Enterprise() {
             Our Enterprise Solutions
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto">
-            Kamela International offers a comprehensive suite of enterprise solutions designed to meet
-            the diverse needs of organisations across South Africa and Africa.
+            Kamela International offers a comprehensive suite of enterprise
+            solutions designed to meet the diverse needs of organisations across
+            South Africa and Africa.
           </p>
         </div>
         <Feature197 />
       </section>
 
       {/* ── Testimonials ── */}
-      <section aria-labelledby="testimonials-heading" className="mx-auto px-6 py-20">
+      <section
+        aria-labelledby="testimonials-heading"
+        className="mx-auto px-6 py-20"
+      >
         <h2 id="testimonials-heading" className="text-center sm:text-3xl mb-12">
           What Our Partners Say About Us
         </h2>
@@ -342,9 +426,10 @@ export default function Enterprise() {
               Ready to Transform Your Workforce and Drive Enterprise Success?
             </h2>
             <p className="mt-4 text-gray-600 leading-relaxed">
-              Partner with Kamela International to access customised training solutions that empower
-              your employees, develop SMMEs, and build talent pipelines for the future. Let's create a
-              skilled, inclusive, and competitive workforce together.
+              Partner with Kamela International to access customised training
+              solutions that empower your employees, develop SMMEs, and build
+              talent pipelines for the future. Let's create a skilled,
+              inclusive, and competitive workforce together.
             </p>
             <div className="mt-8">
               <Link
@@ -355,7 +440,10 @@ export default function Enterprise() {
                   Let's Collaborate
                 </span>
                 <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center transform transition-all duration-200 ease-in-out group-hover:-translate-x-35 group-hover:rotate-45 group-hover:bg-black">
-                  <ArrowUpRight className="w-4 h-4 text-black transition-colors duration-200 ease-in-out group-hover:text-white" strokeWidth={1.67} />
+                  <ArrowUpRight
+                    className="w-4 h-4 text-black transition-colors duration-200 ease-in-out group-hover:text-white"
+                    strokeWidth={1.67}
+                  />
                 </div>
               </Link>
             </div>

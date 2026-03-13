@@ -24,7 +24,7 @@ export default function About() {
           <div>
             <h2
             id="about-heading"
-            className="sm:text-4xl lg:text-5xl leading-tight pb-18"
+            className="sm:text-4xl lg:text-5xl leading-tight pb-15"
           >
             Innovating Skills Development For The Future Workforce
           </h2>
@@ -85,7 +85,7 @@ export default function About() {
               practical, industry-aligned competencies that prepare them to
               excel in modern workplaces and growing sectors.
             </p>
-            <div className="flex justify-center items-center gap-6 flex-wrap mt-10">
+            <div className="flex justify-center items-center mt-10">
               <Link
                 href="/About-Us"
                 className="group bg-(--prime) text-white font-medium flex flex-row justify-between items-center py-2 px-6 rounded-full max-w-64 w-52 md:py-3 border border-(--prime) transition-all duration-200 ease-in-out hover:bg-transparent hover:text-(--prime)"

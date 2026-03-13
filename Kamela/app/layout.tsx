@@ -4,10 +4,10 @@ import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/footer/footer";
 import "remixicon/fonts/remixicon.css";
-import { Analytics } from '@vercel/analytics/next';
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import Script from "next/script";
-
+import OrganizationSchema from "@/components/OrganizationSchema";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,38 +22,34 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title:
-    "Kamela International | Leading Training Provider",
+  title: "Kamela International | Leading Training Provider",
   description:
     "Kamela International empowers learners with accredited training, flexible study options, and industry-aligned qualifications. Our supportive community helps students, professionals, and career changers gain the skills and confidence needed to thrive in today's workforce.",
-     keywords: [
-      "Kamela International",
-      "Skills Development",
-      "Kamela Training",
-      "Accredited Training",
-      "Flexible Study Options",
-      "Industry-Aligned Qualifications",
-      "Supportive Learning",
-      "Career Advancement",
-      "Professional Development",
-      "Kamela",
-      "QCTO",
-      "Accredited Courses",
-      "Online Learning",
-      "In-Person Training",
-      "Blended Learning",
-      "Workforce Empowerment",
-      "Career Growth",
-      "Courses",
-      "Training Programs",
-      "Skills Training",
-      "Professional Training",
-      "Career Training",
-    ],
-
+  keywords: [
+    "Kamela International",
+    "Skills Development",
+    "Kamela Training",
+    "Accredited Training",
+    "Flexible Study Options",
+    "Industry-Aligned Qualifications",
+    "Supportive Learning",
+    "Career Advancement",
+    "Professional Development",
+    "Kamela",
+    "QCTO",
+    "Accredited Courses",
+    "Online Learning",
+    "In-Person Training",
+    "Blended Learning",
+    "Workforce Empowerment",
+    "Career Growth",
+    "Courses",
+    "Training Programs",
+    "Skills Training",
+    "Professional Training",
+    "Career Training",
+  ],
 };
-
-
 
 export default function RootLayout({
   children,
@@ -105,8 +101,9 @@ export default function RootLayout({
             strokeOpacity=".7"
           />
         </svg>
+        <OrganizationSchema />
 
-        <Navbar/>
+        <Navbar />
         {children}
         <Script
           id="tawk-to"
@@ -127,7 +124,7 @@ export default function RootLayout({
         />
         <Analytics />
         <SpeedInsights />
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

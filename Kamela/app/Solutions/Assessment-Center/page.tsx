@@ -14,6 +14,7 @@ import {
   Send,
   Award,
 } from "lucide-react";
+import AssessmentCentreSchema from "@/components/assessment-center-schema";
 import type { Metadata } from "next";
 
 /* ─── Brand tokens ────────────────────────────────────────────── */
@@ -25,26 +26,41 @@ const BRAND = {
 /* ─── SEO ─────────────────────────────────────────────────────── */
 export const metadata: Metadata = {
   title:
-    "QCTO-Accredited Assessment Centre | EISA Dates 2026 | Kamela International",
+    "QCTO Assessment Centre Sandton | EISA Dates 2026 | Kamela International",
   description:
-    "Book your External Integrated Summative Assessment (EISA) at Kamela International's QCTO-accredited Assessment Centre. View 2026 EISA dates for Contact Centre Manager, Office Administrator, Project Manager, HR Administrator and more.",
+    "Johannesburg's trusted QCTO-accredited Assessment Centre in Sandton. Book your 2026 EISA for learnerships in Contact Centre Management, Office Administration, Project Management, HR & more. Serving training providers and employers across Gauteng.",
   keywords: [
-    "QCTO Assessment Centre South Africa",
-    "EISA dates 2026",
-    "External Integrated Summative Assessment",
-    "QCTO accredited assessment centre",
+    "QCTO assessment centre Johannesburg",
+    "QCTO assessment centre Sandton",
+    "EISA centre Gauteng",
+    "assessment centre near me Johannesburg",
+    "QCTO accredited centre Sandton",
+    "learnership assessment Johannesburg",
+    "learnership assessment Gauteng",
+    "learnership EISA booking",
+    "EISA for training providers",
+    "QCTO learnership assessment South Africa",
+    "occupational learnership assessment centre",
+    "skills development EISA Johannesburg",
+    "SETA learnership assessment",
+    "training provider QCTO assessment",
+    "B-BBEE learnership assessment centre",
+    "workplace-based learning assessment",
+    "External Integrated Summative Assessment 2026",
+    "EISA dates 2026 Johannesburg",
     "EISA booking South Africa",
-    "occupational qualifications assessment",
-    "QCTO certification",
-    "EISA fees South Africa",
+    "EISA fees 2026",
+    "QCTO EISA schedule Gauteng",
+    "EISA exam centre Sandton",
     "Contact Centre Manager NQF 5 EISA",
-    "Office Administrator NQF 5 EISA",
+    "Office Administrator NQF 5 EISA Johannesburg",
     "Project Manager NQF 5 EISA",
-    "HR Administrator EISA",
+    "HR Administrator EISA Gauteng",
     "Marketing Coordinator NQF 5 EISA",
-    "Kamela International assessment",
-    "QCTO EISA schedule",
-    "assessment centre Johannesburg",
+    "occupational qualification assessment NQF 5",
+    "Kamela International assessment centre",
+    "Kamela International EISA",
+    "Kamela International Sandton",
   ],
   authors: [
     { name: "Kamela International", url: "https://kamelatraining.co.za" },
@@ -55,9 +71,9 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://kamelatraining.co.za/Assessment-Center" },
   openGraph: {
     title:
-      "QCTO-Accredited Assessment Centre | EISA 2026 | Kamela International",
+      "QCTO Assessment Centre Sandton | EISA 2026 | Kamela International",
     description:
-      "View 2026 EISA dates and book your External Integrated Summative Assessment at Kamela International's QCTO-accredited Assessment Centre.",
+      "Book your 2026 EISA at Kamela International — Johannesburg's QCTO-accredited Assessment Centre in Sandton. Serving learnerships, training providers and employers across Gauteng.",
     url: "https://kamelatraining.co.za/Assessment-Center",
     siteName: "Kamela International",
     images: [
@@ -65,7 +81,7 @@ export const metadata: Metadata = {
         url: "https://kamelatraining.co.za/Kamela8.jpg",
         width: 1200,
         height: 630,
-        alt: "Kamela International QCTO-Accredited Assessment Centre",
+        alt: "Kamela International QCTO-Accredited Assessment Centre in Sandton, Johannesburg",
       },
     ],
     locale: "en_ZA",
@@ -73,9 +89,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "QCTO Assessment Centre | EISA Dates 2026 | Kamela International",
+    title:
+      "QCTO Assessment Centre Sandton | EISA 2026 | Kamela International",
     description:
-      "Book your EISA at Kamela International's QCTO-accredited Assessment Centre. 2026 dates available for multiple NQF Level 5 occupational qualifications.",
+      "Johannesburg's QCTO-accredited Assessment Centre. Book your 2026 EISA for NQF Level 5 learnerships. Serving training providers and employers across Gauteng.",
     images: ["https://kamelatraining.co.za/Kamela8.jpg"],
   },
   robots: {
@@ -207,6 +224,8 @@ const processSteps = [
 /* ─── Page ────────────────────────────────────────────────────── */
 export default function AssessmentCenter() {
   return (
+    <>
+    <AssessmentCentreSchema />
     <div className="min-h-screen w-full flex flex-col">
       {/* ── Breadcrumb ── */}
       <nav
@@ -231,14 +250,14 @@ export default function AssessmentCenter() {
       {/* ── Hero ── */}
       <header className="container mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center relative z-10">
         <div>
-          <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 text-blue-700 text-xs font-semibold px-3 py-1.5 rounded-full mb-5">
+          <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 text-blue-700 text-xs font-semibold px-3 py-1.5 rounded-full mb-5 uppercase">
             <span
               className="w-1.5 h-1.5 rounded-full bg-blue-600"
               aria-hidden
             />
             QCTO Accredited Assesssment Center
           </div>
-          <h1 className="sm:text-5xl leading-tight text-start md:text-left">
+          <h1 className="sm:text-5xl leading-tight text-start md:text-left mt-4">
             External Integrated Summative{" "}
             <span
               style={{
@@ -625,5 +644,6 @@ export default function AssessmentCenter() {
         </div>
       </section>
     </div>
+    </>
   );
 }

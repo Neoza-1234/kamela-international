@@ -78,7 +78,7 @@ export default function Hero() {
               leadership capability, and accredited learning solutions that
               drive measurable growth and transformation
             </p>
-            <div className=" flex justify-start items-center gap-3 flex-wrap mt-8">
+            <div className=" flex justify-start items-center gap-6 flex-wrap mt-8">
               <Link
                 href="/Solutions/Study"
                 className="group bg-(--prime) text-white font-medium flex flex-row justify-between items-center py-2 px-5 rounded-full max-w-64 w-52 md:py-3 border border-(--prime) transition-all duration-200 ease-in-out hover:bg-transparent hover:text-(--prime)"
@@ -125,11 +125,11 @@ export default function Hero() {
         </div>
       </section>
       {/* ─── STATISTICS SECTION ──────────────────────────────────────────────── */}
-      <div className="bg-black max-w-6xl py-8 rounded-3xl flex flex-col items-center mx-auto justify-center mt-10 px-6 mb-20">
+      <div className="bg-black py-8 flex flex-col items-center mx-auto justify-center mt-10 px-3 mb-20">
         <div className="px-[8%] lg:px-[12%] sm:px-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-6">
           {statsData.map((stat, index) => (
             <div key={index} className="text-center">
-              <h2 className="text-white font-extrabold">
+              <span className="text-white text-4xl ">
                 <CountUp
                   start={0}
                   end={parseInt(stat.value)}
@@ -137,7 +137,7 @@ export default function Hero() {
                   enableScrollSpy
                 />
                 {stat.suffix}
-              </h2>
+              </span>
               <h3 className="text-gray-300 mt-2">{stat.title}</h3>
             </div>
           ))}

@@ -53,14 +53,14 @@ const defaultFeatures: FeatureItem[] = [
   },
   {
     id: 5,
-    title: "Work Integrated Learning (WIL) Solutions",
+    title: "Work Integrated Learning Solutions",
     image: "/icons/workil.svg",
     description:
       "We support employee development and organizational performance through practical, workplace-driven learning experiences. Our focus areas include leadership & supervisory skills, customer service excellence, negotiation & conflict management, project management fundamentals, emotional intelligence, time management, workplace problem solving  and financial literacy.",
   },
   {
     id: 6,
-    title: "Recruitment as a Service (RaaS)",
+    title: "Recruitment as a Service",
     image: "/icons/recruitmentaas.svg",
     description:
       "We provide end-to-end recruitment and placement tailored for internships, learnerships, graduate programs and entry-level positions, ensuring a seamless hiring process for organizations seeking fresh talent.",
@@ -83,7 +83,7 @@ const Feature197 = ({ features = defaultFeatures }: Feature197Props) => {
                     className="cursor-pointer py-5 no-underline! transition"
                   >
                     <h2
-                      className={`text-xl font-semibold ${
+                      className={`font-semibold ${
                         tab.id === activeTabId ? "text-black" : "text-gray-600"
                       }`}
                     >
